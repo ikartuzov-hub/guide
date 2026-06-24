@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моя Неизведанная Мадейра</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='23' fill='%23FBE9EC'/%3E%3Cg fill='none' stroke='%23E14B6A' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M72 36 A26 26 0 1 0 72 64 L72 50 L54 50'/%3E%3Cpath d='M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0E2233;--ink:#EAF1F4;--muted:#9DB2BF;--accent:#FF6B8A;--card:#16314A;--line:#244A66;--tile:#0A1A28;--shadow:0 10px 30px rgba(0,0,0,.35);--r:18px}
+:root[data-theme="light"]{--bg:#F6F1E7;--ink:#16314A;--muted:#5C7384;--accent:#E14B6A;--card:#FFFFFF;--line:#E7DCC9;--tile:#EDE4D4;--shadow:0 10px 28px rgba(20,49,74,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:0;z-index:1200;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:12px;height:60px;max-width:1080px;margin:0 auto;padding:0 18px}
+.mark{width:30px;height:30px;flex:0 0 auto}.mark svg{display:block;width:100%;height:100%}
+.brandtext{font-family:'Newsreader',serif;font-weight:600;font-size:18px}
+.brandtext small{display:block;font:500 11px 'Inter';color:var(--muted);margin-top:-2px}
+.top-sp{flex:1}
+.lang{background:var(--tile);border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:8px 10px;font:600 13px 'Inter';cursor:pointer}
+.tbtn{background:none;border:1px solid var(--line);color:var(--ink);width:38px;height:38px;border-radius:11px;cursor:pointer;font-size:16px;display:grid;place-items:center;transition:.2s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.hero{padding:44px 0 22px}
+.eyebrow{font:600 12px 'Inter';letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.h1{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(38px,7vw,66px);line-height:1.02;margin:0;letter-spacing:-.5px}
+.sub{font-family:'Newsreader',serif;font-style:italic;font-size:clamp(17px,2.6vw,22px);color:var(--muted);margin:14px 0 0;max-width:42ch}
+.by{margin-top:16px;font-size:13.5px;color:var(--muted)}.by b{color:var(--ink);font-weight:600}
+#map{height:340px;border-radius:var(--r);margin:22px 0 8px;border:1px solid var(--line);z-index:1}
+.pop-n{font-family:'Newsreader',serif;font-weight:600;font-size:15px;color:#16314A}
+.pop-r{color:#E14B6A;font-weight:600;font-size:12.5px}.pop-note{font-style:italic;color:#5C7384;font-size:12.5px;margin-top:3px}
+.st{font-family:'Newsreader',serif;font-weight:600;font-size:25px;margin:40px 0 4px}
+.st small{display:block;font:400 13.5px 'Inter';color:var(--muted);margin-top:4px}
+/* picker */
+.picker{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0 6px;padding:16px;background:var(--tile);border:1px solid var(--line);border-radius:var(--r)}
+.pgrp{display:flex;flex-direction:column;gap:7px}
+.plab{font:600 11px 'Inter';letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.popts{display:flex;gap:6px;flex-wrap:wrap}
+.popt{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 13px 'Inter';cursor:pointer;transition:.15s}
+.popt.on{border-color:var(--accent);background:var(--accent);color:#fff}
+/* scenario */
+.scn{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin:18px 0}
+.scn.feat{border-color:var(--accent)}
+.scn-h{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.scn-meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
+.mtag{font:600 11.5px 'Inter';background:var(--tile);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted)}
+.mtag.sun{color:var(--accent);border-color:var(--accent)}
+.scn-t{font-family:'Newsreader',serif;font-weight:600;font-size:23px;margin:0;line-height:1.1}
+.scn-why{font-family:'Newsreader',serif;font-style:italic;color:var(--muted);font-size:15px;margin:8px 0 0}
+.scn-b{padding:6px 20px 18px}
+.stop{display:flex;gap:13px;padding:12px 0;border-bottom:1px dashed var(--line)}.stop:last-child{border-bottom:0}
+.stop-i{width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font:600 12px 'Inter';display:grid;place-items:center;flex:0 0 auto;margin-top:1px}
+.stop-n{font-weight:600;font-size:15px}.stop-m{color:var(--muted);font-weight:400;font-size:12.5px}
+.stop-note{font-family:'Newsreader',serif;font-style:italic;font-size:13.5px;color:var(--muted);margin-top:2px}
+.scn-x{display:grid;grid-template-columns:1fr;gap:12px;padding:14px 20px 18px;background:var(--tile);border-top:1px solid var(--line)}
+@media(min-width:620px){.scn-x{grid-template-columns:1fr 1fr}}
+.xblock{font-size:13px}.xblock h4{margin:0 0 4px;font:600 11px 'Inter';letter-spacing:1px;text-transform:uppercase;color:var(--accent)}
+.xblock ul{margin:0;padding-left:16px;color:var(--muted)}.xblock li{margin:2px 0}
+.xblock p{margin:0;color:var(--muted)}
+/* tags + cards */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 13px;font:500 13px 'Inter';cursor:pointer;display:inline-flex;gap:6px;align-items:center;transition:.18s}
+.chip.on{border-color:var(--accent);background:var(--accent);color:#fff}.chip .ct{opacity:.6;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:20px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .2s,border-color .2s;position:relative}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.ph{aspect-ratio:16/10;background:var(--tile) center/cover no-repeat;position:relative;display:grid;place-items:center}
+.ph .ph-e{font-size:40px;opacity:.35}
+.tag-dot{position:absolute;top:11px;left:11px;background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:4px 10px;font:600 11.5px 'Inter';display:inline-flex;gap:5px;align-items:center;backdrop-filter:blur(4px)}
+.secret{position:absolute;top:11px;right:11px;background:var(--accent);color:#fff;border-radius:999px;padding:4px 10px;font:600 11px 'Inter'}
+.cbody{padding:15px 16px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.cname{font-family:'Newsreader',serif;font-weight:600;font-size:19px;line-height:1.15;margin:0}
+.rate{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);flex-wrap:wrap}.star{color:var(--accent);font-weight:700}
+.hours{font-size:12.5px;color:var(--muted)}
+.note{font-family:'Newsreader',serif;font-style:italic;font-size:15px;line-height:1.4;color:var(--ink);border-left:2px solid var(--accent);padding-left:11px;margin:2px 0}
+.cfoot{margin-top:auto;padding-top:6px}
+.dir{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font:600 13px 'Inter';text-decoration:none}.dir:hover{text-decoration:underline}
+.hidden{display:none!important}
+.foot{border-top:1px solid var(--line);margin-top:50px;padding:34px 0 60px}
+.cta{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}
+.cta-t{font-family:'Newsreader',serif;font-weight:600;font-size:21px}.cta-t small{display:block;font:400 13.5px 'Inter';color:var(--muted);margin-top:3px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:12px;padding:12px 22px;font:600 14.5px 'Inter';text-decoration:none;display:inline-block;cursor:pointer;transition:.2s}.btn:hover{filter:brightness(1.08)}
+.sig{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:24px;font-size:12.5px;color:var(--muted)}.sig a{color:var(--muted)}
+@keyframes markIn{0%{transform:translate(calc(50vw - 33px),40vh) scale(7);opacity:0}18%{opacity:1}70%{transform:translate(calc(50vw - 33px),40vh) scale(7)}100%{transform:translate(0,0) scale(1)}}
+.mark.reveal{animation:markIn 2.4s cubic-bezier(.65,0,.25,1) both}@media(prefers-reduced-motion:reduce){.mark.reveal{animation:none}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(max-width:560px){#map{height:280px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in">
+  <span class="mark" id="mark" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M72 36 A26 26 0 1 0 72 64 L72 50 L54 50"/><path d="M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84"/></svg></span>
+  <span class="brandtext">Мой Гид<small>SeedWave</small></span>
+  <span class="top-sp"></span>
+  <select class="lang" id="lang"><option value="ru">🇷🇺 RU</option><option value="en">🇬🇧 EN</option><option value="pt">🇵🇹 PT</option><option value="es">🇪🇸 ES</option><option value="de">🇩🇪 DE</option></select>
+  <button class="tbtn" id="theme" aria-label="theme">☾</button>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow" data-i="eyebrow"></p>
+    <h1 class="h1" data-i="title"></h1>
+    <p class="sub" data-i="sub"></p>
+    <p class="by" id="by"></p>
+  </header>
+
+  <div id="map"></div>
+
+  <!-- HERO: scenarios -->
+  <h2 class="st"><span data-i="sc_title"></span><small data-i="sc_sub"></small></h2>
+  <div class="picker" id="picker"></div>
+  <div id="scns"></div>
+
+  <!-- base: all places -->
+  <h2 class="st"><span data-i="places_title"></span><small data-i="places_sub"></small></h2>
+  <div class="tags" id="tags"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer class="foot">
+    <div class="cta"><div class="cta-t"><span data-i="foot_t"></span><small data-i="foot_s"></small></div>
+      <a class="btn" id="hublink" data-i="foot_btn" href="#"></a></div>
+    <div class="sig"><span>© <a href="#" id="lk">Igor Kartuzov</a> · <a href="#" id="hub2">SeedWave</a></span>
+      <span data-i="data_note"></span></div>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js"></script>
+<script>
+/* ===== СЛОЙ 2 — ЛОКАЛИ (в проде ui.{lang}.json). Интерфейс на 5 языках. ===== */
+const UI={
+ ru:{eyebrow:"Гид · мои секретные точки",title:"Моя Неизведанная Мадейра",sub:"Места без толп — закаты, деревни, секреты острова от того, кто здесь живёт.",by:"Собрал {a} · {n} мест · {s} секретных",
+   sc_title:"Сценарии из моих точек",sc_sub:"Скажи, что у тебя есть — соберу вечер или маршрут",
+   time:"Время",half:"Полдня",day:"День",multi:"2–3 дня",car:"Машина",cy:"Есть",cn:"Нет",light:"Свет",sunset:"Закат",sunrise:"Восход",dayl:"Днём",act:"Хочу",walk:"Прогулка",hike:"Хайк",swim:"Купаться",food:"Гастро",any:"Любое",
+   secrets:"Секретные места рядом",park:"Парковка",wear:"Что надеть",why:"Почему ехать",sunset_t:"Закат сегодня",sunrise_t:"Восход сегодня",noscn:"Под этот набор сценария нет — поменяй фильтры.",
+   places_title:"Все мои места",places_sub:"База: к секретным точкам — по пути",all:"Все",secret:"секрет",reviews:"отзывов",dir:"Проложить маршрут",
+   foot_t:"Понравился гид?",foot_s:"Сделай свой — из своих точек на карте.",foot_btn:"Сделать свой гид →",data_note:"Данные мест · Google · снимок"},
+ en:{eyebrow:"Guide · my secret spots",title:"My Undiscovered Madeira",sub:"Places without crowds — sunsets, villages, island secrets from someone who lives here.",by:"By {a} · {n} places · {s} secret",
+   sc_title:"Scenarios from my spots",sc_sub:"Tell me what you've got — I'll build your evening or route",
+   time:"Time",half:"Half-day",day:"Day",multi:"2–3 days",car:"Car",cy:"Yes",cn:"No",light:"Light",sunset:"Sunset",sunrise:"Sunrise",dayl:"Daytime",act:"I want",walk:"Stroll",hike:"Hike",swim:"Swim",food:"Food & drink",any:"Any",
+   secrets:"Secret spots nearby",park:"Parking",wear:"What to wear",why:"Why go",sunset_t:"Sunset today",sunrise_t:"Sunrise today",noscn:"No scenario for this set — change the filters.",
+   places_title:"All my places",places_sub:"The base — on the way to the secret spots",all:"All",secret:"secret",reviews:"reviews",dir:"Get directions",
+   foot_t:"Liked this guide?",foot_s:"Make your own — from your pins on the map.",foot_btn:"Make your guide →",data_note:"Place data · Google · snapshot"},
+ pt:{eyebrow:"Guia · os meus lugares secretos",title:"A Minha Madeira Secreta",sub:"Lugares sem multidões — pores do sol, aldeias e segredos da ilha de quem cá vive.",by:"Por {a} · {n} lugares · {s} secretos",
+   sc_title:"Cenários dos meus lugares",sc_sub:"Diz-me o que tens — monto a tua tarde ou rota",
+   time:"Tempo",half:"Meio-dia",day:"Um dia",multi:"2–3 dias",car:"Carro",cy:"Sim",cn:"Não",light:"Luz",sunset:"Pôr do sol",sunrise:"Nascer do sol",dayl:"De dia",act:"Quero",walk:"Passeio",hike:"Caminhada",swim:"Nadar",food:"Gastronomia",any:"Qualquer",
+   secrets:"Lugares secretos perto",park:"Estacionamento",wear:"O que vestir",why:"Porquê ir",sunset_t:"Pôr do sol hoje",sunrise_t:"Nascer do sol hoje",noscn:"Sem cenário para esta seleção — muda os filtros.",
+   places_title:"Todos os meus lugares",places_sub:"A base — a caminho dos lugares secretos",all:"Todos",secret:"secreto",reviews:"avaliações",dir:"Como chegar",
+   foot_t:"Gostaste do guia?",foot_s:"Cria o teu — a partir dos teus pontos no mapa.",foot_btn:"Criar o meu guia →",data_note:"Dados dos locais · Google · captura"},
+ es:{eyebrow:"Guía · mis lugares secretos",title:"Mi Madeira Inexplorada",sub:"Lugares sin multitudes — atardeceres, pueblos y secretos de la isla de quien vive aquí.",by:"Por {a} · {n} lugares · {s} secretos",
+   sc_title:"Escenarios de mis lugares",sc_sub:"Dime qué tienes — te armo la tarde o la ruta",
+   time:"Tiempo",half:"Medio día",day:"Un día",multi:"2–3 días",car:"Coche",cy:"Sí",cn:"No",light:"Luz",sunset:"Atardecer",sunrise:"Amanecer",dayl:"De día",act:"Quiero",walk:"Paseo",hike:"Senderismo",swim:"Nadar",food:"Gastronomía",any:"Cualquiera",
+   secrets:"Lugares secretos cerca",park:"Aparcamiento",wear:"Qué llevar",why:"Por qué ir",sunset_t:"Atardecer hoy",sunrise_t:"Amanecer hoy",noscn:"Sin escenario para esta selección — cambia los filtros.",
+   places_title:"Todos mis lugares",places_sub:"La base — de camino a los secretos",all:"Todos",secret:"secreto",reviews:"reseñas",dir:"Cómo llegar",
+   foot_t:"¿Te gustó la guía?",foot_s:"Crea la tuya — desde tus puntos en el mapa.",foot_btn:"Crear mi guía →",data_note:"Datos de lugares · Google · captura"},
+ de:{eyebrow:"Guide · meine geheimen Orte",title:"Mein Unentdecktes Madeira",sub:"Orte ohne Menschenmassen — Sonnenuntergänge, Dörfer und Inselgeheimnisse von einem, der hier lebt.",by:"Von {a} · {n} Orte · {s} geheim",
+   sc_title:"Szenarien aus meinen Orten",sc_sub:"Sag, was du hast — ich baue deinen Abend oder die Route",
+   time:"Zeit",half:"Halber Tag",day:"Ein Tag",multi:"2–3 Tage",car:"Auto",cy:"Ja",cn:"Nein",light:"Licht",sunset:"Sonnenuntergang",sunrise:"Sonnenaufgang",dayl:"Tagsüber",act:"Ich will",walk:"Spaziergang",hike:"Wandern",swim:"Baden",food:"Essen & Trinken",any:"Egal",
+   secrets:"Geheime Orte in der Nähe",park:"Parken",wear:"Was anziehen",why:"Warum hin",sunset_t:"Sonnenuntergang heute",sunrise_t:"Sonnenaufgang heute",noscn:"Kein Szenario für diese Auswahl — ändere die Filter.",
+   places_title:"Alle meine Orte",places_sub:"Die Basis — auf dem Weg zu den geheimen Orten",all:"Alle",secret:"geheim",reviews:"Bewertungen",dir:"Route",
+   foot_t:"Guide gefallen?",foot_s:"Mach deinen eigenen — aus deinen Punkten auf der Karte.",foot_btn:"Meinen Guide erstellen →",data_note:"Ortsdaten · Google · Snapshot"}
+};
+
+/* ===== СЛОЙ 3 — КОНТЕНТ (в проде data.madeira-igor.json). Голос автора — в note (RU). ===== */
+const GUIDE={
+ meta:{id:"madeira-igor",author:"Igor Kartuzov",hubUrl:"https://ikartuzov-hub.github.io/seedwave-catalog/hub/",linkedin:"https://www.linkedin.com/in/igor-kartuzov/"},
+ points:[
+  {id:"barbusano",name:"Quinta do Barbusano",lat:32.799385,lon:-17.034893,place_id:"ChIJgSSkgGdFYAwRRf2juVZ4l0k",note:"Вино: винодельня у São Vicente, тур + дегустация с видом на часовню",rating:4.3,count:392,addr:"São Vicente",hours:"Вт–Сб 9:30–18:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZMeKUobOs3q-0lu0FKpDZkA7Fx9WF6zM4WeofCVczTZ0jVsyuA9neetYuQR6rFd6aEZ9vXVwK6Xi63GTG08tifFB-bDolu1SwETpcRWZjr2qih-UvQY6rrGIX_ExX4KthVirkdPsefA_VvZHLE2GUiQ=w800-h500"},
+  {id:"poncha",name:"Taberna da Poncha",lat:32.728226,lon:-17.0239434,place_id:"ChIJDXRGmexbYAwRB-q3Xaw2enY",note:"Бар: культовая понча-бар у Serra de Água, понча из лимонов своего сада",rating:4.3,count:340,addr:"Serra de Água",hours:"Ежедневно 9:00–20:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZMn_4I5PR5L8VEa15u7qt7iREftSi8PDosbHwS25IPORgpOS7bfU_ph94ZXhEPdtEB6uiYsDR9eNzs-LeqCtd3yQffCJqQPISG4Ktbd5e3Xpievm9OF9lVk7hmfiNAMOmZqF8UqovxHjzPZ=w800-h500"},
+  {id:"vila77",name:"VILA 77 NORTH",lat:32.8651554,lon:-17.1711313,place_id:"ChIJOciDGwBJYAwRnApV7fdaX0o",note:"Еда: бургеры и коктейли у Porto Moniz, маленький и уютный",rating:4.9,count:1560,addr:"Porto Moniz",hours:"Ежедневно 10:00–19:30",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZOY_DmWAUC_JruP8BNgJvRuMQB02VuYwwr0hKstUICyWiYeAWZnNjCJLNYQ6DJRPUUETmx1Swlo0PY_VnFDKXixxJ57AxuVhJWtILhuUoBtt7KVTuoN_zZU3X8ShuT477H2p6b7R2jYOG8VV3-ZwisB1w=w800-h500"},
+  {id:"gatolegal",name:"Gato Legal Coffee Roastery",lat:32.813466,lon:-17.2462691,place_id:"ChIJ1bgSDnFNYAwRTYLutYPPvBc",note:"Кофе: ростерия на краю света, Ponta do Pargo. Лучший кофе на острове",rating:4.9,count:2083,addr:"Ponta do Pargo",hours:"Закрыт вт · 9:00–17:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZPebKv5vCKleUKFm3sQKENcvNHYGn38cjv7ieCxR7-iP29YKMpNsE8W4mLe_fWW7_oOBsDh_I0m5PyPpg2ieFTaJVOvWMjtca2uC1OG3VVpvUPs-TlFYs2IQrcsLhjwlsEqwTVOCm2foeUDMt6XEXO6Sg=w800-h500"},
+  {id:"apipa",name:"A Pipa",lat:32.7733684,lon:-16.8280818,place_id:"ChIJhcztk4VmYAwRHZ_ypnwGX-k",note:"Еда: Porto da Cruz, лучшие лапаш и осьминог, местная кухня",rating:4.7,count:3801,addr:"Porto da Cruz",hours:"Закрыт пн, вс · 12:00–22:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZMyoXIDDmslttNCEZ4n2AbCrduWCK_2Yo_TqpWBS-AXPNXjoC9-LL3LojOTbmENTU8QUb0Ij1OwQvCe03TMgeSUYDsr3SGqjdJWq2rBxS413x48kwOjdCzkTKCe9Qmg9NnBP3yc9CecjUSIpxY=w800-h500"},
+  {id:"curral",name:"Sabores do Curral",lat:32.7197505,lon:-16.9646522,place_id:"ChIJDcRA2ytcYAwRdyaaeOT4Ft4",note:"Еда: Долина Монахинь, каштановое меню, вид с крыши",rating:4.6,count:2037,addr:"Curral das Freiras",hours:"Закрыт пн–вт · 9:30–19:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZM0j1yYQoZqoyIpRj2eXiLs6S1xheOlAdfrkLo4j10ZEJWUAtw9Yc1m-zcQkZ0l_vu70GXhQiiaPttgkjNm_F8iINUMqAfM6jBLMTELiGC_f-9fkbe6K0rx2_Te9il6eG1EdiF6pAcb2HjS0A=w800-h500"},
+  {id:"blandys",name:"Blandy's Wine Lodge",lat:32.6478698,lon:-16.9106236,place_id:"ChIJD2eCbAhgYAwRZ1wExjwHVQw",note:"Вино: исторический винный погреб на Av. Arriaga, туры + дегустация мадеры",rating:4.5,count:2949,addr:"Funchal",hours:"Закрыт сб · 10:00–18:30",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZOSsEpE4kVA_DBn1VqIOJhbiRTLSANPLdpQH-ygTZfDIqGNBQS4QsOW0SPmFpDOe9PlI6amAKpTMXPJuqoNNlOeKEr3BICDbVW2cG2_DcwPoABDUKGh2r05_gjz9BsAEgzT8rQlnA=w800-h500"},
+  {id:"akua",name:"Akua",lat:32.6475074,lon:-16.9092635,place_id:"ChIJEzbeKHhhYAwRB5rtKj4PkSQ",note:"Fine dining: авторская кухня шефа Julio Pereira, тартар из тунца, chef's table",rating:4.7,count:2612,addr:"Funchal",hours:"Ежедневно 12:30–23:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZP1Q6rZpQCscQjKt0cqPXU-u-WaQS_jso66xvQTzhkiz-jIz90pCCE0_VcvJmlZ_nqhqGnITJMl5dOhlmPE-crVqpsmxtqgP-0cymoEcn8jrBebu8U-BSvZqhzuhe1D5fMYXh8s5nT29Pc29v2aR6iEVA=w800-h500"},
+  {id:"lume",name:"Lume Pizzeria",lat:32.643003,lon:-16.9475313,place_id:"ChIJZYtAA65fYAwRGPfRGS9oEWg",note:"Еда: лучшая неаполитанская пицца на острове, веган-опции",rating:4.7,count:1192,addr:"Funchal",hours:"Закрыт пн · вечер",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZP5mm2ACR9uUmz8H4RzG3CjIt1jYx8EJh8IcnFdRN_wKCvi1E1bWG2oWJyqmDkqtkrfH_-EM0olB9VZlSKiad4VFPXos15__d39j_9BuwwMpTEEiV0DeaWfTula7TnvnEmB2KFnYwlJBDnAbkM=w800-h500"},
+  {id:"kamoshi",name:"KAMOSHI",lat:32.7525968,lon:-17.2246117,place_id:"ChIJkY2DFQBTYAwRMu_3gnW5Z5M",note:"Пекарня: соурдоу, циннамон роллы в Paul do Mar, малоизвестная",rating:4.9,count:343,addr:"Paul do Mar",hours:"Ср–Сб 9:00–14:00",photo:"https://lh3.googleusercontent.com/place-photos/AJRVUZP9kkeWeeTP38P4FxcEIikixBr0a6XcYLj_W_SbdFY1w1JxFm_0NL5OQzKzNtB6FGIdI-2GD6MAcN6BMltVI_6aIbxq9fnazDdM9d9jjIZsJi2w-Dv6q34tJYfI1kmZW4MnuiJCzTFYws7netzqLgc7UA=w800-h500"},
+  {id:"maktub",name:"Maktub Pub",lat:32.7648693,lon:-17.2345899,place_id:"ChIJywp1knhSYAwRyAsBDIpepq4",note:"Бар: закат у океана в Paúl do Mar, свежий улов, коктейли, без меню — спрашивай улов",rating:4.5,count:1603,addr:"Paúl do Mar",hours:"Закрыт ср · 14:00–23:00",photo:""},
+  {id:"cascata",name:"Paúl do Mar waterfall",lat:32.7525426,lon:-17.2230193,place_id:"ChIJ16M-2gZTYAwRcJKugIqlbsA",note:"Вид: водопад у деревни, без толп, утки в пруду — природная пауза перед закатом",rating:4.5,count:634,addr:"Paúl do Mar",hours:"Круглосуточно",photo:""},
+  {id:"pr16",name:"PR16 Levada Fajã do Rodrigues",lat:32.7792495,lon:-17.0495786,place_id:"ChIJ6c6N3yVbYAwRSqW3KU5_n-k",note:"Маршрут: левада через туннели и зелень к Ribeira do Inferno, джунглевый трек São Vicente",rating:4.6,count:1030,addr:"São Vicente",hours:"Круглосуточно · ~3ч",photo:""},
+  {id:"lavrador",name:"Restaurante Lavrador",lat:32.7902281,lon:-17.0357961,place_id:"ChIJAaWhdDRbYAwRSgqhtCVYqno",note:"Еда: São Vicente, терраса на горы, португальская кухня. Закрыт вт",rating:4.7,count:2252,addr:"São Vicente",hours:"Закрыт вт · 12:00–18:30",photo:""},
+  {id:"ilheus",name:"Miradouro Ilheus da Ribeira da Janela",lat:32.8554097,lon:-17.1529808,place_id:"ChIJtfI6gBxPYAwRFaqYOmLeibA",note:"Вид: драматичные скальные иглы у Ribeira da Janela, чёрный галечный пляж, секретная лестница к балкону",rating:4.8,count:2415,addr:"Porto Moniz",hours:"Круглосуточно",photo:""},
+  {id:"seixal",name:"Praia do Porto do Seixal",lat:32.8222825,lon:-17.1030977,place_id:"ChIJi7XbMIdPYAwRxEpKrHZAyw4",note:"Вид: чёрный песок, водопад у пляжа, зелёные горы — финал дня на закате",rating:4.6,count:1965,addr:"Seixal",hours:"Круглосуточно",photo:""},
+  {id:"brasaviva",name:"Churrascaria Brasa Viva",lat:32.8105769,lon:-17.0411853,place_id:"ChIJiQIvRMNEYAwRfyoSTAcR7-Q",note:"Еда: São Vicente, гриль на углях, огромные порции. Закрыт пн",rating:4.6,count:1385,addr:"São Vicente",hours:"Закрыт пн · 12:00–21:30",photo:""}
+ ],
+ scenarios:[
+  {id:"pauldomar",feat:true,title:{ru:"Секретный закат · Paúl do Mar",en:"Secret sunset · Paúl do Mar",pt:"Pôr do sol secreto · Paúl do Mar",es:"Atardecer secreto · Paúl do Mar",de:"Geheimer Sonnenuntergang · Paúl do Mar"},
+   duration:"half",car:true,light:"sunset",act:["walk","food"],sunLat:32.7649,sunLon:-17.2346,
+   why:"Деревня, океан, ужин и мягкий вечерний свет — медленный slow-travel вечер без суеты.",
+   stops:[
+    {n:"Приезд в Paúl do Mar, набережная",m:"за 2–3 часа до заката",note:"Сразу ловишь ритм деревни: узкая прибрежная линия, скалы, океан"},
+    {n:"Прогулка по улочкам деревни",m:"петлёй, не сразу к бару",note:"Старые дома, лестницы, фактуры стен, видовые повороты к океану"},
+    {n:"Paúl do Mar waterfall",m:"природная пауза, фото",note:"Без толп, утки в пруду — добавь паузу до вечера"},
+    {n:"Ужин в Maktub Pub",m:"меню по улову — спрашивай свежее",note:"Свежий улов, коктейли; лучше прийти до пика"},
+    {n:"Закат у воды рядом с Maktub",m:"финал",note:"После ужина спустись к морю — здесь закат мягкий и спокойный"}],
+   secrets:["Боковые улочки выше набережной — там настоящая деревня","Точки над пляжем — камернее, чем центр у бара","Скалы и повороты дороги с разрезом домов и океана — пауза и фото"],
+   park:"Ищи место выше по маршруту, не у самой точки. Выезжать лучше через 10–15 минут после заката — поток спокойнее.",
+   wear:"Лёгкая куртка и удобная обувь — вечером у океана ветер сильнее."},
+  {id:"curralday",feat:true,title:{ru:"Горная долина · Куррал-даш-Фрейраш",en:"Mountain valley · Curral das Freiras",pt:"Vale das montanhas · Curral das Freiras",es:"Valle de montaña · Curral das Freiras",de:"Bergtal · Curral das Freiras"},
+   duration:"half",car:true,light:"day",act:["walk","food"],sunLat:32.7197,sunLon:-16.9647,
+   why:"Долина Монахинь на дне горного кратера: смотровая сверху, спуск к деревне и каштановый обед с видом с крыши.",
+   stops:[
+    {n:"Miradouro Eira do Serrado",m:"старт · вид в кратер",note:"Смотровая над долиной — деревня внизу как на ладони"},
+    {n:"Спуск к Curral das Freiras",m:"пешком ~1–1.5ч",note:"Тропа вниз среди каштанов, медленно и с видами"},
+    {n:"Обед в Sabores do Curral",m:"★4.6 · каштановое меню",note:"Терраса на крыше, каштановый суп, местное пиво — вид на долину"}],
+   secrets:["Каштановое пиво и ликёр — фишка именно этой долины","Проси столик на крыше Sabores — оттуда лучший вид"],
+   park:"В деревне парковка тесная — оставь машину у Eira do Serrado и спустись пешком, так и красивее.",
+   wear:"Удобная обувь для спуска и ветровка — в горах прохладнее, чем на побережье."},
+  {id:"nwday",feat:true,title:{ru:"Наши Гавайи · северо-запад за день",en:"Our Hawaii · the northwest in a day",pt:"A nossa Havai · o noroeste num dia",es:"Nuestro Hawái · el noroeste en un día",de:"Unser Hawaii · der Nordwesten an einem Tag"},
+   duration:"day",car:true,light:"sunset",act:["walk","hike","food"],sunLat:32.8223,sunLon:-17.1031,
+   why:"Вино, зелёная левада, северное побережье и чёрные пляжи — самый сильный визуальный день острова. Финал — закат на Seixal.",
+   stops:[
+    {n:"Quinta do Barbusano",m:"утро · ★4.3 · пока свежий",note:"Вино: тур и дегустация с видом на долину São Vicente. Ставь первой"},
+    {n:"Igreja das Feiteiras · Capelinha N.Sra de Fátima",m:"короткие паузы по пути",note:"Деревенская Мадейра и виды по дороге"},
+    {n:"PR16 Levada Fajã do Rodrigues",m:"днём · ★4.6 · 3–3.5ч",note:"Левада через туннели к Ribeira do Inferno. Фонарик и дождевик с собой"},
+    {n:"Обед: Restaurante Lavrador",m:"★4.7 · после левады",note:"Терраса на горы, местная кухня. Закрыт вт — запас Brasa Viva"},
+    {n:"São Vicente Promenade · Miradouro Ilheus da Ribeira da Janela",m:"★4.8",note:"Драматичные скальные иглы — самый эффектный мир маршрута"},
+    {n:"Закат: Praia do Porto do Seixal",m:"★4.6 · финал",note:"Чёрный песок, водопад у пляжа, зелёные горы — финал на закате"}],
+   secrets:["У Miradouro Ilheus — секретная лестница в скале к скрытому балкону","Seixal сильнее в облачную погоду — туман идёт к чёрному вулканическому пляжу","Чёрный песок Seixal + иглы Ribeira da Janela — вот почему это «наши Гавайи»"],
+   park:"На Seixal к вечеру парковка тяжёлая — приезжай заранее или будь готов спуститься пешком (за стоянку где попало штрафуют).",
+   wear:"Слои: на леваде сыро и туннели (фонарик, дождевик), на побережье ветер. Обувь с протектором."}
+ ]
+};
+
+/* ===== ДВИЖОК (Слой 1) ===== */
+const TAGS={wine:{l:"wine",e:"🍷",c:"#B5476B"},food:{l:"food",e:"🍽",c:"#C25A3C"},coffee:{l:"coffee",e:"☕",c:"#9C6B3F"},bar:{l:"bar",e:"🍹",c:"#2E8B6B"},bakery:{l:"bakery",e:"🥐",c:"#C99A3B"},fine:{l:"fine",e:"✦",c:"#8E3B6E"},view:{l:"view",e:"🌅",c:"#E2772E"},hike:{l:"hike",e:"🥾",c:"#2E7D32"}};
+const TAGLABEL={ru:{wine:"Вино",food:"Еда",coffee:"Кофе",bar:"Бары",bakery:"Пекарни",fine:"Fine dining",view:"Виды",hike:"Маршруты"},en:{wine:"Wine",food:"Food",coffee:"Coffee",bar:"Bars",bakery:"Bakeries",fine:"Fine dining",view:"Views",hike:"Hikes"},pt:{wine:"Vinho",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Padarias",fine:"Fine dining",view:"Vistas",hike:"Trilhos"},es:{wine:"Vino",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Panaderías",fine:"Fine dining",view:"Vistas",hike:"Rutas"},de:{wine:"Wein",food:"Essen",coffee:"Kaffee",bar:"Bars",bakery:"Bäckereien",fine:"Fine dining",view:"Aussicht",hike:"Wandern"}};
+function deriveTags(p){const n=(p.note||"").toLowerCase();const o=new Set();
+ if(/fine dining/.test(n))o.add("fine");if(/вино|винодел|погреб|дегустац/.test(n))o.add("wine");
+ if(/кофе|ростер/.test(n))o.add("coffee");if(/пекарн|соурдоу/.test(n))o.add("bakery");
+ if(/\bбар\b|понча|коктейл/.test(n))o.add("bar");if(/закат|рассвет|вид|панорам|водопад/.test(n))o.add("view");
+ if(/левад|трек|хайк|тропа/.test(n))o.add("hike");if(/еда|кухн|ресторан|пицц|осьминог/.test(n)&&!o.has("fine"))o.add("food");
+ if(!o.size)o.add("food");return[...o];}
+function isSecret(p){const n=(p.note||"").toLowerCase();return p.count<600||/секрет|малоизвестн|без толп|только по записи|край света/.test(n);}
+function regionOf(p){const{lat,lon}=p;if(lon<-17.18)return"west";if(lat>32.80)return"northwest";if(lat>32.78)return"north";if(lon>-16.88)return"east";if(lat<32.70&&lon>-16.97)return"funchal";return"centre";}
+GUIDE.points.forEach(p=>{p.tags=deriveTags(p);p.secret=isSecret(p);p.reg=regionOf(p);
+ p.dir=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&destination_place_id=${p.place_id}`;});
+
+/* auto half-day scenarios from geo clusters (secret-led) */
+const REGT={west:"Запад",northwest:"Северо-запад",north:"Север",east:"Восток",funchal:"Фуншал",centre:"Центр · горы"};
+function autoScenarios(){
+ const g={};GUIDE.points.forEach(p=>{(g[p.reg]=g[p.reg]||[]).push(p)});
+ const out=[];
+ Object.entries(g).forEach(([k,pts])=>{
+  if(["west","centre","north","northwest"].includes(k))return; // покрыто ручными героями
+  if(pts.length<2)return;
+  pts.sort((a,b)=>(b.secret-a.secret)||(b.rating-a.rating));
+  const light=k==="east"?"sunrise":(k==="funchal"?"day":"sunset");
+  const car=k!=="funchal";
+  out.push({id:"auto-"+k,title:{ru:"Полдня · "+REGT[k],en:"Half-day · "+REGT[k],pt:"Meio-dia · "+REGT[k],es:"Medio día · "+REGT[k],de:"Halber Tag · "+REGT[k]},
+   duration:"half",car,light,act:[...new Set(pts.flatMap(p=>p.tags.map(t=>t==="view"?"walk":(t==="hike"?"hike":(t==="bar"||t==="wine"||t==="coffee"||t==="bakery"?"walk":"food")))))],
+   why:"",auto:true,stops:pts.slice(0,4).map(p=>({n:p.name,m:"★"+p.rating+" · "+p.hours,note:p.note.replace(/^[^:]+:\s*/,'')})),sunLat:pts[0].lat,sunLon:pts[0].lon});
+ });
+ // multiday route (2–3 дня) by regions
+ const order=["funchal","east","north","northwest","west","centre"].filter(k=>g[k]);
+ out.push({id:"multi",title:{ru:"Маршрут на 2–3 дня",en:"2–3 day route",pt:"Rota de 2–3 dias",es:"Ruta de 2–3 días",de:"2–3-Tage-Route"},
+  duration:"multi",car:true,light:"any",act:["walk","food","hike"],why:"",auto:true,multiday:order.map((k,i)=>({day:i+1,t:REGT[k],pts:g[k]})),sunLat:32.75,sunLon:-17.0});
+ return out;
+}
+const ALLSCN=[...GUIDE.scenarios,...autoScenarios()];
+
+/* state */
+let L="ru",active=null,filt={duration:null,car:null,light:null,act:null};
+
+function t(k){return UI[L][k]}
+function fmtTime(d){return d.getHours().toString().padStart(2,'0')+":"+d.getMinutes().toString().padStart(2,'0')}
+
+/* i18n apply */
+function applyI18n(){
+ document.documentElement.lang=L;
+ document.querySelectorAll('[data-i]').forEach(el=>{const k=el.dataset.i;if(UI[L][k]!==undefined)el.textContent=UI[L][k];});
+ document.title=t('title');
+ const sec=GUIDE.points.filter(p=>p.secret).length;
+ document.getElementById('by').innerHTML=t('by').replace('{a}','<b>'+GUIDE.meta.author+'</b>').replace('{n}',GUIDE.points.length).replace('{s}',sec);
+ renderPicker();renderScenarios();renderTags();renderCards();
+}
+
+/* picker */
+const DIMS=[
+ {k:"duration",lab:"time",opts:[["half","half"],["day","day"],["multi","multi"]]},
+ {k:"car",lab:"car",opts:[["true","cy"],["false","cn"]]},
+ {k:"light",lab:"light",opts:[["sunset","sunset"],["sunrise","sunrise"],["day","dayl"]]},
+ {k:"act",lab:"act",opts:[["walk","walk"],["hike","hike"],["food","food"]]}
+];
+function renderPicker(){
+ document.getElementById('picker').innerHTML=DIMS.map(d=>`<div class="pgrp"><span class="plab">${t(d.lab)}</span>
+  <div class="popts" data-k="${d.k}"><button class="popt ${filt[d.k]===null?'on':''}" data-v="">${t('any')}</button>
+  ${d.opts.map(([v,lk])=>`<button class="popt ${String(filt[d.k])===v?'on':''}" data-v="${v}">${t(lk)}</button>`).join('')}</div></div>`).join('');
+}
+document.getElementById('picker').addEventListener('click',e=>{const b=e.target.closest('.popt');if(!b)return;
+ const k=b.parentElement.dataset.k,v=b.dataset.v;
+ filt[k]=v===""?null:(k==="car"?(v==="true"):v);
+ renderPicker();renderScenarios();});
+
+function scnMatch(s){
+ if(filt.duration&&s.duration!==filt.duration)return false;
+ if(filt.car!==null&&s.car!==filt.car)return false;
+ if(filt.light&&s.light!=="any"&&s.light!==filt.light)return false;
+ if(filt.act&&!(s.act||[]).includes(filt.act))return false;
+ return true;
+}
+function sunLine(s){
+ if(!s.sunLat)return"";
+ const times=SunCalc.getTimes(new Date(),s.sunLat,s.sunLon);
+ if(s.light==="sunset")return `<span class="mtag sun">🌅 ${t('sunset_t')} ${fmtTime(times.sunset)}</span>`;
+ if(s.light==="sunrise")return `<span class="mtag sun">🌄 ${t('sunrise_t')} ${fmtTime(times.sunrise)}</span>`;
+ return"";
+}
+function metaTags(s){
+ const m=[];m.push(`<span class="mtag">⏱ ${t(s.duration)}</span>`);
+ m.push(`<span class="mtag">🚗 ${s.car?t('cy'):t('cn')}</span>`);
+ if(s.light&&s.light!=="any")m.push(`<span class="mtag">${s.light==="sunset"?"🌅":s.light==="sunrise"?"🌄":"☀️"} ${t(s.light==="day"?"dayl":s.light)}</span>`);
+ (s.act||[]).forEach(a=>m.push(`<span class="mtag">${t(a)}</span>`));
+ const sl=sunLine(s);if(sl)m.push(sl);
+ return m.join('');
+}
+function renderScenarios(){
+ const list=ALLSCN.filter(scnMatch);
+ const box=document.getElementById('scns');
+ if(!list.length){box.innerHTML=`<p style="color:var(--muted)">${t('noscn')}</p>`;return;}
+ box.innerHTML=list.map(s=>{
+  const title=s.title[L]||s.title.ru;
+  let body;
+  if(s.multiday){
+   body=s.multiday.map(d=>`<div class="stop"><span class="stop-i">${d.day}</span><div>
+     <div class="stop-n">${t('day')} ${d.day} · ${d.t}</div>
+     <div class="stop-note">${d.pts.map(p=>p.name).join(' · ')}</div></div></div>`).join('');
+  }else{
+   body=s.stops.map((st,i)=>`<div class="stop"><span class="stop-i">${i+1}</span><div>
+     <div class="stop-n">${st.n} ${st.m?`<span class="stop-m">· ${st.m}</span>`:''}</div>
+     ${st.note?`<div class="stop-note">${st.note}</div>`:''}</div></div>`).join('');
+  }
+  let extra="";
+  if(s.secrets||s.park||s.wear){
+   extra=`<div class="scn-x">
+    ${s.secrets?`<div class="xblock"><h4>🤫 ${t('secrets')}</h4><ul>${s.secrets.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
+    <div class="xblock">
+      ${s.park?`<h4>🅿 ${t('park')}</h4><p>${s.park}</p>`:''}
+      ${s.wear?`<h4 style="margin-top:10px">👕 ${t('wear')}</h4><p>${s.wear}</p>`:''}
+    </div></div>`;
+  }
+  return `<article class="scn ${s.feat?'feat':''}">
+    <div class="scn-h"><div class="scn-meta">${metaTags(s)}</div>
+      <h3 class="scn-t">${title}</h3>
+      ${s.why?`<p class="scn-why">${s.why}</p>`:''}</div>
+    <div class="scn-b">${body}</div>${extra}</article>`;
+ }).join('');
+}
+
+/* tags + cards */
+function renderTags(){
+ const used=[...new Set(GUIDE.points.flatMap(p=>p.tags))];
+ const box=document.getElementById('tags');
+ box.innerHTML=`<button class="chip ${active===null?'on':''}" data-t="">${t('all')} <span class="ct">${GUIDE.points.length}</span></button>`+
+  used.map(tg=>{const n=GUIDE.points.filter(p=>p.tags.includes(tg)).length;
+   return `<button class="chip ${active===tg?'on':''}" data-t="${tg}">${TAGS[tg].e} ${TAGLABEL[L][tg]} <span class="ct">${n}</span></button>`}).join('');
+}
+document.getElementById('tags').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;active=b.dataset.t||null;renderTags();renderCards();drawMarkers();});
+function visible(){return active?GUIDE.points.filter(p=>p.tags.includes(active)):GUIDE.points;}
+function card(p){const tg=TAGS[p.tags[0]];
+ const ph=p.photo?`style="background-image:url('${p.photo}')"`:"";
+ return `<article class="card"><div class="ph" ${ph}>${p.photo?'':`<span class="ph-e">${tg.e}</span>`}
+   <span class="tag-dot">${tg.e} ${TAGLABEL[L][p.tags[0]]}</span>
+   ${p.secret?`<span class="secret">🤫 ${t('secret')}</span>`:''}</div>
+  <div class="cbody"><h3 class="cname">${p.name}</h3>
+   <div class="rate"><span class="star">★ ${p.rating.toFixed(1)}</span><span>${p.count.toLocaleString('ru')} ${t('reviews')}</span><span>· ${p.addr}</span></div>
+   <div class="hours">🕑 ${p.hours}</div>
+   <p class="note">${p.note.replace(/^[^:]+:\s*/,'')}</p>
+   <div class="cfoot"><a class="dir" href="${p.dir}" target="_blank" rel="noopener">↗ ${t('dir')}</a></div>
+  </div></article>`;}
+function renderCards(){document.getElementById('grid').innerHTML=visible().map(card).join('');}
+
+/* map */
+let map,markers=[];
+function initMap(){map=L_.map('map',{scrollWheelZoom:false}).setView([32.75,-17.05],10);
+ L_.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);drawMarkers();}
+function drawMarkers(){markers.forEach(m=>map.removeLayer(m));markers=[];const grp=[];
+ visible().forEach(p=>{const tg=TAGS[p.tags[0]];
+  const ic=L_.divIcon({className:'',html:`<div style="background:${tg.c};width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:grid;place-items:center"><span style="transform:rotate(45deg);font-size:12px">${p.secret?'🤫':tg.e}</span></div>`,iconSize:[26,26],iconAnchor:[13,26]});
+  const m=L_.marker([p.lat,p.lon],{icon:ic}).addTo(map).bindPopup(`<div class="pop-n">${p.name}</div><div class="pop-r">★ ${p.rating} · ${p.count.toLocaleString('ru')}</div><div class="pop-note">${p.note.replace(/^[^:]+:\s*/,'')}</div>`);
+  markers.push(m);grp.push([p.lat,p.lon]);});
+ if(grp.length)map.fitBounds(grp,{padding:[40,40],maxZoom:11});}
+const L_=window.L; // Leaflet (переменная L занята языком интерфейса)
+
+/* footer links + controls */
+[['hublink',GUIDE.meta.hubUrl],['hub2',GUIDE.meta.hubUrl],['lk',GUIDE.meta.linkedin]].forEach(([id,u])=>document.getElementById(id).href=u);
+document.getElementById('lang').addEventListener('change',e=>{L=e.target.value;applyI18n();});
+const themeBtn=document.getElementById('theme');
+themeBtn.addEventListener('click',()=>{const cur=document.documentElement.dataset.theme==='light'?'':'light';document.documentElement.dataset.theme=cur;themeBtn.textContent=cur==='light'?'☀':'☾';setTimeout(()=>{map&&map.invalidateSize()},60);});
+
+/* init */
+applyI18n();initMap();
+const mk=document.getElementById('mark');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){mk.classList.add('reveal');mk.addEventListener('animationend',()=>mk.classList.remove('reveal'),{once:true});}
+</script>
+</body>
+</html>
