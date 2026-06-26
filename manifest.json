@@ -1,0 +1,20 @@
+{
+ "schema": 1,
+ "guides": [
+  {
+   "id": "madeira-igor",
+   "title": {
+    "ru": "Моя Неизведанная Мадейра",
+    "en": "My Undiscovered Madeira",
+    "pt": "A Minha Madeira por Descobrir",
+    "es": "Mi Madeira por Descubrir",
+    "de": "Mein unentdecktes Madeira"
+   },
+   "author": "Igor Kartuzov",
+   "langs": ["ru", "en", "pt", "es", "de"],
+   "dataUrl": "data/madeira-igor.json",
+   "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+   "live": true
+  }
+ ]
+}
