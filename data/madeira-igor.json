@@ -1,1 +1,988 @@
-
+{
+ "schema": 1,
+ "meta": {
+  "id": "madeira-igor",
+  "author": "Igor Kartuzov",
+  "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/"
+ },
+ "points": [
+  {
+   "id": "barbusano",
+   "name": "Quinta do Barbusano",
+   "lat": 32.799385,
+   "lon": -17.034893,
+   "place_id": "ChIJgSSkgGdFYAwRRf2juVZ4l0k",
+   "note": {
+    "ru": "Вино: винодельня у São Vicente, тур + дегустация с видом на часовню",
+    "en": "Wine: winery near São Vicente, tour + tasting with a chapel view",
+    "pt": "Vinho: adega perto de São Vicente, visita + prova com vista para a capela",
+    "es": "Vino: bodega cerca de São Vicente, visita + cata con vistas a la capilla",
+    "de": "Wein: Weingut bei São Vicente, Führung + Verkostung mit Kapellenblick"
+   },
+   "rating": 4.3,
+   "count": 392,
+   "addr": "São Vicente",
+   "hours": {
+    "ru": "Вт–Сб 9:30–18:00",
+    "en": "Tue–Sat 9:30–18:00",
+    "pt": "Ter–Sáb 9:30–18:00",
+    "es": "Mar–Sáb 9:30–18:00",
+    "de": "Di–Sa 9:30–18:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZMeKUobOs3q-0lu0FKpDZkA7Fx9WF6zM4WeofCVczTZ0jVsyuA9neetYuQR6rFd6aEZ9vXVwK6Xi63GTG08tifFB-bDolu1SwETpcRWZjr2qih-UvQY6rrGIX_ExX4KthVirkdPsefA_VvZHLE2GUiQ=w800-h500",
+   "tags": [
+    "wine",
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "poncha",
+   "name": "Taberna da Poncha",
+   "lat": 32.728226,
+   "lon": -17.0239434,
+   "place_id": "ChIJDXRGmexbYAwRB-q3Xaw2enY",
+   "note": {
+    "ru": "Бар: культовая понча-бар у Serra de Água, понча из лимонов своего сада",
+    "en": "Bar: cult poncha bar near Serra de Água, poncha from their own garden lemons",
+    "pt": "Bar: icónico bar de poncha perto de Serra de Água, poncha de limões da própria horta",
+    "es": "Bar: bar de poncha de culto cerca de Serra de Água, poncha de limones de su huerto",
+    "de": "Bar: Kult-Poncha-Bar bei Serra de Água, Poncha aus Zitronen des eigenen Gartens"
+   },
+   "rating": 4.3,
+   "count": 340,
+   "addr": "Serra de Água",
+   "hours": {
+    "ru": "Ежедневно 9:00–20:00",
+    "en": "Daily 9:00–20:00",
+    "pt": "Todos os dias 9:00–20:00",
+    "es": "A diario 9:00–20:00",
+    "de": "Täglich 9:00–20:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZMn_4I5PR5L8VEa15u7qt7iREftSi8PDosbHwS25IPORgpOS7bfU_ph94ZXhEPdtEB6uiYsDR9eNzs-LeqCtd3yQffCJqQPISG4Ktbd5e3Xpievm9OF9lVk7hmfiNAMOmZqF8UqovxHjzPZ=w800-h500",
+   "tags": [
+    "bar"
+   ],
+   "secret": true
+  },
+  {
+   "id": "vila77",
+   "name": "VILA 77 NORTH",
+   "lat": 32.8651554,
+   "lon": -17.1711313,
+   "place_id": "ChIJOciDGwBJYAwRnApV7fdaX0o",
+   "note": {
+    "ru": "Еда: бургеры и коктейли у Porto Moniz, маленький и уютный",
+    "en": "Food: burgers and cocktails near Porto Moniz, small and cosy",
+    "pt": "Comida: hambúrgueres e cocktails perto de Porto Moniz, pequeno e acolhedor",
+    "es": "Comida: hamburguesas y cócteles cerca de Porto Moniz, pequeño y acogedor",
+    "de": "Essen: Burger und Cocktails bei Porto Moniz, klein und gemütlich"
+   },
+   "rating": 4.9,
+   "count": 1560,
+   "addr": "Porto Moniz",
+   "hours": {
+    "ru": "Ежедневно 10:00–19:30",
+    "en": "Daily 10:00–19:30",
+    "pt": "Todos os dias 10:00–19:30",
+    "es": "A diario 10:00–19:30",
+    "de": "Täglich 10:00–19:30"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZOY_DmWAUC_JruP8BNgJvRuMQB02VuYwwr0hKstUICyWiYeAWZnNjCJLNYQ6DJRPUUETmx1Swlo0PY_VnFDKXixxJ57AxuVhJWtILhuUoBtt7KVTuoN_zZU3X8ShuT477H2p6b7R2jYOG8VV3-ZwisB1w=w800-h500",
+   "tags": [
+    "bar",
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "gatolegal",
+   "name": "Gato Legal Coffee Roastery",
+   "lat": 32.813466,
+   "lon": -17.2462691,
+   "place_id": "ChIJ1bgSDnFNYAwRTYLutYPPvBc",
+   "note": {
+    "ru": "Кофе: ростерия на краю света, Ponta do Pargo. Лучший кофе на острове",
+    "en": "Coffee: roastery at the edge of the world, Ponta do Pargo. Best coffee on the island",
+    "pt": "Café: torrefação no fim do mundo, Ponta do Pargo. O melhor café da ilha",
+    "es": "Café: tostadero en el fin del mundo, Ponta do Pargo. El mejor café de la isla",
+    "de": "Kaffee: Rösterei am Ende der Welt, Ponta do Pargo. Bester Kaffee der Insel"
+   },
+   "rating": 4.9,
+   "count": 2083,
+   "addr": "Ponta do Pargo",
+   "hours": {
+    "ru": "Закрыт вт · 9:00–17:00",
+    "en": "Closed Tue · 9:00–17:00",
+    "pt": "Fechado Ter · 9:00–17:00",
+    "es": "Cerrado Mar · 9:00–17:00",
+    "de": "Di geschlossen · 9:00–17:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZPebKv5vCKleUKFm3sQKENcvNHYGn38cjv7ieCxR7-iP29YKMpNsE8W4mLe_fWW7_oOBsDh_I0m5PyPpg2ieFTaJVOvWMjtca2uC1OG3VVpvUPs-TlFYs2IQrcsLhjwlsEqwTVOCm2foeUDMt6XEXO6Sg=w800-h500",
+   "tags": [
+    "coffee"
+   ],
+   "secret": false
+  },
+  {
+   "id": "apipa",
+   "name": "A Pipa",
+   "lat": 32.7733684,
+   "lon": -16.8280818,
+   "place_id": "ChIJhcztk4VmYAwRHZ_ypnwGX-k",
+   "note": {
+    "ru": "Еда: Porto da Cruz, лучшие лапаш и осьминог, местная кухня",
+    "en": "Food: Porto da Cruz, the best lapas and octopus, local cuisine",
+    "pt": "Comida: Porto da Cruz, as melhores lapas e polvo, cozinha local",
+    "es": "Comida: Porto da Cruz, las mejores lapas y pulpo, cocina local",
+    "de": "Essen: Porto da Cruz, beste Napfschnecken und Oktopus, lokale Küche"
+   },
+   "rating": 4.7,
+   "count": 3801,
+   "addr": "Porto da Cruz",
+   "hours": {
+    "ru": "Закрыт пн, вс · 12:00–22:00",
+    "en": "Closed Mon, Sun · 12:00–22:00",
+    "pt": "Fechado Seg, Dom · 12:00–22:00",
+    "es": "Cerrado Lun, Dom · 12:00–22:00",
+    "de": "Mo, So geschlossen · 12:00–22:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyoXIDDmslttNCEZ4n2AbCrduWCK_2Yo_TqpWBS-AXPNXjoC9-LL3LojOTbmENTU8QUb0Ij1OwQvCe03TMgeSUYDsr3SGqjdJWq2rBxS413x48kwOjdCzkTKCe9Qmg9NnBP3yc9CecjUSIpxY=w800-h500",
+   "tags": [
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "curral",
+   "name": "Sabores do Curral",
+   "lat": 32.7197505,
+   "lon": -16.9646522,
+   "place_id": "ChIJDcRA2ytcYAwRdyaaeOT4Ft4",
+   "note": {
+    "ru": "Еда: Долина Монахинь, каштановое меню, вид с крыши",
+    "en": "Food: Nuns' Valley, chestnut menu, rooftop view",
+    "pt": "Comida: Curral das Freiras, menu de castanha, vista do terraço",
+    "es": "Comida: Valle de las Monjas, menú de castaña, vista desde la azotea",
+    "de": "Essen: Nonnental, Kastanienmenü, Dachterrassenblick"
+   },
+   "rating": 4.6,
+   "count": 2037,
+   "addr": "Curral das Freiras",
+   "hours": {
+    "ru": "Закрыт пн–вт · 9:30–19:00",
+    "en": "Closed Mon–Tue · 9:30–19:00",
+    "pt": "Fechado Seg–Ter · 9:30–19:00",
+    "es": "Cerrado Lun–Mar · 9:30–19:00",
+    "de": "Mo–Di geschlossen · 9:30–19:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZM0j1yYQoZqoyIpRj2eXiLs6S1xheOlAdfrkLo4j10ZEJWUAtw9Yc1m-zcQkZ0l_vu70GXhQiiaPttgkjNm_F8iINUMqAfM6jBLMTELiGC_f-9fkbe6K0rx2_Te9il6eG1EdiF6pAcb2HjS0A=w800-h500",
+   "tags": [
+    "view",
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "blandys",
+   "name": "Blandy's Wine Lodge",
+   "lat": 32.6478698,
+   "lon": -16.9106236,
+   "place_id": "ChIJD2eCbAhgYAwRZ1wExjwHVQw",
+   "note": {
+    "ru": "Вино: исторический винный погреб на Av. Arriaga, туры + дегустация мадеры",
+    "en": "Wine: historic wine lodge on Av. Arriaga, tours + Madeira tasting",
+    "pt": "Vinho: adega histórica na Av. Arriaga, visitas + prova de vinho Madeira",
+    "es": "Vino: bodega histórica en Av. Arriaga, visitas + cata de vino de Madeira",
+    "de": "Wein: historischer Weinkeller an der Av. Arriaga, Touren + Madeira-Verkostung"
+   },
+   "rating": 4.5,
+   "count": 2949,
+   "addr": "Funchal",
+   "hours": {
+    "ru": "Закрыт сб · 10:00–18:30",
+    "en": "Closed Sat · 10:00–18:30",
+    "pt": "Fechado Sáb · 10:00–18:30",
+    "es": "Cerrado Sáb · 10:00–18:30",
+    "de": "Sa geschlossen · 10:00–18:30"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSsEpE4kVA_DBn1VqIOJhbiRTLSANPLdpQH-ygTZfDIqGNBQS4QsOW0SPmFpDOe9PlI6amAKpTMXPJuqoNNlOeKEr3BICDbVW2cG2_DcwPoABDUKGh2r05_gjz9BsAEgzT8rQlnA=w800-h500",
+   "tags": [
+    "wine"
+   ],
+   "secret": false
+  },
+  {
+   "id": "akua",
+   "name": "Akua",
+   "lat": 32.6475074,
+   "lon": -16.9092635,
+   "place_id": "ChIJEzbeKHhhYAwRB5rtKj4PkSQ",
+   "note": {
+    "ru": "Fine dining: авторская кухня шефа Julio Pereira, тартар из тунца, chef's table",
+    "en": "Fine dining: signature cuisine by chef Julio Pereira, tuna tartare, chef's table",
+    "pt": "Fine dining: cozinha de autor do chef Julio Pereira, tártaro de atum, chef's table",
+    "es": "Fine dining: cocina de autor del chef Julio Pereira, tartar de atún, chef's table",
+    "de": "Fine dining: Signature-Küche von Chef Julio Pereira, Thunfisch-Tatar, Chef's Table"
+   },
+   "rating": 4.7,
+   "count": 2612,
+   "addr": "Funchal",
+   "hours": {
+    "ru": "Ежедневно 12:30–23:00",
+    "en": "Daily 12:30–23:00",
+    "pt": "Todos os dias 12:30–23:00",
+    "es": "A diario 12:30–23:00",
+    "de": "Täglich 12:30–23:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZP1Q6rZpQCscQjKt0cqPXU-u-WaQS_jso66xvQTzhkiz-jIz90pCCE0_VcvJmlZ_nqhqGnITJMl5dOhlmPE-crVqpsmxtqgP-0cymoEcn8jrBebu8U-BSvZqhzuhe1D5fMYXh8s5nT29Pc29v2aR6iEVA=w800-h500",
+   "tags": [
+    "fine"
+   ],
+   "secret": false
+  },
+  {
+   "id": "lume",
+   "name": "Lume Pizzeria",
+   "lat": 32.643003,
+   "lon": -16.9475313,
+   "place_id": "ChIJZYtAA65fYAwRGPfRGS9oEWg",
+   "note": {
+    "ru": "Еда: лучшая неаполитанская пицца на острове, веган-опции",
+    "en": "Food: the best Neapolitan pizza on the island, vegan options",
+    "pt": "Comida: a melhor pizza napolitana da ilha, opções vegan",
+    "es": "Comida: la mejor pizza napolitana de la isla, opciones veganas",
+    "de": "Essen: beste neapolitanische Pizza der Insel, vegane Optionen"
+   },
+   "rating": 4.7,
+   "count": 1192,
+   "addr": "Funchal",
+   "hours": {
+    "ru": "Закрыт пн · вечер",
+    "en": "Closed Mon · evenings",
+    "pt": "Fechado Seg · à noite",
+    "es": "Cerrado Lun · noche",
+    "de": "Mo geschlossen · abends"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZP5mm2ACR9uUmz8H4RzG3CjIt1jYx8EJh8IcnFdRN_wKCvi1E1bWG2oWJyqmDkqtkrfH_-EM0olB9VZlSKiad4VFPXos15__d39j_9BuwwMpTEEiV0DeaWfTula7TnvnEmB2KFnYwlJBDnAbkM=w800-h500",
+   "tags": [
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "kamoshi",
+   "name": "KAMOSHI",
+   "lat": 32.7525968,
+   "lon": -17.2246117,
+   "place_id": "ChIJkY2DFQBTYAwRMu_3gnW5Z5M",
+   "note": {
+    "ru": "Пекарня: соурдоу, циннамон роллы в Paul do Mar, малоизвестная",
+    "en": "Bakery: sourdough, cinnamon rolls in Paul do Mar, little-known",
+    "pt": "Padaria: pão de fermentação natural, cinnamon rolls em Paul do Mar, pouco conhecida",
+    "es": "Panadería: masa madre, cinnamon rolls en Paul do Mar, poco conocida",
+    "de": "Bäckerei: Sauerteig, Zimtschnecken in Paul do Mar, wenig bekannt"
+   },
+   "rating": 4.9,
+   "count": 343,
+   "addr": "Paul do Mar",
+   "hours": {
+    "ru": "Ср–Сб 9:00–14:00",
+    "en": "Wed–Sat 9:00–14:00",
+    "pt": "Qua–Sáb 9:00–14:00",
+    "es": "Mié–Sáb 9:00–14:00",
+    "de": "Mi–Sa 9:00–14:00"
+   },
+   "photo": "https://lh3.googleusercontent.com/place-photos/AJRVUZP9kkeWeeTP38P4FxcEIikixBr0a6XcYLj_W_SbdFY1w1JxFm_0NL5OQzKzNtB6FGIdI-2GD6MAcN6BMltVI_6aIbxq9fnazDdM9d9jjIZsJi2w-Dv6q34tJYfI1kmZW4MnuiJCzTFYws7netzqLgc7UA=w800-h500",
+   "tags": [
+    "bakery"
+   ],
+   "secret": true
+  },
+  {
+   "id": "maktub",
+   "name": "Maktub Pub",
+   "lat": 32.7648693,
+   "lon": -17.2345899,
+   "place_id": "ChIJywp1knhSYAwRyAsBDIpepq4",
+   "note": {
+    "ru": "Бар: закат у океана в Paúl do Mar, свежий улов, коктейли, без меню — спрашивай улов",
+    "en": "Bar: ocean sunset in Paúl do Mar, fresh catch, cocktails, no menu — ask for the catch",
+    "pt": "Bar: pôr do sol no oceano em Paúl do Mar, pesca fresca, cocktails, sem menu — pergunta pela pesca",
+    "es": "Bar: atardecer en el océano en Paúl do Mar, pesca fresca, cócteles, sin carta — pregunta por la pesca",
+    "de": "Bar: Ozean-Sonnenuntergang in Paúl do Mar, frischer Fang, Cocktails, keine Karte — frag nach dem Fang"
+   },
+   "rating": 4.5,
+   "count": 1603,
+   "addr": "Paúl do Mar",
+   "hours": {
+    "ru": "Закрыт ср · 14:00–23:00",
+    "en": "Closed Wed · 14:00–23:00",
+    "pt": "Fechado Qua · 14:00–23:00",
+    "es": "Cerrado Mié · 14:00–23:00",
+    "de": "Mi geschlossen · 14:00–23:00"
+   },
+   "photo": "",
+   "tags": [
+    "bar",
+    "view"
+   ],
+   "secret": false
+  },
+  {
+   "id": "cascata",
+   "name": "Paúl do Mar waterfall",
+   "lat": 32.7525426,
+   "lon": -17.2230193,
+   "place_id": "ChIJ16M-2gZTYAwRcJKugIqlbsA",
+   "note": {
+    "ru": "Вид: водопад у деревни, без толп, утки в пруду — природная пауза перед закатом",
+    "en": "View: waterfall by the village, no crowds, ducks in the pond — a nature pause before sunset",
+    "pt": "Vista: cascata junto à aldeia, sem multidões, patos no lago — pausa na natureza antes do pôr do sol",
+    "es": "Vista: cascada junto al pueblo, sin multitudes, patos en el estanque — pausa natural antes del atardecer",
+    "de": "Aussicht: Wasserfall am Dorf, keine Menschenmassen, Enten im Teich — Naturpause vor dem Sonnenuntergang"
+   },
+   "rating": 4.5,
+   "count": 634,
+   "addr": "Paúl do Mar",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "pr16",
+   "name": "PR16 Levada Fajã do Rodrigues",
+   "lat": 32.7792495,
+   "lon": -17.0495786,
+   "place_id": "ChIJ6c6N3yVbYAwRSqW3KU5_n-k",
+   "note": {
+    "ru": "Маршрут: левада через туннели и зелень к Ribeira do Inferno, джунглевый трек São Vicente",
+    "en": "Trail: a levada through tunnels and greenery to Ribeira do Inferno, a jungle trek in São Vicente",
+    "pt": "Trilho: levada por túneis e verde até à Ribeira do Inferno, caminhada na selva de São Vicente",
+    "es": "Ruta: levada por túneles y verde hasta Ribeira do Inferno, sendero selvático en São Vicente",
+    "de": "Wanderung: Levada durch Tunnel und Grün zur Ribeira do Inferno, Dschungeltour in São Vicente"
+   },
+   "rating": 4.6,
+   "count": 1030,
+   "addr": "São Vicente",
+   "hours": {
+    "ru": "Круглосуточно · ~3ч",
+    "en": "Open 24h · ~3h",
+    "pt": "24 horas · ~3h",
+    "es": "24 horas · ~3h",
+    "de": "Durchgehend · ~3h"
+   },
+   "photo": "",
+   "tags": [
+    "hike"
+   ],
+   "secret": false
+  },
+  {
+   "id": "lavrador",
+   "name": "Restaurante Lavrador",
+   "lat": 32.7902281,
+   "lon": -17.0357961,
+   "place_id": "ChIJAaWhdDRbYAwRSgqhtCVYqno",
+   "note": {
+    "ru": "Еда: São Vicente, терраса на горы, португальская кухня. Закрыт вт",
+    "en": "Food: São Vicente, terrace facing the mountains, Portuguese cuisine. Closed Tue",
+    "pt": "Comida: São Vicente, esplanada virada à serra, cozinha portuguesa. Fechado Ter",
+    "es": "Comida: São Vicente, terraza hacia las montañas, cocina portuguesa. Cerrado Mar",
+    "de": "Essen: São Vicente, Terrasse zu den Bergen, portugiesische Küche. Di geschlossen"
+   },
+   "rating": 4.7,
+   "count": 2252,
+   "addr": "São Vicente",
+   "hours": {
+    "ru": "Закрыт вт · 12:00–18:30",
+    "en": "Closed Tue · 12:00–18:30",
+    "pt": "Fechado Ter · 12:00–18:30",
+    "es": "Cerrado Mar · 12:00–18:30",
+    "de": "Di geschlossen · 12:00–18:30"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "ilheus",
+   "name": "Miradouro Ilheus da Ribeira da Janela",
+   "lat": 32.8554097,
+   "lon": -17.1529808,
+   "place_id": "ChIJtfI6gBxPYAwRFaqYOmLeibA",
+   "note": {
+    "ru": "Вид: драматичные скальные иглы у Ribeira da Janela, чёрный галечный пляж, секретная лестница к балкону",
+    "en": "View: dramatic rock needles at Ribeira da Janela, black pebble beach, a secret stairway to the balcony",
+    "pt": "Vista: agulhas de rocha dramáticas em Ribeira da Janela, praia de calhau preto, escadaria secreta até ao miradouro",
+    "es": "Vista: dramáticas agujas de roca en Ribeira da Janela, playa de cantos negros, escalera secreta al balcón",
+    "de": "Aussicht: dramatische Felsnadeln bei Ribeira da Janela, schwarzer Kieselstrand, geheime Treppe zum Balkon"
+   },
+   "rating": 4.8,
+   "count": 2415,
+   "addr": "Porto Moniz",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "seixal",
+   "name": "Praia do Porto do Seixal",
+   "lat": 32.8222825,
+   "lon": -17.1030977,
+   "place_id": "ChIJi7XbMIdPYAwRxEpKrHZAyw4",
+   "note": {
+    "ru": "Вид: чёрный песок, водопад у пляжа, зелёные горы — финал дня на закате",
+    "en": "View: black sand, a waterfall by the beach, green mountains — the day's finale at sunset",
+    "pt": "Vista: areia preta, cascata junto à praia, montanhas verdes — o final do dia ao pôr do sol",
+    "es": "Vista: arena negra, cascada junto a la playa, montañas verdes — el final del día al atardecer",
+    "de": "Aussicht: schwarzer Sand, Wasserfall am Strand, grüne Berge — das Finale des Tages bei Sonnenuntergang"
+   },
+   "rating": 4.6,
+   "count": 1965,
+   "addr": "Seixal",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": false
+  },
+  {
+   "id": "brasaviva",
+   "name": "Churrascaria Brasa Viva",
+   "lat": 32.8105769,
+   "lon": -17.0411853,
+   "place_id": "ChIJiQIvRMNEYAwRfyoSTAcR7-Q",
+   "note": {
+    "ru": "Еда: São Vicente, гриль на углях, огромные порции. Закрыт пн",
+    "en": "Food: São Vicente, charcoal grill, huge portions. Closed Mon",
+    "pt": "Comida: São Vicente, grelha a carvão, porções enormes. Fechado Seg",
+    "es": "Comida: São Vicente, parrilla de carbón, porciones enormes. Cerrado Lun",
+    "de": "Essen: São Vicente, Holzkohlegrill, riesige Portionen. Mo geschlossen"
+   },
+   "rating": 4.6,
+   "count": 1385,
+   "addr": "São Vicente",
+   "hours": {
+    "ru": "Закрыт пн · 12:00–21:30",
+    "en": "Closed Mon · 12:00–21:30",
+    "pt": "Fechado Seg · 12:00–21:30",
+    "es": "Cerrado Lun · 12:00–21:30",
+    "de": "Mo geschlossen · 12:00–21:30"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": false
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "pauldomar",
+   "feat": true,
+   "title": {
+    "ru": "Секретный закат · Paúl do Mar",
+    "en": "Secret sunset · Paúl do Mar",
+    "pt": "Pôr do sol secreto · Paúl do Mar",
+    "es": "Atardecer secreto · Paúl do Mar",
+    "de": "Geheimer Sonnenuntergang · Paúl do Mar"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.7649,
+   "sunLon": -17.2346,
+   "why": {
+    "ru": "Деревня, океан, ужин и мягкий вечерний свет — медленный slow-travel вечер без суеты.",
+    "en": "Village, ocean, dinner and soft evening light — a slow-travel evening with no rush.",
+    "pt": "Aldeia, oceano, jantar e luz suave do entardecer — uma noite slow-travel sem pressa.",
+    "es": "Pueblo, océano, cena y luz suave del atardecer — una tarde slow-travel sin prisas.",
+    "de": "Dorf, Ozean, Abendessen und weiches Abendlicht — ein Slow-Travel-Abend ohne Eile."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Приезд в Paúl do Mar, набережная",
+      "en": "Arrive in Paúl do Mar, the seafront",
+      "pt": "Chegada a Paúl do Mar, a marginal",
+      "es": "Llegada a Paúl do Mar, el paseo marítimo",
+      "de": "Ankunft in Paúl do Mar, die Strandpromenade"
+     },
+     "m": {
+      "ru": "за 2–3 часа до заката",
+      "en": "2–3 hours before sunset",
+      "pt": "2–3 horas antes do pôr do sol",
+      "es": "2–3 horas antes del atardecer",
+      "de": "2–3 Stunden vor Sonnenuntergang"
+     },
+     "note": {
+      "ru": "Сразу ловишь ритм деревни: узкая прибрежная линия, скалы, океан",
+      "en": "You catch the village rhythm right away: a narrow coastal strip, cliffs, ocean",
+      "pt": "Apanhas logo o ritmo da aldeia: faixa costeira estreita, falésias, oceano",
+      "es": "Captas enseguida el ritmo del pueblo: franja costera estrecha, acantilados, océano",
+      "de": "Du spürst sofort den Rhythmus des Dorfes: schmaler Küstenstreifen, Klippen, Ozean"
+     }
+    },
+    {
+     "n": {
+      "ru": "Прогулка по улочкам деревни",
+      "en": "A walk through the village lanes",
+      "pt": "Passeio pelas ruelas da aldeia",
+      "es": "Paseo por las callejuelas del pueblo",
+      "de": "Spaziergang durch die Dorfgassen"
+     },
+     "m": {
+      "ru": "петлёй, не сразу к бару",
+      "en": "loop around, don't head straight to the bar",
+      "pt": "em laço, sem ir logo ao bar",
+      "es": "en bucle, sin ir directo al bar",
+      "de": "im Bogen, nicht direkt zur Bar"
+     },
+     "note": {
+      "ru": "Старые дома, лестницы, фактуры стен, видовые повороты к океану",
+      "en": "Old houses, stairways, wall textures, view-turns toward the ocean",
+      "pt": "Casas antigas, escadarias, texturas de paredes, curvas com vista para o oceano",
+      "es": "Casas antiguas, escaleras, texturas de muros, recodos con vistas al océano",
+      "de": "Alte Häuser, Treppen, Wandtexturen, Aussichtskurven zum Ozean"
+     }
+    },
+    {
+     "n": {
+      "ru": "Paúl do Mar waterfall",
+      "en": "Paúl do Mar waterfall",
+      "pt": "Cascata de Paúl do Mar",
+      "es": "Cascada de Paúl do Mar",
+      "de": "Wasserfall von Paúl do Mar"
+     },
+     "m": {
+      "ru": "природная пауза, фото",
+      "en": "a nature pause, photos",
+      "pt": "pausa na natureza, fotos",
+      "es": "pausa en la naturaleza, fotos",
+      "de": "Naturpause, Fotos"
+     },
+     "note": {
+      "ru": "Без толп, утки в пруду — добавь паузу до вечера",
+      "en": "No crowds, ducks in the pond — add a pause before evening",
+      "pt": "Sem multidões, patos no lago — acrescenta uma pausa antes do anoitecer",
+      "es": "Sin multitudes, patos en el estanque — añade una pausa antes de la tarde",
+      "de": "Keine Menschenmassen, Enten im Teich — leg eine Pause vor dem Abend ein"
+     }
+    },
+    {
+     "n": {
+      "ru": "Ужин в Maktub Pub",
+      "en": "Dinner at Maktub Pub",
+      "pt": "Jantar no Maktub Pub",
+      "es": "Cena en Maktub Pub",
+      "de": "Abendessen im Maktub Pub"
+     },
+     "m": {
+      "ru": "меню по улову — спрашивай свежее",
+      "en": "menu by the catch — ask what's fresh",
+      "pt": "menu conforme a pesca — pergunta o que há de fresco",
+      "es": "menú según la pesca — pregunta qué hay fresco",
+      "de": "Menü je nach Fang — frag nach dem Frischen"
+     },
+     "note": {
+      "ru": "Свежий улов, коктейли; лучше прийти до пика",
+      "en": "Fresh catch, cocktails; better to arrive before the rush",
+      "pt": "Pesca fresca, cocktails; melhor chegar antes do pico",
+      "es": "Pesca fresca, cócteles; mejor llegar antes del pico",
+      "de": "Frischer Fang, Cocktails; besser vor dem Andrang kommen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Закат у воды рядом с Maktub",
+      "en": "Sunset by the water next to Maktub",
+      "pt": "Pôr do sol à beira-mar junto ao Maktub",
+      "es": "Atardecer junto al agua, al lado de Maktub",
+      "de": "Sonnenuntergang am Wasser neben Maktub"
+     },
+     "m": {
+      "ru": "финал",
+      "en": "the finale",
+      "pt": "o final",
+      "es": "el final",
+      "de": "das Finale"
+     },
+     "note": {
+      "ru": "После ужина спустись к морю — здесь закат мягкий и спокойный",
+      "en": "After dinner head down to the sea — the sunset here is soft and calm",
+      "pt": "Depois do jantar desce até ao mar — aqui o pôr do sol é suave e calmo",
+      "es": "Tras la cena baja al mar — aquí el atardecer es suave y tranquilo",
+      "de": "Nach dem Essen geh hinunter ans Meer — der Sonnenuntergang ist hier sanft und ruhig"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Боковые улочки выше набережной — там настоящая деревня",
+     "en": "Side lanes above the seafront — that is the real village",
+     "pt": "Ruelas laterais acima da marginal — é ali a aldeia verdadeira",
+     "es": "Callejuelas por encima del paseo — ahí está el pueblo de verdad",
+     "de": "Seitengassen oberhalb der Promenade — dort ist das echte Dorf"
+    },
+    {
+     "ru": "Точки над пляжем — камернее, чем центр у бара",
+     "en": "Spots above the beach — more intimate than the centre by the bar",
+     "pt": "Pontos acima da praia — mais intimistas que o centro junto ao bar",
+     "es": "Rincones sobre la playa — más íntimos que el centro junto al bar",
+     "de": "Plätze oberhalb des Strandes — intimer als das Zentrum an der Bar"
+    },
+    {
+     "ru": "Скалы и повороты дороги с разрезом домов и океана — пауза и фото",
+     "en": "Cliffs and road bends framing houses and ocean — a pause and a photo",
+     "pt": "Falésias e curvas da estrada a emoldurar casas e oceano — pausa e foto",
+     "es": "Acantilados y curvas de la carretera enmarcando casas y océano — pausa y foto",
+     "de": "Klippen und Straßenkurven, die Häuser und Ozean rahmen — Pause und Foto"
+    }
+   ],
+   "park": {
+    "ru": "Ищи место выше по маршруту, не у самой точки. Выезжать лучше через 10–15 минут после заката — поток спокойнее.",
+    "en": "Look for a spot higher up the route, not right at the point. Better to leave 10–15 min after sunset — the traffic is calmer.",
+    "pt": "Procura lugar mais acima no percurso, não mesmo no ponto. Sai 10–15 min após o pôr do sol — o trânsito é mais calmo.",
+    "es": "Busca sitio más arriba en la ruta, no justo en el punto. Mejor salir 10–15 min tras el atardecer — el tráfico está más tranquilo.",
+    "de": "Such einen Platz weiter oben an der Route, nicht direkt am Punkt. Besser 10–15 Min nach Sonnenuntergang losfahren — der Verkehr ist ruhiger."
+   },
+   "wear": {
+    "ru": "Лёгкая куртка и удобная обувь — вечером у океана ветер сильнее.",
+    "en": "A light jacket and comfy shoes — by the ocean the wind picks up in the evening.",
+    "pt": "Casaco leve e calçado confortável — à noite junto ao oceano o vento aperta.",
+    "es": "Chaqueta ligera y calzado cómodo — al anochecer junto al océano el viento arrecia.",
+    "de": "Leichte Jacke und bequeme Schuhe — am Abend am Ozean wird der Wind stärker."
+   }
+  },
+  {
+   "id": "curralday",
+   "feat": true,
+   "title": {
+    "ru": "Горная долина · Куррал-даш-Фрейраш",
+    "en": "Mountain valley · Curral das Freiras",
+    "pt": "Vale das montanhas · Curral das Freiras",
+    "es": "Valle de montaña · Curral das Freiras",
+    "de": "Bergtal · Curral das Freiras"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.7197,
+   "sunLon": -16.9647,
+   "why": {
+    "ru": "Долина Монахинь на дне горного кратера: смотровая сверху, спуск к деревне и каштановый обед с видом с крыши.",
+    "en": "The Nuns' Valley at the bottom of a mountain crater: a viewpoint above, a descent to the village and a chestnut lunch with a rooftop view.",
+    "pt": "O Vale das Freiras no fundo de uma cratera de montanha: miradouro no topo, descida à aldeia e almoço de castanha com vista do terraço.",
+    "es": "El Valle de las Monjas en el fondo de un cráter de montaña: mirador arriba, bajada al pueblo y almuerzo de castaña con vistas desde la azotea.",
+    "de": "Das Nonnental am Grund eines Bergkraters: Aussichtspunkt oben, Abstieg ins Dorf und ein Kastanien-Mittagessen mit Dachterrassenblick."
+   },
+   "stops": [
+    {
+     "n": "Miradouro Eira do Serrado",
+     "m": {
+      "ru": "старт · вид в кратер",
+      "en": "start · view into the crater",
+      "pt": "início · vista para a cratera",
+      "es": "inicio · vista al cráter",
+      "de": "Start · Blick in den Krater"
+     },
+     "note": {
+      "ru": "Смотровая над долиной — деревня внизу как на ладони",
+      "en": "A viewpoint over the valley — the village below in full view",
+      "pt": "Miradouro sobre o vale — a aldeia lá em baixo bem à vista",
+      "es": "Mirador sobre el valle — el pueblo abajo a plena vista",
+      "de": "Aussichtspunkt über dem Tal — das Dorf unten voll im Blick"
+     }
+    },
+    {
+     "n": {
+      "ru": "Спуск к Curral das Freiras",
+      "en": "Descent to Curral das Freiras",
+      "pt": "Descida a Curral das Freiras",
+      "es": "Bajada a Curral das Freiras",
+      "de": "Abstieg nach Curral das Freiras"
+     },
+     "m": {
+      "ru": "пешком ~1–1.5ч",
+      "en": "on foot ~1–1.5h",
+      "pt": "a pé ~1–1.5h",
+      "es": "a pie ~1–1.5h",
+      "de": "zu Fuß ~1–1.5 Std."
+     },
+     "note": {
+      "ru": "Тропа вниз среди каштанов, медленно и с видами",
+      "en": "A trail down through chestnut groves, slow and with views",
+      "pt": "Trilho a descer por castanheiros, devagar e com vistas",
+      "es": "Sendero hacia abajo entre castaños, lento y con vistas",
+      "de": "Pfad hinunter durch Kastanienhaine, langsam und mit Ausblicken"
+     }
+    },
+    {
+     "n": {
+      "ru": "Обед в Sabores do Curral",
+      "en": "Lunch at Sabores do Curral",
+      "pt": "Almoço no Sabores do Curral",
+      "es": "Almuerzo en Sabores do Curral",
+      "de": "Mittagessen im Sabores do Curral"
+     },
+     "m": {
+      "ru": "★4.6 · каштановое меню",
+      "en": "★4.6 · chestnut menu",
+      "pt": "★4.6 · menu de castanha",
+      "es": "★4.6 · menú de castaña",
+      "de": "★4.6 · Kastanienmenü"
+     },
+     "note": {
+      "ru": "Терраса на крыше, каштановый суп, местное пиво — вид на долину",
+      "en": "Rooftop terrace, chestnut soup, local beer — a valley view",
+      "pt": "Terraço no telhado, sopa de castanha, cerveja local — vista para o vale",
+      "es": "Terraza en la azotea, sopa de castaña, cerveza local — vista al valle",
+      "de": "Dachterrasse, Kastaniensuppe, lokales Bier — Talblick"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Каштановое пиво и ликёр — фишка именно этой долины",
+     "en": "Chestnut beer and liqueur — the signature of this very valley",
+     "pt": "Cerveja e licor de castanha — o ex-líbris deste vale",
+     "es": "Cerveza y licor de castaña — el sello de este valle",
+     "de": "Kastanienbier und -likör — das Markenzeichen genau dieses Tals"
+    },
+    {
+     "ru": "Проси столик на крыше Sabores — оттуда лучший вид",
+     "en": "Ask for a rooftop table at Sabores — the best view is from there",
+     "pt": "Pede mesa no terraço do Sabores — a melhor vista é dali",
+     "es": "Pide mesa en la azotea de Sabores — la mejor vista está allí",
+     "de": "Bitte um einen Tisch auf der Dachterrasse des Sabores — von dort der beste Blick"
+    }
+   ],
+   "park": {
+    "ru": "В деревне парковка тесная — оставь машину у Eira do Serrado и спустись пешком, так и красивее.",
+    "en": "Parking in the village is tight — leave the car at Eira do Serrado and walk down, it is prettier that way.",
+    "pt": "O estacionamento na aldeia é apertado — deixa o carro em Eira do Serrado e desce a pé, é mais bonito assim.",
+    "es": "El aparcamiento en el pueblo es estrecho — deja el coche en Eira do Serrado y baja a pie, así es más bonito.",
+    "de": "Parken im Dorf ist eng — lass das Auto an der Eira do Serrado und geh zu Fuß hinunter, so ist es schöner."
+   },
+   "wear": {
+    "ru": "Удобная обувь для спуска и ветровка — в горах прохладнее, чем на побережье.",
+    "en": "Comfy shoes for the descent and a windbreaker — it is cooler in the mountains than on the coast.",
+    "pt": "Calçado confortável para a descida e corta-vento — na serra é mais fresco que na costa.",
+    "es": "Calzado cómodo para la bajada y cortavientos — en la montaña hace más fresco que en la costa.",
+    "de": "Bequeme Schuhe für den Abstieg und eine Windjacke — in den Bergen ist es kühler als an der Küste."
+   }
+  },
+  {
+   "id": "nwday",
+   "feat": true,
+   "title": {
+    "ru": "Наши Гавайи · северо-запад за день",
+    "en": "Our Hawaii · the northwest in a day",
+    "pt": "A nossa Havai · o noroeste num dia",
+    "es": "Nuestro Hawái · el noroeste en un día",
+    "de": "Unser Hawaii · der Nordwesten an einem Tag"
+   },
+   "duration": "day",
+   "car": true,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "hike",
+    "food"
+   ],
+   "sunLat": 32.8223,
+   "sunLon": -17.1031,
+   "why": {
+    "ru": "Вино, зелёная левада, северное побережье и чёрные пляжи — самый сильный визуальный день острова. Финал — закат на Seixal.",
+    "en": "Wine, a green levada, the north coast and black beaches — the island's most striking visual day. Finale — sunset at Seixal.",
+    "pt": "Vinho, uma levada verde, a costa norte e praias negras — o dia mais marcante da ilha. Final — pôr do sol no Seixal.",
+    "es": "Vino, una levada verde, la costa norte y playas negras — el día más impactante de la isla. Final — atardecer en Seixal.",
+    "de": "Wein, eine grüne Levada, die Nordküste und schwarze Strände — der visuell stärkste Tag der Insel. Finale — Sonnenuntergang in Seixal."
+   },
+   "stops": [
+    {
+     "n": "Quinta do Barbusano",
+     "m": {
+      "ru": "утро · ★4.3 · пока свежий",
+      "en": "morning · ★4.3 · while fresh",
+      "pt": "manhã · ★4.3 · enquanto fresco",
+      "es": "mañana · ★4.3 · mientras fresco",
+      "de": "morgens · ★4.3 · solange frisch"
+     },
+     "note": {
+      "ru": "Вино: тур и дегустация с видом на долину São Vicente. Ставь первой",
+      "en": "Wine: tour and tasting with a view of the São Vicente valley. Put it first",
+      "pt": "Vinho: visita e prova com vista para o vale de São Vicente. Põe primeiro",
+      "es": "Vino: visita y cata con vistas al valle de São Vicente. Ponlo primero",
+      "de": "Wein: Führung und Verkostung mit Blick auf das São-Vicente-Tal. Als Erstes einplanen"
+     }
+    },
+    {
+     "n": "Igreja das Feiteiras · Capelinha N.Sra de Fátima",
+     "m": {
+      "ru": "короткие паузы по пути",
+      "en": "short stops along the way",
+      "pt": "paragens curtas pelo caminho",
+      "es": "paradas cortas por el camino",
+      "de": "kurze Stopps unterwegs"
+     },
+     "note": {
+      "ru": "Деревенская Мадейра и виды по дороге",
+      "en": "Village Madeira and views along the road",
+      "pt": "Madeira rural e vistas pela estrada",
+      "es": "La Madeira rural y vistas por la carretera",
+      "de": "Ländliches Madeira und Ausblicke an der Straße"
+     }
+    },
+    {
+     "n": "PR16 Levada Fajã do Rodrigues",
+     "m": {
+      "ru": "днём · ★4.6 · 3–3.5ч",
+      "en": "midday · ★4.6 · 3–3.5h",
+      "pt": "meio-dia · ★4.6 · 3–3.5h",
+      "es": "mediodía · ★4.6 · 3–3.5h",
+      "de": "mittags · ★4.6 · 3–3.5 Std."
+     },
+     "note": {
+      "ru": "Левада через туннели к Ribeira do Inferno. Фонарик и дождевик с собой",
+      "en": "A levada through tunnels to Ribeira do Inferno. Bring a torch and a raincoat",
+      "pt": "Levada por túneis até à Ribeira do Inferno. Leva lanterna e impermeável",
+      "es": "Levada por túneles hasta Ribeira do Inferno. Lleva linterna e impermeable",
+      "de": "Levada durch Tunnel zur Ribeira do Inferno. Taschenlampe und Regenjacke mitnehmen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Обед: Restaurante Lavrador",
+      "en": "Lunch: Restaurante Lavrador",
+      "pt": "Almoço: Restaurante Lavrador",
+      "es": "Almuerzo: Restaurante Lavrador",
+      "de": "Mittagessen: Restaurante Lavrador"
+     },
+     "m": {
+      "ru": "★4.7 · после левады",
+      "en": "★4.7 · after the levada",
+      "pt": "★4.7 · depois da levada",
+      "es": "★4.7 · tras la levada",
+      "de": "★4.7 · nach der Levada"
+     },
+     "note": {
+      "ru": "Терраса на горы, местная кухня. Закрыт вт — запас Brasa Viva",
+      "en": "Terrace facing the mountains, local cuisine. Closed Tue — backup Brasa Viva",
+      "pt": "Esplanada virada à serra, cozinha local. Fechado Ter — alternativa Brasa Viva",
+      "es": "Terraza hacia las montañas, cocina local. Cerrado Mar — alternativa Brasa Viva",
+      "de": "Terrasse zu den Bergen, lokale Küche. Di geschlossen — Ausweich Brasa Viva"
+     }
+    },
+    {
+     "n": "São Vicente Promenade · Miradouro Ilheus da Ribeira da Janela",
+     "m": "★4.8",
+     "note": {
+      "ru": "Драматичные скальные иглы — самый эффектный мир маршрута",
+      "en": "Dramatic rock needles — the most spectacular sight of the route",
+      "pt": "Agulhas de rocha dramáticas — o ponto mais espetacular do percurso",
+      "es": "Dramáticas agujas de roca — el punto más espectacular de la ruta",
+      "de": "Dramatische Felsnadeln — der spektakulärste Punkt der Route"
+     }
+    },
+    {
+     "n": {
+      "ru": "Закат: Praia do Porto do Seixal",
+      "en": "Sunset: Praia do Porto do Seixal",
+      "pt": "Pôr do sol: Praia do Porto do Seixal",
+      "es": "Atardecer: Praia do Porto do Seixal",
+      "de": "Sonnenuntergang: Praia do Porto do Seixal"
+     },
+     "m": {
+      "ru": "★4.6 · финал",
+      "en": "★4.6 · finale",
+      "pt": "★4.6 · final",
+      "es": "★4.6 · final",
+      "de": "★4.6 · Finale"
+     },
+     "note": {
+      "ru": "Чёрный песок, водопад у пляжа, зелёные горы — финал на закате",
+      "en": "Black sand, a waterfall by the beach, green mountains — the finale at sunset",
+      "pt": "Areia preta, cascata junto à praia, montanhas verdes — o final ao pôr do sol",
+      "es": "Arena negra, cascada junto a la playa, montañas verdes — el final al atardecer",
+      "de": "Schwarzer Sand, Wasserfall am Strand, grüne Berge — das Finale bei Sonnenuntergang"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "У Miradouro Ilheus — секретная лестница в скале к скрытому балкону",
+     "en": "At Miradouro Ilheus — a secret stairway in the rock to a hidden balcony",
+     "pt": "No Miradouro Ilheus — uma escadaria secreta na rocha até um miradouro escondido",
+     "es": "En el Miradouro Ilheus — una escalera secreta en la roca a un balcón oculto",
+     "de": "Am Miradouro Ilheus — eine geheime Treppe im Fels zu einem versteckten Balkon"
+    },
+    {
+     "ru": "Seixal сильнее в облачную погоду — туман идёт к чёрному вулканическому пляжу",
+     "en": "Seixal is stronger in cloudy weather — mist rolls onto the black volcanic beach",
+     "pt": "Seixal é mais forte com céu nublado — a névoa desce sobre a praia vulcânica negra",
+     "es": "Seixal impacta más con nubes — la niebla baja a la playa volcánica negra",
+     "de": "Seixal wirkt bei bewölktem Wetter stärker — Nebel zieht über den schwarzen Vulkanstrand"
+    },
+    {
+     "ru": "Чёрный песок Seixal + иглы Ribeira da Janela — вот почему это «наши Гавайи»",
+     "en": "Seixal black sand + the Ribeira da Janela needles — that is why we call it our Hawaii",
+     "pt": "Areia preta do Seixal + as agulhas da Ribeira da Janela — é por isso que lhe chamamos a nossa Havai",
+     "es": "La arena negra de Seixal + las agujas de Ribeira da Janela — por eso es nuestro Hawái",
+     "de": "Seixals schwarzer Sand + die Felsnadeln der Ribeira da Janela — darum unser Hawaii"
+    }
+   ],
+   "park": {
+    "ru": "На Seixal к вечеру парковка тяжёлая — приезжай заранее или будь готов спуститься пешком (за стоянку где попало штрафуют).",
+    "en": "Parking at Seixal gets hard towards evening — come early or be ready to walk down (parking anywhere gets fined).",
+    "pt": "Estacionar no Seixal complica ao fim da tarde — chega cedo ou prepara-te para descer a pé (estacionar à toa dá multa).",
+    "es": "Aparcar en Seixal se complica al atardecer — llega pronto o prepárate para bajar a pie (aparcar de cualquier manera lo multan).",
+    "de": "Parken in Seixal wird gegen Abend schwierig — komm früh oder sei bereit, hinunterzulaufen (wildes Parken wird bestraft)."
+   },
+   "wear": {
+    "ru": "Слои: на леваде сыро и туннели (фонарик, дождевик), на побережье ветер. Обувь с протектором.",
+    "en": "Layers: the levada is damp with tunnels (torch, raincoat), the coast is windy. Shoes with grip.",
+    "pt": "Camadas: a levada é húmida e com túneis (lanterna, impermeável), a costa tem vento. Calçado com aderência.",
+    "es": "Capas: la levada es húmeda y con túneles (linterna, impermeable), la costa tiene viento. Calzado con agarre.",
+    "de": "Schichten: die Levada ist feucht mit Tunneln (Taschenlampe, Regenjacke), die Küste windig. Schuhe mit Profil."
+   }
+  }
+ ]
+}
