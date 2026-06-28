@@ -1,0 +1,13 @@
+{
+  "name": "Мой Гид",
+  "short_name": "Мой Гид",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1014",
+  "theme_color": "#C13A57",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
