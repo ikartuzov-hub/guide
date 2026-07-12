@@ -1,0 +1,2665 @@
+{
+ "schema": 1,
+ "meta": {
+  "id": "paris-igor",
+  "author": "Igor Kartuzov",
+  "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/",
+  "city": {
+   "ru": "Париж",
+   "en": "Paris",
+   "pt": "Paris",
+   "es": "París",
+   "de": "Paris"
+  },
+  "icon": "icons/paris.svg",
+  "theme": {
+   "bg": "#161B22",
+   "bg2": "#1B2129",
+   "bg3": "#212933",
+   "ink": "#EAEEF3",
+   "muted": "#93A4B8",
+   "faint": "#5E6B7A",
+   "accent": "#6C8CB4",
+   "accent2": "#8AA6C8",
+   "accentInk": "#0E141B",
+   "card": "#1B2129",
+   "line": "#2A333F",
+   "tile": "#212933"
+  },
+  "themeLight": {
+   "bg": "#F2F4F7",
+   "bg2": "#FFFFFF",
+   "bg3": "#F7F9FB",
+   "ink": "#1B222B",
+   "muted": "#5E7185",
+   "faint": "#96A3B2",
+   "accent": "#3E5C76",
+   "accent2": "#557191",
+   "accentInk": "#FFFFFF",
+   "card": "#FFFFFF",
+   "line": "#E3E8EE",
+   "tile": "#EEF2F6"
+  }
+ },
+ "intro": {
+  "eyebrow": {
+   "ru": "Гид · мой Париж без открыток",
+   "en": "Guide · my Paris beyond postcards",
+   "pt": "Guia · a minha Paris sem postais",
+   "es": "Guía · mi París sin postales",
+   "de": "Guide · mein Paris abseits der Postkarten"
+  },
+  "title": {
+   "ru": "Мой Париж на пару дней",
+   "en": "My Paris for a Couple of Days",
+   "pt": "A Minha Paris por Uns Dias",
+   "es": "Mi París para un Par de Días",
+   "de": "Mein Paris für ein paar Tage"
+  },
+  "sub": {
+   "ru": "Гастрономические кварталы, пассажи и виды на башню в стороне от туристических троп — от того, кто ходит этими улицами.",
+   "en": "Gourmet quarters, covered passages and tower views off the tourist trail — from someone who walks these streets.",
+   "pt": "Bairros gastronómicos, passagens e vistas da torre fora dos trilhos turísticos — de quem anda por estas ruas.",
+   "es": "Barrios gastronómicos, pasajes y vistas de la torre fuera de las rutas turísticas — de quien camina por estas calles.",
+   "de": "Gourmet-Viertel, Passagen und Turmblicke abseits der Touristenpfade — von jemandem, der diese Straßen kennt."
+  }
+ },
+ "regions": {
+  "west": {
+   "ru": "Башня · 15-й",
+   "en": "Tower · 15th",
+   "pt": "Torre · 15º",
+   "es": "Torre · 15º",
+   "de": "Turm · 15."
+  },
+  "bac": {
+   "ru": "Сен-Жермен · Rue du Bac",
+   "en": "Saint-Germain · Rue du Bac",
+   "pt": "Saint-Germain · Rue du Bac",
+   "es": "Saint-Germain · Rue du Bac",
+   "de": "Saint-Germain · Rue du Bac"
+  },
+  "latin": {
+   "ru": "Латинский квартал · Сите",
+   "en": "Latin Quarter · Cité",
+   "pt": "Bairro Latino · Cité",
+   "es": "Barrio Latino · Cité",
+   "de": "Quartier Latin · Cité"
+  },
+  "louvre": {
+   "ru": "Лувр · Сент-Оноре",
+   "en": "Louvre · Saint-Honoré",
+   "pt": "Louvre · Saint-Honoré",
+   "es": "Louvre · Saint-Honoré",
+   "de": "Louvre · Saint-Honoré"
+  },
+  "opera": {
+   "ru": "Опера · пассажи",
+   "en": "Opéra · passages",
+   "pt": "Ópera · passagens",
+   "es": "Ópera · pasajes",
+   "de": "Oper · Passagen"
+  },
+  "marais": {
+   "ru": "Маре",
+   "en": "Le Marais",
+   "pt": "Le Marais",
+   "es": "Le Marais",
+   "de": "Le Marais"
+  },
+  "montmartre": {
+   "ru": "Монмартр",
+   "en": "Montmartre",
+   "pt": "Montmartre",
+   "es": "Montmartre",
+   "de": "Montmartre"
+  }
+ },
+ "autoSkip": [
+  "bac",
+  "opera",
+  "west"
+ ],
+ "regionOrder": [
+  "west",
+  "bac",
+  "latin",
+  "louvre",
+  "opera",
+  "marais",
+  "montmartre"
+ ],
+ "points": [
+  {
+   "id": "camoens",
+   "name": "Avenue de Camoens",
+   "lat": 48.8597306,
+   "lon": 2.2860582,
+   "place_id": "ChIJOXSDA_1v5kcROE3OZBy09x8",
+   "note": {
+    "ru": "Вид: тот самый ракурс — башня в разрезе улицы. Приходить рано утром, пока нет очереди на фото",
+    "en": "View: that framing — the tower in the street's cut. Come early morning, before the photo queue",
+    "pt": "Vista: aquele enquadramento — a torre no recorte da rua. Vir de manhã cedo, antes da fila para fotos",
+    "es": "Vista: ese encuadre — la torre en el corte de la calle. Llegar temprano, antes de la cola para fotos",
+    "de": "Aussicht: genau dieser Blick — der Turm im Straßenausschnitt. Früh morgens kommen, vor der Fotoschlange"
+   },
+   "rating": 4.7,
+   "count": 433,
+   "addr": "75116, Пасси",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "view"
+   ],
+   "secret": true,
+   "reg": "west"
+  },
+  {
+   "id": "trocadero",
+   "name": "Jardins du Trocadéro",
+   "lat": 48.8616885,
+   "lon": 2.2892799,
+   "place_id": "ChIJoxY3R-Nv5kcRWsRDGBoNIOk",
+   "note": {
+    "ru": "Классика, которую не испортить: вид на башню через Сену. Утро или закат; спуститься от площади вниз в сады — людей меньше, ракурс тот же",
+    "en": "A classic you can't spoil: the tower across the Seine. Morning or sunset; walk down from the square into the gardens — fewer people, same view",
+    "pt": "Um clássico que não se estraga: a torre sobre o Sena. Manhã ou pôr do sol; desce da praça para os jardins — menos gente, mesma vista",
+    "es": "Un clásico imposible de estropear: la torre sobre el Sena. Mañana o atardecer; baja de la plaza a los jardines — menos gente, misma vista",
+    "de": "Ein Klassiker, der nicht enttäuscht: der Turm über der Seine. Morgens oder zum Sonnenuntergang; von der Terrasse in die Gärten hinabgehen — weniger Leute, gleicher Blick"
+   },
+   "rating": 4.6,
+   "count": 150680,
+   "addr": "75016",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24/7",
+    "pt": "Aberto 24/7",
+    "es": "Abierto 24/7",
+    "de": "Rund um die Uhr"
+   },
+   "tags": [
+    "view",
+    "hike"
+   ],
+   "secret": false,
+   "reg": "west"
+  },
+  {
+   "id": "champs",
+   "name": "Champs-Élysées",
+   "lat": 48.8729602,
+   "lon": 2.2978526,
+   "place_id": "ChIJUXgA-MRv5kcR9mSP84enoVo",
+   "note": {
+    "ru": "Прогулка: главная ось города — от Триумфальной арки к Тюильри",
+    "en": "Walk: the city's grand axis — from the Arc de Triomphe towards the Tuileries",
+    "pt": "Passeio: o grande eixo da cidade — do Arco do Triunfo às Tulherias",
+    "es": "Paseo: el gran eje de la ciudad — del Arco de Triunfo a las Tullerías",
+    "de": "Spaziergang: die große Achse der Stadt — vom Triumphbogen zu den Tuilerien"
+   },
+   "rating": 4.7,
+   "count": 6377,
+   "addr": "75008",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight",
+    "hike"
+   ],
+   "secret": false,
+   "reg": "west"
+  },
+  {
+   "id": "recrutement",
+   "name": "Le Recrutement",
+   "lat": 48.8599938,
+   "lon": 2.3099627,
+   "place_id": "ChIJn2wJz9lv5kcRlZLbCAIOPRg",
+   "note": {
+    "ru": "Еда: брассери с фото-видом на Эйфелеву башню; классическая французская кухня, открыто до 2 ночи",
+    "en": "Food: brasserie with a photo view of the Eiffel Tower; classic French cooking, open till 2 am",
+    "pt": "Comida: brasserie com vista fotogénica para a Torre Eiffel; cozinha francesa clássica, aberto até às 2h",
+    "es": "Comida: brasserie con vista de foto a la Torre Eiffel; cocina francesa clásica, abierto hasta las 2h",
+    "de": "Essen: Brasserie mit Fotoblick auf den Eiffelturm; klassische französische Küche, bis 2 Uhr geöffnet"
+   },
+   "rating": 4.0,
+   "count": 3928,
+   "addr": "75007, Bd de la Tour-Maubourg",
+   "hours": {
+    "ru": "Ежедневно 07:00–02:00",
+    "en": "Daily 07:00–02:00",
+    "pt": "Diariamente 07:00–02:00",
+    "es": "A diario 07:00–02:00",
+    "de": "Täglich 07:00–02:00"
+   },
+   "tags": [
+    "food",
+    "view"
+   ],
+   "secret": false,
+   "reg": "west"
+  },
+  {
+   "id": "salur",
+   "name": "Vincent Salur",
+   "lat": 48.8488681,
+   "lon": 2.2909102,
+   "place_id": "ChIJJ76sablx5kcR3H4izYe4uGs",
+   "note": {
+    "ru": "Пекарня: багет и круассаны с 07:00 — одна из немногих открытых так рано; pain au chocolat и флан — топ квартала",
+    "en": "Bakery: baguette and croissants from 7 am — one of the few open that early; the pain au chocolat and flan are the block's best",
+    "pt": "Padaria: baguete e croissants desde as 07:00 — das poucas abertas tão cedo; o pain au chocolat e o flan são o melhor do bairro",
+    "es": "Panadería: baguette y cruasanes desde las 07:00 — de las pocas abiertas tan temprano; el pain au chocolat y el flan son lo mejor del barrio",
+    "de": "Bäckerei: Baguette und Croissants ab 7 Uhr — eine der wenigen so früh geöffneten; Pain au Chocolat und Flan sind die besten im Viertel"
+   },
+   "rating": 4.5,
+   "count": 1632,
+   "addr": "75015, Rue de Lourmel",
+   "hours": {
+    "ru": "Ежедневно 07:00–20:00",
+    "en": "Daily 07:00–20:00",
+    "pt": "Diariamente 07:00–20:00",
+    "es": "A diario 07:00–20:00",
+    "de": "Täglich 07:00–20:00"
+   },
+   "tags": [
+    "bakery"
+   ],
+   "secret": true,
+   "reg": "west"
+  },
+  {
+   "id": "loquer",
+   "name": "Boulangerie Loquer",
+   "lat": 48.8452256,
+   "lon": 2.2894417,
+   "place_id": "ChIJJSdld8Nx5kcRMoZdR2Q65lo",
+   "note": {
+    "ru": "Пекарня: открывается в 07:00; угловая, локальная, без туристов — круассан и хлеб уровня «лучшее в Париже» по честной цене",
+    "en": "Bakery: opens at 7 am; a local corner spot with no tourists — croissant and bread of 'best in Paris' level at an honest price",
+    "pt": "Padaria: abre às 07:00; esquina local, sem turistas — croissant e pão de nível «melhor de Paris» a preço honesto",
+    "es": "Panadería: abre a las 07:00; esquina local, sin turistas — croissant y pan de nivel «lo mejor de París» a precio honesto",
+    "de": "Bäckerei: öffnet um 7 Uhr; lokale Ecke ohne Touristen — Croissant und Brot auf «Bestes-von-Paris»-Niveau zum ehrlichen Preis"
+   },
+   "rating": 4.8,
+   "count": 225,
+   "addr": "75015, Rue des Entrepreneurs",
+   "hours": {
+    "ru": "Пн–Пт 07–20, Сб 07–14, Вс закрыто",
+    "en": "Mon–Fri 07–20, Sat 07–14, Sun closed",
+    "pt": "Seg–Sex 07–20, Sáb 07–14, Dom fechado",
+    "es": "Lun–Vie 07–20, Sáb 07–14, Dom cerrado",
+    "de": "Mo–Fr 07–20, Sa 07–14, So geschlossen"
+   },
+   "tags": [
+    "bakery"
+   ],
+   "secret": true,
+   "reg": "west"
+  },
+  {
+   "id": "manutention",
+   "name": "Manutention Boulangerie",
+   "lat": 48.8479073,
+   "lon": 2.2935113,
+   "place_id": "ChIJVYA89xlw5kcRH4ce16aoBzc",
+   "note": {
+    "ru": "Пекарня для утра: крошечная, почти никем не найденная — скорее кондитерская высокого уровня, чем булочная",
+    "en": "Morning bakery: tiny and almost undiscovered — closer to a high-level pastry shop than a boulangerie",
+    "pt": "Padaria da manhã: minúscula e quase por descobrir — mais pastelaria de alto nível do que padaria",
+    "es": "Panadería de mañana: diminuta y casi sin descubrir — más pastelería de alto nivel que panadería",
+    "de": "Morgenbäckerei: winzig und fast unentdeckt — eher hochklassige Patisserie als Bäckerei"
+   },
+   "rating": 5.0,
+   "count": 4,
+   "addr": "75015, Rue Fondary",
+   "hours": {
+    "ru": "Утро–день",
+    "en": "Morning–afternoon",
+    "pt": "Manhã–tarde",
+    "es": "Mañana–tarde",
+    "de": "Morgens–nachmittags"
+   },
+   "tags": [
+    "bakery"
+   ],
+   "secret": true,
+   "reg": "west"
+  },
+  {
+   "id": "dubois",
+   "name": "Fromagerie Laurent Dubois",
+   "lat": 48.8505413,
+   "lon": 2.2921739,
+   "place_id": "ChIJN6Omxxtw5kcRDWa6XDQTank",
+   "note": {
+    "ru": "Сыр! Лучшая сырная в 15-м: комте, трюфельный бри, масло Bordier; продегустируют, подберут и завакуумируют в дорогу",
+    "en": "Cheese! The 15th's best fromagerie: comté, truffle brie, Bordier butter; they let you taste, advise and vacuum-seal for travel",
+    "pt": "Queijo! A melhor queijaria do 15º: comté, brie de trufa, manteiga Bordier; dão a provar, aconselham e embalam a vácuo para a viagem",
+    "es": "¡Queso! La mejor quesería del 15: comté, brie de trufa, mantequilla Bordier; te dan a probar, aconsejan y envasan al vacío para el viaje",
+    "de": "Käse! Die beste Fromagerie im 15.: Comté, Trüffel-Brie, Bordier-Butter; man darf probieren, wird beraten, alles reisefertig vakuumiert"
+   },
+   "rating": 4.5,
+   "count": 275,
+   "addr": "75015, Rue de Lourmel",
+   "hours": {
+    "ru": "Вт–Сб 09–20, Вс 09–13, Пн закрыто",
+    "en": "Tue–Sat 09–20, Sun 09–13, Mon closed",
+    "pt": "Ter–Sáb 09–20, Dom 09–13, Seg fechado",
+    "es": "Mar–Sáb 09–20, Dom 09–13, Lun cerrado",
+    "de": "Di–Sa 09–20, So 09–13, Mo geschlossen"
+   },
+   "tags": [
+    "food",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "west"
+  },
+  {
+   "id": "vanves",
+   "name": "Marché aux puces de la Porte de Vanves",
+   "lat": 48.8250472,
+   "lon": 2.3107774,
+   "place_id": "ChIJgSWkYQBx5kcRMuoPRujWdDo",
+   "note": {
+    "ru": "Блошиный рынок: камернее Сент-Уана, без подделок, кураторский винтаж; лучшее разбирают к полудню — приходить к открытию",
+    "en": "Flea market: more intimate than Saint-Ouen, no fakes, curated vintage; the best goes by noon — come at opening",
+    "pt": "Feira da ladra: mais intimista que Saint-Ouen, sem falsificações, vintage curado; o melhor esgota ao meio-dia — vir à abertura",
+    "es": "Mercadillo: más íntimo que Saint-Ouen, sin falsificaciones, vintage curado; lo mejor vuela a mediodía — llegar a la apertura",
+    "de": "Flohmarkt: intimer als Saint-Ouen, keine Fälschungen, kuratierter Vintage; das Beste ist bis mittags weg — zur Öffnung kommen"
+   },
+   "rating": 4.4,
+   "count": 208,
+   "addr": "75014, Av. Georges Lafenestre",
+   "hours": {
+    "ru": "Только Сб–Вс 07–14",
+    "en": "Sat–Sun only 07–14",
+    "pt": "Só Sáb–Dom 07–14",
+    "es": "Solo Sáb–Dom 07–14",
+    "de": "Nur Sa–So 07–14"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": true,
+   "reg": "west"
+  },
+  {
+   "id": "barthelemy",
+   "name": "Barthélémy",
+   "lat": 48.8544587,
+   "lon": 2.3255338,
+   "place_id": "ChIJ9-8ysdVx5kcR8Kx11cZTRsA",
+   "note": {
+    "ru": "Сырная лавка, в которую заходишь по запаху ещё с улицы. Твёрдый комте и Фонтенбло — взбитый сыр как сливки; знают каждый сыр лично и завакуумируют в дорогу",
+    "en": "A cheese shop you enter by smell from the street. Aged comté and Fontainebleau — whipped cheese like cream; they know every cheese personally and vacuum-seal it for the road",
+    "pt": "Uma queijaria em que se entra pelo cheiro ainda na rua. Comté curado e Fontainebleau — queijo batido como natas; conhecem cada queijo pessoalmente e embalam a vácuo",
+    "es": "Una quesería en la que entras por el olor desde la calle. Comté curado y Fontainebleau — queso batido como nata; conocen cada queso personalmente y lo envasan al vacío",
+    "de": "Ein Käseladen, den man schon von der Straße am Duft findet. Gereifter Comté und Fontainebleau — geschlagener Käse wie Sahne; hier kennt man jeden Käse persönlich und vakuumiert für die Reise"
+   },
+   "rating": 4.5,
+   "count": 266,
+   "addr": "75007, Rue de Grenelle",
+   "hours": {
+    "ru": "Вт–Пт 08:30–19:30, Сб до 19, Вс–Пн закрыто",
+    "en": "Tue–Fri 08:30–19:30, Sat till 19, Sun–Mon closed",
+    "pt": "Ter–Sex 08:30–19:30, Sáb até 19, Dom–Seg fechado",
+    "es": "Mar–Vie 08:30–19:30, Sáb hasta 19, Dom–Lun cerrado",
+    "de": "Di–Fr 08:30–19:30, Sa bis 19, So–Mo geschlossen"
+   },
+   "tags": [
+    "food",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "hemispheres",
+   "name": "Conservatoire des Hémisphères — Art du thé",
+   "lat": 48.8541931,
+   "lon": 2.3237283,
+   "place_id": "ChIJ4yw0dTBx5kcR2UPswrQiIsg",
+   "note": {
+    "ru": "Чай для подарков в латунной банке: выдвижные ящички с ароматами, ручная упаковка — ощущение лавки волшебных палочек",
+    "en": "Tea for gifts in a brass tin: pull-out scent drawers, hand-wrapping — feels like a wand shop",
+    "pt": "Chá para presentes em lata de latão: gavetas de aromas, embrulho à mão — parece uma loja de varinhas mágicas",
+    "es": "Té para regalos en lata de latón: cajones de aromas, envoltura a mano — parece una tienda de varitas mágicas",
+    "de": "Tee als Geschenk in der Messingdose: Duft-Schubladen, Handverpackung — wie ein Zauberstab-Laden"
+   },
+   "rating": 4.8,
+   "count": 125,
+   "addr": "75007, Rue du Bac",
+   "hours": {
+    "ru": "Пн–Пт 11–19:30, Сб 10–19:30, Вс 12:30–18:30",
+    "en": "Mon–Fri 11–19:30, Sat 10–19:30, Sun 12:30–18:30",
+    "pt": "Seg–Sex 11–19:30, Sáb 10–19:30, Dom 12:30–18:30",
+    "es": "Lun–Vie 11–19:30, Sáb 10–19:30, Dom 12:30–18:30",
+    "de": "Mo–Fr 11–19:30, Sa 10–19:30, So 12:30–18:30"
+   },
+   "tags": [
+    "shop",
+    "fine"
+   ],
+   "secret": true,
+   "reg": "bac"
+  },
+  {
+   "id": "bacglaces",
+   "name": "Le Bac à Glaces",
+   "lat": 48.8522438,
+   "lon": 2.3237896,
+   "place_id": "ChIJfdm_j9Rx5kcRcNav4DN4s5Q",
+   "note": {
+    "ru": "Мороженое на фермерских продуктах, милкшейки! Семейная лавка старой школы: жареная фисташка, ром-изюм, несладкие взбитые сливки",
+    "en": "Ice cream on farm produce, milkshakes! An old-school family shop: roasted pistachio, rum-raisin, unsweetened whipped cream",
+    "pt": "Gelado de produtos de quinta, batidos! Casa familiar à antiga: pistácio torrado, rum-passas, chantilly sem açúcar",
+    "es": "Helado de productos de granja, ¡batidos! Casa familiar a la antigua: pistacho tostado, ron-pasas, nata montada sin azúcar",
+    "de": "Eis aus Hofprodukten, Milchshakes! Altmodischer Familienladen: gerösteter Pistazie, Rum-Rosine, ungesüßte Schlagsahne"
+   },
+   "rating": 4.7,
+   "count": 1137,
+   "addr": "75007, Rue du Bac",
+   "hours": {
+    "ru": "Ежедневно 11:00–19:00",
+    "en": "Daily 11:00–19:00",
+    "pt": "Diariamente 11:00–19:00",
+    "es": "A diario 11:00–19:00",
+    "de": "Täglich 11:00–19:00"
+   },
+   "tags": [
+    "food",
+    "fine"
+   ],
+   "secret": true,
+   "reg": "bac"
+  },
+  {
+   "id": "certified",
+   "name": "Certified café",
+   "lat": 48.8540585,
+   "lon": 2.3248145,
+   "place_id": "ChIJzd7hUu5x5kcRoVqX5UAIGQ4",
+   "note": {
+    "ru": "Кофе: спешелти с собственной обжаркой и внутренним двориком. Супер район!",
+    "en": "Coffee: specialty with in-house roasting and a courtyard. Great neighbourhood!",
+    "pt": "Café: specialty com torra própria e pátio interior. Bairro fantástico!",
+    "es": "Café: specialty con tueste propio y patio interior. ¡Barrio genial!",
+    "de": "Kaffee: Specialty mit eigener Röstung und Innenhof. Super Viertel!"
+   },
+   "rating": 4.5,
+   "count": 1282,
+   "addr": "75007, Rue du Bac",
+   "hours": {
+    "ru": "Пн–Пт 08–18, Сб–Вс 09–19",
+    "en": "Mon–Fri 08–18, Sat–Sun 09–19",
+    "pt": "Seg–Sex 08–18, Sáb–Dom 09–19",
+    "es": "Lun–Vie 08–18, Sáb–Dom 09–19",
+    "de": "Mo–Fr 08–18, Sa–So 09–19"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "conticini",
+   "name": "Philippe Conticini Paris 7ème",
+   "lat": 48.8539669,
+   "lon": 2.3231085,
+   "place_id": "ChIJEWNIFqNx5kcRRffZ4wX2NyQ",
+   "note": {
+    "ru": "Гигантский круассан 🥐 — легенда кондитера Контичини; разбирают за час после открытия, Paris-Brest тоже премирован",
+    "en": "The giant croissant 🥐 — Conticini's legend; sells out within an hour of opening, the Paris-Brest is award-winning too",
+    "pt": "O croissant gigante 🥐 — a lenda de Conticini; esgota uma hora após abrir, o Paris-Brest também é premiado",
+    "es": "El cruasán gigante 🥐 — la leyenda de Conticini; se agota una hora tras abrir, el Paris-Brest también es premiado",
+    "de": "Das Riesen-Croissant 🥐 — Conticinis Legende; eine Stunde nach Öffnung ausverkauft, auch der Paris-Brest ist preisgekrönt"
+   },
+   "rating": 4.1,
+   "count": 1069,
+   "addr": "75007, Rue de Varenne",
+   "hours": {
+    "ru": "Утро–вечер, идти к открытию",
+    "en": "Morning–evening, come at opening",
+    "pt": "Manhã–noite, ir à abertura",
+    "es": "Mañana–tarde, ir a la apertura",
+    "de": "Morgens–abends, zur Öffnung kommen"
+   },
+   "tags": [
+    "bakery",
+    "fine"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "bonmarche",
+   "name": "Le Bon Marché",
+   "lat": 48.851204,
+   "lon": 2.324485,
+   "place_id": "ChIJAYa7ntNx5kcRcmJxXPZ7m9k",
+   "note": {
+    "ru": "Старейший универмаг мира (1852): спокойная роскошь без толпы Lafayette; финал маршрута — La Grande Épicerie, гастрономический этаж-легенда",
+    "en": "The world's oldest department store (1852): calm luxury without the Lafayette crowds; end the route at La Grande Épicerie, the legendary food hall",
+    "pt": "O mais antigo grande armazém do mundo (1852): luxo calmo sem as multidões do Lafayette; termina na La Grande Épicerie, o lendário piso gourmet",
+    "es": "El gran almacén más antiguo del mundo (1852): lujo tranquilo sin las multitudes de Lafayette; termina en La Grande Épicerie, la legendaria planta gourmet",
+    "de": "Das älteste Kaufhaus der Welt (1852): ruhiger Luxus ohne Lafayette-Massen; zum Abschluss La Grande Épicerie, die legendäre Gourmet-Etage"
+   },
+   "rating": 4.5,
+   "count": 21898,
+   "addr": "75007, Rue de Sèvres",
+   "hours": {
+    "ru": "Ежедневно 10:00–19:45",
+    "en": "Daily 10:00–19:45",
+    "pt": "Diariamente 10:00–19:45",
+    "es": "A diario 10:00–19:45",
+    "de": "Täglich 10:00–19:45"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "orsay",
+   "name": "Musée d'Orsay",
+   "lat": 48.8599614,
+   "lon": 2.3265614,
+   "place_id": "ChIJG5Qwtitu5kcR2CNEsYy9cdA",
+   "note": {
+    "ru": "Музей в старом вокзале: крупнейшая коллекция импрессионистов в мире; в четверг открыто до 21:45 — вечером тише",
+    "en": "A museum inside an old railway station: the world's largest Impressionist collection; Thursdays open till 21:45 — quieter in the evening",
+    "pt": "Museu numa antiga estação: a maior coleção impressionista do mundo; quinta até às 21:45 — mais calmo à noite",
+    "es": "Museo en una antigua estación: la mayor colección impresionista del mundo; jueves hasta las 21:45 — más tranquilo por la noche",
+    "de": "Museum im alten Bahnhof: die größte Impressionisten-Sammlung der Welt; donnerstags bis 21:45 — abends ruhiger"
+   },
+   "rating": 4.8,
+   "count": 115083,
+   "addr": "75007",
+   "hours": {
+    "ru": "Вт–Вс 09:30–18, Чт до 21:45, Пн закрыто",
+    "en": "Tue–Sun 09:30–18, Thu till 21:45, Mon closed",
+    "pt": "Ter–Dom 09:30–18, Qui até 21:45, Seg fechado",
+    "es": "Mar–Dom 09:30–18, Jue hasta 21:45, Lun cerrado",
+    "de": "Di–So 09:30–18, Do bis 21:45, Mo geschlossen"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "entrecote",
+   "name": "Le Relais de l'Entrecôte",
+   "lat": 48.8546373,
+   "lon": 2.3327323,
+   "place_id": "ChIJzaRYiNdx5kcRlxQ89kuogt0",
+   "note": {
+    "ru": "Популярный, очереди: одно блюдо — стейк-фри с секретным соусом, добавка положена; бронь не берут, приходить к открытию",
+    "en": "Popular, with queues: one dish — steak-frites with the secret sauce, seconds included; no reservations, come at opening",
+    "pt": "Popular, com filas: um só prato — steak-frites com o molho secreto, repetição incluída; sem reservas, chegar à abertura",
+    "es": "Popular, con colas: un solo plato — steak-frites con la salsa secreta, repetición incluida; sin reservas, llegar a la apertura",
+    "de": "Beliebt, mit Schlangen: ein Gericht — Steak-Frites mit Geheimsauce, Nachschlag inklusive; keine Reservierung, zur Öffnung kommen"
+   },
+   "rating": 4.2,
+   "count": 8309,
+   "addr": "75006, Сен-Жермен",
+   "hours": {
+    "ru": "Ежедневно 12–14:30, 18:30–23",
+    "en": "Daily 12–14:30, 18:30–23",
+    "pt": "Diariamente 12–14:30, 18:30–23",
+    "es": "A diario 12–14:30, 18:30–23",
+    "de": "Täglich 12–14:30, 18:30–23"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "procope",
+   "name": "Le Procope",
+   "lat": 48.8529913,
+   "lon": 2.3387975,
+   "place_id": "ChIJdQn7zN5x5kcRhKnVo8EDJS0",
+   "note": {
+    "ru": "Старейшее кафе Парижа (1686): здесь сидели Вольтер, Франклин и Наполеон; интерьер — живой музей",
+    "en": "The oldest café in Paris (1686): Voltaire, Franklin and Napoleon sat here; the interior is a living museum",
+    "pt": "O café mais antigo de Paris (1686): Voltaire, Franklin e Napoleão sentaram-se aqui; o interior é um museu vivo",
+    "es": "El café más antiguo de París (1686): aquí se sentaron Voltaire, Franklin y Napoleón; el interior es un museo vivo",
+    "de": "Das älteste Café von Paris (1686): hier saßen Voltaire, Franklin und Napoleon; das Interieur ist ein lebendes Museum"
+   },
+   "rating": 4.5,
+   "count": 27247,
+   "addr": "75006",
+   "hours": {
+    "ru": "Ежедневно 12:00–00:00",
+    "en": "Daily 12:00–00:00",
+    "pt": "Diariamente 12:00–00:00",
+    "es": "A diario 12:00–00:00",
+    "de": "Täglich 12:00–00:00"
+   },
+   "tags": [
+    "food",
+    "sight"
+   ],
+   "secret": false,
+   "reg": "bac"
+  },
+  {
+   "id": "estrapade",
+   "name": "Place de l'Estrapade",
+   "lat": 48.8452061,
+   "lon": 2.3451192,
+   "place_id": "ChIJm8My7ehx5kcRTTsoNlaMrN8",
+   "note": {
+    "ru": "Дом Эмили: та самая площадь из «Эмили в Париже» — дом, булочная и ресторан в трёх шагах друг от друга",
+    "en": "Emily's home: the square from 'Emily in Paris' — her building, bakery and restaurant three steps apart",
+    "pt": "A casa da Emily: a praça de «Emily in Paris» — o prédio, a padaria e o restaurante a três passos",
+    "es": "La casa de Emily: la plaza de «Emily in Paris» — el edificio, la panadería y el restaurante a tres pasos",
+    "de": "Emilys Zuhause: der Platz aus «Emily in Paris» — Haus, Bäckerei und Restaurant nur drei Schritte auseinander"
+   },
+   "rating": null,
+   "count": null,
+   "addr": "75005",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": true,
+   "reg": "latin"
+  },
+  {
+   "id": "moderne",
+   "name": "Boulangerie Moderne",
+   "lat": 48.845497,
+   "lon": 2.3441853,
+   "place_id": "ChIJPbYfEOhx5kcRQYaFqlNa7yg",
+   "note": {
+    "ru": "«Эмили-булочная»: pain au chocolat, ради которого стоит очередь из сериала — и он честно хорош",
+    "en": "The 'Emily bakery': the pain au chocolat people queue for because of the show — and it's honestly good",
+    "pt": "A «padaria da Emily»: o pain au chocolat pelo qual se faz fila por causa da série — e é mesmo bom",
+    "es": "La «panadería de Emily»: el pain au chocolat por el que hacen cola por la serie — y es realmente bueno",
+    "de": "Die «Emily-Bäckerei»: das Pain au Chocolat, für das man wegen der Serie ansteht — und es ist ehrlich gut"
+   },
+   "rating": 4.5,
+   "count": 1921,
+   "addr": "75005, Rue des Fossés St-Jacques",
+   "hours": {
+    "ru": "Пн–Пт 07–20, Сб–Вс закрыто",
+    "en": "Mon–Fri 07–20, Sat–Sun closed",
+    "pt": "Seg–Sex 07–20, Sáb–Dom fechado",
+    "es": "Lun–Vie 07–20, Sáb–Dom cerrado",
+    "de": "Mo–Fr 07–20, Sa–So geschlossen"
+   },
+   "tags": [
+    "bakery",
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "terranera",
+   "name": "Terra Nera",
+   "lat": 48.8454016,
+   "lon": 2.3442824,
+   "place_id": "ChIJF2r0D-hx5kcReqneTycZGEE",
+   "note": {
+    "ru": "«Эмили-ресторан» (у Габриэля): на деле — итальянский, ризотто с морепродуктами; зал маленький, бронировать",
+    "en": "The 'Emily restaurant' (Gabriel's): actually Italian — seafood risotto; a small room, book ahead",
+    "pt": "O «restaurante da Emily» (do Gabriel): na verdade italiano — risotto de marisco; sala pequena, reservar",
+    "es": "El «restaurante de Emily» (de Gabriel): en realidad italiano — risotto de marisco; sala pequeña, reservar",
+    "de": "Das «Emily-Restaurant» (Gabriels): tatsächlich italienisch — Meeresfrüchte-Risotto; kleiner Raum, reservieren"
+   },
+   "rating": 4.2,
+   "count": 1334,
+   "addr": "75005, Rue des Fossés St-Jacques",
+   "hours": {
+    "ru": "Пн–Сб 12–14, 19–22, Вс закрыто",
+    "en": "Mon–Sat 12–14, 19–22, Sun closed",
+    "pt": "Seg–Sáb 12–14, 19–22, Dom fechado",
+    "es": "Lun–Sáb 12–14, 19–22, Dom cerrado",
+    "de": "Mo–Sa 12–14, 19–22, So geschlossen"
+   },
+   "tags": [
+    "food",
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "pantheon",
+   "name": "Panthéon",
+   "lat": 48.8462218,
+   "lon": 2.3464138,
+   "place_id": "ChIJc8mX0udx5kcRWKcjTwDr5QA",
+   "note": {
+    "ru": "Пантеон: усыпальница великих и маятник Фуко — в двух шагах от площади Эмили",
+    "en": "The Panthéon: resting place of the greats and Foucault's pendulum — two steps from Emily's square",
+    "pt": "O Panteão: morada dos grandes e o pêndulo de Foucault — a dois passos da praça da Emily",
+    "es": "El Panteón: morada de los grandes y el péndulo de Foucault — a dos pasos de la plaza de Emily",
+    "de": "Das Panthéon: Ruhestätte der Großen und Foucaults Pendel — zwei Schritte von Emilys Platz"
+   },
+   "rating": 4.6,
+   "count": 68346,
+   "addr": "75005",
+   "hours": {
+    "ru": "Ежедневно 10:00–18:30",
+    "en": "Daily 10:00–18:30",
+    "pt": "Diariamente 10:00–18:30",
+    "es": "A diario 10:00–18:30",
+    "de": "Täglich 10:00–18:30"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "shakespeare",
+   "name": "Shakespeare and Company",
+   "lat": 48.8525632,
+   "lon": 2.3471303,
+   "place_id": "ChIJ_7ZXHuFx5kcRs1LnTeCsOBM",
+   "note": {
+    "ru": "Книжный-легенда напротив Нотр-Дама: покупку штампуют фирменной печатью, наверху — читальная комната и пианино",
+    "en": "The legendary bookshop opposite Notre-Dame: purchases get the house stamp; upstairs — a reading room and a piano",
+    "pt": "A livraria lendária frente a Notre-Dame: carimbam a compra com o selo da casa; em cima — sala de leitura e piano",
+    "es": "La librería legendaria frente a Notre-Dame: sellan la compra con el sello de la casa; arriba — sala de lectura y piano",
+    "de": "Die legendäre Buchhandlung gegenüber Notre-Dame: Käufe bekommen den Hausstempel; oben Lesesaal und Klavier"
+   },
+   "rating": 4.6,
+   "count": 25347,
+   "addr": "75005, Rue de la Bûcherie",
+   "hours": {
+    "ru": "Пн–Ср 10–20, Чт–Сб 10–21, Вс 12–19",
+    "en": "Mon–Wed 10–20, Thu–Sat 10–21, Sun 12–19",
+    "pt": "Seg–Qua 10–20, Qui–Sáb 10–21, Dom 12–19",
+    "es": "Lun–Mié 10–20, Jue–Sáb 10–21, Dom 12–19",
+    "de": "Mo–Mi 10–20, Do–Sa 10–21, So 12–19"
+   },
+   "tags": [
+    "shop",
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "notredame",
+   "name": "Notre-Dame de Paris",
+   "lat": 48.8529682,
+   "lon": 2.3499021,
+   "place_id": "ChIJATr1n-Fx5kcRjQb6q6cdQDY",
+   "note": {
+    "ru": "Нотр-Дам после реставрации: внутрь — по бесплатной брони заранее; вечером у Сены — лучший ракурс на апсиду",
+    "en": "Notre-Dame after the restoration: book the free timed entry in advance; evening by the Seine gives the best view of the apse",
+    "pt": "Notre-Dame após o restauro: reservar a entrada gratuita com antecedência; à noite, junto ao Sena, a melhor vista da abside",
+    "es": "Notre-Dame tras la restauración: reserva la entrada gratuita con antelación; por la tarde, junto al Sena, la mejor vista del ábside",
+    "de": "Notre-Dame nach der Restaurierung: kostenlosen Zeitslot vorab buchen; abends an der Seine der beste Blick auf die Apsis"
+   },
+   "rating": 4.7,
+   "count": 95493,
+   "addr": "Île de la Cité",
+   "hours": {
+    "ru": "Ежедневно ≈08:00–19:00",
+    "en": "Daily ≈08:00–19:00",
+    "pt": "Diariamente ≈08:00–19:00",
+    "es": "A diario ≈08:00–19:00",
+    "de": "Täglich ≈08:00–19:00"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "saintechapelle",
+   "name": "Sainte-Chapelle",
+   "lat": 48.855375,
+   "lon": 2.3449609,
+   "place_id": "ChIJR3122B9u5kcRaCck3PlB9DM",
+   "note": {
+    "ru": "Витражи, от которых замолкает даже толпа: XIII век, стены из света; билеты со слотом брать заранее",
+    "en": "Stained glass that silences even the crowd: 13th century, walls made of light; buy timed tickets in advance",
+    "pt": "Vitrais que calam até a multidão: século XIII, paredes de luz; comprar bilhetes com hora marcada",
+    "es": "Vidrieras que callan incluso a la multitud: siglo XIII, paredes de luz; comprar entradas con hora antes",
+    "de": "Glasfenster, die selbst die Menge verstummen lassen: 13. Jahrhundert, Wände aus Licht; Zeitfenster-Tickets vorab kaufen"
+   },
+   "rating": 4.6,
+   "count": 49416,
+   "addr": "Île de la Cité",
+   "hours": {
+    "ru": "Ежедневно 09:00–19:00",
+    "en": "Daily 09:00–19:00",
+    "pt": "Diariamente 09:00–19:00",
+    "es": "A diario 09:00–19:00",
+    "de": "Täglich 09:00–19:00"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "latin"
+  },
+  {
+   "id": "louvre",
+   "name": "Musée du Louvre",
+   "lat": 48.8606111,
+   "lon": 2.337644,
+   "place_id": "ChIJD3uTd9hx5kcR1IQvGfr8dbk",
+   "note": {
+    "ru": "Лувр: брать слот на утро среды/пятницы (открыто до 21) и идти не к Джоконде, а от неё — залы пустеют мгновенно",
+    "en": "The Louvre: book a Wednesday/Friday slot (open till 9 pm) and walk away from the Mona Lisa, not towards it — rooms empty instantly",
+    "pt": "O Louvre: reservar quarta/sexta (aberto até às 21) e caminhar para longe da Mona Lisa — as salas esvaziam num instante",
+    "es": "El Louvre: reserva miércoles/viernes (abierto hasta las 21) y camina alejándote de la Mona Lisa — las salas se vacían al instante",
+    "de": "Der Louvre: Mittwoch/Freitag buchen (bis 21 Uhr geöffnet) und von der Mona Lisa weggehen — die Säle leeren sich sofort"
+   },
+   "rating": 4.7,
+   "count": 370709,
+   "addr": "75001",
+   "hours": {
+    "ru": "Ср, Пт 09–21; Пн, Чт–Вс 09–18; Вт закрыто",
+    "en": "Wed, Fri 09–21; Mon, Thu–Sun 09–18; Tue closed",
+    "pt": "Qua, Sex 09–21; Seg, Qui–Dom 09–18; Ter fechado",
+    "es": "Mié, Vie 09–21; Lun, Jue–Dom 09–18; Mar cerrado",
+    "de": "Mi, Fr 09–21; Mo, Do–So 09–18; Di geschlossen"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "palaisroyal",
+   "name": "Palais-Royal · колонны Бюрена",
+   "lat": 48.863612,
+   "lon": 2.3370336,
+   "place_id": "ChIJDXdMUSRu5kcRIaPd51vDi3w",
+   "note": {
+    "ru": "Каменные колонны — современное искусство во дворе XVII века; тихий сад-каре за спиной Лувра, вход бесплатный",
+    "en": "Striped stone columns — contemporary art in a 17th-century courtyard; a quiet garden square behind the Louvre, free entry",
+    "pt": "Colunas de pedra às riscas — arte contemporânea num pátio do séc. XVII; jardim tranquilo atrás do Louvre, entrada livre",
+    "es": "Columnas de piedra a rayas — arte contemporáneo en un patio del s. XVII; jardín tranquilo tras el Louvre, entrada libre",
+    "de": "Gestreifte Steinsäulen — zeitgenössische Kunst im Hof des 17. Jahrhunderts; stiller Garten hinter dem Louvre, Eintritt frei"
+   },
+   "rating": 4.5,
+   "count": 2896,
+   "addr": "75001",
+   "hours": {
+    "ru": "Ежедневно 08:00–20:30",
+    "en": "Daily 08:00–20:30",
+    "pt": "Diariamente 08:00–20:30",
+    "es": "A diario 08:00–20:30",
+    "de": "Täglich 08:00–20:30"
+   },
+   "tags": [
+    "sight",
+    "hike"
+   ],
+   "secret": true,
+   "reg": "louvre"
+  },
+  {
+   "id": "tuileries",
+   "name": "Port des Tuileries",
+   "lat": 48.8616119,
+   "lon": 2.32729,
+   "place_id": "ChIJm6sO-Ctu5kcRPt4QjjVVcXE",
+   "note": {
+    "ru": "Стеклянный пешеходный мост и нижняя набережная Сены: прогулка у воды вместо толпы наверху",
+    "en": "The glass footbridge and the lower Seine quay: a walk by the water instead of the crowds above",
+    "pt": "A ponte pedonal de vidro e o cais baixo do Sena: passeio junto à água em vez da multidão lá em cima",
+    "es": "La pasarela de cristal y el muelle bajo del Sena: paseo junto al agua en vez de la multitud de arriba",
+    "de": "Die gläserne Fußgängerbrücke und das untere Seine-Ufer: Spaziergang am Wasser statt Menschenmenge oben"
+   },
+   "rating": null,
+   "count": null,
+   "addr": "75001, набережная",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight",
+    "hike"
+   ],
+   "secret": true,
+   "reg": "louvre"
+  },
+  {
+   "id": "vendome",
+   "name": "Place Vendôme",
+   "lat": 48.8674008,
+   "lon": 2.3295635,
+   "place_id": "ChIJBWOM7jFu5kcR55OhA4bMQGA",
+   "note": {
+    "ru": "Площадь-витрина высокого ювелирного: колонна Наполеона и Ritz; вечером подсветка витрин — отдельное шоу",
+    "en": "The showcase square of high jewellery: Napoleon's column and the Ritz; the lit windows at night are a show of their own",
+    "pt": "A praça-montra da alta joalharia: a coluna de Napoleão e o Ritz; à noite as montras iluminadas são um espetáculo",
+    "es": "La plaza-escaparate de la alta joyería: la columna de Napoleón y el Ritz; de noche los escaparates iluminados son un espectáculo",
+    "de": "Der Schauplatz der Haute Joaillerie: Napoleons Säule und das Ritz; abends sind die beleuchteten Vitrinen ein eigenes Schauspiel"
+   },
+   "rating": null,
+   "count": null,
+   "addr": "75001",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "angelina",
+   "name": "Angelina (Rivoli)",
+   "lat": 48.8650898,
+   "lon": 2.3284434,
+   "place_id": "ChIJWVhEdi5u5kcRRl0Vdpqt7RI",
+   "note": {
+    "ru": "Пирожное Монблан (каштановое!) и легендарный горячий шоколад L'Africain; будни к открытию 08:30 — без очереди",
+    "en": "The Mont-Blanc (chestnut!) and the legendary L'Africain hot chocolate; weekdays at the 8:30 opening — no queue",
+    "pt": "O Mont-Blanc (castanha!) e o lendário chocolate quente L'Africain; dias úteis à abertura das 08:30 — sem fila",
+    "es": "El Mont-Blanc (¡castaña!) y el legendario chocolate caliente L'Africain; entre semana a la apertura de las 08:30 — sin cola",
+    "de": "Das Mont-Blanc (Kastanie!) und die legendäre heiße Schokolade L'Africain; wochentags zur Öffnung um 8:30 — ohne Schlange"
+   },
+   "rating": 4.3,
+   "count": 18679,
+   "addr": "75001, Rue de Rivoli",
+   "hours": {
+    "ru": "Ежедневно 08:30–19:30",
+    "en": "Daily 08:30–19:30",
+    "pt": "Diariamente 08:30–19:30",
+    "es": "A diario 08:30–19:30",
+    "de": "Täglich 08:30–19:30"
+   },
+   "tags": [
+    "fine",
+    "food"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "hevin",
+   "name": "Jean-Paul Hévin",
+   "lat": 48.8661757,
+   "lon": 2.3291741,
+   "place_id": "ChIJuaROGy5u5kcR9QDT8bp8x2U",
+   "note": {
+    "ru": "Макаруны, пирожные, шоколад: шоколадные макаруны — возможно, лучшие в городе; лавка спрятана во внутреннем дворике",
+    "en": "Macarons, pastries, chocolate: the chocolate macarons may be the city's best; the shop hides in an inner courtyard",
+    "pt": "Macarons, bolos, chocolate: os macarons de chocolate talvez sejam os melhores da cidade; a loja esconde-se num pátio interior",
+    "es": "Macarons, pasteles, chocolate: los macarons de chocolate quizá sean los mejores de la ciudad; la tienda se esconde en un patio interior",
+    "de": "Macarons, Gebäck, Schokolade: die Schoko-Macarons sind vielleicht die besten der Stadt; der Laden versteckt sich im Innenhof"
+   },
+   "rating": 4.5,
+   "count": 415,
+   "addr": "75001, Rue Saint-Honoré",
+   "hours": {
+    "ru": "Пн–Сб 10–19:30, Вс закрыто",
+    "en": "Mon–Sat 10–19:30, Sun closed",
+    "pt": "Seg–Sáb 10–19:30, Dom fechado",
+    "es": "Lun–Sáb 10–19:30, Dom cerrado",
+    "de": "Mo–Sa 10–19:30, So geschlossen"
+   },
+   "tags": [
+    "fine"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "shukery",
+   "name": "Shukery coffee & matcha",
+   "lat": 48.8655651,
+   "lon": 2.334734,
+   "place_id": "ChIJfYvffNRv5kcRKiBqfb0aXms",
+   "note": {
+    "ru": "Кофе и матча: взбивают при тебе; манго-матча и эгг-сандо — пит-стоп между Лувром и Оперой",
+    "en": "Coffee and matcha: whisked in front of you; the mango matcha and egg sando make a pit stop between the Louvre and the Opéra",
+    "pt": "Café e matcha: batido à tua frente; o matcha de manga e o egg sando são a paragem entre o Louvre e a Ópera",
+    "es": "Café y matcha: batido delante de ti; el matcha de mango y el egg sando son la parada entre el Louvre y la Ópera",
+    "de": "Kaffee und Matcha: vor deinen Augen aufgeschlagen; Mango-Matcha und Egg-Sando — der Boxenstopp zwischen Louvre und Oper"
+   },
+   "rating": 4.8,
+   "count": 1354,
+   "addr": "75001, Av. de l'Opéra",
+   "hours": {
+    "ru": "Ежедневно ≈07:30–21:00",
+    "en": "Daily ≈07:30–21:00",
+    "pt": "Diariamente ≈07:30–21:00",
+    "es": "A diario ≈07:30–21:00",
+    "de": "Täglich ≈07:30–21:00"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "zen",
+   "name": "Zen",
+   "lat": 48.86405,
+   "lon": 2.334654,
+   "place_id": "ChIJKzegdyVu5kcRmu5GJO1fAiY",
+   "note": {
+    "ru": "Японский: идзакая у японского квартала; унаги-дон и тираси, в обед очередь из местных — верный знак",
+    "en": "Japanese: an izakaya by the Japanese quarter; unagi-don and chirashi, a local lunch queue — always a good sign",
+    "pt": "Japonês: izakaya junto ao bairro japonês; unagi-don e chirashi, fila de locais ao almoço — bom sinal",
+    "es": "Japonés: izakaya junto al barrio japonés; unagi-don y chirashi, cola de locales al mediodía — buena señal",
+    "de": "Japanisch: Izakaya am japanischen Viertel; Unagi-Don und Chirashi, mittags Schlange von Einheimischen — gutes Zeichen"
+   },
+   "rating": 4.6,
+   "count": 2746,
+   "addr": "75001, Rue de l'Échelle",
+   "hours": {
+    "ru": "Ежедневно 12–14:30, 19–22",
+    "en": "Daily 12–14:30, 19–22",
+    "pt": "Diariamente 12–14:30, 19–22",
+    "es": "A diario 12–14:30, 19–22",
+    "de": "Täglich 12–14:30, 19–22"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "aki",
+   "name": "Aki",
+   "lat": 48.8661874,
+   "lon": 2.3353669,
+   "place_id": "ChIJNx4iyE9v5kcR2AONc2_TSX4",
+   "note": {
+    "ru": "Японский на Rue Sainte-Anne: окономияки, карри и холодная соба; порции домашние, цены честные",
+    "en": "Japanese on Rue Sainte-Anne: okonomiyaki, curry and cold soba; homely portions, honest prices",
+    "pt": "Japonês na Rue Sainte-Anne: okonomiyaki, caril e soba fria; doses caseiras, preços honestos",
+    "es": "Japonés en Rue Sainte-Anne: okonomiyaki, curry y soba fría; raciones caseras, precios honestos",
+    "de": "Japanisch in der Rue Sainte-Anne: Okonomiyaki, Curry und kalte Soba; hausgemachte Portionen, ehrliche Preise"
+   },
+   "rating": 4.4,
+   "count": 4777,
+   "addr": "75001, Rue Sainte-Anne",
+   "hours": {
+    "ru": "Пн–Сб 11:30–23, Вс закрыто",
+    "en": "Mon–Sat 11:30–23, Sun closed",
+    "pt": "Seg–Sáb 11:30–23, Dom fechado",
+    "es": "Lun–Sáb 11:30–23, Dom cerrado",
+    "de": "Mo–Sa 11:30–23, So geschlossen"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "westwood",
+   "name": "Vivienne Westwood",
+   "lat": 48.8640639,
+   "lon": 2.3336,
+   "place_id": "ChIJv6j51jxu5kcRDVl2MQ8Wwy4",
+   "note": {
+    "ru": "Бутик Вествуд на Сент-Оноре: главный этаж внизу, полная линейка украшений и часов",
+    "en": "The Westwood boutique on Saint-Honoré: the main floor is downstairs, full jewellery and watch lines",
+    "pt": "A boutique Westwood em Saint-Honoré: o piso principal é em baixo, linha completa de joias e relógios",
+    "es": "La boutique Westwood en Saint-Honoré: la planta principal está abajo, línea completa de joyas y relojes",
+    "de": "Die Westwood-Boutique in Saint-Honoré: Hauptetage unten, volles Schmuck- und Uhrensortiment"
+   },
+   "rating": 4.0,
+   "count": 605,
+   "addr": "75001, Rue Saint-Honoré",
+   "hours": {
+    "ru": "Пн–Сб 10:30–18:45, Вс закрыто",
+    "en": "Mon–Sat 10:30–18:45, Sun closed",
+    "pt": "Seg–Sáb 10:30–18:45, Dom fechado",
+    "es": "Lun–Sáb 10:30–18:45, Dom cerrado",
+    "de": "Mo–Sa 10:30–18:45, So geschlossen"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": false,
+   "reg": "louvre"
+  },
+  {
+   "id": "noir",
+   "name": "Noir Coffee Shop (Louvre)",
+   "lat": 48.8619888,
+   "lon": 2.3396529,
+   "place_id": "ChIJc2FOYwBv5kcR268kDc1eKhk",
+   "note": {
+    "ru": "Кофе: филиал одной из лучших парижских обжарок в двух шагах от Лувра — просторно и много света",
+    "en": "Coffee: a branch of one of Paris's best roasters two steps from the Louvre — spacious and full of light",
+    "pt": "Café: filial de uma das melhores torrefações de Paris a dois passos do Louvre — espaçoso e cheio de luz",
+    "es": "Café: sucursal de uno de los mejores tostadores de París a dos pasos del Louvre — amplio y lleno de luz",
+    "de": "Kaffee: Filiale einer der besten Pariser Röstereien, zwei Schritte vom Louvre — großzügig und lichtdurchflutet"
+   },
+   "rating": 4.5,
+   "count": 53,
+   "addr": "75001, Rue de Marengo",
+   "hours": {
+    "ru": "Пн–Пт 08–18, Сб–Вс 09–19",
+    "en": "Mon–Fri 08–18, Sat–Sun 09–19",
+    "pt": "Seg–Sex 08–18, Sáb–Dom 09–19",
+    "es": "Lun–Vie 08–18, Sáb–Dom 09–19",
+    "de": "Mo–Fr 08–18, Sa–So 09–19"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "reg": "louvre"
+  },
+  {
+   "id": "babi",
+   "name": "Babi",
+   "lat": 48.8656663,
+   "lon": 2.3452016,
+   "place_id": "ChIJyfgOmH5v5kcR5RHYr1AtHCc",
+   "note": {
+    "ru": "Рекомендация Moveable Feast Paris: молодой дуэт шеф+сомелье, сет из 5 блюд с винным пейрингом; камерно, бронировать",
+    "en": "A Moveable Feast Paris pick: a young chef+sommelier duo, 5-course tasting with wine pairing; intimate, book ahead",
+    "pt": "Recomendação do Moveable Feast Paris: dupla jovem chef+sommelier, menu de 5 pratos com harmonização; intimista, reservar",
+    "es": "Recomendación de Moveable Feast Paris: dúo joven chef+sumiller, menú de 5 platos con maridaje; íntimo, reservar",
+    "de": "Empfehlung von Moveable Feast Paris: junges Chef+Sommelier-Duo, 5-Gänge-Menü mit Weinbegleitung; intim, reservieren"
+   },
+   "rating": 4.8,
+   "count": 211,
+   "addr": "75002, Rue Mandar",
+   "hours": {
+    "ru": "Вт–Чт 19–00, Пт–Сб также обед 12–15",
+    "en": "Tue–Thu 19–24, Fri–Sat also lunch 12–15",
+    "pt": "Ter–Qui 19–24, Sex–Sáb também almoço 12–15",
+    "es": "Mar–Jue 19–24, Vie–Sáb también almuerzo 12–15",
+    "de": "Di–Do 19–24, Fr–Sa auch Mittag 12–15"
+   },
+   "tags": [
+    "food",
+    "fine"
+   ],
+   "secret": true,
+   "reg": "louvre"
+  },
+  {
+   "id": "panoramas",
+   "name": "Passage des Panoramas",
+   "lat": 48.8715109,
+   "lon": 2.341904,
+   "place_id": "ChIJM_82Pjxu5kcRe4g8VvgAGQI",
+   "note": {
+    "ru": "Старейший пассаж Парижа — марки, монеты, винтажные вывески… машина времени 1799 года. Приходить утром: всё открыто и живёт; дальше насквозь в Jouffroy и Verdeau — три пассажа одной прогулкой 👍",
+    "en": "The oldest passage in Paris — stamps, coins, vintage signs… an 1799 time machine. Come in the morning when everything is open and alive; continue straight through into Jouffroy and Verdeau — three passages in one walk 👍",
+    "pt": "A passagem mais antiga de Paris — selos, moedas, letreiros vintage… máquina do tempo de 1799. Vir de manhã: tudo aberto e vivo; seguir a direito para Jouffroy e Verdeau — três passagens num só passeio 👍",
+    "es": "El pasaje más antiguo de París — sellos, monedas, letreros vintage… una máquina del tiempo de 1799. Venir por la mañana: todo abierto y vivo; seguir de largo hacia Jouffroy y Verdeau — tres pasajes en un solo paseo 👍",
+    "de": "Die älteste Passage von Paris — Briefmarken, Münzen, Vintage-Schilder… eine Zeitmaschine von 1799. Morgens kommen: alles offen und lebendig; weiter durch nach Jouffroy und Verdeau — drei Passagen in einem Spaziergang 👍"
+   },
+   "rating": 4.5,
+   "count": 3343,
+   "addr": "75002, Bd Montmartre",
+   "hours": {
+    "ru": "Ежедневно 06:00–00:00",
+    "en": "Daily 06:00–00:00",
+    "pt": "Diariamente 06:00–00:00",
+    "es": "A diario 06:00–00:00",
+    "de": "Täglich 06:00–00:00"
+   },
+   "tags": [
+    "hike",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "jouffroy",
+   "name": "Passage Jouffroy",
+   "lat": 48.8723694,
+   "lon": 2.3421357,
+   "place_id": "ChIJt8TDkz5u5kcR8m_DZVb04NE",
+   "note": {
+    "ru": "Через дорогу от Panoramas — заходишь как в продолжение. Стекло, металл, книжные со старыми изданиями и игрушечная лавка как из детства. Внутри прячется отель Chopin 😉 Чайная Le Valentin — законная пауза на пирожное",
+    "en": "Across the road from Panoramas — you enter as if continuing. Glass, iron, bookshops with old editions and a toy shop straight out of childhood. The Hotel Chopin hides inside 😉 The Le Valentin tearoom is a legitimate pastry pause",
+    "pt": "Do outro lado da rua do Panoramas — entra-se como continuação. Vidro, ferro, alfarrabistas e uma loja de brinquedos saída da infância. Lá dentro esconde-se o Hotel Chopin 😉 O salão de chá Le Valentin é uma pausa legítima para um doce",
+    "es": "Al otro lado de Panoramas — entras como en su continuación. Cristal, hierro, librerías con ediciones antiguas y una juguetería salida de la infancia. Dentro se esconde el Hotel Chopin 😉 El salón de té Le Valentin es una pausa legítima para un pastel",
+    "de": "Gegenüber von Panoramas — man tritt ein wie in die Fortsetzung. Glas, Eisen, Buchläden mit alten Ausgaben und ein Spielzeugladen wie aus der Kindheit. Drinnen versteckt sich das Hotel Chopin 😉 Der Teesalon Le Valentin ist eine legitime Gebäck-Pause"
+   },
+   "rating": 4.5,
+   "count": null,
+   "addr": "75009",
+   "hours": {
+    "ru": "Ежедневно 07:00–21:30",
+    "en": "Daily 07:00–21:30",
+    "pt": "Diariamente 07:00–21:30",
+    "es": "A diario 07:00–21:30",
+    "de": "Täglich 07:00–21:30"
+   },
+   "tags": [
+    "hike",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "verdeau",
+   "name": "Passage Verdeau",
+   "lat": 48.8734638,
+   "lon": 2.3423251,
+   "place_id": "ChIJMwoy-z5u5kcR5zya_k4ikO4",
+   "note": {
+    "ru": "Третье звено цепочки пассажей: самый тихий — старые книги, гравюры, фотоаппараты; коллекционерская часть маршрута",
+    "en": "The third link in the passage chain: the quietest — old books, prints, cameras; the collector's leg of the walk",
+    "pt": "O terceiro elo da cadeia de passagens: a mais calma — livros antigos, gravuras, câmaras; a etapa dos colecionadores",
+    "es": "El tercer eslabón de la cadena de pasajes: el más tranquilo — libros antiguos, grabados, cámaras; la etapa coleccionista",
+    "de": "Das dritte Glied der Passagen-Kette: die ruhigste — alte Bücher, Drucke, Kameras; die Sammler-Etappe"
+   },
+   "rating": null,
+   "count": null,
+   "addr": "75009",
+   "hours": {
+    "ru": "Ежедневно 07:30–21:00",
+    "en": "Daily 07:30–21:00",
+    "pt": "Diariamente 07:30–21:00",
+    "es": "A diario 07:30–21:00",
+    "de": "Täglich 07:30–21:00"
+   },
+   "tags": [
+    "hike",
+    "shop"
+   ],
+   "secret": true,
+   "reg": "opera"
+  },
+  {
+   "id": "vivienne",
+   "name": "Galerie Vivienne",
+   "lat": 48.8663533,
+   "lon": 2.3394854,
+   "place_id": "ChIJuwjIqyRu5kcRP4GCzHGeUSk",
+   "note": {
+    "ru": "Самый парадный пассаж (1823): мозаичные полы, неоклассика, винный погреб Legrand; «Пассаж 4» — финал прогулки по галереям",
+    "en": "The most stately passage (1823): mosaic floors, neoclassicism, the Legrand wine cellar; 'Passage 4' — the finale of the gallery walk",
+    "pt": "A passagem mais imponente (1823): pisos de mosaico, neoclássico, a garrafeira Legrand; «Passagem 4» — o final do passeio pelas galerias",
+    "es": "El pasaje más señorial (1823): suelos de mosaico, neoclásico, la bodega Legrand; «Pasaje 4» — el final del paseo por las galerías",
+    "de": "Die prächtigste Passage (1823): Mosaikböden, Neoklassik, der Weinkeller Legrand; «Passage 4» — das Finale des Galerien-Spaziergangs"
+   },
+   "rating": 4.6,
+   "count": 6471,
+   "addr": "75002, Rue des Petits Champs",
+   "hours": {
+    "ru": "Ежедневно 08:30–20:00",
+    "en": "Daily 08:30–20:00",
+    "pt": "Diariamente 08:30–20:00",
+    "es": "A diario 08:30–20:00",
+    "de": "Täglich 08:30–20:00"
+   },
+   "tags": [
+    "hike",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "chartier",
+   "name": "Bouillon Chartier Grands Boulevards",
+   "lat": 48.8719224,
+   "lon": 2.3430304,
+   "place_id": "ChIJ4xutfT5u5kcRaJn2NkiOhPU",
+   "note": {
+    "ru": "Оптимален для компаний: зал-легенда 1896 года, официанты пишут счёт на скатерти, цены — как в прошлом веке; очередь двигается быстро, брони нет",
+    "en": "Ideal for groups: a legendary 1896 hall, waiters write the bill on the tablecloth, prices from another century; the queue moves fast, no reservations",
+    "pt": "Ideal para grupos: sala lendária de 1896, os empregados escrevem a conta na toalha, preços de outro século; a fila anda depressa, sem reservas",
+    "es": "Ideal para grupos: sala legendaria de 1896, los camareros escriben la cuenta en el mantel, precios de otro siglo; la cola avanza rápido, sin reservas",
+    "de": "Ideal für Gruppen: legendärer Saal von 1896, Kellner schreiben die Rechnung aufs Tischtuch, Preise aus einem anderen Jahrhundert; die Schlange bewegt sich schnell, keine Reservierung"
+   },
+   "rating": 4.1,
+   "count": 32440,
+   "addr": "75009, Rue du Fbg Montmartre",
+   "hours": {
+    "ru": "Ежедневно 11:30–00:00",
+    "en": "Daily 11:30–00:00",
+    "pt": "Diariamente 11:30–00:00",
+    "es": "A diario 11:30–00:00",
+    "de": "Täglich 11:30–00:00"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "garnier",
+   "name": "Опера Гарнье · Palais Garnier",
+   "lat": 48.8719697,
+   "lon": 2.3316014,
+   "place_id": "ChIJOYNm1DBu5kcRZwdtKBzyq6k",
+   "note": {
+    "ru": "Внутрь экскурсию! Лестница, плафон Шагала и ложа Призрака — снаружи это полкартины; брать тур с гидом",
+    "en": "Take the tour inside! The staircase, Chagall's ceiling and the Phantom's box — the outside is only half the picture; book a guided tour",
+    "pt": "Visita por dentro! A escadaria, o teto de Chagall e o camarote do Fantasma — por fora é só metade do quadro; reservar visita guiada",
+    "es": "¡Entra con visita! La escalinata, el techo de Chagall y el palco del Fantasma — por fuera es solo media imagen; reservar visita guiada",
+    "de": "Unbedingt die Führung drinnen! Treppenhaus, Chagall-Decke und die Loge des Phantoms — von außen ist das nur das halbe Bild; geführte Tour buchen"
+   },
+   "rating": 4.7,
+   "count": 59557,
+   "addr": "75009",
+   "hours": {
+    "ru": "Ежедневно 10:00–17:00",
+    "en": "Daily 10:00–17:00",
+    "pt": "Diariamente 10:00–17:00",
+    "es": "A diario 10:00–17:00",
+    "de": "Täglich 10:00–17:00"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "lafayette",
+   "name": "Galeries Lafayette Haussmann",
+   "lat": 48.8736224,
+   "lon": 2.3321099,
+   "place_id": "ChIJixChAzdu5kcRkxWrzUU4d-Y",
+   "note": {
+    "ru": "Главный универмаг: купол ар-нуво + бесплатная смотровая на крыше — панорама с Эйфелевой башней без билета",
+    "en": "The flagship department store: the Art Nouveau dome + a free rooftop terrace — an Eiffel Tower panorama with no ticket",
+    "pt": "O grande armazém principal: cúpula Arte Nova + terraço gratuito no telhado — panorâmica com a Torre Eiffel sem bilhete",
+    "es": "El gran almacén principal: cúpula art nouveau + terraza gratuita en la azotea — panorámica con la Torre Eiffel sin entrada",
+    "de": "Das Flaggschiff-Kaufhaus: Jugendstil-Kuppel + kostenlose Dachterrasse — Panorama mit Eiffelturm ohne Ticket"
+   },
+   "rating": 4.5,
+   "count": 95739,
+   "addr": "75009, Bd Haussmann",
+   "hours": {
+    "ru": "Ежедневно 10:00–20:30",
+    "en": "Daily 10:00–20:30",
+    "pt": "Diariamente 10:00–20:30",
+    "es": "A diario 10:00–20:30",
+    "de": "Täglich 10:00–20:30"
+   },
+   "tags": [
+    "shop",
+    "view"
+   ],
+   "secret": false,
+   "reg": "opera"
+  },
+  {
+   "id": "cuvee",
+   "name": "Cuvée Noire — Madeleine",
+   "lat": 48.8702697,
+   "lon": 2.32822,
+   "place_id": "ChIJG31qqxNv5kcRKiFhzofuXu4",
+   "note": {
+    "ru": "Кофе: спешелти у Мадлен — фруктовые обжарки, городской вайб; спасение от туристического кофе больших бульваров",
+    "en": "Coffee: specialty near the Madeleine — fruity roasts, urban vibe; salvation from the tourist coffee of the grands boulevards",
+    "pt": "Café: specialty junto à Madeleine — torras frutadas, vibe urbana; a salvação do café turístico dos grandes bulevares",
+    "es": "Café: specialty junto a la Madeleine — tuestes afrutados, vibra urbana; la salvación del café turístico de los grandes bulevares",
+    "de": "Kaffee: Specialty bei der Madeleine — fruchtige Röstungen, urbaner Vibe; die Rettung vor dem Touristenkaffee der Boulevards"
+   },
+   "rating": 4.8,
+   "count": 527,
+   "addr": "75009, Rue de Caumartin",
+   "hours": {
+    "ru": "Ежедневно 08:00–18:00",
+    "en": "Daily 08:00–18:00",
+    "pt": "Diariamente 08:00–18:00",
+    "es": "A diario 08:00–18:00",
+    "de": "Täglich 08:00–18:00"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "reg": "opera"
+  },
+  {
+   "id": "komekome",
+   "name": "Komé Komé",
+   "lat": 48.8727435,
+   "lon": 2.3281745,
+   "place_id": "ChIJVUa4WRhv5kcRtkZ7icR7RrY",
+   "note": {
+    "ru": "Японский: лучшие онигири города — комте-яки, кимчи-моцарелла; быстрый и честный обед между Оперой и Lafayette",
+    "en": "Japanese: the city's best onigiri — comté-yaki, kimchi-mozzarella; a fast, honest lunch between the Opéra and Lafayette",
+    "pt": "Japonês: os melhores onigiri da cidade — comté-yaki, kimchi-mozzarella; almoço rápido e honesto entre a Ópera e o Lafayette",
+    "es": "Japonés: los mejores onigiri de la ciudad — comté-yaki, kimchi-mozzarella; almuerzo rápido y honesto entre la Ópera y Lafayette",
+    "de": "Japanisch: die besten Onigiri der Stadt — Comté-Yaki, Kimchi-Mozzarella; schnelles, ehrliches Mittagessen zwischen Oper und Lafayette"
+   },
+   "rating": 4.7,
+   "count": 5690,
+   "addr": "75009, Rue de Caumartin",
+   "hours": {
+    "ru": "Ежедневно 11:00–19:30",
+    "en": "Daily 11:00–19:30",
+    "pt": "Diariamente 11:00–19:30",
+    "es": "A diario 11:00–19:30",
+    "de": "Täglich 11:00–19:30"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": true,
+   "reg": "opera"
+  },
+  {
+   "id": "hygge",
+   "name": "Hygge Café — La Fayette",
+   "lat": 48.8733188,
+   "lon": 2.3348786,
+   "place_id": "ChIJj1kgF0tv5kcRgkLONAPPRr0",
+   "note": {
+    "ru": "Кофе: датский уют у Оперы; авторские напитки (кунжутный Harmony), белый горячий шоколад, хозяин встречает сам",
+    "en": "Coffee: Danish cosiness near the Opéra; signature drinks (the sesame Harmony), white hot chocolate, the owner greets you himself",
+    "pt": "Café: aconchego dinamarquês junto à Ópera; bebidas de autor (o Harmony de sésamo), chocolate quente branco, o dono recebe-te pessoalmente",
+    "es": "Café: calidez danesa junto a la Ópera; bebidas de autor (el Harmony de sésamo), chocolate caliente blanco, el dueño te recibe en persona",
+    "de": "Kaffee: dänische Gemütlichkeit an der Oper; Signature-Drinks (das Sesam-Harmony), weiße heiße Schokolade, der Besitzer begrüßt dich selbst"
+   },
+   "rating": 4.9,
+   "count": 241,
+   "addr": "75009, Rue La Fayette",
+   "hours": {
+    "ru": "Ежедневно 09:00–19:00",
+    "en": "Daily 09:00–19:00",
+    "pt": "Diariamente 09:00–19:00",
+    "es": "A diario 09:00–19:00",
+    "de": "Täglich 09:00–19:00"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "reg": "opera"
+  },
+  {
+   "id": "losandes",
+   "name": "Los Andes Coffee LAB",
+   "lat": 48.8796261,
+   "lon": 2.3362413,
+   "place_id": "ChIJm3HLGKlv5kcRRHoTQTmZZTI",
+   "note": {
+    "ru": "Кофе: колумбийская лаборатория в Южном Пигале — panelatte на тростниковом сахаре, зёрна прямо с семейных ферм",
+    "en": "Coffee: a Colombian lab in South Pigalle — panelatte on cane sugar, beans straight from family farms",
+    "pt": "Café: laboratório colombiano em South Pigalle — panelatte com açúcar de cana, grãos diretos de quintas familiares",
+    "es": "Café: laboratorio colombiano en South Pigalle — panelatte con azúcar de caña, granos directos de fincas familiares",
+    "de": "Kaffee: kolumbianisches Labor in South Pigalle — Panelatte mit Rohrzucker, Bohnen direkt von Familienfarmen"
+   },
+   "rating": 5.0,
+   "count": 111,
+   "addr": "75009, Rue N-D de Lorette",
+   "hours": {
+    "ru": "Ср–Сб 09–17:30, Вс 10–17:30, Пн 09–15:30, Вт закрыто",
+    "en": "Wed–Sat 09–17:30, Sun 10–17:30, Mon 09–15:30, Tue closed",
+    "pt": "Qua–Sáb 09–17:30, Dom 10–17:30, Seg 09–15:30, Ter fechado",
+    "es": "Mié–Sáb 09–17:30, Dom 10–17:30, Lun 09–15:30, Mar cerrado",
+    "de": "Mi–Sa 09–17:30, So 10–17:30, Mo 09–15:30, Di geschlossen"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "reg": "opera"
+  },
+  {
+   "id": "thomas",
+   "name": "Thomas artisan fromager",
+   "lat": 48.8604059,
+   "lon": 2.3556875,
+   "place_id": "ChIJH847q3xv5kcRptavyH03sxk",
+   "note": {
+    "ru": "Сырный магазин: крошечная лавка у Помпиду — раклет-врап делают при тебе за 5 минут, дают пробовать с порога",
+    "en": "Cheese shop: a tiny place by the Pompidou — the raclette wrap is made in front of you in 5 minutes, tastings offered at the door",
+    "pt": "Queijaria: loja minúscula junto ao Pompidou — o wrap de raclette é feito à tua frente em 5 minutos, dão a provar à entrada",
+    "es": "Quesería: tienda diminuta junto al Pompidou — el wrap de raclette lo hacen delante de ti en 5 minutos, dan a probar al entrar",
+    "de": "Käseladen: winziger Laden am Pompidou — der Raclette-Wrap wird in 5 Minuten vor dir gemacht, Kostproben gleich an der Tür"
+   },
+   "rating": 4.6,
+   "count": 134,
+   "addr": "75004, Rue Rambuteau",
+   "hours": {
+    "ru": "Ежедневно 09:30–20:00",
+    "en": "Daily 09:30–20:00",
+    "pt": "Diariamente 09:30–20:00",
+    "es": "A diario 09:30–20:00",
+    "de": "Täglich 09:30–20:00"
+   },
+   "tags": [
+    "food",
+    "shop"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "lafaurie",
+   "name": "Lafaurie (Vieille du Temple)",
+   "lat": 48.8588539,
+   "lon": 2.3591397,
+   "place_id": "ChIJm4PgqwNu5kcR-I9IXnZsw3I",
+   "note": {
+    "ru": "Мужская одежда: французский бренд, качество и посадка; подгонят рукава по месту",
+    "en": "Menswear: a French brand with real quality and fit; they'll adjust sleeves on the spot",
+    "pt": "Roupa masculina: marca francesa, qualidade e corte; ajustam as mangas na hora",
+    "es": "Ropa masculina: marca francesa, calidad y corte; ajustan las mangas en el momento",
+    "de": "Herrenmode: französische Marke, Qualität und Passform; Ärmel werden vor Ort angepasst"
+   },
+   "rating": 4.7,
+   "count": 232,
+   "addr": "75003, Rue Vieille du Temple",
+   "hours": {
+    "ru": "Ежедневно 10:30–19:30",
+    "en": "Daily 10:30–19:30",
+    "pt": "Diariamente 10:30–19:30",
+    "es": "A diario 10:30–19:30",
+    "de": "Täglich 10:30–19:30"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "lafauriearch",
+   "name": "Lafaurie Archives",
+   "lat": 48.8546276,
+   "lon": 2.3650554,
+   "place_id": "",
+   "note": {
+    "ru": "Архивный аутлет Lafaurie: прошлые коллекции той же марки заметно дешевле — в паре кварталов от основного бутика",
+    "en": "The Lafaurie archive outlet: past collections of the same brand noticeably cheaper — a couple of blocks from the main boutique",
+    "pt": "O outlet de arquivo da Lafaurie: coleções passadas da mesma marca bem mais baratas — a dois quarteirões da boutique principal",
+    "es": "El outlet de archivo de Lafaurie: colecciones pasadas de la misma marca bastante más baratas — a dos manzanas de la boutique principal",
+    "de": "Das Lafaurie-Archiv-Outlet: frühere Kollektionen derselben Marke deutlich günstiger — zwei Blocks von der Hauptboutique"
+   },
+   "rating": null,
+   "count": null,
+   "addr": "75004, Маре",
+   "hours": {
+    "ru": "Часы уточнить на месте",
+    "en": "Check hours on site",
+    "pt": "Confirmar horário no local",
+    "es": "Confirmar horario in situ",
+    "de": "Öffnungszeiten vor Ort prüfen"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "miista",
+   "name": "Miista",
+   "lat": 48.8602683,
+   "lon": 2.3644291,
+   "place_id": "ChIJLcMgnAZu5kcRVcqeCOdMuI0",
+   "note": {
+    "ru": "Ботиночки: скульптурная обувь и деликатные ткани; маленький зал — примерка без спешки в будни",
+    "en": "Boots and shoes: sculptural footwear and delicate fabrics; a small room — unhurried fittings on weekdays",
+    "pt": "Botinhas: calçado escultural e tecidos delicados; sala pequena — provas sem pressa nos dias úteis",
+    "es": "Botines: calzado escultural y tejidos delicados; sala pequeña — pruebas sin prisa entre semana",
+    "de": "Stiefeletten: skulpturale Schuhe und feine Stoffe; kleiner Raum — entspannte Anprobe unter der Woche"
+   },
+   "rating": 4.2,
+   "count": 325,
+   "addr": "75003, Rue de Turenne",
+   "hours": {
+    "ru": "Пн–Сб 11–19, Вс 12–18",
+    "en": "Mon–Sat 11–19, Sun 12–18",
+    "pt": "Seg–Sáb 11–19, Dom 12–18",
+    "es": "Lun–Sáb 11–19, Dom 12–18",
+    "de": "Mo–Sa 11–19, So 12–18"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "drole",
+   "name": "Drôle de Monsieur",
+   "lat": 48.8617151,
+   "lon": 2.3625545,
+   "place_id": "ChIJR5Y8p1tv5kcRvczHYb6aOCI",
+   "note": {
+    "ru": "Стильный магаз: флагман бренда в Маре — к примерке приносят фирменный мини-эспрессо",
+    "en": "A stylish shop: the brand's Marais flagship — they bring a house mini-espresso while you try things on",
+    "pt": "Loja com estilo: a flagship da marca no Marais — trazem-te um mini-espresso da casa durante a prova",
+    "es": "Tienda con estilo: el flagship de la marca en el Marais — te traen un mini-espresso de la casa mientras te pruebas",
+    "de": "Stylischer Laden: der Flagship der Marke im Marais — zur Anprobe gibt es einen Mini-Espresso des Hauses"
+   },
+   "rating": 4.8,
+   "count": 156,
+   "addr": "75003, Rue de Poitou",
+   "hours": {
+    "ru": "Пн–Сб 11–19, Вс 14–19",
+    "en": "Mon–Sat 11–19, Sun 14–19",
+    "pt": "Seg–Sáb 11–19, Dom 14–19",
+    "es": "Lun–Sáb 11–19, Dom 14–19",
+    "de": "Mo–Sa 11–19, So 14–19"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "eataly",
+   "name": "Eataly Paris Marais",
+   "lat": 48.8585827,
+   "lon": 2.3546289,
+   "place_id": "ChIJUSmUXUFv5kcR2GGP6Dn34pw",
+   "note": {
+    "ru": "Итали! Eataly! Итальянский рынок-ресторан в Маре: паста, сыры, вино — собрать итальянский ужин посреди Парижа",
+    "en": "Italy! Eataly! The Italian market-restaurant in the Marais: pasta, cheeses, wine — assemble an Italian dinner in the middle of Paris",
+    "pt": "Itália! Eataly! O mercado-restaurante italiano no Marais: massa, queijos, vinho — montar um jantar italiano no meio de Paris",
+    "es": "¡Italia! ¡Eataly! El mercado-restaurante italiano en el Marais: pasta, quesos, vino — montar una cena italiana en pleno París",
+    "de": "Italien! Eataly! Der italienische Markt mit Restaurant im Marais: Pasta, Käse, Wein — ein italienisches Abendessen mitten in Paris"
+   },
+   "rating": 4.3,
+   "count": 20165,
+   "addr": "75004, Rue Ste-Croix",
+   "hours": {
+    "ru": "Ежедневно 10:00–22:30",
+    "en": "Daily 10:00–22:30",
+    "pt": "Diariamente 10:00–22:30",
+    "es": "A diario 10:00–22:30",
+    "de": "Täglich 10:00–22:30"
+   },
+   "tags": [
+    "food",
+    "shop"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "janou",
+   "name": "Chez Janou",
+   "lat": 48.8567159,
+   "lon": 2.3671983,
+   "place_id": "ChIJaXXlBgBu5kcRzeSQ0Um9YSg",
+   "note": {
+    "ru": "Прованский бистро за Пл. Вогезов: утиная грудка и шоколадный мусс, который накладывают из общей миски — сколько унесёшь; бронировать сильно заранее",
+    "en": "A Provençal bistro behind Place des Vosges: duck breast and the chocolate mousse served from a communal bowl — take as much as you dare; book well ahead",
+    "pt": "Bistro provençal atrás da Place des Vosges: peito de pato e a mousse de chocolate servida de uma taça comum — leva quanto conseguires; reservar com muita antecedência",
+    "es": "Bistró provenzal tras la Place des Vosges: magret de pato y la mousse de chocolate servida de un bol común — coge cuanto puedas; reservar con mucha antelación",
+    "de": "Provenzalisches Bistro hinter der Place des Vosges: Entenbrust und die Schokoladenmousse aus der großen Schüssel — nimm so viel du magst; früh reservieren"
+   },
+   "rating": 4.3,
+   "count": 8454,
+   "addr": "75003, у Пл. Вогезов",
+   "hours": {
+    "ru": "Ежедневно 08:30–02:00",
+    "en": "Daily 08:30–02:00",
+    "pt": "Diariamente 08:30–02:00",
+    "es": "A diario 08:30–02:00",
+    "de": "Täglich 08:30–02:00"
+   },
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "pyrenees",
+   "name": "Vins des Pyrénées",
+   "lat": 48.8537473,
+   "lon": 2.3644392,
+   "place_id": "ChIJ5Wj8rv9x5kcRHVNKXm9y8Lk",
+   "note": {
+    "ru": "Винный бистро в Маре: серьёзная карта и сомелье, крок-месье с трюфелем; наверху прячется коктейльный спикизи «1905»",
+    "en": "A wine bistro in the Marais: a serious list and a sommelier, truffle croque-monsieur; the '1905' cocktail speakeasy hides upstairs",
+    "pt": "Bistro de vinhos no Marais: carta séria e sommelier, croque-monsieur de trufa; lá em cima esconde-se o speakeasy «1905»",
+    "es": "Bistró de vinos en el Marais: carta seria y sumiller, croque-monsieur de trufa; arriba se esconde el speakeasy «1905»",
+    "de": "Wein-Bistro im Marais: ernsthafte Karte und Sommelier, Trüffel-Croque-Monsieur; oben versteckt sich das Speakeasy «1905»"
+   },
+   "rating": 4.5,
+   "count": 2245,
+   "addr": "75004, Rue Beautreillis",
+   "hours": {
+    "ru": "Ежедневно 08:30–00:00",
+    "en": "Daily 08:30–00:00",
+    "pt": "Diariamente 08:30–00:00",
+    "es": "A diario 08:30–00:00",
+    "de": "Täglich 08:30–00:00"
+   },
+   "tags": [
+    "wine",
+    "food",
+    "bar"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "ogata",
+   "name": "Ogata",
+   "lat": 48.8610097,
+   "lon": 2.3635511,
+   "place_id": "ChIJexUJUzFv5kcRcynXsmuxF5o",
+   "note": {
+    "ru": "Японский центр: чайная церемония, галерея, ресторан и лавка в одном особняке — самый красивый чайный салон города",
+    "en": "A Japanese centre: tea ceremony, gallery, restaurant and shop in one mansion — the most beautiful tea salon in the city",
+    "pt": "Centro japonês: cerimónia do chá, galeria, restaurante e loja num só palacete — o salão de chá mais bonito da cidade",
+    "es": "Centro japonés: ceremonia del té, galería, restaurante y tienda en un mismo palacete — el salón de té más bonito de la ciudad",
+    "de": "Japanisches Zentrum: Teezeremonie, Galerie, Restaurant und Laden in einem Stadtpalais — der schönste Teesalon der Stadt"
+   },
+   "rating": 4.2,
+   "count": 630,
+   "addr": "75003, Rue Debelleyme",
+   "hours": {
+    "ru": "Ежедневно 11:00–21:00",
+    "en": "Daily 11:00–21:00",
+    "pt": "Diariamente 11:00–21:00",
+    "es": "A diario 11:00–21:00",
+    "de": "Täglich 11:00–21:00"
+   },
+   "tags": [
+    "food",
+    "fine",
+    "sight"
+   ],
+   "secret": true,
+   "reg": "marais"
+  },
+  {
+   "id": "pompidou",
+   "name": "Центр Помпиду",
+   "lat": 48.8608316,
+   "lon": 2.3517012,
+   "place_id": "ChIJFwqVS71v5kcRx07AoPuLgBw",
+   "note": {
+    "ru": "Помпиду: здание-«наизнанку» и главное современное искусство; эскалатор в стеклянной трубе — сам по себе видовая точка",
+    "en": "The Pompidou: the 'inside-out' building and the key modern art collection; the glass-tube escalator is a viewpoint in itself",
+    "pt": "O Pompidou: o edifício «do avesso» e a principal arte moderna; a escada rolante no tubo de vidro é um miradouro em si",
+    "es": "El Pompidou: el edificio «del revés» y el arte moderno principal; la escalera mecánica en tubo de cristal es un mirador en sí",
+    "de": "Das Pompidou: das «umgestülpte» Gebäude und die wichtigste moderne Kunst; die Rolltreppe im Glasrohr ist selbst ein Aussichtspunkt"
+   },
+   "rating": 4.5,
+   "count": 130,
+   "addr": "75004",
+   "hours": {
+    "ru": "По программе выставок",
+    "en": "Per exhibition programme",
+    "pt": "Conforme o programa",
+    "es": "Según programa",
+    "de": "Je nach Programm"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "hoteldeville",
+   "name": "Отель-де-Виль",
+   "lat": 48.8564826,
+   "lon": 2.3524135,
+   "place_id": "ChIJi1uPs_1x5kcRbh8M8XJSNMA",
+   "note": {
+    "ru": "Парижская мэрия: неоренессансный фасад со статуями и площадь — зимой каток, летом бесплатные фотовыставки внутри",
+    "en": "Paris City Hall: a neo-Renaissance façade lined with statues; the square hosts a winter rink and free photo exhibitions inside in summer",
+    "pt": "A Câmara de Paris: fachada neorrenascentista com estátuas; na praça, pista de gelo no inverno e exposições de fotografia gratuitas no verão",
+    "es": "El Ayuntamiento de París: fachada neorrenacentista con estatuas; en la plaza, pista de hielo en invierno y exposiciones de foto gratuitas dentro en verano",
+    "de": "Das Pariser Rathaus: Neorenaissance-Fassade voller Statuen; auf dem Platz im Winter Eisbahn, im Sommer freie Fotoausstellungen drinnen"
+   },
+   "rating": 4.5,
+   "count": 5120,
+   "addr": "75004",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "vosges",
+   "name": "Площадь Вогезов",
+   "lat": 48.8556114,
+   "lon": 2.3655266,
+   "place_id": "ChIJUeiI4P9x5kcRqEwHl6V32GQ",
+   "note": {
+    "ru": "Старейшая площадь Парижа: красный кирпич, аркады с галереями, газон для пикника; дом-музей Виктора Гюго в углу",
+    "en": "The oldest square in Paris: red brick, arcades with galleries, a lawn made for picnics; Victor Hugo's house-museum in the corner",
+    "pt": "A praça mais antiga de Paris: tijolo vermelho, arcadas com galerias, relvado para piquenique; a casa-museu de Victor Hugo ao canto",
+    "es": "La plaza más antigua de París: ladrillo rojo, arcadas con galerías, césped para picnic; la casa-museo de Victor Hugo en la esquina",
+    "de": "Der älteste Platz von Paris: roter Backstein, Arkaden mit Galerien, Rasen für ein Picknick; Victor Hugos Haus-Museum in der Ecke"
+   },
+   "rating": 4.6,
+   "count": 32907,
+   "addr": "75004",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight",
+    "hike"
+   ],
+   "secret": false,
+   "reg": "marais"
+  },
+  {
+   "id": "sacrecoeur",
+   "name": "Базилика Сакре-Кёр",
+   "lat": 48.8867046,
+   "lon": 2.3431043,
+   "place_id": "ChIJ442GNENu5kcRGYUrvgqHw88",
+   "note": {
+    "ru": "Белая базилика на вершине Монмартра: панорама всего Парижа со ступеней; на рассвете — почти без людей",
+    "en": "The white basilica atop Montmartre: an all-Paris panorama from the steps; at sunrise it's nearly empty",
+    "pt": "A basílica branca no topo de Montmartre: panorâmica de toda Paris das escadas; ao nascer do sol quase sem gente",
+    "es": "La basílica blanca en lo alto de Montmartre: panorámica de todo París desde las escaleras; al amanecer casi sin gente",
+    "de": "Die weiße Basilika auf dem Montmartre: Panorama über ganz Paris von den Stufen; bei Sonnenaufgang fast menschenleer"
+   },
+   "rating": 4.7,
+   "count": 165111,
+   "addr": "75018, Монмартр",
+   "hours": {
+    "ru": "Ежедневно 06:30–22:30",
+    "en": "Daily 06:30–22:30",
+    "pt": "Diariamente 06:30–22:30",
+    "es": "A diario 06:30–22:30",
+    "de": "Täglich 06:30–22:30"
+   },
+   "tags": [
+    "view",
+    "sight"
+   ],
+   "secret": false,
+   "reg": "montmartre"
+  },
+  {
+   "id": "montmartre",
+   "name": "Монмартр",
+   "lat": 48.8861929,
+   "lon": 2.3430895,
+   "place_id": "ChIJEcgELkNu5kcRjVQFUIvkPMY",
+   "note": {
+    "ru": "Холм художников: подниматься боковыми лестницами (Rue Foyatier — мимо), кружить улочками за базиликой — там настоящая деревня",
+    "en": "The artists' hill: climb the side stairways (skip Rue Foyatier), loop the lanes behind the basilica — that's where the real village is",
+    "pt": "A colina dos artistas: subir pelas escadas laterais (evitar a Rue Foyatier), vaguear pelas ruelas atrás da basílica — é lá a aldeia verdadeira",
+    "es": "La colina de los artistas: subir por las escaleras laterales (evita Rue Foyatier), callejear tras la basílica — ahí está el pueblo de verdad",
+    "de": "Der Künstlerhügel: über die Seitentreppen aufsteigen (Rue Foyatier meiden), hinter der Basilika durch die Gassen streifen — dort liegt das echte Dorf"
+   },
+   "rating": 4.7,
+   "count": 8110,
+   "addr": "75018",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight",
+    "view",
+    "hike"
+   ],
+   "secret": false,
+   "reg": "montmartre"
+  },
+  {
+   "id": "moulinrouge",
+   "name": "Мулен Руж",
+   "lat": 48.8841232,
+   "lon": 2.3322519,
+   "place_id": "ChIJiQxv_05u5kcRESFIh6-QTvQ",
+   "note": {
+    "ru": "Красная мельница 1889 года — родина канкана; на шоу билеты сильно заранее, снаружи — вечером, когда горит вывеска",
+    "en": "The red windmill of 1889 — birthplace of the cancan; book the show far ahead, see the outside at night when the sign is lit",
+    "pt": "O moinho vermelho de 1889 — berço do cancã; bilhetes para o espetáculo com muita antecedência, por fora à noite com o letreiro aceso",
+    "es": "El molino rojo de 1889 — cuna del cancán; entradas para el show con mucha antelación, por fuera de noche con el letrero encendido",
+    "de": "Die rote Mühle von 1889 — Wiege des Cancan; Show-Tickets weit im Voraus, von außen abends, wenn die Leuchtreklame brennt"
+   },
+   "rating": 4.4,
+   "count": 17352,
+   "addr": "75018, Bd de Clichy",
+   "hours": {
+    "ru": "Открытое пространство",
+    "en": "Open space",
+    "pt": "Espaço aberto",
+    "es": "Espacio abierto",
+    "de": "Frei zugänglich"
+   },
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "reg": "montmartre"
+  },
+  {
+   "id": "saintouen",
+   "name": "Marché aux puces de Saint-Ouen",
+   "lat": 48.9025816,
+   "lon": 2.3410486,
+   "place_id": "ChIJ47PTPvFu5kcRN4pDd6JWhEo",
+   "note": {
+    "ru": "Крупнейший блошиный рынок мира: здесь гуляют и закупаются Александр Васильев (историк моды) с Серёжей — приходить с утра пораньше; пятница 08–12 — «дилерское утро», лучшие находки уходят первыми",
+    "en": "The world's largest flea market: fashion historian Alexandre Vassiliev and Serge shop and stroll here — come early in the morning; Friday 08–12 is 'dealers' morning', the best finds go first",
+    "pt": "A maior feira da ladra do mundo: o historiador de moda Alexandre Vassiliev e o Serge passeiam e compram aqui — vir de manhã cedo; sexta 08–12 é a «manhã dos negociantes», o melhor vai primeiro",
+    "es": "El mercadillo más grande del mundo: el historiador de moda Alexandre Vassiliev y Serge pasean y compran aquí — llegar temprano; el viernes 08–12 es la «mañana de los marchantes», lo mejor vuela primero",
+    "de": "Der größte Flohmarkt der Welt: Modehistoriker Alexandre Wassiljew und Serge bummeln und kaufen hier ein — früh am Morgen kommen; Freitag 08–12 ist der «Händlermorgen», die besten Stücke gehen zuerst"
+   },
+   "rating": 4.2,
+   "count": 589,
+   "addr": "Saint-Ouen, Rue des Rosiers",
+   "hours": {
+    "ru": "Пт 08–12, Сб–Вс 10–18, Пн 10–18, Вт–Чт закрыто",
+    "en": "Fri 08–12, Sat–Sun 10–18, Mon 10–18, Tue–Thu closed",
+    "pt": "Sex 08–12, Sáb–Dom 10–18, Seg 10–18, Ter–Qui fechado",
+    "es": "Vie 08–12, Sáb–Dom 10–18, Lun 10–18, Mar–Jue cerrado",
+    "de": "Fr 08–12, Sa–So 10–18, Mo 10–18, Di–Do geschlossen"
+   },
+   "tags": [
+    "shop"
+   ],
+   "secret": true,
+   "reg": "montmartre"
+  },
+  {
+   "id": "partisan",
+   "name": "Partisan Café Artisanal",
+   "lat": 48.864681,
+   "lon": 2.353093,
+   "place_id": "ChIJoXjzXBpu5kcRxcAyAUf7Oy8",
+   "note": {
+    "ru": "Кафе: обжарка прямо в зале, выбор степени обжарки к чашке; банановый хлеб — местная легенда",
+    "en": "Café: roasting right in the room, pick your roast per cup; the banana bread is a local legend",
+    "pt": "Café: torra na própria sala, escolhe-se o grau de torra por chávena; o banana bread é uma lenda local",
+    "es": "Café: tuestan en la propia sala, eliges el grado de tueste por taza; el banana bread es una leyenda local",
+    "de": "Café: Röstung direkt im Raum, Röstgrad pro Tasse wählbar; das Bananenbrot ist eine lokale Legende"
+   },
+   "rating": 4.3,
+   "count": 1825,
+   "addr": "75003, Rue de Turbigo",
+   "hours": {
+    "ru": "Ежедневно 08:30–18:00",
+    "en": "Daily 08:30–18:00",
+    "pt": "Diariamente 08:30–18:00",
+    "es": "A diario 08:30–18:00",
+    "de": "Täglich 08:30–18:00"
+   },
+   "tags": [
+    "coffee"
+   ],
+   "secret": false,
+   "reg": "marais"
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "gastro-bac",
+   "feat": true,
+   "title": {
+    "ru": "Гастрономический квартал · Rue du Bac",
+    "en": "The gourmet quarter · Rue du Bac",
+    "pt": "O bairro gourmet · Rue du Bac",
+    "es": "El barrio gourmet · Rue du Bac",
+    "de": "Das Gourmet-Viertel · Rue du Bac"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 48.8544,
+   "sunLon": 2.3248,
+   "why": {
+    "ru": "Сыр, чай, мороженое, кофе и великий круассан — всё в радиусе 400 метров одного тихого квартала 7-го округа. Никаких переездов: медленная гастрономическая петля пешком.",
+    "en": "Cheese, tea, ice cream, coffee and the great croissant — all within 400 metres of one quiet block of the 7th. No transfers: a slow gourmet loop on foot.",
+    "pt": "Queijo, chá, gelado, café e o grande croissant — tudo num raio de 400 metros num quarteirão tranquilo do 7º. Sem deslocações: um laço gourmet a pé, sem pressa.",
+    "es": "Queso, té, helado, café y el gran cruasán — todo en un radio de 400 metros de una manzana tranquila del 7º. Sin traslados: un bucle gourmet a pie, sin prisa.",
+    "de": "Käse, Tee, Eis, Kaffee und das große Croissant — alles im Umkreis von 400 Metern in einem stillen Block des 7. Arrondissements. Keine Wege: eine langsame Gourmet-Schleife zu Fuß."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Barthélémy — сырная увертюра",
+      "en": "Barthélémy — the cheese overture",
+      "pt": "Barthélémy — a abertura de queijo",
+      "es": "Barthélémy — la obertura de queso",
+      "de": "Barthélémy — die Käse-Ouvertüre"
+     },
+     "m": {
+      "ru": "к открытию 08:30 (вт–сб)",
+      "en": "at the 8:30 opening (Tue–Sat)",
+      "pt": "à abertura das 08:30 (ter–sáb)",
+      "es": "a la apertura de las 08:30 (mar–sáb)",
+      "de": "zur Öffnung um 8:30 (Di–Sa)"
+     },
+     "note": {
+      "ru": "Заходишь по запаху ещё с улицы. Комте, взбитый Фонтенбло; попроси завакуумировать — довезёшь домой",
+      "en": "You find it by smell from the street. Comté, whipped Fontainebleau; ask them to vacuum-seal it — it'll survive the trip home",
+      "pt": "Encontra-se pelo cheiro ainda na rua. Comté, Fontainebleau batido; pede para embalar a vácuo — chega a casa intacto",
+      "es": "La encuentras por el olor desde la calle. Comté, Fontainebleau batido; pide que lo envasen al vacío — llegará a casa intacto",
+      "de": "Man findet ihn schon von der Straße am Duft. Comté, geschlagenes Fontainebleau; lass es vakuumieren — es übersteht die Heimreise"
+     }
+    },
+    {
+     "n": {
+      "ru": "Conservatoire des Hémisphères — чай",
+      "en": "Conservatoire des Hémisphères — tea",
+      "pt": "Conservatoire des Hémisphères — chá",
+      "es": "Conservatoire des Hémisphères — té",
+      "de": "Conservatoire des Hémisphères — Tee"
+     },
+     "m": {
+      "ru": "100 м по Rue du Bac",
+      "en": "100 m along Rue du Bac",
+      "pt": "100 m pela Rue du Bac",
+      "es": "100 m por la Rue du Bac",
+      "de": "100 m die Rue du Bac entlang"
+     },
+     "note": {
+      "ru": "Выдвижные ящички с ароматами и упаковка вручную; чай в латунной банке — лучший съедобный сувенир квартала",
+      "en": "Pull-out scent drawers and hand-wrapping; tea in a brass tin is the block's best edible souvenir",
+      "pt": "Gavetas de aromas e embrulho à mão; o chá na lata de latão é a melhor lembrança comestível do bairro",
+      "es": "Cajones de aromas y envoltura a mano; el té en lata de latón es el mejor recuerdo comestible del barrio",
+      "de": "Duft-Schubladen und Handverpackung; Tee in der Messingdose ist das beste essbare Souvenir des Viertels"
+     }
+    },
+    {
+     "n": {
+      "ru": "Le Bac à Glaces — пауза на мороженое",
+      "en": "Le Bac à Glaces — an ice-cream pause",
+      "pt": "Le Bac à Glaces — pausa para gelado",
+      "es": "Le Bac à Glaces — pausa de helado",
+      "de": "Le Bac à Glaces — Eis-Pause"
+     },
+     "m": {
+      "ru": "через дорогу, с 11:00",
+      "en": "across the street, from 11 am",
+      "pt": "do outro lado, a partir das 11",
+      "es": "enfrente, desde las 11",
+      "de": "gegenüber, ab 11 Uhr"
+     },
+     "note": {
+      "ru": "Фермерское мороженое старой школы: жареная фисташка или ром-изюм, сверху несладкие сливки",
+      "en": "Old-school farm ice cream: roasted pistachio or rum-raisin, topped with unsweetened cream",
+      "pt": "Gelado de quinta à antiga: pistácio torrado ou rum-passas, com chantilly sem açúcar",
+      "es": "Helado de granja a la antigua: pistacho tostado o ron-pasas, con nata sin azúcar",
+      "de": "Altmodisches Hof-Eis: geröstete Pistazie oder Rum-Rosine, mit ungesüßter Sahne obendrauf"
+     }
+    },
+    {
+     "n": {
+      "ru": "Certified café — кофе",
+      "en": "Certified café — coffee",
+      "pt": "Certified café — café",
+      "es": "Certified café — café",
+      "de": "Certified café — Kaffee"
+     },
+     "m": {
+      "ru": "50 м, дворик внутри",
+      "en": "50 m, courtyard inside",
+      "pt": "50 m, pátio interior",
+      "es": "50 m, patio interior",
+      "de": "50 m, Innenhof"
+     },
+     "note": {
+      "ru": "Спешелти с собственной обжаркой. Супер район — самое время это признать за чашкой во дворике",
+      "en": "Specialty with in-house roasting. A great neighbourhood — the courtyard cup is the moment to admit it",
+      "pt": "Specialty com torra própria. Bairro fantástico — a chávena no pátio é o momento de o admitir",
+      "es": "Specialty con tueste propio. Barrio genial — la taza en el patio es el momento de admitirlo",
+      "de": "Specialty mit eigener Röstung. Super Viertel — bei der Tasse im Hof gibt man es gern zu"
+     }
+    },
+    {
+     "n": {
+      "ru": "Philippe Conticini — великий круассан",
+      "en": "Philippe Conticini — the great croissant",
+      "pt": "Philippe Conticini — o grande croissant",
+      "es": "Philippe Conticini — el gran cruasán",
+      "de": "Philippe Conticini — das große Croissant"
+     },
+     "m": {
+      "ru": "5 минут, Rue de Varenne",
+      "en": "5 minutes, Rue de Varenne",
+      "pt": "5 minutos, Rue de Varenne",
+      "es": "5 minutos, Rue de Varenne",
+      "de": "5 Minuten, Rue de Varenne"
+     },
+     "note": {
+      "ru": "Гигантский круассан 🥐 разбирают за час после открытия — если пришёл поздно, бери Paris-Brest, он премирован",
+      "en": "The giant croissant 🥐 sells out within an hour of opening — if you're late, take the award-winning Paris-Brest",
+      "pt": "O croissant gigante 🥐 esgota uma hora após abrir — se chegares tarde, leva o premiado Paris-Brest",
+      "es": "El cruasán gigante 🥐 se agota una hora tras abrir — si llegas tarde, llévate el premiado Paris-Brest",
+      "de": "Das Riesen-Croissant 🥐 ist eine Stunde nach Öffnung weg — kommst du spät, nimm den preisgekrönten Paris-Brest"
+     }
+    },
+    {
+     "n": {
+      "ru": "La Grande Épicerie (Бон-Марше) — финал",
+      "en": "La Grande Épicerie (Bon Marché) — the finale",
+      "pt": "La Grande Épicerie (Bon Marché) — o final",
+      "es": "La Grande Épicerie (Bon Marché) — el final",
+      "de": "La Grande Épicerie (Bon Marché) — das Finale"
+     },
+     "m": {
+      "ru": "замкнуть петлю на Rue de Sèvres",
+      "en": "close the loop on Rue de Sèvres",
+      "pt": "fechar o laço na Rue de Sèvres",
+      "es": "cerrar el bucle en Rue de Sèvres",
+      "de": "die Schleife an der Rue de Sèvres schließen"
+     },
+     "note": {
+      "ru": "Гастрономический этаж старейшего универмага мира: добрать вино и всё, что не унёс из лавок",
+      "en": "The food hall of the world's oldest department store: top up on wine and whatever the shops didn't fit",
+      "pt": "O piso gourmet do mais antigo grande armazém do mundo: completar com vinho e o que faltou das lojas",
+      "es": "La planta gourmet del gran almacén más antiguo del mundo: completa con vino y lo que no cupo de las tiendas",
+      "de": "Die Gourmet-Etage des ältesten Kaufhauses der Welt: Wein und alles nachlegen, was in den Läden nicht mitging"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Фонтенбло у Barthélémy — взбитый сыр как сливки: не в каждой сырной он есть вообще",
+     "en": "The Fontainebleau at Barthélémy — whipped cheese like cream: most fromageries don't even carry it",
+     "pt": "O Fontainebleau no Barthélémy — queijo batido como natas: a maioria das queijarias nem o tem",
+     "es": "El Fontainebleau de Barthélémy — queso batido como nata: la mayoría de queserías ni lo tienen",
+     "de": "Das Fontainebleau bei Barthélémy — geschlagener Käse wie Sahne: die meisten Fromagerien führen es gar nicht"
+    },
+    {
+     "ru": "Хочется шоколада — 15 минут через Тюильри до Jean-Paul Hévin: шоколадные макаруны, лавка во внутреннем дворе",
+     "en": "Craving chocolate — 15 minutes through the Tuileries to Jean-Paul Hévin: chocolate macarons, a shop in an inner courtyard",
+     "pt": "Apetece chocolate — 15 minutos pelas Tulherias até Jean-Paul Hévin: macarons de chocolate, loja num pátio interior",
+     "es": "¿Antojo de chocolate? — 15 minutos por las Tullerías hasta Jean-Paul Hévin: macarons de chocolate, tienda en un patio interior",
+     "de": "Lust auf Schokolade — 15 Minuten durch die Tuilerien zu Jean-Paul Hévin: Schoko-Macarons, Laden im Innenhof"
+    },
+    {
+     "ru": "Всё покупное просите завакуумировать — сыр и масло Bordier переживут любой перелёт",
+     "en": "Ask to have purchases vacuum-sealed — cheese and Bordier butter survive any flight",
+     "pt": "Pede para embalar tudo a vácuo — o queijo e a manteiga Bordier sobrevivem a qualquer voo",
+     "es": "Pide envasar todo al vacío — el queso y la mantequilla Bordier sobreviven a cualquier vuelo",
+     "de": "Alles vakuumieren lassen — Käse und Bordier-Butter überstehen jeden Flug"
+    }
+   ],
+   "park": {
+    "ru": "Машина не нужна: метро Rue du Bac (линия 12), вся петля — 400 метров пешком.",
+    "en": "No car needed: Rue du Bac metro (line 12), the whole loop is 400 metres on foot.",
+    "pt": "Não é preciso carro: metro Rue du Bac (linha 12), todo o laço são 400 metros a pé.",
+    "es": "No hace falta coche: metro Rue du Bac (línea 12), todo el bucle son 400 metros a pie.",
+    "de": "Kein Auto nötig: Metro Rue du Bac (Linie 12), die ganze Schleife sind 400 Meter zu Fuß."
+   },
+   "wear": {
+    "ru": "Сумка-шоппер для покупок и место в аппетите: маршрут съедобный от первой точки до последней.",
+    "en": "A tote for purchases and room in your appetite: the route is edible from first stop to last.",
+    "pt": "Um saco para as compras e espaço no apetite: o percurso é comestível da primeira à última paragem.",
+    "es": "Una bolsa para las compras y hueco en el apetito: la ruta es comestible de la primera a la última parada.",
+    "de": "Eine Tasche für Einkäufe und Platz im Appetit: die Route ist von der ersten bis zur letzten Station essbar."
+   }
+  },
+  {
+   "id": "passages",
+   "feat": false,
+   "title": {
+    "ru": "Пассажи и вокруг · утро до толп",
+    "en": "The passages & around · morning before the crowds",
+    "pt": "As passagens e à volta · manhã antes das multidões",
+    "es": "Los pasajes y alrededores · mañana antes de las multitudes",
+    "de": "Die Passagen & drumherum · morgens vor den Massen"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 48.8715,
+   "sunLon": 2.3419,
+   "why": {
+    "ru": "Три стеклянных пассажа насквозь одной линией, обед-легенда для всей компании и бесплатная крыша с видом на башню — всё в шаговом кольце вокруг Оперы.",
+    "en": "Three glass passages straight through in one line, a legendary lunch for the whole group and a free rooftop with a tower view — all in one walking ring around the Opéra.",
+    "pt": "Três passagens de vidro a direito numa só linha, um almoço lendário para todo o grupo e um terraço gratuito com vista para a torre — tudo num anel a pé à volta da Ópera.",
+    "es": "Tres pasajes de cristal de un tirón, un almuerzo legendario para todo el grupo y una azotea gratuita con vista a la torre — todo en un anillo a pie alrededor de la Ópera.",
+    "de": "Drei Glaspassagen in einer Linie hindurch, ein legendäres Mittagessen für die ganze Gruppe und ein kostenloses Dach mit Turmblick — alles in einem Fußring um die Oper."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Passage des Panoramas",
+      "en": "Passage des Panoramas",
+      "pt": "Passage des Panoramas",
+      "es": "Passage des Panoramas",
+      "de": "Passage des Panoramas"
+     },
+     "m": {
+      "ru": "утром, когда всё живёт",
+      "en": "in the morning, when it's alive",
+      "pt": "de manhã, quando tudo vive",
+      "es": "por la mañana, cuando todo vive",
+      "de": "morgens, wenn alles lebt"
+     },
+     "note": {
+      "ru": "Машина времени 1799 года: марки, монеты, винтажные вывески. К вечеру половина лавок закрыта — поэтому именно утро",
+      "en": "An 1799 time machine: stamps, coins, vintage signs. By evening half the shops are shut — hence the morning",
+      "pt": "Máquina do tempo de 1799: selos, moedas, letreiros vintage. À noite metade das lojas fecha — por isso a manhã",
+      "es": "Máquina del tiempo de 1799: sellos, monedas, letreros vintage. Por la tarde media galería cierra — por eso la mañana",
+      "de": "Zeitmaschine von 1799: Briefmarken, Münzen, Vintage-Schilder. Abends ist die Hälfte zu — deshalb der Morgen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Насквозь: Passage Jouffroy",
+      "en": "Straight through: Passage Jouffroy",
+      "pt": "A direito: Passage Jouffroy",
+      "es": "De largo: Passage Jouffroy",
+      "de": "Geradeaus: Passage Jouffroy"
+     },
+     "m": {
+      "ru": "перейти бульвар — и дальше",
+      "en": "cross the boulevard — and onward",
+      "pt": "atravessar o bulevar — e seguir",
+      "es": "cruzar el bulevar — y seguir",
+      "de": "den Boulevard überqueren — und weiter"
+     },
+     "note": {
+      "ru": "Стекло и металл, книжные со старыми изданиями, игрушечная лавка из детства и спрятанный отель Chopin 😉 Le Valentin — пауза на пирожное",
+      "en": "Glass and iron, bookshops with old editions, a childhood toy shop and the hidden Hotel Chopin 😉 Le Valentin — a pastry pause",
+      "pt": "Vidro e ferro, alfarrabistas, uma loja de brinquedos da infância e o escondido Hotel Chopin 😉 Le Valentin — pausa para um doce",
+      "es": "Cristal y hierro, librerías antiguas, una juguetería de la infancia y el escondido Hotel Chopin 😉 Le Valentin — pausa para un pastel",
+      "de": "Glas und Eisen, Buchläden mit alten Ausgaben, ein Kindheits-Spielzeugladen und das versteckte Hotel Chopin 😉 Le Valentin — Gebäck-Pause"
+     }
+    },
+    {
+     "n": {
+      "ru": "Passage Verdeau — тихий финал цепочки",
+      "en": "Passage Verdeau — the quiet end of the chain",
+      "pt": "Passage Verdeau — o final calmo da cadeia",
+      "es": "Passage Verdeau — el final tranquilo de la cadena",
+      "de": "Passage Verdeau — das stille Ende der Kette"
+     },
+     "m": {
+      "ru": "сразу за Jouffroy",
+      "en": "right after Jouffroy",
+      "pt": "logo a seguir ao Jouffroy",
+      "es": "justo tras Jouffroy",
+      "de": "direkt nach Jouffroy"
+     },
+     "note": {
+      "ru": "Старые книги, гравюры, фотоаппараты — коллекционерская часть; три пассажа пройдены одной прямой",
+      "en": "Old books, prints, cameras — the collectors' stretch; three passages done in one straight line",
+      "pt": "Livros antigos, gravuras, câmaras — a parte dos colecionadores; três passagens numa só linha reta",
+      "es": "Libros antiguos, grabados, cámaras — la parte coleccionista; tres pasajes en una sola línea recta",
+      "de": "Alte Bücher, Drucke, Kameras — die Sammler-Strecke; drei Passagen in einer geraden Linie geschafft"
+     }
+    },
+    {
+     "n": {
+      "ru": "Обед: Bouillon Chartier",
+      "en": "Lunch: Bouillon Chartier",
+      "pt": "Almoço: Bouillon Chartier",
+      "es": "Almuerzo: Bouillon Chartier",
+      "de": "Mittag: Bouillon Chartier"
+     },
+     "m": {
+      "ru": "100 м от Panoramas; встать до 12:30",
+      "en": "100 m from Panoramas; queue before 12:30",
+      "pt": "100 m do Panoramas; chegar antes das 12:30",
+      "es": "100 m de Panoramas; llegar antes de las 12:30",
+      "de": "100 m von Panoramas; vor 12:30 anstellen"
+     },
+     "note": {
+      "ru": "Оптимален для компаний: зал 1896 года, счёт пишут на скатерти, цены прошлого века; очередь двигается быстро",
+      "en": "Ideal for groups: an 1896 hall, the bill written on the tablecloth, last-century prices; the queue moves fast",
+      "pt": "Ideal para grupos: sala de 1896, a conta escrita na toalha, preços do século passado; a fila anda depressa",
+      "es": "Ideal para grupos: sala de 1896, la cuenta escrita en el mantel, precios del siglo pasado; la cola avanza rápido",
+      "de": "Ideal für Gruppen: Saal von 1896, Rechnung aufs Tischtuch geschrieben, Preise vom letzten Jahrhundert; die Schlange geht schnell"
+     }
+    },
+    {
+     "n": {
+      "ru": "Galerie Vivienne — «Пассаж 4»",
+      "en": "Galerie Vivienne — 'Passage 4'",
+      "pt": "Galerie Vivienne — «Passagem 4»",
+      "es": "Galerie Vivienne — «Pasaje 4»",
+      "de": "Galerie Vivienne — «Passage 4»"
+     },
+     "m": {
+      "ru": "10 минут вниз к Пале-Руаялю",
+      "en": "10 minutes down towards the Palais-Royal",
+      "pt": "10 minutos para o Palais-Royal",
+      "es": "10 minutos hacia el Palais-Royal",
+      "de": "10 Minuten hinunter zum Palais-Royal"
+     },
+     "note": {
+      "ru": "Самый парадный: мозаичные полы 1823 года и винный погреб Legrand; рядом — полосатые колонны Бюрена во дворе Пале-Руаяля",
+      "en": "The most stately: 1823 mosaic floors and the Legrand wine cellar; the striped Buren columns wait nearby in the Palais-Royal courtyard",
+      "pt": "A mais imponente: pisos de mosaico de 1823 e a garrafeira Legrand; ao lado, as colunas às riscas de Buren no pátio do Palais-Royal",
+      "es": "El más señorial: suelos de mosaico de 1823 y la bodega Legrand; al lado, las columnas a rayas de Buren en el patio del Palais-Royal",
+      "de": "Die prächtigste: Mosaikböden von 1823 und der Weinkeller Legrand; nebenan warten Burens gestreifte Säulen im Hof des Palais-Royal"
+     }
+    },
+    {
+     "n": {
+      "ru": "Финал: крыша Galeries Lafayette",
+      "en": "Finale: the Galeries Lafayette rooftop",
+      "pt": "Final: o terraço das Galeries Lafayette",
+      "es": "Final: la azotea de Galeries Lafayette",
+      "de": "Finale: das Dach der Galeries Lafayette"
+     },
+     "m": {
+      "ru": "вернуться к Опере; вход свободный",
+      "en": "back towards the Opéra; free entry",
+      "pt": "voltar à Ópera; entrada livre",
+      "es": "volver a la Ópera; entrada libre",
+      "de": "zurück zur Oper; Eintritt frei"
+     },
+     "note": {
+      "ru": "Купол ар-нуво изнутри и бесплатная смотровая на крыше — панорама с башней; по пути загляни в Оперу Гарнье (внутрь — экскурсию!)",
+      "en": "The Art Nouveau dome from inside and the free rooftop — a panorama with the tower; peek into the Palais Garnier on the way (take the tour!)",
+      "pt": "A cúpula Arte Nova por dentro e o terraço gratuito — panorâmica com a torre; espreita a Ópera Garnier no caminho (faz a visita!)",
+      "es": "La cúpula art nouveau por dentro y la azotea gratuita — panorámica con la torre; asómate a la Ópera Garnier de camino (¡haz la visita!)",
+      "de": "Die Jugendstil-Kuppel von innen und das freie Dach — Panorama mit Turm; unterwegs in die Opéra Garnier schauen (Führung nehmen!)"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Кофе-пауза не в пассажах: Cuvée Noire и онигири Komé Komé — на одной Rue de Caumartin в 5 минутах",
+     "en": "Skip passage coffee: Cuvée Noire and Komé Komé onigiri share Rue de Caumartin, 5 minutes away",
+     "pt": "Café fora das passagens: Cuvée Noire e os onigiri do Komé Komé na mesma Rue de Caumartin, a 5 minutos",
+     "es": "Café fuera de los pasajes: Cuvée Noire y los onigiri de Komé Komé en la misma Rue de Caumartin, a 5 minutos",
+     "de": "Kaffee nicht in den Passagen: Cuvée Noire und Komé-Komé-Onigiri liegen an derselben Rue de Caumartin, 5 Minuten"
+    },
+    {
+     "ru": "В Jouffroy — пол с подогревом, первый в Париже: пассаж строили как зимнюю улицу",
+     "en": "Jouffroy has heated floors, the first in Paris: the passage was built as a winter street",
+     "pt": "O Jouffroy tem piso aquecido, o primeiro de Paris: a passagem foi feita como rua de inverno",
+     "es": "Jouffroy tiene suelo radiante, el primero de París: el pasaje se construyó como calle de invierno",
+     "de": "Jouffroy hat Fußbodenheizung, die erste in Paris: die Passage wurde als Winterstraße gebaut"
+    },
+    {
+     "ru": "Дождливый день — лучший день этого маршрута: он почти весь под стеклом",
+     "en": "A rainy day is this route's best day: it's almost entirely under glass",
+     "pt": "Um dia de chuva é o melhor dia desta rota: está quase toda sob vidro",
+     "es": "Un día de lluvia es el mejor día de esta ruta: va casi toda bajo cristal",
+     "de": "Ein Regentag ist der beste Tag für diese Route: sie verläuft fast ganz unter Glas"
+    }
+   ],
+   "park": {
+    "ru": "Только пешком и метро: Grands Boulevards (8, 9) на входе, Opéra (3, 7, 8) на выходе.",
+    "en": "Foot and metro only: Grands Boulevards (8, 9) at the start, Opéra (3, 7, 8) at the end.",
+    "pt": "Só a pé e de metro: Grands Boulevards (8, 9) à entrada, Opéra (3, 7, 8) à saída.",
+    "es": "Solo a pie y en metro: Grands Boulevards (8, 9) al inicio, Opéra (3, 7, 8) al final.",
+    "de": "Nur zu Fuß und Metro: Grands Boulevards (8, 9) am Anfang, Opéra (3, 7, 8) am Ende."
+   },
+   "wear": {
+    "ru": "Обычная городская обувь; наличные мелочью — часть лавок в пассажах живёт как в прошлом веке.",
+    "en": "Ordinary city shoes; small cash — some passage shops still live in the last century.",
+    "pt": "Calçado urbano normal; dinheiro trocado — algumas lojas das passagens ainda vivem no século passado.",
+    "es": "Calzado urbano normal; efectivo suelto — algunas tiendas de los pasajes aún viven en el siglo pasado.",
+    "de": "Normale Stadtschuhe; etwas Bargeld — manche Passagen-Läden leben noch im letzten Jahrhundert."
+   }
+  },
+  {
+   "id": "tower-15",
+   "feat": false,
+   "title": {
+    "ru": "Башня без туристов · Camoens и 15-й",
+    "en": "The Tower without tourists · Camoens & the 15th",
+    "pt": "A Torre sem turistas · Camoens e o 15º",
+    "es": "La Torre sin turistas · Camoens y el 15º",
+    "de": "Der Turm ohne Touristen · Camoens & das 15."
+   },
+   "duration": "half",
+   "car": false,
+   "light": "any",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 48.8617,
+   "sunLon": 2.2893,
+   "why": {
+    "ru": "Лучшие ракурсы башни — и сразу в сторону от туристических троп: «домашний» 15-й округ, где на одной улице живут великая пекарня и великая сырная. Утром — пустой Camoens и свежие круассаны; на закате — золотой свет над Сеной.",
+    "en": "The tower's best angles — then straight off the tourist trail into the homely 15th, where a great bakery and a great fromagerie share one street. Morning gives you an empty Camoens and fresh croissants; sunset gives golden light over the Seine.",
+    "pt": "Os melhores ângulos da torre — e logo fora dos trilhos turísticos, para o caseiro 15º, onde uma grande padaria e uma grande queijaria partilham a mesma rua. De manhã, um Camoens vazio e croissants frescos; ao pôr do sol, luz dourada sobre o Sena.",
+    "es": "Los mejores ángulos de la torre — y enseguida fuera de las rutas turísticas, al hogareño 15º, donde una gran panadería y una gran quesería comparten calle. Por la mañana, un Camoens vacío y cruasanes recién hechos; al atardecer, luz dorada sobre el Sena.",
+    "de": "Die besten Blickwinkel auf den Turm — und gleich weg vom Touristenpfad ins heimelige 15., wo eine große Bäckerei und eine große Fromagerie sich eine Straße teilen. Morgens ein leerer Camoens und frische Croissants; zum Sonnenuntergang goldenes Licht über der Seine."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Avenue de Camoens — тот самый ракурс",
+      "en": "Avenue de Camoens — that framing",
+      "pt": "Avenue de Camoens — aquele enquadramento",
+      "es": "Avenue de Camoens — ese encuadre",
+      "de": "Avenue de Camoens — genau dieser Blick"
+     },
+     "m": {
+      "ru": "рано утром, до фотосессий",
+      "en": "early morning, before the photo shoots",
+      "pt": "de manhã cedo, antes das sessões",
+      "es": "temprano, antes de las sesiones de fotos",
+      "de": "früh morgens, vor den Fotoshootings"
+     },
+     "note": {
+      "ru": "Башня в разрезе улицы, перила для кадра. Днём здесь очередь инфлюенсеров — утром улица твоя",
+      "en": "The tower framed by the street, a railing to pose on. By day there's an influencer queue — in the morning the street is yours",
+      "pt": "A torre no recorte da rua, o corrimão para a foto. De dia há fila de influencers — de manhã a rua é tua",
+      "es": "La torre en el corte de la calle, la barandilla para la foto. De día hay cola de influencers — por la mañana la calle es tuya",
+      "de": "Der Turm im Straßenausschnitt, ein Geländer fürs Foto. Tagsüber stehen hier Influencer Schlange — morgens gehört die Straße dir"
+     }
+    },
+    {
+     "n": {
+      "ru": "Сады Трокадеро",
+      "en": "The Trocadéro gardens",
+      "pt": "Os jardins do Trocadéro",
+      "es": "Los jardines del Trocadero",
+      "de": "Die Trocadéro-Gärten"
+     },
+     "m": {
+      "ru": "3 минуты; вниз от площади",
+      "en": "3 minutes; down from the square",
+      "pt": "3 minutos; a descer da praça",
+      "es": "3 minutos; bajando de la plaza",
+      "de": "3 Minuten; von der Terrasse hinab"
+     },
+     "note": {
+      "ru": "Классика, которую не испортить: вид на башню через Сену. Спуститься вниз в сады — людей меньше, ракурс тот же",
+      "en": "A classic you can't spoil: the tower across the Seine. Walk down into the gardens — fewer people, same view",
+      "pt": "Um clássico que não se estraga: a torre sobre o Sena. Desce aos jardins — menos gente, mesma vista",
+      "es": "Un clásico imposible de estropear: la torre sobre el Sena. Baja a los jardines — menos gente, misma vista",
+      "de": "Ein Klassiker, der nicht enttäuscht: der Turm über der Seine. In die Gärten hinabgehen — weniger Leute, gleicher Blick"
+     }
+    },
+    {
+     "n": {
+      "ru": "Мост Иена — под башню и мимо",
+      "en": "Pont d'Iéna — under the tower and on",
+      "pt": "Ponte de Iéna — sob a torre e a seguir",
+      "es": "Puente de Iéna — bajo la torre y de largo",
+      "de": "Pont d'Iéna — unter den Turm und vorbei"
+     },
+     "m": {
+      "ru": "пересечь Сену пешком",
+      "en": "cross the Seine on foot",
+      "pt": "atravessar o Sena a pé",
+      "es": "cruzar el Sena a pie",
+      "de": "die Seine zu Fuß überqueren"
+     },
+     "note": {
+      "ru": "Подойти под самые опоры, поднять голову — и не вставать в очередь: лучший вид на башню всегда снаружи неё",
+      "en": "Walk right under the pillars, look up — and skip the queue: the best view of the tower is always from outside it",
+      "pt": "Chegar mesmo debaixo dos pilares, olhar para cima — e não entrar na fila: a melhor vista da torre é sempre de fora dela",
+      "es": "Llegar justo bajo los pilares, mirar arriba — y saltarse la cola: la mejor vista de la torre siempre es desde fuera",
+      "de": "Direkt unter die Pfeiler treten, nach oben schauen — und die Schlange auslassen: der beste Blick auf den Turm ist immer von außen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Rue de Lourmel: Vincent Salur",
+      "en": "Rue de Lourmel: Vincent Salur",
+      "pt": "Rue de Lourmel: Vincent Salur",
+      "es": "Rue de Lourmel: Vincent Salur",
+      "de": "Rue de Lourmel: Vincent Salur"
+     },
+     "m": {
+      "ru": "20 минут пешком вглубь 15-го",
+      "en": "a 20-minute walk into the 15th",
+      "pt": "20 minutos a pé pelo 15º adentro",
+      "es": "20 minutos a pie hacia el 15º",
+      "de": "20 Minuten zu Fuß ins 15."
+     },
+     "note": {
+      "ru": "Багет и круассаны с 07:00; pain au chocolat, за которым возвращаются трижды за поездку. Туристов нет — только квартал",
+      "en": "Baguette and croissants from 7 am; the pain au chocolat people return for three times per trip. No tourists — just the neighbourhood",
+      "pt": "Baguete e croissants desde as 07:00; o pain au chocolat que faz voltar três vezes numa viagem. Sem turistas — só o bairro",
+      "es": "Baguette y cruasanes desde las 07:00; el pain au chocolat al que se vuelve tres veces por viaje. Sin turistas — solo el barrio",
+      "de": "Baguette und Croissants ab 7 Uhr; das Pain au Chocolat, für das man dreimal pro Reise wiederkommt. Keine Touristen — nur das Viertel"
+     }
+    },
+    {
+     "n": {
+      "ru": "Fromagerie Laurent Dubois — сыр!",
+      "en": "Fromagerie Laurent Dubois — cheese!",
+      "pt": "Fromagerie Laurent Dubois — queijo!",
+      "es": "Fromagerie Laurent Dubois — ¡queso!",
+      "de": "Fromagerie Laurent Dubois — Käse!"
+     },
+     "m": {
+      "ru": "та же улица, 200 м",
+      "en": "same street, 200 m",
+      "pt": "a mesma rua, 200 m",
+      "es": "la misma calle, 200 m",
+      "de": "dieselbe Straße, 200 m"
+     },
+     "note": {
+      "ru": "Комте, трюфельный бри и масло Bordier; дегустация, совет и вакуум в дорогу — сырная точка «своего» района",
+      "en": "Comté, truffle brie and Bordier butter; a taste, advice and vacuum-sealing for the road — the home district's cheese stop",
+      "pt": "Comté, brie de trufa e manteiga Bordier; prova, conselho e vácuo para a viagem — a paragem de queijo do bairro «da casa»",
+      "es": "Comté, brie de trufa y mantequilla Bordier; prueba, consejo y vacío para el viaje — la parada de queso del barrio «de casa»",
+      "de": "Comté, Trüffel-Brie und Bordier-Butter; Kostprobe, Beratung und Vakuum für unterwegs — die Käsestation des «eigenen» Viertels"
+     }
+    },
+    {
+     "n": {
+      "ru": "Boulangerie Loquer — сладкий финал",
+      "en": "Boulangerie Loquer — the sweet finale",
+      "pt": "Boulangerie Loquer — o final doce",
+      "es": "Boulangerie Loquer — el final dulce",
+      "de": "Boulangerie Loquer — das süße Finale"
+     },
+     "m": {
+      "ru": "ещё 5 минут на юг",
+      "en": "another 5 minutes south",
+      "pt": "mais 5 minutos para sul",
+      "es": "otros 5 minutos al sur",
+      "de": "noch 5 Minuten nach Süden"
+     },
+     "note": {
+      "ru": "Угловая пекарня, о которой не пишут гиды: фисташковая улитка и лучший, по мнению многих, круассан города — по цене обычного",
+      "en": "A corner bakery the guides don't mention: the pistachio swirl and, many say, the city's best croissant — at an ordinary price",
+      "pt": "Uma padaria de esquina que os guias não referem: o caracol de pistácio e, dizem muitos, o melhor croissant da cidade — a preço normal",
+      "es": "Una panadería de esquina que las guías no mencionan: el caracol de pistacho y, dicen muchos, el mejor cruasán de la ciudad — a precio normal",
+      "de": "Eine Eckbäckerei, die in keinem Guide steht: die Pistazienschnecke und, sagen viele, das beste Croissant der Stadt — zum normalen Preis"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Закатная версия: тот же маршрут в обратную сторону — сначала 15-й, к золотому часу выйти на Camoens и Трокадеро",
+     "en": "The sunset version: same route reversed — the 15th first, reaching Camoens and the Trocadéro for golden hour",
+     "pt": "Versão de pôr do sol: a mesma rota ao contrário — primeiro o 15º, chegando a Camoens e ao Trocadéro na hora dourada",
+     "es": "Versión de atardecer: la misma ruta al revés — primero el 15º, llegando a Camoens y al Trocadero en la hora dorada",
+     "de": "Die Sonnenuntergangs-Version: dieselbe Route umgekehrt — erst das 15., zur goldenen Stunde an Camoens und Trocadéro ankommen"
+    },
+    {
+     "ru": "Каждый час после заката башня искрится 5 минут — смотреть с моста Иена или из садов, не из очереди под ней",
+     "en": "Every hour after sunset the tower sparkles for 5 minutes — watch from the Pont d'Iéna or the gardens, not from the queue beneath it",
+     "pt": "A cada hora após o pôr do sol a torre cintila 5 minutos — ver da ponte de Iéna ou dos jardins, não da fila por baixo",
+     "es": "Cada hora tras el atardecer la torre destella 5 minutos — verlo desde el puente de Iéna o los jardines, no desde la cola de abajo",
+     "de": "Jede volle Stunde nach Sonnenuntergang glitzert der Turm 5 Minuten — von der Pont d'Iéna oder den Gärten aus schauen, nicht aus der Schlange darunter"
+    },
+    {
+     "ru": "Суббота или воскресенье — добавить крюк на блошиный Vanves (07–14): он на южной кромке того же берега",
+     "en": "On Saturday or Sunday add a detour to the Vanves flea market (07–14): it sits on the same bank's southern edge",
+     "pt": "Ao sábado ou domingo, acrescenta um desvio à feira de Vanves (07–14): fica na orla sul da mesma margem",
+     "es": "En sábado o domingo, añade un desvío al mercadillo de Vanves (07–14): está en el borde sur de la misma orilla",
+     "de": "Samstags oder sonntags einen Abstecher zum Flohmarkt Vanves (07–14) einplanen: er liegt am Südrand desselben Ufers"
+    }
+   ],
+   "park": {
+    "ru": "Пешеходный маршрут: метро Passy или Trocadéro на входе, Boucicaut/Charles Michels на выходе. Машина только помешает.",
+    "en": "A walking route: Passy or Trocadéro metro at the start, Boucicaut/Charles Michels at the end. A car would only get in the way.",
+    "pt": "Percurso a pé: metro Passy ou Trocadéro à entrada, Boucicaut/Charles Michels à saída. O carro só atrapalha.",
+    "es": "Ruta a pie: metro Passy o Trocadero al inicio, Boucicaut/Charles Michels al final. El coche solo estorba.",
+    "de": "Eine Fußroute: Metro Passy oder Trocadéro am Start, Boucicaut/Charles Michels am Ende. Ein Auto stört nur."
+   },
+   "wear": {
+    "ru": "Удобная обувь — суммарно 4–5 км; утром у реки свежо даже летом, возьми слой.",
+    "en": "Comfortable shoes — 4–5 km in total; mornings by the river are crisp even in summer, bring a layer.",
+    "pt": "Calçado confortável — 4–5 km no total; de manhã junto ao rio está fresco mesmo no verão, leva uma camada.",
+    "es": "Calzado cómodo — 4–5 km en total; por la mañana junto al río refresca incluso en verano, lleva una capa.",
+    "de": "Bequeme Schuhe — insgesamt 4–5 km; morgens am Fluss ist es selbst im Sommer frisch, eine Schicht mitnehmen."
+   }
+  }
+ ]
+}

@@ -4,7 +4,14 @@
   "id": "madeira-igor",
   "author": "Igor Kartuzov",
   "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
-  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/"
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/",
+  "city": {
+   "ru": "Мадейра",
+   "en": "Madeira",
+   "pt": "Madeira",
+   "es": "Madeira",
+   "de": "Madeira"
+  }
  },
  "points": [
   {
