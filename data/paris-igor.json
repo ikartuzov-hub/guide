@@ -40,7 +40,8 @@
    "card": "#FFFFFF",
    "line": "#E3E8EE",
    "tile": "#EEF2F6"
-  }
+  },
+  "shareBase": "share/"
  },
  "intro": {
   "eyebrow": {
@@ -403,11 +404,11 @@
    "lon": 2.3255338,
    "place_id": "ChIJ9-8ysdVx5kcR8Kx11cZTRsA",
    "note": {
-    "ru": "Сырная лавка, в которую заходишь по запаху ещё с улицы. Твёрдый комте и Фонтенбло — взбитый сыр как сливки; знают каждый сыр лично и завакуумируют в дорогу",
-    "en": "A cheese shop you enter by smell from the street. Aged comté and Fontainebleau — whipped cheese like cream; they know every cheese personally and vacuum-seal it for the road",
-    "pt": "Uma queijaria em que se entra pelo cheiro ainda na rua. Comté curado e Fontainebleau — queijo batido como natas; conhecem cada queijo pessoalmente e embalam a vácuo",
-    "es": "Una quesería en la que entras por el olor desde la calle. Comté curado y Fontainebleau — queso batido como nata; conocen cada queso personalmente y lo envasan al vacío",
-    "de": "Ein Käseladen, den man schon von der Straße am Duft findet. Gereifter Comté und Fontainebleau — geschlagener Käse wie Sahne; hier kennt man jeden Käse persönlich und vakuumiert für die Reise"
+    "ru": "Сырная лавка, в которую заходишь по запаху ещё с улицы. Твёрдый комте и Фонтенбло — взбитый сыр как сливки; завакуумируют в дорогу. И возьми мини-эпуас Le Trou du Cru — только произноси «крю» чётко: сглотнёшь звук — попросишь у француза дырку в попе (Le Trou du Cul) 😉",
+    "en": "A cheese shop you enter by smell from the street. Aged comté and Fontainebleau — whipped cheese like cream; vacuum-sealed for the road. And grab the mini-époisses Le Trou du Cru — just pronounce «cru» crisply: slur it and you're asking the Frenchman for Le Trou du Cul — a rather different hole 😉",
+    "pt": "Uma queijaria em que se entra pelo cheiro ainda na rua. Comté curado e Fontainebleau — queijo batido como natas; embalam a vácuo. E leva o mini-époisses Le Trou du Cru — mas pronuncia «cru» com cuidado: se escorregar, estás a pedir ao francês Le Trou du Cul — um buraco bem diferente 😉",
+    "es": "Una quesería en la que entras por el olor desde la calle. Comté curado y Fontainebleau — queso batido como nata; lo envasan al vacío. Y llévate el mini-époisses Le Trou du Cru — pero pronuncia «cru» con cuidado: si se te escapa, le estás pidiendo al francés Le Trou du Cul — un agujero muy distinto 😉",
+    "de": "Ein Käseladen, den man schon von der Straße am Duft findet. Gereifter Comté und Fontainebleau — geschlagener Käse wie Sahne; wird reisefertig vakuumiert. Und nimm den Mini-Époisses Le Trou du Cru — sprich «cru» nur sauber aus: verschluckst du den Laut, bestellst du beim Franzosen Le Trou du Cul — ein ganz anderes Loch 😉"
    },
    "rating": 4.5,
    "count": 266,
@@ -424,7 +425,8 @@
     "shop"
    ],
    "secret": false,
-   "reg": "bac"
+   "reg": "bac",
+   "photo": "photos/barthelemy.jpg"
   },
   {
    "id": "hemispheres",
@@ -433,11 +435,11 @@
    "lon": 2.3237283,
    "place_id": "ChIJ4yw0dTBx5kcR2UPswrQiIsg",
    "note": {
-    "ru": "Чай для подарков в латунной банке: выдвижные ящички с ароматами, ручная упаковка — ощущение лавки волшебных палочек",
-    "en": "Tea for gifts in a brass tin: pull-out scent drawers, hand-wrapping — feels like a wand shop",
-    "pt": "Chá para presentes em lata de latão: gavetas de aromas, embrulho à mão — parece uma loja de varinhas mágicas",
-    "es": "Té para regalos en lata de latón: cajones de aromas, envoltura a mano — parece una tienda de varitas mágicas",
-    "de": "Tee als Geschenk in der Messingdose: Duft-Schubladen, Handverpackung — wie ein Zauberstab-Laden"
+    "ru": "Чай для подарков в латунной банке: выдвижные ящички с ароматами, насыпают и упаковывают при тебе — прекрасный подарок 2 в 1, для чайного гурмана и эстета",
+    "en": "Gift tea in a brass tin: pull-out scent drawers, weighed and wrapped in front of you — a perfect 2-in-1 gift, for the tea gourmet and the aesthete",
+    "pt": "Chá para presente em lata de latão: gavetas de aromas, pesado e embrulhado à tua frente — um presente 2 em 1 perfeito, para o gourmet de chá e para o esteta",
+    "es": "Té para regalo en lata de latón: cajones de aromas, pesado y envuelto delante de ti — un regalo 2 en 1 perfecto, para el gourmet del té y el esteta",
+    "de": "Geschenk-Tee in der Messingdose: Duft-Schubladen, vor deinen Augen abgewogen und verpackt — das perfekte 2-in-1-Geschenk, für Tee-Gourmet und Ästhet"
    },
    "rating": 4.8,
    "count": 125,
@@ -454,7 +456,9 @@
     "fine"
    ],
    "secret": true,
-   "reg": "bac"
+   "reg": "bac",
+   "photo": "photos/hemispheres.jpg",
+   "video": "photos/hemispheres.mp4"
   },
   {
    "id": "bacglaces",
@@ -2251,7 +2255,15 @@
     "pt": "Um saco para as compras e espaço no apetite: o percurso é comestível da primeira à última paragem.",
     "es": "Una bolsa para las compras y hueco en el apetito: la ruta es comestible de la primera a la última parada.",
     "de": "Eine Tasche für Einkäufe und Platz im Appetit: die Route ist von der ersten bis zur letzten Station essbar."
-   }
+   },
+   "route": [
+    "barthelemy",
+    "hemispheres",
+    "bacglaces",
+    "certified",
+    "conticini",
+    "bonmarche"
+   ]
   },
   {
    "id": "passages",
@@ -2455,7 +2467,15 @@
     "pt": "Calçado urbano normal; dinheiro trocado — algumas lojas das passagens ainda vivem no século passado.",
     "es": "Calzado urbano normal; efectivo suelto — algunas tiendas de los pasajes aún viven en el siglo pasado.",
     "de": "Normale Stadtschuhe; etwas Bargeld — manche Passagen-Läden leben noch im letzten Jahrhundert."
-   }
+   },
+   "route": [
+    "panoramas",
+    "jouffroy",
+    "verdeau",
+    "chartier",
+    "vivienne",
+    "lafayette"
+   ]
   },
   {
    "id": "tower-15",
@@ -2659,7 +2679,14 @@
     "pt": "Calçado confortável — 4–5 km no total; de manhã junto ao rio está fresco mesmo no verão, leva uma camada.",
     "es": "Calzado cómodo — 4–5 km en total; por la mañana junto al río refresca incluso en verano, lleva una capa.",
     "de": "Bequeme Schuhe — insgesamt 4–5 km; morgens am Fluss ist es selbst im Sommer frisch, eine Schicht mitnehmen."
-   }
+   },
+   "route": [
+    "camoens",
+    "trocadero",
+    "salur",
+    "dubois",
+    "loquer"
+   ]
   }
  ]
 }
