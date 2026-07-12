@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моя Неизведанная Мадейра</title>
+<link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
+<link rel="manifest" href="app.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg?v=2">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1E1016;--bg2:#281720;--bg3:#321E29;--ink:#F6E9EC;--muted:#C49AA4;--faint:#8A6670;--accent:#E14B6A;--accent2:#F07A92;--accentInk:#2A0E16;--card:#281720;--line:#3A2530;--tile:#321E29;--shadow:0 10px 30px rgba(0,0,0,.45);--r:18px}
+:root[data-theme="light"]{--bg:#FBF1F0;--bg2:#FFFFFF;--bg3:#FCF6F5;--ink:#1E1016;--muted:#7A5560;--faint:#B08C95;--accent:#C13A57;--accent2:#E14B6A;--accentInk:#FFFFFF;--card:#FFFFFF;--line:#F0DEE1;--tile:#FBEEF0;--shadow:0 10px 28px rgba(30,16,22,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mulish',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:0;z-index:1200;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:12px;min-height:60px;max-width:1080px;margin:0 auto;padding:8px 18px}
+.mark{width:30px;height:30px;flex:0 0 auto}.mark svg{display:block;width:100%;height:100%}
+.brandtext{font-family:'Lora',serif;font-weight:600;font-size:18px}
+.brandtext small{display:block;font:500 11px 'Mulish';color:var(--muted);margin-top:-2px}
+.brandtext #brandcity{color:var(--accent);font-weight:600}
+.top-sp{flex:1}
+.topctrl{display:flex;align-items:center;gap:8px}
+.ctrl{width:38px;height:38px;border-radius:50%;background:var(--bg2);border:1px solid var(--line);color:var(--ink);font:700 13px 'Mulish';cursor:pointer;display:grid;place-items:center;transition:.2s}
+.ctrl:hover{border-color:var(--accent);color:var(--accent)}
+.langwrap{position:relative}
+.langmenu{position:absolute;top:46px;right:0;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px;min-width:184px;z-index:60}
+.langmenu[hidden]{display:none}
+.langopt{display:flex;gap:10px;align-items:center;width:100%;text-align:left;background:none;border:0;color:var(--ink);font:500 14px 'Mulish';padding:9px 12px;border-radius:9px;cursor:pointer;transition:.15s}
+.langopt:hover{background:var(--tile)}
+.langopt.on{color:var(--accent);font-weight:700}
+.langopt .lc{width:26px;font-weight:700;color:var(--muted)}
+.langopt.on .lc{color:var(--accent)}
+.hero{padding:44px 0 22px}
+.eyebrow{font:600 12px 'Mulish';letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.h1{font-family:'Lora',serif;font-weight:600;font-size:clamp(38px,7vw,66px);line-height:1.02;margin:0;letter-spacing:-.5px}
+.sub{font-family:'Lora',serif;font-style:italic;font-size:clamp(17px,2.6vw,22px);color:var(--muted);margin:14px 0 0;max-width:42ch}
+.by{margin-top:16px;font-size:13.5px;color:var(--muted)}.by b{color:var(--ink);font-weight:600}
+#map{height:340px;border-radius:var(--r);margin:22px 0 8px;border:1px solid var(--line);z-index:1}
+.pop-n{font-family:'Lora',serif;font-weight:600;font-size:15px;color:#1E1016}
+.pop-r{color:#C13A57;font-weight:600;font-size:12.5px}.pop-note{font-style:italic;color:#7A5560;font-size:12.5px;margin-top:3px}
+.st{font-family:'Lora',serif;font-weight:600;font-size:25px;margin:40px 0 4px}
+.st small{display:block;font:400 13.5px 'Mulish';color:var(--muted);margin-top:4px}
+/* picker */
+.picker{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0 6px;padding:16px;background:var(--tile);border:1px solid var(--line);border-radius:var(--r)}
+.pgrp{display:flex;flex-direction:column;gap:7px}
+.plab{font:600 11px 'Mulish';letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.popts{display:flex;gap:6px;flex-wrap:wrap}
+.popt{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 13px 'Mulish';cursor:pointer;transition:.15s}
+.popt.on{border-color:var(--accent);background:var(--accent);color:var(--accentInk)}
+/* scenario */
+.scn{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin:18px 0}
+.scn.feat{border-color:var(--accent)}
+.scn-h{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.scn-meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
+.mtag{font:600 11.5px 'Mulish';background:var(--tile);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted)}
+.mtag.sun{color:var(--accent);border-color:var(--accent)}
+.scn-t{font-family:'Lora',serif;font-weight:600;font-size:23px;margin:0;line-height:1.1}
+.scn-why{font-family:'Lora',serif;font-style:italic;color:var(--muted);font-size:15px;margin:8px 0 0}
+.scn-b{padding:6px 20px 18px}
+.stop{display:flex;gap:13px;padding:12px 0;border-bottom:1px dashed var(--line)}.stop:last-child{border-bottom:0}
+.stop-i{width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accentInk);font:600 12px 'Mulish';display:grid;place-items:center;flex:0 0 auto;margin-top:1px}
+.stop-n{font-weight:600;font-size:15px}.stop-m{color:var(--muted);font-weight:400;font-size:12.5px}
+.stop-note{font-family:'Lora',serif;font-style:italic;font-size:13.5px;color:var(--muted);margin-top:2px}
+.scn-x{display:grid;grid-template-columns:1fr;gap:12px;padding:14px 20px 18px;background:var(--tile);border-top:1px solid var(--line)}
+@media(min-width:620px){.scn-x{grid-template-columns:1fr 1fr}}
+.xblock{font-size:13px}.xblock h4{margin:0 0 4px;font:600 11px 'Mulish';letter-spacing:1px;text-transform:uppercase;color:var(--accent)}
+.xblock ul{margin:0;padding-left:16px;color:var(--muted)}.xblock li{margin:2px 0}
+.xblock p{margin:0;color:var(--muted)}
+/* tags + cards */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 13px;font:500 13px 'Mulish';cursor:pointer;display:inline-flex;gap:6px;align-items:center;transition:.18s}
+.chip.on{border-color:var(--accent);background:var(--accent);color:var(--accentInk)}.chip .ct{opacity:.6;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:20px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .2s,border-color .2s;position:relative}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.ph{aspect-ratio:16/10;background:var(--tile) center/cover no-repeat;position:relative;display:grid;place-items:center}
+.ph .ph-e{font-size:40px;opacity:.35}
+.tag-dot{position:absolute;top:11px;left:11px;background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:4px 10px;font:600 11.5px 'Mulish';display:inline-flex;gap:5px;align-items:center;backdrop-filter:blur(4px)}
+.secret{position:absolute;top:11px;right:11px;background:var(--accent);color:var(--accentInk);border-radius:999px;padding:4px 10px;font:600 11px 'Mulish'}
+.cbody{padding:15px 16px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.cname{font-family:'Lora',serif;font-weight:600;font-size:19px;line-height:1.15;margin:0}
+.rate{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);flex-wrap:wrap}.star{color:var(--accent);font-weight:700}
+.hours{font-size:12.5px;color:var(--muted)}
+.note{font-family:'Lora',serif;font-style:italic;font-size:15px;line-height:1.4;color:var(--ink);border-left:2px solid var(--accent);padding-left:11px;margin:2px 0}
+.cfoot{margin-top:auto;padding-top:6px}
+.dir{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font:600 13px 'Mulish';text-decoration:none}.dir:hover{text-decoration:underline}
+.btnlike{background:none;border:0;cursor:pointer;padding:0}
+.scn-act{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.scn.hl{outline:2px solid var(--accent);outline-offset:2px}
+.hidden{display:none!important}
+.foot{border-top:1px solid var(--line);margin-top:50px;padding:34px 0 60px}
+.cta{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}
+.cta-t{font-family:'Lora',serif;font-weight:600;font-size:21px}.cta-t small{display:block;font:400 13.5px 'Mulish';color:var(--muted);margin-top:3px}
+.btn{background:var(--accent);color:var(--accentInk);border:0;border-radius:12px;padding:12px 22px;font:600 14.5px 'Mulish';text-decoration:none;display:inline-block;cursor:pointer;transition:.2s}.btn:hover{filter:brightness(1.08)}
+.sig{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:24px;font-size:12.5px;color:var(--muted)}.sig a{color:var(--muted)}
+@keyframes markIn{0%{transform:translate(calc(50vw - 33px),40vh) scale(7);opacity:0}18%{opacity:1}70%{transform:translate(calc(50vw - 33px),40vh) scale(7)}100%{transform:translate(0,0) scale(1)}}
+.mark.reveal{animation:markIn 2.4s cubic-bezier(.65,0,.25,1) both}@media(prefers-reduced-motion:reduce){.mark.reveal{animation:none}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(max-width:560px){#map{height:280px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in">
+  <span class="mark" id="mark" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M72 36 A26 26 0 1 0 72 64 L72 50 L54 50"/><path d="M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84"/></svg></span>
+  <span class="brandtext">Мой Гид<span id="brandcity"></span><small>SeedWave</small></span>
+  <span class="top-sp"></span>
+  <div class="topctrl">
+    <div class="langwrap">
+      <button class="ctrl" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Язык / Language">RU</button>
+      <div class="langmenu" id="langMenu" role="menu" hidden></div>
+    </div>
+    <button class="ctrl" id="theme" aria-label="Тема / Theme">☾</button>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow" data-i="eyebrow"></p>
+    <h1 class="h1" data-i="title"></h1>
+    <p class="sub" data-i="sub"></p>
+    <p class="by" id="by"></p>
+  </header>
+
+  <div id="map"></div>
+
+  <!-- HERO: scenarios -->
+  <h2 class="st"><span data-i="sc_title"></span><small data-i="sc_sub"></small></h2>
+  <div class="picker" id="picker"></div>
+  <div id="scns"></div>
+
+  <!-- base: all places -->
+  <h2 class="st"><span data-i="places_title"></span><small data-i="places_sub"></small></h2>
+  <div class="tags" id="tags"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer class="foot">
+    <div class="cta"><div class="cta-t"><span data-i="foot_t"></span><small data-i="foot_s"></small></div>
+      <a class="btn" id="hublink" data-i="foot_btn" href="#"></a></div>
+    <div class="sig"><span>© <a href="#" id="lk">Igor Kartuzov</a> · <a href="#" id="hub2">SeedWave</a></span>
+      <span data-i="data_note"></span></div>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js"></script>
+<script>
+const LANGS=["ru","en","pt","es","de"];
+/* ===== СЛОЙ 2 — ЛОКАЛИ (в проде ui.{lang}.json). Интерфейс на 5 языках. ===== */
+const UI={
+ ru:{eyebrow:"Гид · мои секретные точки",title:"Моя Неизведанная Мадейра",sub:"Места без толп — закаты, деревни, секреты острова от того, кто здесь живёт.",by:"Собрал {a} · {n} мест · {s} секретных",
+   sc_title:"Сценарии из моих точек",sc_sub:"Скажи, что у тебя есть — соберу вечер или маршрут",
+   time:"Время",half:"Полдня",day:"День",multi:"2–3 дня",car:"Машина",cy:"Есть",cn:"Нет",light:"Свет",sunset:"Закат",sunrise:"Восход",dayl:"Днём",act:"Хочу",walk:"Прогулка",hike:"Хайк",swim:"Купаться",food:"Гастро",any:"Любое",
+   secrets:"Секретные места рядом",park:"Парковка",wear:"Что надеть",why:"Почему ехать",sunset_t:"Закат сегодня",sunrise_t:"Восход сегодня",noscn:"Под этот набор сценария нет — поменяй фильтры.",
+   places_title:"Все мои места",places_sub:"База: к секретным точкам — по пути",all:"Все",secret:"секрет",reviews:"отзывов",dir:"Проложить маршрут",gmaps:"Маршрут в Google Maps",onmap:"Показать на карте",share:"Поделиться маршрутом",copied:"Ссылка скопирована ✓",
+   foot_t:"Понравился гид?",foot_s:"Сделай свой — из своих точек на карте.",foot_btn:"Сделать свой гид →",data_note:"Данные мест · Google · снимок"},
+ en:{eyebrow:"Guide · my secret spots",title:"My Undiscovered Madeira",sub:"Places without crowds — sunsets, villages, island secrets from someone who lives here.",by:"By {a} · {n} places · {s} secret",
+   sc_title:"Scenarios from my spots",sc_sub:"Tell me what you've got — I'll build your evening or route",
+   time:"Time",half:"Half-day",day:"Day",multi:"2–3 days",car:"Car",cy:"Yes",cn:"No",light:"Light",sunset:"Sunset",sunrise:"Sunrise",dayl:"Daytime",act:"I want",walk:"Stroll",hike:"Hike",swim:"Swim",food:"Food & drink",any:"Any",
+   secrets:"Secret spots nearby",park:"Parking",wear:"What to wear",why:"Why go",sunset_t:"Sunset today",sunrise_t:"Sunrise today",noscn:"No scenario for this set — change the filters.",
+   places_title:"All my places",places_sub:"The base — on the way to the secret spots",all:"All",secret:"secret",reviews:"reviews",dir:"Get directions",gmaps:"Route in Google Maps",onmap:"Show on map",share:"Share this route",copied:"Link copied ✓",
+   foot_t:"Liked this guide?",foot_s:"Make your own — from your pins on the map.",foot_btn:"Make your guide →",data_note:"Place data · Google · snapshot"},
+ pt:{eyebrow:"Guia · os meus lugares secretos",title:"A Minha Madeira Secreta",sub:"Lugares sem multidões — pores do sol, aldeias e segredos da ilha de quem cá vive.",by:"Por {a} · {n} lugares · {s} secretos",
+   sc_title:"Cenários dos meus lugares",sc_sub:"Diz-me o que tens — monto a tua tarde ou rota",
+   time:"Tempo",half:"Meio-dia",day:"Um dia",multi:"2–3 dias",car:"Carro",cy:"Sim",cn:"Não",light:"Luz",sunset:"Pôr do sol",sunrise:"Nascer do sol",dayl:"De dia",act:"Quero",walk:"Passeio",hike:"Caminhada",swim:"Nadar",food:"Gastronomia",any:"Qualquer",
+   secrets:"Lugares secretos perto",park:"Estacionamento",wear:"O que vestir",why:"Porquê ir",sunset_t:"Pôr do sol hoje",sunrise_t:"Nascer do sol hoje",noscn:"Sem cenário para esta seleção — muda os filtros.",
+   places_title:"Todos os meus lugares",places_sub:"A base — a caminho dos lugares secretos",all:"Todos",secret:"secreto",reviews:"avaliações",dir:"Como chegar",gmaps:"Rota no Google Maps",onmap:"Mostrar no mapa",share:"Partilhar a rota",copied:"Link copiado ✓",
+   foot_t:"Gostaste do guia?",foot_s:"Cria o teu — a partir dos teus pontos no mapa.",foot_btn:"Criar o meu guia →",data_note:"Dados dos locais · Google · captura"},
+ es:{eyebrow:"Guía · mis lugares secretos",title:"Mi Madeira Inexplorada",sub:"Lugares sin multitudes — atardeceres, pueblos y secretos de la isla de quien vive aquí.",by:"Por {a} · {n} lugares · {s} secretos",
+   sc_title:"Escenarios de mis lugares",sc_sub:"Dime qué tienes — te armo la tarde o la ruta",
+   time:"Tiempo",half:"Medio día",day:"Un día",multi:"2–3 días",car:"Coche",cy:"Sí",cn:"No",light:"Luz",sunset:"Atardecer",sunrise:"Amanecer",dayl:"De día",act:"Quiero",walk:"Paseo",hike:"Senderismo",swim:"Nadar",food:"Gastronomía",any:"Cualquiera",
+   secrets:"Lugares secretos cerca",park:"Aparcamiento",wear:"Qué llevar",why:"Por qué ir",sunset_t:"Atardecer hoy",sunrise_t:"Amanecer hoy",noscn:"Sin escenario para esta selección — cambia los filtros.",
+   places_title:"Todos mis lugares",places_sub:"La base — de camino a los secretos",all:"Todos",secret:"secreto",reviews:"reseñas",dir:"Cómo llegar",gmaps:"Ruta en Google Maps",onmap:"Ver en el mapa",share:"Compartir la ruta",copied:"Enlace copiado ✓",
+   foot_t:"¿Te gustó la guía?",foot_s:"Crea la tuya — desde tus puntos en el mapa.",foot_btn:"Crear mi guía →",data_note:"Datos de lugares · Google · captura"},
+ de:{eyebrow:"Guide · meine geheimen Orte",title:"Mein Unentdecktes Madeira",sub:"Orte ohne Menschenmassen — Sonnenuntergänge, Dörfer und Inselgeheimnisse von einem, der hier lebt.",by:"Von {a} · {n} Orte · {s} geheim",
+   sc_title:"Szenarien aus meinen Orten",sc_sub:"Sag, was du hast — ich baue deinen Abend oder die Route",
+   time:"Zeit",half:"Halber Tag",day:"Ein Tag",multi:"2–3 Tage",car:"Auto",cy:"Ja",cn:"Nein",light:"Licht",sunset:"Sonnenuntergang",sunrise:"Sonnenaufgang",dayl:"Tagsüber",act:"Ich will",walk:"Spaziergang",hike:"Wandern",swim:"Baden",food:"Essen & Trinken",any:"Egal",
+   secrets:"Geheime Orte in der Nähe",park:"Parken",wear:"Was anziehen",why:"Warum hin",sunset_t:"Sonnenuntergang heute",sunrise_t:"Sonnenaufgang heute",noscn:"Kein Szenario für diese Auswahl — ändere die Filter.",
+   places_title:"Alle meine Orte",places_sub:"Die Basis — auf dem Weg zu den geheimen Orten",all:"Alle",secret:"geheim",reviews:"Bewertungen",dir:"Route",gmaps:"Route in Google Maps",onmap:"Auf der Karte zeigen",share:"Route teilen",copied:"Link kopiert ✓",
+   foot_t:"Guide gefallen?",foot_s:"Mach deinen eigenen — aus deinen Punkten auf der Karte.",foot_btn:"Meinen Guide erstellen →",data_note:"Ortsdaten · Google · Snapshot"}
+};
+
+/* ===== СЛОЙ 3 — КОНТЕНТ (в проде data.madeira-igor.json). Голос автора — в note (RU). ===== */
+let GUIDE=null;
+
+/* ===== ДВИЖОК (Слой 1) ===== */
+const TAGS={wine:{l:"wine",e:"🍷",c:"#B5476B"},food:{l:"food",e:"🍽",c:"#C25A3C"},coffee:{l:"coffee",e:"☕",c:"#9C6B3F"},bar:{l:"bar",e:"🍹",c:"#2E8B6B"},bakery:{l:"bakery",e:"🥐",c:"#C99A3B"},fine:{l:"fine",e:"✦",c:"#8E3B6E"},view:{l:"view",e:"🌅",c:"#E2772E"},hike:{l:"hike",e:"🥾",c:"#2E7D32"},shop:{l:"shop",e:"🛍",c:"#5B6ABF"},sight:{l:"sight",e:"🏛",c:"#7A6A8C"}};
+const TAGLABEL={ru:{wine:"Вино",food:"Еда",coffee:"Кофе",bar:"Бары",bakery:"Пекарни",fine:"Fine dining",view:"Виды",hike:"Маршруты",shop:"Шопинг",sight:"Классика"},en:{wine:"Wine",food:"Food",coffee:"Coffee",bar:"Bars",bakery:"Bakeries",fine:"Fine dining",view:"Views",hike:"Hikes",shop:"Shopping",sight:"Sights"},pt:{wine:"Vinho",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Padarias",fine:"Fine dining",view:"Vistas",hike:"Trilhos",shop:"Compras",sight:"Monumentos"},es:{wine:"Vino",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Panaderías",fine:"Fine dining",view:"Vistas",hike:"Rutas",shop:"Compras",sight:"Monumentos"},de:{wine:"Wein",food:"Essen",coffee:"Kaffee",bar:"Bars",bakery:"Bäckereien",fine:"Fine dining",view:"Aussicht",hike:"Wandern",shop:"Shopping",sight:"Sehenswertes"}};
+/* deriveTags/isSecret вынесены в data (поля tags/secret) */
+function regionOf(p){const{lat,lon}=p;if(lon<-17.18)return"west";if(lat>32.80)return"northwest";if(lat>32.78)return"north";if(lon>-16.88)return"east";if(lat<32.70&&lon>-16.97)return"funchal";return"centre";}
+/* post-process перенесён в bootGuide() */
+
+/* auto half-day scenarios from geo clusters (secret-led) */
+const REGT={west:{ru:"Запад",en:"West",pt:"Oeste",es:"Oeste",de:"Westen"},northwest:{ru:"Северо-запад",en:"Northwest",pt:"Noroeste",es:"Noroeste",de:"Nordwesten"},north:{ru:"Север",en:"North",pt:"Norte",es:"Norte",de:"Norden"},east:{ru:"Восток",en:"East",pt:"Este",es:"Este",de:"Osten"},funchal:{ru:"Фуншал",en:"Funchal",pt:"Funchal",es:"Funchal",de:"Funchal"},centre:{ru:"Центр · горы",en:"Centre · mountains",pt:"Centro · montanhas",es:"Centro · montañas",de:"Mitte · Berge"}};
+function autoScenarios(){
+ const RT=Object.assign({},REGT,GUIDE.regions||{});
+ const SKIP=GUIDE.autoSkip||["west","centre","north","northwest"];
+ const g={};GUIDE.points.forEach(p=>{(g[p.reg]=g[p.reg]||[]).push(p)});
+ const out=[];
+ Object.entries(g).forEach(([k,pts])=>{
+  if(SKIP.includes(k))return; // покрыто ручными героями
+  if(pts.length<2)return;
+  pts.sort((a,b)=>(b.secret-a.secret)||((b.rating||0)-(a.rating||0)));
+  const light=GUIDE.regions?"day":(k==="east"?"sunrise":(k==="funchal"?"day":"sunset"));
+  const car=GUIDE.regions?false:(k!=="funchal");
+  out.push({id:"auto-"+k,title:{ru:"Полдня · "+RT[k].ru,en:"Half-day · "+RT[k].en,pt:"Meio-dia · "+RT[k].pt,es:"Medio día · "+RT[k].es,de:"Halber Tag · "+RT[k].de},
+   duration:"half",car,light,act:[...new Set(pts.flatMap(p=>p.tags.map(t=>t==="view"?"walk":(t==="hike"?"hike":(t==="bar"||t==="wine"||t==="coffee"||t==="bakery"?"walk":"food")))))],
+   why:"",auto:true,stops:pts.slice(0,4).map(p=>({n:p.name,m:Object.fromEntries(LANGS.map(l=>[l,(p.rating!=null?"★"+p.rating+" · ":"")+pick(p.hours,l)])),note:Object.fromEntries(LANGS.map(l=>[l,pick(p.note,l).replace(/^[^:]+:\s*/,'')]))})),sunLat:pts[0].lat,sunLon:pts[0].lon});
+ });
+ // multiday route (2–3 дня) by regions
+ const order=(GUIDE.regionOrder||["funchal","east","north","northwest","west","centre"]).filter(k=>g[k]);
+ out.push({id:"multi",title:{ru:"Маршрут на 2–3 дня",en:"2–3 day route",pt:"Rota de 2–3 dias",es:"Ruta de 2–3 días",de:"2–3-Tage-Route"},
+  duration:"multi",car:!GUIDE.regions,light:"any",act:["walk","food","hike"],why:"",auto:true,multiday:order.map((k,i)=>({day:i+1,t:RT[k],pts:g[k]})),sunLat:32.75,sunLon:-17.0});
+ return out;
+}
+let ALLSCN=[];
+
+/* state */
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function detectLang(){
+  const u=new URLSearchParams(location.search).get("lang");
+  const s=lsGet("guide_lang");
+  const n=(navigator.language||"ru").slice(0,2).toLowerCase();
+  return [u,s,n,"ru"].find(x=>LANGS.includes(x))||"ru";
+}
+let L=detectLang(),active=null,filt={duration:null,car:null,light:null,act:null};
+
+function t(k){return UI[L][k]}
+function pick(v,l){return (v&&typeof v==='object')?(v[l]||v.ru||Object.values(v)[0]||''):(v||'')}
+function raw(v){return pick(v,'ru')}
+function tx(v){return pick(v,L)}
+function fmtTime(d){return d.getHours().toString().padStart(2,'0')+":"+d.getMinutes().toString().padStart(2,'0')}
+
+/* i18n apply */
+function applyI18n(){
+ document.documentElement.lang=L;
+ renderLangMenu();
+ setBridges();
+ document.querySelectorAll('[data-i]').forEach(el=>{const k=el.dataset.i;if(UI[L][k]!==undefined)el.textContent=UI[L][k];});
+ if(GUIDE.intro){['eyebrow','title','sub'].forEach(k=>{const el=document.querySelector('[data-i=\"'+k+'\"]');if(el&&GUIDE.intro[k])el.textContent=pick(GUIDE.intro[k],L);});}
+ {const bc=document.getElementById('brandcity');if(bc)bc.textContent=GUIDE.meta.city?' · '+pick(GUIDE.meta.city,L):'';}
+ document.title=(GUIDE.intro&&GUIDE.intro.title)?pick(GUIDE.intro.title,L):t('title');
+ const sec=GUIDE.points.filter(p=>p.secret).length;
+ document.getElementById('by').innerHTML=t('by').replace('{a}','<b>'+GUIDE.meta.author+'</b>').replace('{n}',GUIDE.points.length).replace('{s}',sec);
+ renderPicker();renderScenarios();renderTags();renderCards();
+}
+
+/* picker */
+const DIMS=[
+ {k:"duration",lab:"time",opts:[["half","half"],["day","day"],["multi","multi"]]},
+ {k:"car",lab:"car",opts:[["true","cy"],["false","cn"]]},
+ {k:"light",lab:"light",opts:[["sunset","sunset"],["sunrise","sunrise"],["day","dayl"]]},
+ {k:"act",lab:"act",opts:[["walk","walk"],["hike","hike"],["food","food"]]}
+];
+function renderPicker(){
+ document.getElementById('picker').innerHTML=DIMS.map(d=>`<div class="pgrp"><span class="plab">${t(d.lab)}</span>
+  <div class="popts" data-k="${d.k}"><button class="popt ${filt[d.k]===null?'on':''}" data-v="">${t('any')}</button>
+  ${d.opts.map(([v,lk])=>`<button class="popt ${String(filt[d.k])===v?'on':''}" data-v="${v}">${t(lk)}</button>`).join('')}</div></div>`).join('');
+}
+document.getElementById('picker').addEventListener('click',e=>{const b=e.target.closest('.popt');if(!b)return;
+ const k=b.parentElement.dataset.k,v=b.dataset.v;
+ filt[k]=v===""?null:(k==="car"?(v==="true"):v);
+ renderPicker();renderScenarios();});
+
+function scnMatch(s){
+ if(filt.duration&&(({half:1,day:2,multi:3})[s.duration]||9)>({half:1,day:2,multi:3})[filt.duration])return false;
+ if(filt.car!==null&&s.car!==filt.car)return false;
+ if(filt.light&&s.light!=="any"&&s.light!==filt.light)return false;
+ if(filt.act&&!(s.act||[]).includes(filt.act))return false;
+ return true;
+}
+function sunLine(s){
+ if(!s.sunLat)return"";
+ const times=SunCalc.getTimes(new Date(),s.sunLat,s.sunLon);
+ if(s.light==="sunset")return `<span class="mtag sun">🌅 ${t('sunset_t')} ${fmtTime(times.sunset)}</span>`;
+ if(s.light==="sunrise")return `<span class="mtag sun">🌄 ${t('sunrise_t')} ${fmtTime(times.sunrise)}</span>`;
+ return"";
+}
+function metaTags(s){
+ const m=[];m.push(`<span class="mtag">⏱ ${t(s.duration)}</span>`);
+ m.push(`<span class="mtag">🚗 ${s.car?t('cy'):t('cn')}</span>`);
+ if(s.light&&s.light!=="any")m.push(`<span class="mtag">${s.light==="sunset"?"🌅":s.light==="sunrise"?"🌄":"☀️"} ${t(s.light==="day"?"dayl":s.light)}</span>`);
+ (s.act||[]).forEach(a=>m.push(`<span class="mtag">${t(a)}</span>`));
+ const sl=sunLine(s);if(sl)m.push(sl);
+ return m.join('');
+}
+function renderScenarios(){
+ const DR={half:1,day:2,multi:3};
+ const list=ALLSCN.filter(scnMatch).sort((a,b)=>((b.feat?1:0)-(a.feat?1:0))||((DR[a.duration]||9)-(DR[b.duration]||9)));
+ const box=document.getElementById('scns');
+ if(!list.length){box.innerHTML=`<p style="color:var(--muted)">${t('noscn')}</p>`;return;}
+ box.innerHTML=list.map(s=>{
+  const title=s.title[L]||s.title.ru;
+  let body;
+  if(s.multiday){
+   body=s.multiday.map(d=>`<div class="stop"><span class="stop-i">${d.day}</span><div>
+     <div class="stop-n">${t('day')} ${d.day} · ${tx(d.t)}</div>
+     <div class="stop-note">${d.pts.map(p=>p.name).join(' · ')}</div></div></div>`).join('');
+  }else{
+   body=s.stops.map((st,i)=>`<div class="stop"><span class="stop-i">${i+1}</span><div>
+     <div class="stop-n">${tx(st.n)} ${st.m?`<span class="stop-m">· ${tx(st.m)}</span>`:''}</div>
+     ${st.note?`<div class="stop-note">${tx(st.note)}</div>`:''}</div></div>`).join('');
+  }
+  let extra="";
+  if(s.secrets||s.park||s.wear){
+   extra=`<div class="scn-x">
+    ${s.secrets?`<div class="xblock"><h4>🤫 ${t('secrets')}</h4><ul>${s.secrets.map(x=>`<li>${tx(x)}</li>`).join('')}</ul></div>`:''}
+    <div class="xblock">
+      ${s.park?`<h4>🅿 ${t('park')}</h4><p>${tx(s.park)}</p>`:''}
+      ${s.wear?`<h4 style="margin-top:10px">👕 ${t('wear')}</h4><p>${tx(s.wear)}</p>`:''}
+    </div></div>`;
+  }
+  return `<article class="scn ${s.feat?'feat':''}">
+    <div class="scn-h"><div class="scn-meta">${metaTags(s)}</div>
+      <h3 class="scn-t">${title}</h3>
+      ${s.why?`<p class="scn-why">${tx(s.why)}</p>`:''}</div>
+    <div class="scn-b">${body}</div>${extra}
+    <div class="scn-act">${s.route?`<a class="dir" href="${gmapsUrl(s)}" target="_blank" rel="noopener">🗺 ${t('gmaps')}</a><button class="dir btnlike" data-onmap="${s.id}">📍 ${t('onmap')}</button>`:''}${s.multiday?'':`<button class="dir btnlike" data-share="${s.id}">🔗 ${t('share')}</button>`}</div></article>`;
+ }).join('');
+}
+
+/* tags + cards */
+function renderTags(){
+ const used=[...new Set(GUIDE.points.flatMap(p=>p.tags))];
+ const box=document.getElementById('tags');
+ box.innerHTML=`<button class="chip ${active===null?'on':''}" data-t="">${t('all')} <span class="ct">${GUIDE.points.length}</span></button>`+
+  used.map(tg=>{const n=GUIDE.points.filter(p=>p.tags.includes(tg)).length;
+   return `<button class="chip ${active===tg?'on':''}" data-t="${tg}">${TAGS[tg].e} ${TAGLABEL[L][tg]} <span class="ct">${n}</span></button>`}).join('');
+}
+document.getElementById('tags').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;active=b.dataset.t||null;renderTags();renderCards();drawMarkers();});
+function visible(){return active?GUIDE.points.filter(p=>p.tags.includes(active)):GUIDE.points;}
+function card(p){const tg=TAGS[p.tags[0]];
+ const ph=p.photo?`style="background-image:url('${p.photo}')"`:"";
+ const vid=p.video?`<video src="${p.video}" ${p.photo?`poster="${p.photo}"`:''} autoplay muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>`:'';
+ return `<article class="card"><div class="ph" ${ph}>${vid}${p.photo||p.video?'':`<span class="ph-e">${tg.e}</span>`}
+   <span class="tag-dot">${tg.e} ${TAGLABEL[L][p.tags[0]]}</span>
+   ${p.secret?`<span class="secret">🤫 ${t('secret')}</span>`:''}</div>
+  <div class="cbody"><h3 class="cname">${p.name}</h3>
+   <div class="rate">${p.rating!=null?`<span class="star">★ ${p.rating.toFixed(1)}</span>`:''}${p.count!=null?`<span>${p.count.toLocaleString(L)} ${t('reviews')}</span>`:''}<span>${p.rating!=null||p.count!=null?'· ':''}${p.addr}</span></div>
+   <div class="hours">🕑 ${tx(p.hours)}</div>
+   <p class="note">${tx(p.note).replace(/^[^:]+:\s*/,'')}</p>
+   <div class="cfoot"><a class="dir" href="${p.dir}" target="_blank" rel="noopener">↗ ${t('dir')}</a></div>
+  </div></article>`;}
+function renderCards(){document.getElementById('grid').innerHTML=visible().map(card).join('');}
+
+/* map */
+let map,markers=[];
+function initMap(){map=L_.map('map',{scrollWheelZoom:false}).setView([32.75,-17.05],10);
+ L_.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);drawMarkers();}
+function drawMarkers(){markers.forEach(m=>map.removeLayer(m));markers=[];const grp=[];
+ visible().forEach(p=>{const tg=TAGS[p.tags[0]];
+  const ic=L_.divIcon({className:'',html:`<div style="background:${tg.c};width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:grid;place-items:center"><span style="transform:rotate(45deg);font-size:12px">${p.secret?'🤫':tg.e}</span></div>`,iconSize:[26,26],iconAnchor:[13,26]});
+  const m=L_.marker([p.lat,p.lon],{icon:ic}).addTo(map).bindPopup(`<div class="pop-n">${p.name}</div>${p.rating!=null?`<div class="pop-r">★ ${p.rating}${p.count!=null?' · '+p.count.toLocaleString(L):''}</div>`:''}<div class="pop-note">${tx(p.note).replace(/^[^:]+:\s*/,'')}</div>`);
+  markers.push(m);grp.push([p.lat,p.lon]);});
+ if(grp.length)map.fitBounds(grp,{padding:[40,40],maxZoom:11});}
+const L_=window.L; // Leaflet (переменная L занята языком интерфейса)
+/* маршрут сценария: Google Maps + полилиния на карте + шер */
+let routeLayer=[];
+function scnPts(s){return (s.route||[]).map(id=>GUIDE.points.find(p=>p.id===id)).filter(Boolean);}
+function gmapsUrl(s){const pts=scnPts(s);if(pts.length<2)return'#';
+ const c=p=>p.lat+','+p.lon;
+ const wp=pts.slice(1,-1).map(c).join('|');
+ return'https://www.google.com/maps/dir/?api=1&origin='+c(pts[0])+'&destination='+c(pts[pts.length-1])+(wp?'&waypoints='+encodeURIComponent(wp):'')+'&travelmode=walking';}
+function showRoute(s){const pts=scnPts(s);if(pts.length<2)return;
+ routeLayer.forEach(x=>map.removeLayer(x));routeLayer=[];
+ const acc=getComputedStyle(document.documentElement).getPropertyValue('--accent').trim()||'#C13A57';
+ const line=L_.polyline(pts.map(p=>[p.lat,p.lon]),{color:acc,weight:4,opacity:.85,dashArray:'1 8',lineCap:'round'}).addTo(map);
+ routeLayer.push(line);
+ pts.forEach((p,i)=>{const ic=L_.divIcon({className:'',html:`<div style="background:${acc};color:#fff;width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:grid;place-items:center;font:700 12px 'Mulish'">${i+1}</div>`,iconSize:[24,24],iconAnchor:[12,12]});
+  routeLayer.push(L_.marker([p.lat,p.lon],{icon:ic,zIndexOffset:1000}).addTo(map).bindPopup(`<div class="pop-n">${i+1}. ${p.name}</div>`));});
+ map.fitBounds(pts.map(p=>[p.lat,p.lon]),{padding:[46,46]});
+ document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}
+function shareUrl(s){const u=new URL(location.href.split('?')[0].split('#')[0]);
+ const qs=new URLSearchParams();const gid=new URLSearchParams(location.search).get('guide');
+ if(GUIDE.meta.shareBase){const su=new URL(GUIDE.meta.shareBase+s.id+'.html',u);su.searchParams.set('lang',L);return su.toString();}
+ if(gid)qs.set('guide',gid);qs.set('s',s.id);qs.set('lang',L);return u.toString()+'?'+qs.toString();}
+async function doShare(s,btn){const url=shareUrl(s);const title=(s.title[L]||s.title.ru);
+ const text=s.why?(typeof s.why==='string'?s.why:(s.why[L]||s.why.ru)):'';
+ if(navigator.share){try{await navigator.share({title,text,url});return;}catch(e){}}
+ try{await navigator.clipboard.writeText(url);const old=btn.innerHTML;btn.innerHTML='✓ '+t('copied');setTimeout(()=>btn.innerHTML=old,1800);}catch(e){prompt('URL:',url);}}
+document.getElementById('scns').addEventListener('click',e=>{
+ const om=e.target.closest('[data-onmap]');if(om){const s=ALLSCN.find(x=>x.id===om.dataset.onmap);if(s)showRoute(s);return;}
+ const sh=e.target.closest('[data-share]');if(sh){const s=ALLSCN.find(x=>x.id===sh.dataset.share);if(s)doShare(s,sh);}});
+
+
+/* footer links + controls */
+function bridge(base){const p=new URLSearchParams();p.set('lang',L);const th=document.documentElement.dataset.theme;if(th)p.set('theme',th);return base+(base.includes('?')?'&':'?')+p.toString();}
+function setBridges(){
+  const hu=GUIDE.meta.hubUrl;
+  const set=(id,u)=>{const el=document.getElementById(id);if(el)el.href=u;};
+  set('hublink',bridge(hu));set('hub2',bridge(hu));set('lk',GUIDE.meta.linkedin);
+}
+/* язык — кнопка-кружок с кодом + выпадающее меню (§7.8) */
+const LANGNAMES={ru:"Русский",en:"English",pt:"Português",es:"Español",de:"Deutsch"};
+const langBtn=document.getElementById('langBtn'),langMenu=document.getElementById('langMenu');
+function renderLangMenu(){
+  langBtn.textContent=L.toUpperCase();
+  langMenu.innerHTML=LANGS.map(c=>`<button class="langopt ${c===L?'on':''}" role="menuitem" data-l="${c}"><span class="lc">${c.toUpperCase()}</span>${LANGNAMES[c]}</button>`).join('');
+}
+function closeLangMenu(){langMenu.hidden=true;langBtn.setAttribute('aria-expanded','false');}
+langBtn.addEventListener('click',e=>{e.stopPropagation();const willOpen=langMenu.hidden;langMenu.hidden=!willOpen;langBtn.setAttribute('aria-expanded',String(willOpen));});
+langMenu.addEventListener('click',e=>{const b=e.target.closest('.langopt');if(!b)return;L=b.dataset.l;lsSet('guide_lang',L);applyI18n();closeLangMenu();});
+document.addEventListener('click',e=>{if(!e.target.closest('.langwrap'))closeLangMenu();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLangMenu();});
+const themeBtn=document.getElementById('theme');
+(function initTheme(){
+  const u=new URLSearchParams(location.search).get('theme');
+  const s=lsGet('guide_theme');
+  const th=(u==='light'||u==='')?u:(s!==null?s:'');
+  if(th==='light')document.documentElement.dataset.theme='light';
+  themeBtn.textContent=document.documentElement.dataset.theme==='light'?'☀':'☾';
+})();
+themeBtn.addEventListener('click',()=>{
+  const cur=document.documentElement.dataset.theme==='light'?'':'light';
+  if(cur)document.documentElement.dataset.theme=cur;else delete document.documentElement.dataset.theme;
+  lsSet('guide_theme',cur);
+  themeBtn.textContent=cur==='light'?'☀':'☾';
+  setBridges();
+  setTimeout(()=>{map&&map.invalidateSize()},60);
+});
+
+/* ===== ЗАГРУЗЧИК ГИДА (?guide=) ===== */
+function guideId(){return (new URLSearchParams(location.search).get('guide')||'madeira-igor').replace(/[^a-z0-9_-]/gi,'')||'madeira-igor';}
+function applyGuideChrome(){
+  const m=GUIDE.meta||{};
+  const cssVars=o=>Object.entries(o).map(([k,v])=>'--'+k+':'+v).join(';');
+  if(m.theme||m.themeLight){
+    let css='';
+    if(m.theme)css+=':root{'+cssVars(m.theme)+'}';
+    if(m.themeLight)css+=':root[data-theme="light"]{'+cssVars(m.themeLight)+'}';
+    let st=document.getElementById('guide-theme');
+    if(!st){st=document.createElement('style');st.id='guide-theme';document.head.appendChild(st);}
+    st.textContent=css;
+  }
+  if(m.icon){document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(l=>l.href=m.icon+'?v=1');}
+}
+function bootGuide(data){
+  GUIDE=data;
+  applyGuideChrome();
+  GUIDE.points.forEach(p=>{p.reg=p.reg||regionOf(p);
+    p.dir=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&destination_place_id=${p.place_id}`;});
+  ALLSCN=[...GUIDE.scenarios,...autoScenarios()];
+  applyI18n();initMap();
+  const dl=new URLSearchParams(location.search).get('s');
+  if(dl){const el=[...document.querySelectorAll('.scn')];const s=ALLSCN.filter(scnMatch).map(x=>x.id);const i=s.indexOf(dl);
+   if(i>=0&&el[i]){el[i].classList.add('hl');setTimeout(()=>el[i].scrollIntoView({behavior:'smooth',block:'start'}),400);
+    const sc=ALLSCN.find(x=>x.id===dl);if(sc&&sc.route)setTimeout(()=>showRoute(sc),900);}}
+  const mk=document.getElementById('mark');
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches){mk.classList.add('reveal');mk.addEventListener('animationend',()=>mk.classList.remove('reveal'),{once:true});}
+}
+fetch('data/'+guideId()+'.json',{cache:'no-cache'})
+  .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+  .then(bootGuide)
+  .catch(err=>{console.error('guide load failed:',err);
+    var g=document.getElementById('grid'); if(g)g.innerHTML='<p style="padding:28px 18px;color:var(--muted)">Guide not found — check ?guide= and data/{id}.json.</p>';});
+</script>
+</body>
+</html>
