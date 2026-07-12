@@ -17,7 +17,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mulish',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
 .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
 .top{position:sticky;top:0;z-index:1200;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top-in{display:flex;align-items:center;gap:12px;height:60px;max-width:1080px;margin:0 auto;padding:0 18px}
+.top-in{display:flex;align-items:center;gap:12px;min-height:60px;max-width:1080px;margin:0 auto;padding:8px 18px}
 .mark{width:30px;height:30px;flex:0 0 auto}.mark svg{display:block;width:100%;height:100%}
 .brandtext{font-family:'Lora',serif;font-weight:600;font-size:18px}
 .brandtext small{display:block;font:500 11px 'Mulish';color:var(--muted);margin-top:-2px}
@@ -88,6 +88,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mulish',system-
 .note{font-family:'Lora',serif;font-style:italic;font-size:15px;line-height:1.4;color:var(--ink);border-left:2px solid var(--accent);padding-left:11px;margin:2px 0}
 .cfoot{margin-top:auto;padding-top:6px}
 .dir{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font:600 13px 'Mulish';text-decoration:none}.dir:hover{text-decoration:underline}
+.btnlike{background:none;border:0;cursor:pointer;padding:0}
+.scn-act{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.scn.hl{outline:2px solid var(--accent);outline-offset:2px}
 .hidden{display:none!important}
 .foot{border-top:1px solid var(--line);margin-top:50px;padding:34px 0 60px}
 .cta{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}
@@ -152,31 +155,31 @@ const UI={
    sc_title:"Сценарии из моих точек",sc_sub:"Скажи, что у тебя есть — соберу вечер или маршрут",
    time:"Время",half:"Полдня",day:"День",multi:"2–3 дня",car:"Машина",cy:"Есть",cn:"Нет",light:"Свет",sunset:"Закат",sunrise:"Восход",dayl:"Днём",act:"Хочу",walk:"Прогулка",hike:"Хайк",swim:"Купаться",food:"Гастро",any:"Любое",
    secrets:"Секретные места рядом",park:"Парковка",wear:"Что надеть",why:"Почему ехать",sunset_t:"Закат сегодня",sunrise_t:"Восход сегодня",noscn:"Под этот набор сценария нет — поменяй фильтры.",
-   places_title:"Все мои места",places_sub:"База: к секретным точкам — по пути",all:"Все",secret:"секрет",reviews:"отзывов",dir:"Проложить маршрут",
+   places_title:"Все мои места",places_sub:"База: к секретным точкам — по пути",all:"Все",secret:"секрет",reviews:"отзывов",dir:"Проложить маршрут",gmaps:"Маршрут в Google Maps",onmap:"Показать на карте",share:"Поделиться маршрутом",copied:"Ссылка скопирована ✓",
    foot_t:"Понравился гид?",foot_s:"Сделай свой — из своих точек на карте.",foot_btn:"Сделать свой гид →",data_note:"Данные мест · Google · снимок"},
  en:{eyebrow:"Guide · my secret spots",title:"My Undiscovered Madeira",sub:"Places without crowds — sunsets, villages, island secrets from someone who lives here.",by:"By {a} · {n} places · {s} secret",
    sc_title:"Scenarios from my spots",sc_sub:"Tell me what you've got — I'll build your evening or route",
    time:"Time",half:"Half-day",day:"Day",multi:"2–3 days",car:"Car",cy:"Yes",cn:"No",light:"Light",sunset:"Sunset",sunrise:"Sunrise",dayl:"Daytime",act:"I want",walk:"Stroll",hike:"Hike",swim:"Swim",food:"Food & drink",any:"Any",
    secrets:"Secret spots nearby",park:"Parking",wear:"What to wear",why:"Why go",sunset_t:"Sunset today",sunrise_t:"Sunrise today",noscn:"No scenario for this set — change the filters.",
-   places_title:"All my places",places_sub:"The base — on the way to the secret spots",all:"All",secret:"secret",reviews:"reviews",dir:"Get directions",
+   places_title:"All my places",places_sub:"The base — on the way to the secret spots",all:"All",secret:"secret",reviews:"reviews",dir:"Get directions",gmaps:"Route in Google Maps",onmap:"Show on map",share:"Share this route",copied:"Link copied ✓",
    foot_t:"Liked this guide?",foot_s:"Make your own — from your pins on the map.",foot_btn:"Make your guide →",data_note:"Place data · Google · snapshot"},
  pt:{eyebrow:"Guia · os meus lugares secretos",title:"A Minha Madeira Secreta",sub:"Lugares sem multidões — pores do sol, aldeias e segredos da ilha de quem cá vive.",by:"Por {a} · {n} lugares · {s} secretos",
    sc_title:"Cenários dos meus lugares",sc_sub:"Diz-me o que tens — monto a tua tarde ou rota",
    time:"Tempo",half:"Meio-dia",day:"Um dia",multi:"2–3 dias",car:"Carro",cy:"Sim",cn:"Não",light:"Luz",sunset:"Pôr do sol",sunrise:"Nascer do sol",dayl:"De dia",act:"Quero",walk:"Passeio",hike:"Caminhada",swim:"Nadar",food:"Gastronomia",any:"Qualquer",
    secrets:"Lugares secretos perto",park:"Estacionamento",wear:"O que vestir",why:"Porquê ir",sunset_t:"Pôr do sol hoje",sunrise_t:"Nascer do sol hoje",noscn:"Sem cenário para esta seleção — muda os filtros.",
-   places_title:"Todos os meus lugares",places_sub:"A base — a caminho dos lugares secretos",all:"Todos",secret:"secreto",reviews:"avaliações",dir:"Como chegar",
+   places_title:"Todos os meus lugares",places_sub:"A base — a caminho dos lugares secretos",all:"Todos",secret:"secreto",reviews:"avaliações",dir:"Como chegar",gmaps:"Rota no Google Maps",onmap:"Mostrar no mapa",share:"Partilhar a rota",copied:"Link copiado ✓",
    foot_t:"Gostaste do guia?",foot_s:"Cria o teu — a partir dos teus pontos no mapa.",foot_btn:"Criar o meu guia →",data_note:"Dados dos locais · Google · captura"},
  es:{eyebrow:"Guía · mis lugares secretos",title:"Mi Madeira Inexplorada",sub:"Lugares sin multitudes — atardeceres, pueblos y secretos de la isla de quien vive aquí.",by:"Por {a} · {n} lugares · {s} secretos",
    sc_title:"Escenarios de mis lugares",sc_sub:"Dime qué tienes — te armo la tarde o la ruta",
    time:"Tiempo",half:"Medio día",day:"Un día",multi:"2–3 días",car:"Coche",cy:"Sí",cn:"No",light:"Luz",sunset:"Atardecer",sunrise:"Amanecer",dayl:"De día",act:"Quiero",walk:"Paseo",hike:"Senderismo",swim:"Nadar",food:"Gastronomía",any:"Cualquiera",
    secrets:"Lugares secretos cerca",park:"Aparcamiento",wear:"Qué llevar",why:"Por qué ir",sunset_t:"Atardecer hoy",sunrise_t:"Amanecer hoy",noscn:"Sin escenario para esta selección — cambia los filtros.",
-   places_title:"Todos mis lugares",places_sub:"La base — de camino a los secretos",all:"Todos",secret:"secreto",reviews:"reseñas",dir:"Cómo llegar",
+   places_title:"Todos mis lugares",places_sub:"La base — de camino a los secretos",all:"Todos",secret:"secreto",reviews:"reseñas",dir:"Cómo llegar",gmaps:"Ruta en Google Maps",onmap:"Ver en el mapa",share:"Compartir la ruta",copied:"Enlace copiado ✓",
    foot_t:"¿Te gustó la guía?",foot_s:"Crea la tuya — desde tus puntos en el mapa.",foot_btn:"Crear mi guía →",data_note:"Datos de lugares · Google · captura"},
  de:{eyebrow:"Guide · meine geheimen Orte",title:"Mein Unentdecktes Madeira",sub:"Orte ohne Menschenmassen — Sonnenuntergänge, Dörfer und Inselgeheimnisse von einem, der hier lebt.",by:"Von {a} · {n} Orte · {s} geheim",
    sc_title:"Szenarien aus meinen Orten",sc_sub:"Sag, was du hast — ich baue deinen Abend oder die Route",
    time:"Zeit",half:"Halber Tag",day:"Ein Tag",multi:"2–3 Tage",car:"Auto",cy:"Ja",cn:"Nein",light:"Licht",sunset:"Sonnenuntergang",sunrise:"Sonnenaufgang",dayl:"Tagsüber",act:"Ich will",walk:"Spaziergang",hike:"Wandern",swim:"Baden",food:"Essen & Trinken",any:"Egal",
    secrets:"Geheime Orte in der Nähe",park:"Parken",wear:"Was anziehen",why:"Warum hin",sunset_t:"Sonnenuntergang heute",sunrise_t:"Sonnenaufgang heute",noscn:"Kein Szenario für diese Auswahl — ändere die Filter.",
-   places_title:"Alle meine Orte",places_sub:"Die Basis — auf dem Weg zu den geheimen Orten",all:"Alle",secret:"geheim",reviews:"Bewertungen",dir:"Route",
+   places_title:"Alle meine Orte",places_sub:"Die Basis — auf dem Weg zu den geheimen Orten",all:"Alle",secret:"geheim",reviews:"Bewertungen",dir:"Route",gmaps:"Route in Google Maps",onmap:"Auf der Karte zeigen",share:"Route teilen",copied:"Link kopiert ✓",
    foot_t:"Guide gefallen?",foot_s:"Mach deinen eigenen — aus deinen Punkten auf der Karte.",foot_btn:"Meinen Guide erstellen →",data_note:"Ortsdaten · Google · Snapshot"}
 };
 
@@ -264,7 +267,7 @@ document.getElementById('picker').addEventListener('click',e=>{const b=e.target.
  renderPicker();renderScenarios();});
 
 function scnMatch(s){
- if(filt.duration&&s.duration!==filt.duration)return false;
+ if(filt.duration&&(({half:1,day:2,multi:3})[s.duration]||9)>({half:1,day:2,multi:3})[filt.duration])return false;
  if(filt.car!==null&&s.car!==filt.car)return false;
  if(filt.light&&s.light!=="any"&&s.light!==filt.light)return false;
  if(filt.act&&!(s.act||[]).includes(filt.act))return false;
@@ -286,7 +289,8 @@ function metaTags(s){
  return m.join('');
 }
 function renderScenarios(){
- const list=ALLSCN.filter(scnMatch);
+ const DR={half:1,day:2,multi:3};
+ const list=ALLSCN.filter(scnMatch).sort((a,b)=>((b.feat?1:0)-(a.feat?1:0))||((DR[a.duration]||9)-(DR[b.duration]||9)));
  const box=document.getElementById('scns');
  if(!list.length){box.innerHTML=`<p style="color:var(--muted)">${t('noscn')}</p>`;return;}
  box.innerHTML=list.map(s=>{
@@ -314,7 +318,8 @@ function renderScenarios(){
     <div class="scn-h"><div class="scn-meta">${metaTags(s)}</div>
       <h3 class="scn-t">${title}</h3>
       ${s.why?`<p class="scn-why">${tx(s.why)}</p>`:''}</div>
-    <div class="scn-b">${body}</div>${extra}</article>`;
+    <div class="scn-b">${body}</div>${extra}
+    <div class="scn-act">${s.route?`<a class="dir" href="${gmapsUrl(s)}" target="_blank" rel="noopener">🗺 ${t('gmaps')}</a><button class="dir btnlike" data-onmap="${s.id}">📍 ${t('onmap')}</button>`:''}${s.multiday?'':`<button class="dir btnlike" data-share="${s.id}">🔗 ${t('share')}</button>`}</div></article>`;
  }).join('');
 }
 
@@ -330,11 +335,12 @@ document.getElementById('tags').addEventListener('click',e=>{const b=e.target.cl
 function visible(){return active?GUIDE.points.filter(p=>p.tags.includes(active)):GUIDE.points;}
 function card(p){const tg=TAGS[p.tags[0]];
  const ph=p.photo?`style="background-image:url('${p.photo}')"`:"";
- return `<article class="card"><div class="ph" ${ph}>${p.photo?'':`<span class="ph-e">${tg.e}</span>`}
+ const vid=p.video?`<video src="${p.video}" ${p.photo?`poster="${p.photo}"`:''} autoplay muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>`:'';
+ return `<article class="card"><div class="ph" ${ph}>${vid}${p.photo||p.video?'':`<span class="ph-e">${tg.e}</span>`}
    <span class="tag-dot">${tg.e} ${TAGLABEL[L][p.tags[0]]}</span>
    ${p.secret?`<span class="secret">🤫 ${t('secret')}</span>`:''}</div>
   <div class="cbody"><h3 class="cname">${p.name}</h3>
-   <div class="rate"><span class="star">★ ${p.rating.toFixed(1)}</span><span>${p.count.toLocaleString(L)} ${t('reviews')}</span><span>· ${p.addr}</span></div>
+   <div class="rate">${p.rating!=null?`<span class="star">★ ${p.rating.toFixed(1)}</span>`:''}${p.count!=null?`<span>${p.count.toLocaleString(L)} ${t('reviews')}</span>`:''}<span>${p.rating!=null||p.count!=null?'· ':''}${p.addr}</span></div>
    <div class="hours">🕑 ${tx(p.hours)}</div>
    <p class="note">${tx(p.note).replace(/^[^:]+:\s*/,'')}</p>
    <div class="cfoot"><a class="dir" href="${p.dir}" target="_blank" rel="noopener">↗ ${t('dir')}</a></div>
@@ -348,10 +354,38 @@ function initMap(){map=L_.map('map',{scrollWheelZoom:false}).setView([32.75,-17.
 function drawMarkers(){markers.forEach(m=>map.removeLayer(m));markers=[];const grp=[];
  visible().forEach(p=>{const tg=TAGS[p.tags[0]];
   const ic=L_.divIcon({className:'',html:`<div style="background:${tg.c};width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:grid;place-items:center"><span style="transform:rotate(45deg);font-size:12px">${p.secret?'🤫':tg.e}</span></div>`,iconSize:[26,26],iconAnchor:[13,26]});
-  const m=L_.marker([p.lat,p.lon],{icon:ic}).addTo(map).bindPopup(`<div class="pop-n">${p.name}</div><div class="pop-r">★ ${p.rating} · ${p.count.toLocaleString(L)}</div><div class="pop-note">${tx(p.note).replace(/^[^:]+:\s*/,'')}</div>`);
+  const m=L_.marker([p.lat,p.lon],{icon:ic}).addTo(map).bindPopup(`<div class="pop-n">${p.name}</div>${p.rating!=null?`<div class="pop-r">★ ${p.rating}${p.count!=null?' · '+p.count.toLocaleString(L):''}</div>`:''}<div class="pop-note">${tx(p.note).replace(/^[^:]+:\s*/,'')}</div>`);
   markers.push(m);grp.push([p.lat,p.lon]);});
  if(grp.length)map.fitBounds(grp,{padding:[40,40],maxZoom:11});}
 const L_=window.L; // Leaflet (переменная L занята языком интерфейса)
+/* маршрут сценария: Google Maps + полилиния на карте + шер */
+let routeLayer=[];
+function scnPts(s){return (s.route||[]).map(id=>GUIDE.points.find(p=>p.id===id)).filter(Boolean);}
+function gmapsUrl(s){const pts=scnPts(s);if(pts.length<2)return'#';
+ const c=p=>p.lat+','+p.lon;
+ const wp=pts.slice(1,-1).map(c).join('|');
+ return'https://www.google.com/maps/dir/?api=1&origin='+c(pts[0])+'&destination='+c(pts[pts.length-1])+(wp?'&waypoints='+encodeURIComponent(wp):'')+'&travelmode=walking';}
+function showRoute(s){const pts=scnPts(s);if(pts.length<2)return;
+ routeLayer.forEach(x=>map.removeLayer(x));routeLayer=[];
+ const acc=getComputedStyle(document.documentElement).getPropertyValue('--accent').trim()||'#C13A57';
+ const line=L_.polyline(pts.map(p=>[p.lat,p.lon]),{color:acc,weight:4,opacity:.85,dashArray:'1 8',lineCap:'round'}).addTo(map);
+ routeLayer.push(line);
+ pts.forEach((p,i)=>{const ic=L_.divIcon({className:'',html:`<div style="background:${acc};color:#fff;width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:grid;place-items:center;font:700 12px 'Mulish'">${i+1}</div>`,iconSize:[24,24],iconAnchor:[12,12]});
+  routeLayer.push(L_.marker([p.lat,p.lon],{icon:ic,zIndexOffset:1000}).addTo(map).bindPopup(`<div class="pop-n">${i+1}. ${p.name}</div>`));});
+ map.fitBounds(pts.map(p=>[p.lat,p.lon]),{padding:[46,46]});
+ document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}
+function shareUrl(s){const u=new URL(location.href.split('?')[0].split('#')[0]);
+ const qs=new URLSearchParams();const gid=new URLSearchParams(location.search).get('guide');
+ if(GUIDE.meta.shareBase){const su=new URL(GUIDE.meta.shareBase+s.id+'.html',u);su.searchParams.set('lang',L);return su.toString();}
+ if(gid)qs.set('guide',gid);qs.set('s',s.id);qs.set('lang',L);return u.toString()+'?'+qs.toString();}
+async function doShare(s,btn){const url=shareUrl(s);const title=(s.title[L]||s.title.ru);
+ const text=s.why?(typeof s.why==='string'?s.why:(s.why[L]||s.why.ru)):'';
+ if(navigator.share){try{await navigator.share({title,text,url});return;}catch(e){}}
+ try{await navigator.clipboard.writeText(url);const old=btn.innerHTML;btn.innerHTML='✓ '+t('copied');setTimeout(()=>btn.innerHTML=old,1800);}catch(e){prompt('URL:',url);}}
+document.getElementById('scns').addEventListener('click',e=>{
+ const om=e.target.closest('[data-onmap]');if(om){const s=ALLSCN.find(x=>x.id===om.dataset.onmap);if(s)showRoute(s);return;}
+ const sh=e.target.closest('[data-share]');if(sh){const s=ALLSCN.find(x=>x.id===sh.dataset.share);if(s)doShare(s,sh);}});
+
 
 /* footer links + controls */
 function bridge(base){const p=new URLSearchParams();p.set('lang',L);const th=document.documentElement.dataset.theme;if(th)p.set('theme',th);return base+(base.includes('?')?'&':'?')+p.toString();}
@@ -411,6 +445,10 @@ function bootGuide(data){
     p.dir=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&destination_place_id=${p.place_id}`;});
   ALLSCN=[...GUIDE.scenarios,...autoScenarios()];
   applyI18n();initMap();
+  const dl=new URLSearchParams(location.search).get('s');
+  if(dl){const el=[...document.querySelectorAll('.scn')];const s=ALLSCN.filter(scnMatch).map(x=>x.id);const i=s.indexOf(dl);
+   if(i>=0&&el[i]){el[i].classList.add('hl');setTimeout(()=>el[i].scrollIntoView({behavior:'smooth',block:'start'}),400);
+    const sc=ALLSCN.find(x=>x.id===dl);if(sc&&sc.route)setTimeout(()=>showRoute(sc),900);}}
   const mk=document.getElementById('mark');
   if(!matchMedia('(prefers-reduced-motion:reduce)').matches){mk.classList.add('reveal');mk.addEventListener('animationend',()=>mk.classList.remove('reveal'),{once:true});}
 }
