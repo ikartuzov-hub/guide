@@ -11,8 +11,35 @@
     "de": "Mein unentdecktes Madeira"
    },
    "author": "Igor Kartuzov",
-   "langs": ["ru", "en", "pt", "es", "de"],
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
    "dataUrl": "data/madeira-igor.json",
+   "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+   "live": true
+  },
+  {
+   "id": "paris-igor",
+   "title": {
+    "ru": "Мой Париж на пару дней",
+    "en": "My Paris for a Couple of Days",
+    "pt": "A Minha Paris por Uns Dias",
+    "es": "Mi París para un Par de Días",
+    "de": "Mein Paris für ein paar Tage"
+   },
+   "author": "Igor Kartuzov",
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
+   "dataUrl": "data/paris-igor.json",
    "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
    "live": true
   }

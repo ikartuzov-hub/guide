@@ -21,6 +21,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mulish',system-
 .mark{width:30px;height:30px;flex:0 0 auto}.mark svg{display:block;width:100%;height:100%}
 .brandtext{font-family:'Lora',serif;font-weight:600;font-size:18px}
 .brandtext small{display:block;font:500 11px 'Mulish';color:var(--muted);margin-top:-2px}
+.brandtext #brandcity{color:var(--accent);font-weight:600}
 .top-sp{flex:1}
 .topctrl{display:flex;align-items:center;gap:8px}
 .ctrl{width:38px;height:38px;border-radius:50%;background:var(--bg2);border:1px solid var(--line);color:var(--ink);font:700 13px 'Mulish';cursor:pointer;display:grid;place-items:center;transition:.2s}
@@ -102,7 +103,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mulish',system-
 <body>
 <div class="top"><div class="top-in">
   <span class="mark" id="mark" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M72 36 A26 26 0 1 0 72 64 L72 50 L54 50"/><path d="M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84"/></svg></span>
-  <span class="brandtext">Мой Гид<small>SeedWave</small></span>
+  <span class="brandtext">Мой Гид<span id="brandcity"></span><small>SeedWave</small></span>
   <span class="top-sp"></span>
   <div class="topctrl">
     <div class="langwrap">
@@ -183,8 +184,8 @@ const UI={
 let GUIDE=null;
 
 /* ===== ДВИЖОК (Слой 1) ===== */
-const TAGS={wine:{l:"wine",e:"🍷",c:"#B5476B"},food:{l:"food",e:"🍽",c:"#C25A3C"},coffee:{l:"coffee",e:"☕",c:"#9C6B3F"},bar:{l:"bar",e:"🍹",c:"#2E8B6B"},bakery:{l:"bakery",e:"🥐",c:"#C99A3B"},fine:{l:"fine",e:"✦",c:"#8E3B6E"},view:{l:"view",e:"🌅",c:"#E2772E"},hike:{l:"hike",e:"🥾",c:"#2E7D32"}};
-const TAGLABEL={ru:{wine:"Вино",food:"Еда",coffee:"Кофе",bar:"Бары",bakery:"Пекарни",fine:"Fine dining",view:"Виды",hike:"Маршруты"},en:{wine:"Wine",food:"Food",coffee:"Coffee",bar:"Bars",bakery:"Bakeries",fine:"Fine dining",view:"Views",hike:"Hikes"},pt:{wine:"Vinho",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Padarias",fine:"Fine dining",view:"Vistas",hike:"Trilhos"},es:{wine:"Vino",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Panaderías",fine:"Fine dining",view:"Vistas",hike:"Rutas"},de:{wine:"Wein",food:"Essen",coffee:"Kaffee",bar:"Bars",bakery:"Bäckereien",fine:"Fine dining",view:"Aussicht",hike:"Wandern"}};
+const TAGS={wine:{l:"wine",e:"🍷",c:"#B5476B"},food:{l:"food",e:"🍽",c:"#C25A3C"},coffee:{l:"coffee",e:"☕",c:"#9C6B3F"},bar:{l:"bar",e:"🍹",c:"#2E8B6B"},bakery:{l:"bakery",e:"🥐",c:"#C99A3B"},fine:{l:"fine",e:"✦",c:"#8E3B6E"},view:{l:"view",e:"🌅",c:"#E2772E"},hike:{l:"hike",e:"🥾",c:"#2E7D32"},shop:{l:"shop",e:"🛍",c:"#5B6ABF"},sight:{l:"sight",e:"🏛",c:"#7A6A8C"}};
+const TAGLABEL={ru:{wine:"Вино",food:"Еда",coffee:"Кофе",bar:"Бары",bakery:"Пекарни",fine:"Fine dining",view:"Виды",hike:"Маршруты",shop:"Шопинг",sight:"Классика"},en:{wine:"Wine",food:"Food",coffee:"Coffee",bar:"Bars",bakery:"Bakeries",fine:"Fine dining",view:"Views",hike:"Hikes",shop:"Shopping",sight:"Sights"},pt:{wine:"Vinho",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Padarias",fine:"Fine dining",view:"Vistas",hike:"Trilhos",shop:"Compras",sight:"Monumentos"},es:{wine:"Vino",food:"Comida",coffee:"Café",bar:"Bares",bakery:"Panaderías",fine:"Fine dining",view:"Vistas",hike:"Rutas",shop:"Compras",sight:"Monumentos"},de:{wine:"Wein",food:"Essen",coffee:"Kaffee",bar:"Bars",bakery:"Bäckereien",fine:"Fine dining",view:"Aussicht",hike:"Wandern",shop:"Shopping",sight:"Sehenswertes"}};
 /* deriveTags/isSecret вынесены в data (поля tags/secret) */
 function regionOf(p){const{lat,lon}=p;if(lon<-17.18)return"west";if(lat>32.80)return"northwest";if(lat>32.78)return"north";if(lon>-16.88)return"east";if(lat<32.70&&lon>-16.97)return"funchal";return"centre";}
 /* post-process перенесён в bootGuide() */
@@ -192,22 +193,24 @@ function regionOf(p){const{lat,lon}=p;if(lon<-17.18)return"west";if(lat>32.80)re
 /* auto half-day scenarios from geo clusters (secret-led) */
 const REGT={west:{ru:"Запад",en:"West",pt:"Oeste",es:"Oeste",de:"Westen"},northwest:{ru:"Северо-запад",en:"Northwest",pt:"Noroeste",es:"Noroeste",de:"Nordwesten"},north:{ru:"Север",en:"North",pt:"Norte",es:"Norte",de:"Norden"},east:{ru:"Восток",en:"East",pt:"Este",es:"Este",de:"Osten"},funchal:{ru:"Фуншал",en:"Funchal",pt:"Funchal",es:"Funchal",de:"Funchal"},centre:{ru:"Центр · горы",en:"Centre · mountains",pt:"Centro · montanhas",es:"Centro · montañas",de:"Mitte · Berge"}};
 function autoScenarios(){
+ const RT=Object.assign({},REGT,GUIDE.regions||{});
+ const SKIP=GUIDE.autoSkip||["west","centre","north","northwest"];
  const g={};GUIDE.points.forEach(p=>{(g[p.reg]=g[p.reg]||[]).push(p)});
  const out=[];
  Object.entries(g).forEach(([k,pts])=>{
-  if(["west","centre","north","northwest"].includes(k))return; // покрыто ручными героями
+  if(SKIP.includes(k))return; // покрыто ручными героями
   if(pts.length<2)return;
-  pts.sort((a,b)=>(b.secret-a.secret)||(b.rating-a.rating));
-  const light=k==="east"?"sunrise":(k==="funchal"?"day":"sunset");
-  const car=k!=="funchal";
-  out.push({id:"auto-"+k,title:{ru:"Полдня · "+REGT[k].ru,en:"Half-day · "+REGT[k].en,pt:"Meio-dia · "+REGT[k].pt,es:"Medio día · "+REGT[k].es,de:"Halber Tag · "+REGT[k].de},
+  pts.sort((a,b)=>(b.secret-a.secret)||((b.rating||0)-(a.rating||0)));
+  const light=GUIDE.regions?"day":(k==="east"?"sunrise":(k==="funchal"?"day":"sunset"));
+  const car=GUIDE.regions?false:(k!=="funchal");
+  out.push({id:"auto-"+k,title:{ru:"Полдня · "+RT[k].ru,en:"Half-day · "+RT[k].en,pt:"Meio-dia · "+RT[k].pt,es:"Medio día · "+RT[k].es,de:"Halber Tag · "+RT[k].de},
    duration:"half",car,light,act:[...new Set(pts.flatMap(p=>p.tags.map(t=>t==="view"?"walk":(t==="hike"?"hike":(t==="bar"||t==="wine"||t==="coffee"||t==="bakery"?"walk":"food")))))],
-   why:"",auto:true,stops:pts.slice(0,4).map(p=>({n:p.name,m:Object.fromEntries(LANGS.map(l=>[l,"★"+p.rating+" · "+pick(p.hours,l)])),note:Object.fromEntries(LANGS.map(l=>[l,pick(p.note,l).replace(/^[^:]+:\s*/,'')]))})),sunLat:pts[0].lat,sunLon:pts[0].lon});
+   why:"",auto:true,stops:pts.slice(0,4).map(p=>({n:p.name,m:Object.fromEntries(LANGS.map(l=>[l,(p.rating!=null?"★"+p.rating+" · ":"")+pick(p.hours,l)])),note:Object.fromEntries(LANGS.map(l=>[l,pick(p.note,l).replace(/^[^:]+:\s*/,'')]))})),sunLat:pts[0].lat,sunLon:pts[0].lon});
  });
  // multiday route (2–3 дня) by regions
- const order=["funchal","east","north","northwest","west","centre"].filter(k=>g[k]);
+ const order=(GUIDE.regionOrder||["funchal","east","north","northwest","west","centre"]).filter(k=>g[k]);
  out.push({id:"multi",title:{ru:"Маршрут на 2–3 дня",en:"2–3 day route",pt:"Rota de 2–3 dias",es:"Ruta de 2–3 días",de:"2–3-Tage-Route"},
-  duration:"multi",car:true,light:"any",act:["walk","food","hike"],why:"",auto:true,multiday:order.map((k,i)=>({day:i+1,t:REGT[k],pts:g[k]})),sunLat:32.75,sunLon:-17.0});
+  duration:"multi",car:!GUIDE.regions,light:"any",act:["walk","food","hike"],why:"",auto:true,multiday:order.map((k,i)=>({day:i+1,t:RT[k],pts:g[k]})),sunLat:32.75,sunLon:-17.0});
  return out;
 }
 let ALLSCN=[];
@@ -235,7 +238,9 @@ function applyI18n(){
  renderLangMenu();
  setBridges();
  document.querySelectorAll('[data-i]').forEach(el=>{const k=el.dataset.i;if(UI[L][k]!==undefined)el.textContent=UI[L][k];});
- document.title=t('title');
+ if(GUIDE.intro){['eyebrow','title','sub'].forEach(k=>{const el=document.querySelector('[data-i=\"'+k+'\"]');if(el&&GUIDE.intro[k])el.textContent=pick(GUIDE.intro[k],L);});}
+ {const bc=document.getElementById('brandcity');if(bc)bc.textContent=GUIDE.meta.city?' · '+pick(GUIDE.meta.city,L):'';}
+ document.title=(GUIDE.intro&&GUIDE.intro.title)?pick(GUIDE.intro.title,L):t('title');
  const sec=GUIDE.points.filter(p=>p.secret).length;
  document.getElementById('by').innerHTML=t('by').replace('{a}','<b>'+GUIDE.meta.author+'</b>').replace('{n}',GUIDE.points.length).replace('{s}',sec);
  renderPicker();renderScenarios();renderTags();renderCards();
@@ -386,9 +391,23 @@ themeBtn.addEventListener('click',()=>{
 
 /* ===== ЗАГРУЗЧИК ГИДА (?guide=) ===== */
 function guideId(){return (new URLSearchParams(location.search).get('guide')||'madeira-igor').replace(/[^a-z0-9_-]/gi,'')||'madeira-igor';}
+function applyGuideChrome(){
+  const m=GUIDE.meta||{};
+  const cssVars=o=>Object.entries(o).map(([k,v])=>'--'+k+':'+v).join(';');
+  if(m.theme||m.themeLight){
+    let css='';
+    if(m.theme)css+=':root{'+cssVars(m.theme)+'}';
+    if(m.themeLight)css+=':root[data-theme="light"]{'+cssVars(m.themeLight)+'}';
+    let st=document.getElementById('guide-theme');
+    if(!st){st=document.createElement('style');st.id='guide-theme';document.head.appendChild(st);}
+    st.textContent=css;
+  }
+  if(m.icon){document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(l=>l.href=m.icon+'?v=1');}
+}
 function bootGuide(data){
   GUIDE=data;
-  GUIDE.points.forEach(p=>{p.reg=regionOf(p);
+  applyGuideChrome();
+  GUIDE.points.forEach(p=>{p.reg=p.reg||regionOf(p);
     p.dir=`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&destination_place_id=${p.place_id}`;});
   ALLSCN=[...GUIDE.scenarios,...autoScenarios()];
   applyI18n();initMap();
