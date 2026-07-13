@@ -1,1 +1,44 @@
-
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8">
+<title>Мой Париж на пару дней</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../icons/paris.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../icons/apple-paris.png">
+<link rel="manifest" href="paris.webmanifest">
+<meta name="theme-color" content="#161B22">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Мой Париж">
+<meta property="og:title" content="Мой Париж на пару дней">
+<meta property="og:description" content="Гастрономические кварталы, пассажи и виды на башню в стороне от туристических троп — 65 мест от местного.">
+<meta property="og:image" content="../share/og-gastro-bac.png">
+<script>
+ // Запущено с иконки на экране (standalone) → сразу открываем гид
+ if(window.navigator.standalone===true||window.matchMedia('(display-mode: standalone)').matches){
+   location.replace('../?guide=paris-igor');
+ }
+</script>
+<style>
+ :root{--bg:#161B22;--card:#1B2129;--ink:#EAEEF3;--mut:#93A4B8;--acc:#6C8CB4;--line:#2A333F}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:32px 22px calc(32px + env(safe-area-inset-bottom))}
+ .mark{width:76px;height:76px;margin-bottom:20px}
+ h1{font-family:Georgia,'Times New Roman',serif;font-size:30px;margin:0 0 8px;line-height:1.15}
+ .sub{color:var(--mut);max-width:340px;margin:0 0 30px}
+ .cta{display:block;background:var(--acc);color:#0E141B;font-weight:700;text-decoration:none;
+  padding:16px 40px;border-radius:14px;font-size:17px;margin-bottom:26px}
+ .tip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;max-width:360px;color:var(--mut);font-size:14px;line-height:1.55}
+ .tip b{color:var(--ink)}
+ .foot{margin-top:30px;color:var(--mut);font-size:13px}
+ .foot a{color:var(--acc)}
+</style></head>
+<body>
+ <svg class="mark" viewBox="0 0 100 100" fill="none" stroke="var(--acc)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M72 36 A26 26 0 1 0 72 64 L72 50 L54 50"/><path d="M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84"/></svg>
+ <h1>Мой Париж<br>на пару дней</h1>
+ <p class="sub">Гастрономические кварталы, пассажи и виды на башню в стороне от туристических троп.</p>
+ <a class="cta" href="../?guide=paris-igor">Открыть гид →</a>
+ <div class="tip">📲 <b>Поставить иконкой на телефон:</b><br>нажми «Поделиться» → «На экран „Домой"». Иконка будет парижская, и откроется сразу этот гид.</div>
+ <div class="foot">© 2026 · <a href="https://www.linkedin.com/in/igor-kartuzov/" target="_blank" rel="noopener">Igor Kartuzov</a> · <a href="https://ikartuzov-hub.github.io/seedwave-catalog/hub/" target="_blank" rel="noopener">SeedWave Hub</a></div>
+</body></html>
