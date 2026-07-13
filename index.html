@@ -437,6 +437,26 @@ function applyGuideChrome(){
     st.textContent=css;
   }
   if(m.icon){document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(l=>l.href=m.icon+'?v=1');}
+  // динамический PWA-манифест под текущий гид (иначе iOS ставит дефолтную Мадейру)
+  try{
+    const gid=guideId();
+    const nm=(GUIDE.intro&&GUIDE.intro.title)?pick(GUIDE.intro.title,L):(UI[L]&&UI[L].title)||'Мой Гид';
+    const acc=(m.themeLight&&m.themeLight.accent)||'#C13A57';
+    const bg=(m.theme&&m.theme.bg)||'#1a1014';
+    const icon=m.icon||'icon.svg';
+    const mf={name:nm,short_name:(m.city?pick(m.city,L):nm),start_url:'./?guide='+gid,scope:'.',display:'standalone',orientation:'portrait',background_color:bg,theme_color:acc,icons:[{src:icon,sizes:'any',type:icon.endsWith('.svg')?'image/svg+xml':'image/png',purpose:'any maskable'}]};
+    const blob=new Blob([JSON.stringify(mf)],{type:'application/manifest+json'});
+    const url=URL.createObjectURL(blob);
+    let ln=document.querySelector('link[rel="manifest"]');
+    if(!ln){ln=document.createElement('link');ln.rel='manifest';document.head.appendChild(ln);}
+    ln.href=url;
+    let tc=document.querySelector('meta[name="theme-color"]');
+    if(!tc){tc=document.createElement('meta');tc.name='theme-color';document.head.appendChild(tc);}
+    tc.content=acc;
+    let at=document.querySelector('meta[name="apple-mobile-web-app-title"]');
+    if(!at){at=document.createElement('meta');at.name='apple-mobile-web-app-title';document.head.appendChild(at);}
+    at.content=(m.city?pick(m.city,L):nm);
+  }catch(e){console.warn('manifest gen skipped',e);}
 }
 function bootGuide(data){
   GUIDE=data;
