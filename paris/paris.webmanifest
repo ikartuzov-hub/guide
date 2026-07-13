@@ -1,1 +1,14 @@
-
+{
+  "name": "Мой Париж на пару дней",
+  "short_name": "Мой Париж",
+  "start_url": "../?guide=paris-igor",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#161B22",
+  "theme_color": "#3E5C76",
+  "icons": [
+    { "src": "../icons/apple-paris.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "../icons/apple-paris.png", "sizes": "180x180", "type": "image/png", "purpose": "maskable" }
+  ]
+}
