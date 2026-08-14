@@ -6,8 +6,8 @@
 
 <p align="center">
   <em>An immersive local guide, in your language — starting with undiscovered Madeira.</em><br>
-  <a href="https://ikartuzov-hub.github.io/guide/">Live demo</a> ·
-  <a href="https://ikartuzov-hub.github.io/seedwave-catalog/hub">SeedWave Hub</a> ·
+  <a href="https://g.seedwave.pt/">Live demo</a> ·
+  <a href="https://seedwave.pt/hub/">SeedWave Hub</a> ·
   <a href="https://www.linkedin.com/in/igor-kartuzov">Built by Igor Kartuzov</a>
 </p>
 
@@ -23,7 +23,7 @@ Guide is a data-driven guide engine: each guide is a JSON file, loaded by `?guid
 `data-driven engine (data/{id}.json)` · `multilingual (RU/EN/PT/ES/DE)` · `GitHub Pages` · `two-theme UI`
 
 ## See it live
-- **Demo:** https://ikartuzov-hub.github.io/guide/
+- **Demo:** https://g.seedwave.pt/
 - Any guide is one URL: `?guide={id}&lang={code}`.
 
 ## Screenshots
@@ -44,5 +44,5 @@ Guide is a data-driven guide engine: each guide is a JSON file, loaded by `?guid
 ---
 
 <p align="center">
-  <sub>© Igor Kartuzov · <a href="https://ikartuzov-hub.github.io/seedwave-catalog/hub">SeedWave</a> — AI-first studio · Madeira, EU</sub>
+  <sub>© Igor Kartuzov · <a href="https://seedwave.pt/hub/">SeedWave</a> — AI-first studio · Madeira, EU</sub>
 </p>

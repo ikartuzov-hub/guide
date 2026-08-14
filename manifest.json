@@ -19,7 +19,7 @@
     "de"
    ],
    "dataUrl": "data/madeira-igor.json",
-   "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+   "hubUrl": "https://seedwave.pt/hub/",
    "live": true
   },
   {
@@ -40,7 +40,7 @@
     "de"
    ],
    "dataUrl": "data/paris-igor.json",
-   "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+   "hubUrl": "https://seedwave.pt/hub/",
    "live": true
   }
  ]
