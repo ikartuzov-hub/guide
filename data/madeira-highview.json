@@ -13,6 +13,29 @@
    "de": "Funchal · São Gonçalo"
   }
  },
+ "intro": {
+  "eyebrow": {
+   "ru": "Гид · вокруг дома",
+   "en": "Guide · around the house",
+   "pt": "Guia · à volta da casa",
+   "es": "Guía · alrededor de la casa",
+   "de": "Guide · rund ums Haus"
+  },
+  "title": {
+   "ru": "Мадейра из São Gonçalo",
+   "en": "Madeira from São Gonçalo",
+   "pt": "A Madeira a partir de São Gonçalo",
+   "es": "Madeira desde São Gonçalo",
+   "de": "Madeira von São Gonçalo aus"
+  },
+  "sub": {
+   "ru": "Закаты, левады и таверны в двадцати минутах от дома — то, что находишь, когда живёшь здесь, а не приезжаешь на неделю.",
+   "en": "Sunsets, levadas and taverns within twenty minutes of the house — the things you find when you live here rather than visit for a week.",
+   "pt": "Pores do sol, levadas e tabernas a vinte minutos de casa — aquilo que se descobre quando se vive aqui e não quando se vem por uma semana.",
+   "es": "Atardeceres, levadas y tabernas a veinte minutos de casa — lo que se descubre cuando vives aquí y no cuando vienes una semana.",
+   "de": "Sonnenuntergänge, Levadas und Tavernen zwanzig Minuten vom Haus — das, was man findet, wenn man hier lebt und nicht eine Woche zu Besuch ist."
+  }
+ },
  "points": [
   {
    "id": "pinaculo",
