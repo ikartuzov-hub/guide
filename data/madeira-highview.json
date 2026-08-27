@@ -1,0 +1,1054 @@
+{
+ "schema": 1,
+ "meta": {
+  "id": "madeira-highview",
+  "author": "Madeira High View",
+  "hubUrl": "https://seedwave.pt/hub/",
+  "linkedin": "https://www.madeirahighview.com/",
+  "city": {
+   "ru": "Фуншал · São Gonçalo",
+   "en": "Funchal · São Gonçalo",
+   "pt": "Funchal · São Gonçalo",
+   "es": "Funchal · São Gonçalo",
+   "de": "Funchal · São Gonçalo"
+  }
+ },
+ "points": [
+  {
+   "id": "pinaculo",
+   "name": "Miradouro do Pináculo",
+   "lat": 32.645296,
+   "lon": -16.870570,
+   "place_id": "ChIJRfkn3CtgYAwREVPHsulb9zw",
+   "note": {
+    "ru": "Вид: главный закат над Фуншалом в пяти минутах от дома, у обочины редко бывает тесно",
+    "en": "View: the main sunset over Funchal, five minutes from the house, and the roadside is rarely crowded",
+    "pt": "Vista: o grande pôr do sol sobre o Funchal a cinco minutos de casa, e a berma raramente enche",
+    "es": "Vista: el gran atardecer sobre Funchal a cinco minutos de casa, y el arcén rara vez se llena",
+    "de": "Aussicht: der große Sonnenuntergang über Funchal, fünf Minuten vom Haus, und am Straßenrand ist selten viel los"
+   },
+   "rating": 4.7,
+   "count": 888,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "balancal",
+   "name": "Restaurante Vista Balancal",
+   "lat": 32.653121,
+   "lon": -16.872277,
+   "place_id": "ChIJs2skuUBhYAwRo65F8fufCPE",
+   "note": {
+    "ru": "Еда: терраса гольф-клуба Palheiro с тем самым видом на Фуншал — и почти никто о ней не знает",
+    "en": "Food: the Palheiro golf club terrace with that view over Funchal — and almost nobody knows it",
+    "pt": "Comida: a esplanada do clube de golfe do Palheiro com aquela vista sobre o Funchal — e quase ninguém a conhece",
+    "es": "Comida: la terraza del club de golf de Palheiro con esa vista sobre Funchal — y casi nadie la conoce",
+    "de": "Essen: die Terrasse des Palheiro-Golfclubs mit diesem Blick über Funchal — und kaum jemand kennt sie"
+   },
+   "rating": 4.6,
+   "count": 55,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Ежедневно 8:00–21:00",
+    "en": "Daily 8:00–21:00",
+    "pt": "Todos os dias 8:00–21:00",
+    "es": "A diario 8:00–21:00",
+    "de": "Täglich 8:00–21:00"
+   },
+   "photo": "",
+   "tags": [
+    "food",
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "oxalis",
+   "name": "Oxalis Restaurant",
+   "lat": 32.657897,
+   "lon": -16.867497,
+   "place_id": "ChIJEbH03YBhYAwRST4ur5cDLuQ",
+   "note": {
+    "ru": "Fine dining: дегустационное меню шефа Gonçalo Bita Bota, только ужин и только по записи",
+    "en": "Fine dining: a tasting menu by chef Gonçalo Bita Bota, dinner only and by reservation only",
+    "pt": "Fine dining: menu de degustação do chef Gonçalo Bita Bota, só jantar e só com reserva",
+    "es": "Fine dining: menú degustación del chef Gonçalo Bita Bota, solo cena y solo con reserva",
+    "de": "Fine dining: Degustationsmenü von Chef Gonçalo Bita Bota, nur abends und nur mit Reservierung"
+   },
+   "rating": 4.5,
+   "count": 28,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Ежедневно 19:00–22:30",
+    "en": "Daily 19:00–22:30",
+    "pt": "Todos os dias 19:00–22:30",
+    "es": "A diario 19:00–22:30",
+    "de": "Täglich 19:00–22:30"
+   },
+   "photo": "",
+   "tags": [
+    "fine"
+   ],
+   "secret": true
+  },
+  {
+   "id": "opalheiro",
+   "name": "Restaurante O PALHEIRO",
+   "lat": 32.662535,
+   "lon": -16.865614,
+   "place_id": "ChIJa7BSNjVgYAwR3l5QUxw9YK0",
+   "note": {
+    "ru": "Еда: деревенская таверна над садами Palheiro, шеф ушёл из пятизвёздочного отеля в своё. Осьминог",
+    "en": "Food: a village tavern above the Palheiro gardens, the chef left a five-star hotel to cook on his own. Octopus",
+    "pt": "Comida: taberna de aldeia acima dos jardins do Palheiro, o chef saiu de um hotel de cinco estrelas para cozinhar por conta própria. Polvo",
+    "es": "Comida: taberna de pueblo sobre los jardines de Palheiro, el chef dejó un hotel de cinco estrellas para cocinar por su cuenta. Pulpo",
+    "de": "Essen: Dorftaverne über den Palheiro-Gärten, der Koch verließ ein Fünf-Sterne-Hotel für sein eigenes Lokal. Oktopus"
+   },
+   "rating": 4.4,
+   "count": 211,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Пн–Сб 8:00–22:00 · вс закрыт",
+    "en": "Mon–Sat 8:00–22:00 · Sun closed",
+    "pt": "Seg–Sáb 8:00–22:00 · Dom fechado",
+    "es": "Lun–Sáb 8:00–22:00 · Dom cerrado",
+    "de": "Mo–Sa 8:00–22:00 · So geschlossen"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": true
+  },
+  {
+   "id": "palheiro",
+   "name": "Palheiro Gardens",
+   "lat": 32.662791,
+   "lon": -16.868542,
+   "place_id": "ChIJWUbojx3oGQ0R5LU4shAq8T8",
+   "note": {
+    "ru": "Вид: сады тише и романтичнее садов Монте, чайный дом смотрит на поле для гольфа. Полтора–два часа",
+    "en": "View: gardens quieter and more romantic than the Monte ones, the tea house looks out over the golf course. An hour and a half to two hours",
+    "pt": "Vista: jardins mais calmos e românticos do que os do Monte, a casa de chá olha para o campo de golfe. Hora e meia a duas horas",
+    "es": "Vista: jardines más tranquilos y románticos que los de Monte, la casa de té mira al campo de golf. De hora y media a dos horas",
+    "de": "Aussicht: Gärten, ruhiger und romantischer als die von Monte, das Teehaus blickt über den Golfplatz. Eineinhalb bis zwei Stunden"
+   },
+   "rating": 4.4,
+   "count": 1416,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Ежедневно 9:00–17:00",
+    "en": "Daily 9:00–17:00",
+    "pt": "Todos os dias 9:00–17:00",
+    "es": "A diario 9:00–17:00",
+    "de": "Täglich 9:00–17:00"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": false
+  },
+  {
+   "id": "tornos",
+   "name": "Levada dos Tornos",
+   "lat": 32.676384,
+   "lon": -16.889715,
+   "place_id": "ChIJr56OuPVhYAwRe7pVR9Oa-Sw",
+   "note": {
+    "ru": "Маршрут: плоская лёгкая левада от Монте к чайным домам, бухта внизу. Не путать с одноимённой в Boaventura",
+    "en": "Trail: a flat, easy levada from Monte to the tea houses, the bay below. Not to be confused with the levada of the same name in Boaventura",
+    "pt": "Trilho: levada plana e fácil do Monte até às casas de chá, a baía lá em baixo. Não confundir com a levada homónima na Boaventura",
+    "es": "Ruta: levada llana y fácil desde Monte hasta las casas de té, la bahía abajo. No confundir con la levada homónima en Boaventura",
+    "de": "Wanderung: flache, leichte Levada von Monte zu den Teehäusern, die Bucht darunter. Nicht mit der gleichnamigen Levada in Boaventura verwechseln"
+   },
+   "rating": 4.5,
+   "count": 219,
+   "addr": "Monte",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "hike",
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "jasmin",
+   "name": "Jasmin Tea House",
+   "lat": 32.665458,
+   "lon": -16.873675,
+   "place_id": "ChIJ_47_qklgYAwRPTfBxWURX3c",
+   "note": {
+    "ru": "Кофе: английский чайный сад прямо на леваде, сконы и хозяин из Манчестера. Понедельник — выходной",
+    "en": "Coffee: an English tea garden right on the levada, scones and an owner from Manchester. Closed on Mondays",
+    "pt": "Café: um jardim de chá inglês mesmo na levada, scones e um dono de Manchester. Encerra à segunda",
+    "es": "Café: un jardín de té inglés en plena levada, scones y un dueño de Mánchester. Cierra los lunes",
+    "de": "Kaffee: ein englischer Teegarten direkt an der Levada, Scones und ein Wirt aus Manchester. Montags geschlossen"
+   },
+   "rating": 4.8,
+   "count": 541,
+   "addr": "São Gonçalo",
+   "hours": {
+    "ru": "Вт–Вс 10:00–17:00 · пн закрыт",
+    "en": "Tue–Sun 10:00–17:00 · Mon closed",
+    "pt": "Ter–Dom 10:00–17:00 · Seg fechado",
+    "es": "Mar–Dom 10:00–17:00 · Lun cerrado",
+    "de": "Di–So 10:00–17:00 · Mo geschlossen"
+   },
+   "photo": "",
+   "tags": [
+    "coffee",
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "cristorei-mir",
+   "name": "Miradouro do Cristo Rei",
+   "lat": 32.637163,
+   "lon": -16.850113,
+   "place_id": "ChIJT9iU4XCKYAwRqvWRUKLaJI4",
+   "note": {
+    "ru": "Вид: узкая дорожка вниз под статуей выводит на самый край мыса — параглайдеры, океан, закат. Статуя — мейнстрим, дорожка — нет",
+    "en": "View: a narrow path down beneath the statue leads to the very edge of the headland — paragliders, ocean, sunset. The statue is mainstream, the path is not",
+    "pt": "Vista: um carreiro estreito por baixo da estátua leva à ponta do cabo — parapentes, oceano, pôr do sol. A estátua é mainstream, o carreiro não",
+    "es": "Vista: un sendero estrecho bajo la estatua baja hasta el filo del cabo — parapentes, océano, atardecer. La estatua es mainstream, el sendero no",
+    "de": "Aussicht: ein schmaler Pfad unterhalb der Statue führt an die äußerste Kante des Kaps — Gleitschirme, Ozean, Sonnenuntergang. Die Statue ist Mainstream, der Pfad nicht"
+   },
+   "rating": 4.7,
+   "count": 412,
+   "addr": "Garajau",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "ferrugem",
+   "name": "FERRUGEM no Garajau Bistro",
+   "lat": 32.643104,
+   "lon": -16.851045,
+   "place_id": "ChIJnf114lKLYAwRpHlPUES0QJg",
+   "note": {
+    "ru": "Еда: хозяйка Barbara говорит на пяти языках, включая немецкий. Ризотто с осьминогом и пиканья. Воскресенье — выходной",
+    "en": "Food: the owner Barbara speaks five languages, German among them. Octopus risotto and picanha. Closed on Sundays",
+    "pt": "Comida: a dona Barbara fala cinco línguas, incluindo alemão. Risoto de polvo e picanha. Encerra ao domingo",
+    "es": "Comida: la dueña Barbara habla cinco idiomas, alemán incluido. Risotto de pulpo y picaña. Cierra los domingos",
+    "de": "Essen: Gastgeberin Barbara spricht fünf Sprachen, darunter Deutsch. Oktopus-Risotto und Picanha. Sonntags geschlossen"
+   },
+   "rating": 4.7,
+   "count": 1374,
+   "addr": "Garajau",
+   "hours": {
+    "ru": "Пн–Сб 12:00–22:00/22:30 · вс закрыт",
+    "en": "Mon–Sat 12:00–22:00/22:30 · Sun closed",
+    "pt": "Seg–Sáb 12:00–22:00/22:30 · Dom fechado",
+    "es": "Lun–Sáb 12:00–22:00/22:30 · Dom cerrado",
+    "de": "Mo–Sa 12:00–22:00/22:30 · So geschlossen"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "bibo",
+   "name": "Bibó Norte carago",
+   "lat": 32.643382,
+   "lon": -16.847958,
+   "place_id": "ChIJs6Ob0D2LYAwRmOoGfbjar_Y",
+   "note": {
+    "ru": "Еда: крошечный зал и кухня севера Португалии — bacalhau à Lagareiro, алейра. Столик бронировать заранее",
+    "en": "Food: a tiny room and the cooking of northern Portugal — bacalhau à Lagareiro, alheira. Book a table ahead",
+    "pt": "Comida: sala minúscula e cozinha do norte de Portugal — bacalhau à Lagareiro, alheira. Reservem mesa com antecedência",
+    "es": "Comida: sala diminuta y cocina del norte de Portugal — bacalhau à Lagareiro, alheira. Reservad mesa con antelación",
+    "de": "Essen: winziger Raum und die Küche Nordportugals — Bacalhau à Lagareiro, Alheira. Tisch vorher reservieren"
+   },
+   "rating": 4.7,
+   "count": 225,
+   "addr": "Garajau",
+   "hours": {
+    "ru": "Вт–Сб 11:00–23:00 · вс 11:00–15:00 · пн закрыт",
+    "en": "Tue–Sat 11:00–23:00 · Sun 11:00–15:00 · Mon closed",
+    "pt": "Ter–Sáb 11:00–23:00 · Dom 11:00–15:00 · Seg fechado",
+    "es": "Mar–Sáb 11:00–23:00 · Dom 11:00–15:00 · Lun cerrado",
+    "de": "Di–Sa 11:00–23:00 · So 11:00–15:00 · Mo geschlossen"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": true
+  },
+  {
+   "id": "flordogarajau",
+   "name": "Flor do Garajau",
+   "lat": 32.644513,
+   "lon": -16.853789,
+   "place_id": "ChIJubr477BhYAwRq9a61Q0oEcw",
+   "note": {
+    "ru": "Пекарня: пастелария для своих, наличные — иностранные карты не принимают. Завтрак перед ранним выездом",
+    "en": "Bakery: a pastelaria for locals, cash only — foreign cards are not accepted. Breakfast before an early start",
+    "pt": "Padaria: pastelaria de bairro, só dinheiro — cartões estrangeiros não passam. Pequeno-almoço antes de uma saída cedo",
+    "es": "Panadería: pastelería de barrio, solo efectivo — no aceptan tarjetas extranjeras. Desayuno antes de salir temprano",
+    "de": "Bäckerei: Pastelaria für Einheimische, nur Bargeld — ausländische Karten werden nicht akzeptiert. Frühstück vor einem frühen Aufbruch"
+   },
+   "rating": 4.5,
+   "count": 344,
+   "addr": "Garajau",
+   "hours": {
+    "ru": "Ежедневно 7:00–21:00",
+    "en": "Daily 7:00–21:00",
+    "pt": "Todos os dias 7:00–21:00",
+    "es": "A diario 7:00–21:00",
+    "de": "Täglich 7:00–21:00"
+   },
+   "photo": "",
+   "tags": [
+    "bakery"
+   ],
+   "secret": true
+  },
+  {
+   "id": "reismagos-bakery",
+   "name": "Reis Magos Bakery",
+   "lat": 32.643893,
+   "lon": -16.830487,
+   "place_id": "ChIJN8ljq8CLYAwRmcYNEZAZSL8",
+   "note": {
+    "ru": "Пекарня: большая, утром эмпанады горячие, к вечеру полки пустеют. Удобна на обратном пути с востока",
+    "en": "Bakery: a big one, the empanadas come out hot in the morning and the shelves empty by evening. Handy on the way back from the east",
+    "pt": "Padaria: grande, de manhã as empanadas saem quentes e ao fim do dia as prateleiras esvaziam. Fica a jeito no regresso do leste",
+    "es": "Panadería: grande, por la mañana las empanadas salen calientes y al atardecer los estantes se vacían. Va bien al volver del este",
+    "de": "Bäckerei: eine große, morgens kommen die Empanadas heiß heraus, abends sind die Regale leer. Praktisch auf dem Rückweg aus dem Osten"
+   },
+   "rating": 4.4,
+   "count": 854,
+   "addr": "Caniço",
+   "hours": {
+    "ru": "Ежедневно 7:00–20:30",
+    "en": "Daily 7:00–20:30",
+    "pt": "Todos os dias 7:00–20:30",
+    "es": "A diario 7:00–20:30",
+    "de": "Täglich 7:00–20:30"
+   },
+   "photo": "",
+   "tags": [
+    "bakery"
+   ],
+   "secret": false
+  },
+  {
+   "id": "saolourenco",
+   "name": "Ponta de São Lourenço",
+   "lat": 32.743370,
+   "lon": -16.700939,
+   "place_id": "ChIJBYiJk6J8YAwRFuEWPLkGqKA",
+   "note": {
+    "ru": "Маршрут: единственный настоящий рассвет на острове. Тропа PR8 требует онлайн-разрешения, парковка у входа заполняется затемно",
+    "en": "Trail: the only true sunrise on the island. The PR8 trail requires an online permit, and the car park at the entrance fills up before dawn",
+    "pt": "Trilho: o único nascer do sol a sério da ilha. O trilho PR8 exige autorização online e o parque à entrada enche antes de amanhecer",
+    "es": "Ruta: el único amanecer de verdad de la isla. El sendero PR8 exige permiso online y el aparcamiento de la entrada se llena antes del alba",
+    "de": "Wanderung: der einzige echte Sonnenaufgang der Insel. Der PR8-Weg erfordert eine Online-Genehmigung, und der Parkplatz am Eingang füllt sich vor Tagesanbruch"
+   },
+   "rating": 4.8,
+   "count": 14235,
+   "addr": "Caniçal",
+   "hours": {
+    "ru": "Круглосуточно · тропа PR8 — онлайн-разрешение (~3 €)",
+    "en": "Open 24h · PR8 trail needs an online permit (~€3)",
+    "pt": "24 horas · o trilho PR8 exige autorização online (~3 €)",
+    "es": "24 horas · el sendero PR8 exige permiso online (~3 €)",
+    "de": "Durchgehend · der PR8-Weg erfordert eine Online-Genehmigung (~3 €)"
+   },
+   "photo": "",
+   "tags": [
+    "hike",
+    "view"
+   ],
+   "secret": false
+  },
+  {
+   "id": "farol",
+   "name": "Farol da Ponta de São Lourenço (miradouro)",
+   "lat": 32.729965,
+   "lon": -16.656828,
+   "place_id": "ChIJ_UWZVId9YAwR6E8JdEzcrZI",
+   "note": {
+    "ru": "Вид: конец тропы — маяк, а в ясный день на горизонте Порту-Санту. Секрет внутри мейнстрима",
+    "en": "View: the end of the trail — a lighthouse, and on a clear day Porto Santo on the horizon. A secret inside the mainstream",
+    "pt": "Vista: o fim do trilho — um farol e, em dia limpo, o Porto Santo no horizonte. Um segredo dentro do mainstream",
+    "es": "Vista: el final del sendero — un faro y, en día claro, Porto Santo en el horizonte. Un secreto dentro del mainstream",
+    "de": "Aussicht: das Ende des Weges — ein Leuchtturm und an klaren Tagen Porto Santo am Horizont. Ein Geheimnis mitten im Mainstream"
+   },
+   "rating": 4.9,
+   "count": 130,
+   "addr": "Caniçal",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view",
+    "hike"
+   ],
+   "secret": true
+  },
+  {
+   "id": "prainha",
+   "name": "Prainha do Caniçal",
+   "lat": 32.742870,
+   "lon": -16.716055,
+   "place_id": "ChIJExrUxq58YAwRWpTtBxudcJ8",
+   "note": {
+    "ru": "Вид: чёрный вулканический песок и снорклинг — окунуться сразу после тропы, пока пляж ещё пустой",
+    "en": "View: black volcanic sand and snorkelling — a dip right after the trail, while the beach is still empty",
+    "pt": "Vista: areia vulcânica preta e snorkelling — um mergulho logo a seguir ao trilho, enquanto a praia ainda está vazia",
+    "es": "Vista: arena volcánica negra y snorkel — un baño justo después del sendero, mientras la playa sigue vacía",
+    "de": "Aussicht: schwarzer Vulkansand und Schnorcheln — ein Sprung ins Wasser gleich nach der Wanderung, solange der Strand noch leer ist"
+   },
+   "rating": 4.6,
+   "count": 1437,
+   "addr": "Caniçal",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": false
+  },
+  {
+   "id": "salaoideal",
+   "name": "Miradouro do Salão Ideal",
+   "lat": 32.645549,
+   "lon": -16.972095,
+   "place_id": "ChIJ9-q6kW1fYAwRm4G4r1FW5rQ",
+   "note": {
+    "ru": "Вид: тихая прогулка вдоль берега на Câmara de Lobos и Cabo Girão, природные бассейны. Закат без толпы",
+    "en": "View: a quiet walk along the shore facing Câmara de Lobos and Cabo Girão, natural pools. Sunset without the crowd",
+    "pt": "Vista: passeio tranquilo à beira-mar virado a Câmara de Lobos e ao Cabo Girão, piscinas naturais. Pôr do sol sem multidão",
+    "es": "Vista: paseo tranquilo junto al mar frente a Câmara de Lobos y Cabo Girão, piscinas naturales. Atardecer sin multitudes",
+    "de": "Aussicht: ruhiger Uferspaziergang mit Blick auf Câmara de Lobos und Cabo Girão, Naturbecken. Sonnenuntergang ohne Menschenmenge"
+   },
+   "rating": 4.6,
+   "count": 263,
+   "addr": "Câmara de Lobos",
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24h",
+    "pt": "24 horas",
+    "es": "24 horas",
+    "de": "Durchgehend"
+   },
+   "photo": "",
+   "tags": [
+    "view"
+   ],
+   "secret": true
+  },
+  {
+   "id": "fajapadres",
+   "name": "Fajã dos Padres",
+   "lat": 32.656909,
+   "lon": -17.021773,
+   "place_id": "ChIJ____v_9nYAwRet06AESTcvs",
+   "note": {
+    "ru": "Вино: фуникулёр отвесно вниз к банановой ферме и редкой Malvasia Cândida. Только днём — последний спуск задолго до заката",
+    "en": "Wine: a cable car straight down to a banana farm and the rare Malvasia Cândida. Daytime only — the last ride down is well before sunset",
+    "pt": "Vinho: teleférico a pique até uma quinta de bananas e à rara Malvasia Cândida. Só de dia — a última descida é bem antes do pôr do sol",
+    "es": "Vino: teleférico en vertical hasta una finca de plátanos y la rara Malvasia Cândida. Solo de día — el último descenso es mucho antes del atardecer",
+    "de": "Wein: eine Seilbahn senkrecht hinunter zu einer Bananenfarm und zur seltenen Malvasia Cândida. Nur tagsüber — die letzte Fahrt hinunter ist lange vor Sonnenuntergang"
+   },
+   "rating": 4.5,
+   "count": 2870,
+   "addr": "Quinta Grande",
+   "hours": {
+    "ru": "Ежедневно 10:00–20:30 (фуникулёр)",
+    "en": "Daily 10:00–20:30 (cable car)",
+    "pt": "Todos os dias 10:00–20:30 (teleférico)",
+    "es": "A diario 10:00–20:30 (teleférico)",
+    "de": "Täglich 10:00–20:30 (Seilbahn)"
+   },
+   "photo": "",
+   "tags": [
+    "wine",
+    "view",
+    "food"
+   ],
+   "secret": false
+  },
+  {
+   "id": "numbertwo",
+   "name": "Bar Number Two",
+   "lat": 32.647762,
+   "lon": -16.901196,
+   "place_id": "ChIJ8TZxWgVgYAwRXQd-j_-bs3g",
+   "note": {
+    "ru": "Бар: старый бар без очередей, понча pescador и «Никита». Понча-ритуал по-фуншальски",
+    "en": "Bar: an old bar with no queues, poncha pescador and a Nikita. The Funchal poncha ritual",
+    "pt": "Bar: um bar antigo sem filas, poncha pescador e uma Nikita. O ritual da poncha à moda do Funchal",
+    "es": "Bar: un bar antiguo sin colas, poncha pescador y una Nikita. El ritual de la poncha al estilo de Funchal",
+    "de": "Bar: eine alte Bar ohne Schlangen, Poncha Pescador und ein Nikita. Das Poncha-Ritual auf Funchal-Art"
+   },
+   "rating": 4.5,
+   "count": 1497,
+   "addr": "Funchal",
+   "hours": {
+    "ru": "Ежедневно 12:00–01:00 · пт/сб до 02:00",
+    "en": "Daily 12:00–01:00 · Fri/Sat to 02:00",
+    "pt": "Todos os dias 12:00–01:00 · Sex/Sáb até 02:00",
+    "es": "A diario 12:00–01:00 · Vie/Sáb hasta 02:00",
+    "de": "Täglich 12:00–01:00 · Fr/Sa bis 02:00"
+   },
+   "photo": "",
+   "tags": [
+    "bar"
+   ],
+   "secret": false
+  },
+  {
+   "id": "garajau-rest",
+   "name": "Restaurante Garajau",
+   "lat": 32.644429,
+   "lon": -16.853546,
+   "place_id": "ChIJaWCf4GVhYAwRAYhtnNDQ9jc",
+   "note": {
+    "ru": "Еда: простой семейный ресторан, где приносят закуски и фрукты просто так. Открыт до полуночи и без выходных — выручает в воскресенье",
+    "en": "Food: a plain family restaurant where the starters and fruit simply arrive on the table. Open until midnight, seven days a week — it saves your Sunday",
+    "pt": "Comida: um restaurante familiar simples onde as entradas e a fruta aparecem sem se pedir. Aberto até à meia-noite todos os dias — safa o domingo",
+    "es": "Comida: un restaurante familiar sencillo donde los entrantes y la fruta llegan sin pedirlos. Abierto hasta medianoche todos los días — salva el domingo",
+    "de": "Essen: ein schlichtes Familienrestaurant, in dem Vorspeisen und Obst einfach auf den Tisch kommen. Täglich bis Mitternacht geöffnet — das rettet den Sonntag"
+   },
+   "rating": 4.4,
+   "count": 373,
+   "addr": "Garajau",
+   "hours": {
+    "ru": "Ежедневно 10:00–24:00",
+    "en": "Daily 10:00–24:00",
+    "pt": "Todos os dias 10:00–24:00",
+    "es": "A diario 10:00–24:00",
+    "de": "Täglich 10:00–24:00"
+   },
+   "photo": "",
+   "tags": [
+    "food"
+   ],
+   "secret": true
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "pinaculosunset",
+   "feat": true,
+   "title": {
+    "ru": "Закат в пяти минутах от дома",
+    "en": "Sunset five minutes from the house",
+    "pt": "Pôr do sol a cinco minutos de casa",
+    "es": "Atardecer a cinco minutos de casa",
+    "de": "Sonnenuntergang fünf Minuten vom Haus"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.6453,
+   "sunLon": -16.8706,
+   "why": {
+    "ru": "Дом стоит выше города, и лучший закат Фуншала — в десяти минутах езды по склону. Сначала край мыса под статуей, потом Pináculo на сам закат, потом ужин внизу в Гаражау. Никакой гонки: выезжаете, когда солнце уже низко.",
+    "en": "The house sits above the city, and Funchal's best sunset is a ten-minute drive along the slope. First the edge of the headland under the statue, then Pináculo for the sunset itself, then dinner down in Garajau. No rush: you set off when the sun is already low.",
+    "pt": "A casa fica acima da cidade e o melhor pôr do sol do Funchal está a dez minutos de carro pela encosta. Primeiro a ponta do cabo por baixo da estátua, depois o Pináculo para o pôr do sol e a seguir jantar lá em baixo, no Garajau. Sem pressa: saem quando o sol já está baixo.",
+    "es": "La casa está por encima de la ciudad y el mejor atardecer de Funchal queda a diez minutos en coche por la ladera. Primero el filo del cabo bajo la estatua, luego el Pináculo para el atardecer y después cena abajo, en Garajau. Sin prisa: salís cuando el sol ya está bajo.",
+    "de": "Das Haus liegt über der Stadt, und Funchals schönster Sonnenuntergang ist zehn Autominuten den Hang entlang. Zuerst die Kante des Kaps unter der Statue, dann der Pináculo für den Sonnenuntergang, danach Abendessen unten in Garajau. Ohne Eile: Sie fahren los, wenn die Sonne schon tief steht."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Спуск под статуей Cristo Rei",
+      "en": "The path down beneath the Cristo Rei statue",
+      "pt": "A descida por baixo da estátua do Cristo Rei",
+      "es": "La bajada bajo la estatua del Cristo Rei",
+      "de": "Der Abstieg unterhalb der Cristo-Rei-Statue"
+     },
+     "m": {
+      "ru": "за полтора часа до заката · ★4.7",
+      "en": "an hour and a half before sunset · ★4.7",
+      "pt": "hora e meia antes do pôr do sol · ★4.7",
+      "es": "hora y media antes del atardecer · ★4.7",
+      "de": "anderthalb Stunden vor Sonnenuntergang · ★4.7"
+     },
+     "note": {
+      "ru": "Узкая дорожка уводит вниз от площадки к самому краю мыса. Здесь садятся параглайдеры, а туристы наверху этого не видят",
+      "en": "A narrow path leads down from the platform to the very edge of the headland. Paragliders land here, and the tourists above never see it",
+      "pt": "Um carreiro estreito desce do miradouro até à ponta do cabo. É aqui que aterram os parapentes, e os turistas lá em cima não veem nada disto",
+      "es": "Un sendero estrecho baja desde el mirador hasta el filo del cabo. Aquí aterrizan los parapentes, y los turistas de arriba no lo ven",
+      "de": "Ein schmaler Pfad führt von der Plattform hinunter bis an die äußerste Kante des Kaps. Hier landen die Gleitschirmflieger, und die Touristen oben sehen davon nichts"
+     }
+    },
+    {
+     "n": {
+      "ru": "Miradouro do Pináculo — закат",
+      "en": "Miradouro do Pináculo — the sunset",
+      "pt": "Miradouro do Pináculo — o pôr do sol",
+      "es": "Miradouro do Pináculo — el atardecer",
+      "de": "Miradouro do Pináculo — der Sonnenuntergang"
+     },
+     "m": {
+      "ru": "за 30 минут до заката · финал",
+      "en": "30 minutes before sunset · the finale",
+      "pt": "30 minutos antes do pôr do sol · o final",
+      "es": "30 minutos antes del atardecer · el final",
+      "de": "30 Minuten vor Sonnenuntergang · das Finale"
+     },
+     "note": {
+      "ru": "Город внизу, солнце уходит в океан справа. Приезжайте заранее — площадка маленькая, мест немного",
+      "en": "The city below, the sun sliding into the ocean on the right. Come early — the spot is small and there is not much room",
+      "pt": "A cidade lá em baixo e o sol a mergulhar no oceano à direita. Cheguem cedo — o miradouro é pequeno e há pouco espaço",
+      "es": "La ciudad abajo y el sol hundiéndose en el océano a la derecha. Llegad pronto — el mirador es pequeño y hay poco sitio",
+      "de": "Die Stadt unten, die Sonne versinkt rechts im Ozean. Kommen Sie früh — der Platz ist klein und schnell besetzt"
+     }
+    },
+    {
+     "n": {
+      "ru": "Ужин: FERRUGEM no Garajau Bistro",
+      "en": "Dinner: FERRUGEM no Garajau Bistro",
+      "pt": "Jantar: FERRUGEM no Garajau Bistro",
+      "es": "Cena: FERRUGEM no Garajau Bistro",
+      "de": "Abendessen: FERRUGEM no Garajau Bistro"
+     },
+     "m": {
+      "ru": "после заката · кухня до 22:00 · вс закрыт",
+      "en": "after sunset · kitchen until 22:00 · closed Sun",
+      "pt": "depois do pôr do sol · cozinha até às 22:00 · Dom fechado",
+      "es": "tras el atardecer · cocina hasta las 22:00 · Dom cerrado",
+      "de": "nach Sonnenuntergang · Küche bis 22:00 · So geschlossen"
+     },
+     "note": {
+      "ru": "Спускаетесь обратно в Гаражау, десять минут. Barbara встретит по-немецки, а ризотто с осьминогом — то, ради чего сюда возвращаются",
+      "en": "You drive back down to Garajau, ten minutes. Barbara will greet you in German, and the octopus risotto is what brings people back",
+      "pt": "Descem de novo ao Garajau, dez minutos. A Barbara recebe-vos em alemão e o risoto de polvo é o que faz as pessoas voltarem",
+      "es": "Bajáis de vuelta a Garajau, diez minutos. Barbara os recibirá en alemán, y el risotto de pulpo es lo que hace volver a la gente",
+      "de": "Sie fahren zurück hinunter nach Garajau, zehn Minuten. Barbara begrüßt Sie auf Deutsch, und das Oktopus-Risotto ist der Grund, warum Gäste wiederkommen"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Хотите начать раньше — терраса Vista Balancal открыта до 21:00. Вид на Фуншал оттуда тот же, а отзывов у неё пятьдесят пять",
+     "en": "If you want to start earlier, the Vista Balancal terrace is open until 21:00. The view over Funchal is the same one, and the place has fifty-five reviews",
+     "pt": "Se quiserem começar mais cedo, a esplanada do Vista Balancal está aberta até às 21:00. A vista sobre o Funchal é a mesma e o sítio tem cinquenta e cinco avaliações",
+     "es": "Si queréis empezar antes, la terraza de Vista Balancal abre hasta las 21:00. La vista sobre Funchal es la misma y el sitio tiene cincuenta y cinco reseñas",
+     "de": "Wenn Sie früher anfangen möchten: Die Terrasse des Vista Balancal ist bis 21:00 geöffnet. Der Blick über Funchal ist derselbe, und das Lokal hat fünfundfünfzig Bewertungen"
+    },
+    {
+     "ru": "В воскресенье FERRUGEM закрыт. Тогда Restaurante Garajau в двух минутах — он открыт до полуночи. Bibó Norte carago по воскресеньям работает только до 15:00, на ужин не рассчитывайте",
+     "en": "FERRUGEM is closed on Sundays. Then Restaurante Garajau, two minutes away, is open until midnight. Bibó Norte carago only runs until 15:00 on Sundays, so do not count on it for dinner",
+     "pt": "Ao domingo o FERRUGEM está fechado. Nesse caso, o Restaurante Garajau, a dois minutos, está aberto até à meia-noite. O Bibó Norte carago ao domingo só abre até às 15:00, não contem com ele para jantar",
+     "es": "Los domingos FERRUGEM cierra. Entonces el Restaurante Garajau, a dos minutos, abre hasta medianoche. El Bibó Norte carago los domingos solo abre hasta las 15:00, no contéis con él para cenar",
+     "de": "Sonntags ist das FERRUGEM geschlossen. Dann hat das Restaurante Garajau, zwei Minuten entfernt, bis Mitternacht geöffnet. Das Bibó Norte carago öffnet sonntags nur bis 15:00 — für das Abendessen also keine Option"
+    },
+    {
+     "ru": "Pináculo в пяти минутах от дома: если небо затянуло, можно до последнего ждать на террасе и выехать, когда просветлеет",
+     "en": "Pináculo is five minutes from the house: if the sky clouds over, you can wait on the terrace until the last moment and drive out when it clears",
+     "pt": "O Pináculo fica a cinco minutos de casa: se o céu fechar, podem esperar no terraço até ao último momento e sair quando abrir",
+     "es": "El Pináculo está a cinco minutos de casa: si el cielo se cierra, podéis esperar en la terraza hasta el último momento y salir cuando aclare",
+     "de": "Der Pináculo liegt fünf Minuten vom Haus: Wenn der Himmel zuzieht, können Sie bis zum letzten Moment auf der Terrasse warten und losfahren, sobald es aufklart"
+    }
+   ],
+   "park": {
+    "ru": "У Pináculo паркуются на обочине вдоль дороги — мест немного, закладывайте полчаса запаса. У Cristo Rei есть площадка наверху, вниз к мысу только пешком.",
+    "en": "At Pináculo people park on the verge along the road — there is not much room, so allow half an hour's margin. At Cristo Rei there is a car park up top; the way down to the headland is on foot only.",
+    "pt": "No Pináculo estaciona-se na berma da estrada — há poucos lugares, contem com meia hora de folga. No Cristo Rei há parque em cima; a descida até ao cabo é só a pé.",
+    "es": "En el Pináculo se aparca en el arcén de la carretera — hay pocos sitios, contad con media hora de margen. En el Cristo Rei hay aparcamiento arriba; la bajada al cabo es solo a pie.",
+    "de": "Am Pináculo parkt man am Straßenrand — es gibt wenige Plätze, planen Sie eine halbe Stunde Puffer ein. Am Cristo Rei gibt es oben einen Parkplatz; hinunter zum Kap geht es nur zu Fuß."
+   },
+   "wear": {
+    "ru": "Ветровка — на мысу вечером задувает. Обувь с протектором и фонарик в телефоне: дорожка под статуей неровная, обратно вы идёте уже в сумерках.",
+    "en": "A windbreaker — the headland gets breezy in the evening. Shoes with grip and the torch on your phone: the path under the statue is uneven and you walk back in the dusk.",
+    "pt": "Corta-vento — ao fim da tarde o cabo apanha vento. Calçado com aderência e a lanterna do telemóvel: o carreiro por baixo da estátua é irregular e o regresso já é ao anoitecer.",
+    "es": "Cortavientos — al atardecer el cabo coge viento. Calzado con agarre y la linterna del móvil: el sendero bajo la estatua es irregular y la vuelta ya es al anochecer.",
+    "de": "Eine Windjacke — am Kap frischt es abends auf. Schuhe mit Profil und die Taschenlampe im Handy: Der Pfad unter der Statue ist uneben, und zurück geht es schon in der Dämmerung."
+   }
+  },
+  {
+   "id": "sunriseeast",
+   "feat": true,
+   "title": {
+    "ru": "Рассвет на востоке",
+    "en": "Sunrise in the east",
+    "pt": "Nascer do sol a leste",
+    "es": "Amanecer en el este",
+    "de": "Sonnenaufgang im Osten"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "sunrise",
+   "act": [
+    "hike",
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.7434,
+   "sunLon": -16.7009,
+   "why": {
+    "ru": "Мадейра почти не даёт рассветов — горы закрывают восток. Ponta de São Lourenço это исключение: голый вулканический гребень, вода с обеих сторон и солнце прямо из океана. Выезжаете затемно, к десяти утра вы уже у бассейна, пока не стало жарко.",
+    "en": "Madeira hardly gives you sunrises — the mountains block the east. Ponta de São Lourenço is the exception: a bare volcanic ridge, water on both sides and the sun coming straight out of the ocean. You leave in the dark and are back at the pool by ten, before the heat.",
+    "pt": "A Madeira quase não dá nascer do sol — as montanhas tapam o leste. A Ponta de São Lourenço é a exceção: uma crista vulcânica nua, água dos dois lados e o sol a sair do oceano. Saem ainda de noite e às dez já estão na piscina, antes do calor.",
+    "es": "Madeira apenas regala amaneceres — las montañas tapan el este. Ponta de São Lourenço es la excepción: una cresta volcánica desnuda, agua a ambos lados y el sol saliendo del océano. Salís de noche y a las diez ya estáis en la piscina, antes del calor.",
+    "de": "Madeira schenkt kaum Sonnenaufgänge — die Berge verdecken den Osten. Die Ponta de São Lourenço ist die Ausnahme: ein kahler Vulkangrat, Wasser auf beiden Seiten und die Sonne direkt aus dem Ozean. Sie fahren im Dunkeln los und sind um zehn wieder am Pool, vor der Hitze."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Выезд затемно из São Gonçalo",
+      "en": "Setting off from São Gonçalo in the dark",
+      "pt": "Partida de São Gonçalo ainda de noite",
+      "es": "Salida de São Gonçalo aún de noche",
+      "de": "Aufbruch aus São Gonçalo im Dunkeln"
+     },
+     "m": {
+      "ru": "за час с четвертью до рассвета",
+      "en": "an hour and a quarter before sunrise",
+      "pt": "uma hora e um quarto antes do nascer do sol",
+      "es": "una hora y cuarto antes del amanecer",
+      "de": "eineinviertel Stunden vor Sonnenaufgang"
+     },
+     "note": {
+      "ru": "Трасса VR1 пустая, до Baía d'Abra примерно сорок минут. Кофе и термос возьмите из дома — по дороге ничего не открыто",
+      "en": "The VR1 is empty and Baía d'Abra is about forty minutes away. Take coffee and a flask from the house — nothing is open along the way",
+      "pt": "A VR1 está vazia e a Baía d'Abra fica a uns quarenta minutos. Levem café e um termo de casa — pelo caminho não há nada aberto",
+      "es": "La VR1 está vacía y Baía d'Abra queda a unos cuarenta minutos. Llevaos café y un termo de casa — por el camino no hay nada abierto",
+      "de": "Die VR1 ist leer, bis Baía d'Abra sind es rund vierzig Minuten. Nehmen Sie Kaffee und eine Thermoskanne von zu Hause mit — unterwegs hat nichts geöffnet"
+     }
+    },
+    {
+     "n": {
+      "ru": "Ponta de São Lourenço — рассвет на первом гребне",
+      "en": "Ponta de São Lourenço — sunrise on the first ridge",
+      "pt": "Ponta de São Lourenço — nascer do sol na primeira crista",
+      "es": "Ponta de São Lourenço — amanecer en la primera cresta",
+      "de": "Ponta de São Lourenço — Sonnenaufgang auf dem ersten Grat"
+     },
+     "m": {
+      "ru": "★4.8 · разрешение PR8 обязательно",
+      "en": "★4.8 · the PR8 permit is mandatory",
+      "pt": "★4.8 · a autorização PR8 é obrigatória",
+      "es": "★4.8 · el permiso PR8 es obligatorio",
+      "de": "★4.8 · die PR8-Genehmigung ist Pflicht"
+     },
+     "note": {
+      "ru": "От парковки двадцать минут вверх по тропе — и дальше можно не идти: солнце выходит прямо из воды между двумя бухтами",
+      "en": "Twenty minutes up the trail from the car park — and you need go no further: the sun comes straight out of the water between two bays",
+      "pt": "Vinte minutos a subir a partir do parque — e não é preciso ir mais longe: o sol sai da água entre duas baías",
+      "es": "Veinte minutos de subida desde el aparcamiento — y no hace falta seguir: el sol sale del agua entre dos bahías",
+      "de": "Zwanzig Minuten den Weg hinauf vom Parkplatz — weiter müssen Sie nicht: Die Sonne steigt zwischen zwei Buchten direkt aus dem Wasser"
+     }
+    },
+    {
+     "n": {
+      "ru": "Farol da Ponta de São Lourenço",
+      "en": "Farol da Ponta de São Lourenço",
+      "pt": "Farol da Ponta de São Lourenço",
+      "es": "Farol da Ponta de São Lourenço",
+      "de": "Farol da Ponta de São Lourenço"
+     },
+     "m": {
+      "ru": "★4.9 · ещё около двух часов в одну сторону",
+      "en": "★4.9 · another two hours or so each way",
+      "pt": "★4.9 · mais umas duas horas em cada sentido",
+      "es": "★4.9 · unas dos horas más en cada sentido",
+      "de": "★4.9 · noch einmal etwa zwei Stunden pro Richtung"
+     },
+     "note": {
+      "ru": "Для тех, кто идёт до конца: маяк на самом краю острова, а ясным утром на горизонте видно Порту-Санту",
+      "en": "For those who go all the way: a lighthouse at the island's very edge, and on a clear morning Porto Santo on the horizon",
+      "pt": "Para quem vai até ao fim: um farol na ponta da ilha e, numa manhã limpa, o Porto Santo no horizonte",
+      "es": "Para quien llega hasta el final: un faro en el extremo de la isla y, en una mañana clara, Porto Santo en el horizonte",
+      "de": "Für alle, die bis zum Ende gehen: ein Leuchtturm am äußersten Rand der Insel und an klaren Morgen Porto Santo am Horizont"
+     }
+    },
+    {
+     "n": {
+      "ru": "Prainha do Caniçal — окунуться",
+      "en": "Prainha do Caniçal — a swim",
+      "pt": "Prainha do Caniçal — um mergulho",
+      "es": "Prainha do Caniçal — un baño",
+      "de": "Prainha do Caniçal — ein Bad"
+     },
+     "m": {
+      "ru": "★4.6 · пока пляж пустой",
+      "en": "★4.6 · while the beach is still empty",
+      "pt": "★4.6 · enquanto a praia ainda está vazia",
+      "es": "★4.6 · mientras la playa sigue vacía",
+      "de": "★4.6 · solange der Strand noch leer ist"
+     },
+     "note": {
+      "ru": "Единственный чёрный песчаный пляж поблизости. После гребня зайти в воду — ровно то, что нужно",
+      "en": "The only black sand beach nearby. After the ridge, stepping into the water is exactly right",
+      "pt": "A única praia de areia preta por perto. Depois da crista, entrar na água é exatamente o que sabe bem",
+      "es": "La única playa de arena negra por la zona. Tras la cresta, meterse en el agua es justo lo que apetece",
+      "de": "Der einzige schwarze Sandstrand in der Nähe. Nach dem Grat ist der Gang ins Wasser genau das Richtige"
+     }
+    },
+    {
+     "n": {
+      "ru": "Завтрак: Reis Magos Bakery",
+      "en": "Breakfast: Reis Magos Bakery",
+      "pt": "Pequeno-almoço: Reis Magos Bakery",
+      "es": "Desayuno: Reis Magos Bakery",
+      "de": "Frühstück: Reis Magos Bakery"
+     },
+     "m": {
+      "ru": "★4.4 · по дороге домой · утром эмпанады горячие",
+      "en": "★4.4 · on the way home · the empanadas are hot in the morning",
+      "pt": "★4.4 · no caminho de regresso · de manhã as empanadas estão quentes",
+      "es": "★4.4 · de vuelta a casa · por la mañana las empanadas están calientes",
+      "de": "★4.4 · auf dem Heimweg · morgens sind die Empanadas heiß"
+     },
+     "note": {
+      "ru": "Последняя остановка перед домом. Берите с запасом — к вечеру полки пустеют",
+      "en": "The last stop before home. Buy extra — the shelves empty by evening",
+      "pt": "A última paragem antes de casa. Levem a mais — ao fim do dia as prateleiras esvaziam",
+      "es": "La última parada antes de casa. Comprad de más — al atardecer los estantes se vacían",
+      "de": "Der letzte Halt vor dem Haus. Kaufen Sie reichlich — abends sind die Regale leer"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Тропа PR8 на Ponta de São Lourenço требует онлайн-разрешения (около 3 €). Оформляется заранее, утренние слоты разбирают быстро — иначе вы упрётесь на входе в темноте. Спросите хозяина, он подскажет, где бронировать.",
+     "en": "The PR8 trail on Ponta de São Lourenço requires an online permit (about €3). Book it in advance — the early morning slots go fast, otherwise you will be turned back at the entrance in the dark. Ask your host where to book it.",
+     "pt": "O trilho PR8 na Ponta de São Lourenço exige autorização online (cerca de 3 €). Reservem com antecedência — os horários da manhã esgotam depressa, caso contrário ficam barrados à entrada, no escuro. Perguntem ao anfitrião onde reservar.",
+     "es": "El sendero PR8 en Ponta de São Lourenço exige permiso online (unos 3 €). Reservadlo con antelación — las franjas de primera hora vuelan, u os quedaréis parados en la entrada a oscuras. Preguntad al anfitrión dónde reservarlo.",
+     "de": "Der PR8-Weg auf der Ponta de São Lourenço erfordert eine Online-Genehmigung (etwa 3 €). Buchen Sie im Voraus — die Morgen-Slots sind schnell vergriffen, sonst stehen Sie im Dunkeln vor dem Eingang. Fragen Sie Ihren Gastgeber, wo man sie bucht."
+    },
+    {
+     "ru": "Рассвет есть и без разрешения, и без тропы: Miradouro do Pico do Facho — на площадку заезжаете прямо на машине, самолёты взлетают под ногами",
+     "en": "There is a sunrise without a permit and without a trail too: Miradouro do Pico do Facho — you drive right up to the platform and the planes take off below your feet",
+     "pt": "Também há nascer do sol sem autorização e sem trilho: Miradouro do Pico do Facho — sobe-se de carro até ao miradouro e os aviões descolam por baixo dos pés",
+     "es": "También hay amanecer sin permiso y sin sendero: Miradouro do Pico do Facho — se sube en coche hasta la plataforma y los aviones despegan bajo vuestros pies",
+     "de": "Einen Sonnenaufgang gibt es auch ohne Genehmigung und ohne Wanderung: Miradouro do Pico do Facho — man fährt direkt auf die Plattform, und die Flugzeuge starten unter den Füßen"
+    },
+    {
+     "ru": "На гребне нет ни метра тени. То, что в семь утра приятно, к десяти становится испытанием — поэтому и выезжают затемно",
+     "en": "There is not a metre of shade on the ridge. What feels pleasant at seven turns into an ordeal by ten — which is exactly why people leave before dawn",
+     "pt": "Na crista não há um metro de sombra. O que às sete é agradável, às dez é uma provação — é por isso que se sai ainda de noite",
+     "es": "En la cresta no hay ni un metro de sombra. Lo que a las siete es agradable, a las diez es una prueba — por eso se sale de noche",
+     "de": "Auf dem Grat gibt es keinen Meter Schatten. Was um sieben angenehm ist, wird um zehn zur Prüfung — genau deshalb bricht man vor Sonnenaufgang auf"
+    }
+   ],
+   "park": {
+    "ru": "Парковка у входа на тропу, Baía d'Abra — бесплатная, но к рассвету заполняется. Приезжайте до первого света; на обочине узкой дороги места нет.",
+    "en": "The car park at the trailhead, Baía d'Abra, is free but fills up by sunrise. Get there before first light; there is no room on the verge of the narrow road.",
+    "pt": "O parque à entrada do trilho, na Baía d'Abra, é gratuito mas enche ao nascer do sol. Cheguem antes da primeira luz; na berma da estrada estreita não há espaço.",
+    "es": "El aparcamiento del inicio del sendero, en Baía d'Abra, es gratis pero se llena al amanecer. Llegad antes de la primera luz; en el arcén de la carretera estrecha no hay sitio.",
+    "de": "Der Parkplatz am Wegbeginn, Baía d'Abra, ist kostenlos, füllt sich aber bis Sonnenaufgang. Kommen Sie vor dem ersten Licht; am Rand der schmalen Straße ist kein Platz."
+   },
+   "wear": {
+    "ru": "Обувь с протектором и ветровка — на гребне дует всегда. Фонарик, вода и купальник: с тропы вы едете прямиком на пляж.",
+    "en": "Shoes with grip and a windbreaker — the ridge is always windy. A torch, water and swimwear: from the trail you head straight for the beach.",
+    "pt": "Calçado com aderência e corta-vento — na crista há sempre vento. Lanterna, água e fato de banho: do trilho seguem direitos para a praia.",
+    "es": "Calzado con agarre y cortavientos — en la cresta siempre sopla. Linterna, agua y bañador: del sendero vais directos a la playa.",
+    "de": "Schuhe mit Profil und eine Windjacke — auf dem Grat weht es immer. Taschenlampe, Wasser und Badesachen: vom Weg geht es direkt an den Strand."
+   }
+  },
+  {
+   "id": "tornosday",
+   "feat": true,
+   "title": {
+    "ru": "Медленный день вокруг дома",
+    "en": "A slow day around the house",
+    "pt": "Um dia lento à volta da casa",
+    "es": "Un día lento alrededor de la casa",
+    "de": "Ein langsamer Tag rund ums Haus"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "day",
+   "act": [
+    "walk",
+    "hike",
+    "food"
+   ],
+   "sunLat": 32.6655,
+   "sunLon": -16.8737,
+   "why": {
+    "ru": "Первый день после перелёта, когда не хочется садиться за руль надолго. Всё в пределах десяти минут от дома: ровная левада без подъёмов, английский чайный сад посреди неё, старые сады над полем для гольфа и таверна с осьминогом. К ужину вы уже дома.",
+    "en": "The first day after the flight, when a long drive is the last thing you want. Everything is within ten minutes of the house: a level levada with no climbing, an English tea garden halfway along it, old gardens above the golf course and a tavern with octopus. You are home by dinner.",
+    "pt": "O primeiro dia depois do voo, quando não apetece conduzir muito. Está tudo a dez minutos de casa: uma levada plana sem subidas, um jardim de chá inglês a meio do caminho, jardins antigos por cima do campo de golfe e uma taberna com polvo. Ao jantar já estão em casa.",
+    "es": "El primer día tras el vuelo, cuando conducir mucho es lo último que apetece. Todo está a diez minutos de casa: una levada llana sin subidas, un jardín de té inglés a mitad de camino, jardines antiguos sobre el campo de golf y una taberna con pulpo. A la hora de cenar ya estáis en casa.",
+    "de": "Der erste Tag nach dem Flug, wenn eine lange Autofahrt das Letzte ist, wonach einem der Sinn steht. Alles liegt zehn Minuten vom Haus: eine ebene Levada ohne Steigung, ein englischer Teegarten auf halbem Weg, alte Gärten über dem Golfplatz und eine Taverne mit Oktopus. Zum Abendessen sind Sie zurück."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Levada dos Tornos от Монте",
+      "en": "Levada dos Tornos from Monte",
+      "pt": "Levada dos Tornos a partir do Monte",
+      "es": "Levada dos Tornos desde Monte",
+      "de": "Levada dos Tornos ab Monte"
+     },
+     "m": {
+      "ru": "★4.5 · утром · 1–1.5 часа",
+      "en": "★4.5 · in the morning · 1–1.5h",
+      "pt": "★4.5 · de manhã · 1–1.5h",
+      "es": "★4.5 · por la mañana · 1–1.5h",
+      "de": "★4.5 · morgens · 1–1,5 Std."
+     },
+     "note": {
+      "ru": "Вода бежит рядом, тропа ровная, слева то и дело открывается бухта. Подъёмов нет — можно идти и разговаривать",
+      "en": "The water runs beside you, the path is level, and the bay keeps opening up on the left. No climbing — you can walk and talk",
+      "pt": "A água corre ao lado, o caminho é plano e a baía vai-se abrindo à esquerda. Não há subidas — dá para andar e conversar",
+      "es": "El agua corre al lado, el camino es llano y la bahía se va abriendo a la izquierda. Sin subidas — se puede andar y conversar",
+      "de": "Das Wasser läuft neben Ihnen, der Weg ist eben, und links öffnet sich immer wieder die Bucht. Keine Steigungen — man kann gehen und dabei reden"
+     }
+    },
+    {
+     "n": {
+      "ru": "Jasmin Tea House",
+      "en": "Jasmin Tea House",
+      "pt": "Jasmin Tea House",
+      "es": "Jasmin Tea House",
+      "de": "Jasmin Tea House"
+     },
+     "m": {
+      "ru": "★4.8 · пн закрыт · до 17:00",
+      "en": "★4.8 · closed Mon · until 17:00",
+      "pt": "★4.8 · Seg fechado · até às 17:00",
+      "es": "★4.8 · Lun cerrado · hasta las 17:00",
+      "de": "★4.8 · Mo geschlossen · bis 17:00"
+     },
+     "note": {
+      "ru": "Чайный сад прямо на леваде: сконы, домашние торты, хозяин из Манчестера. Здесь тропа сама просит остановиться",
+      "en": "A tea garden right on the levada: scones, home-made cakes, an owner from Manchester. This is where the trail asks you to stop",
+      "pt": "Um jardim de chá mesmo na levada: scones, bolos caseiros, um dono de Manchester. É aqui que o trilho pede uma paragem",
+      "es": "Un jardín de té en plena levada: scones, tartas caseras, un dueño de Mánchester. Aquí el sendero pide una parada",
+      "de": "Ein Teegarten direkt an der Levada: Scones, hausgemachte Kuchen, ein Wirt aus Manchester. Hier bittet der Weg von selbst um eine Pause"
+     }
+    },
+    {
+     "n": {
+      "ru": "Palheiro Gardens",
+      "en": "Palheiro Gardens",
+      "pt": "Jardins do Palheiro",
+      "es": "Palheiro Gardens",
+      "de": "Palheiro Gardens"
+     },
+     "m": {
+      "ru": "★4.4 · до 17:00 · 1.5–2 часа",
+      "en": "★4.4 · until 17:00 · 1.5–2h",
+      "pt": "★4.4 · até às 17:00 · 1.5–2h",
+      "es": "★4.4 · hasta las 17:00 · 1.5–2h",
+      "de": "★4.4 · bis 17:00 · 1,5–2 Std."
+     },
+     "note": {
+      "ru": "Тише и романтичнее садов Монте. Чайный дом смотрит на поле для гольфа — вторая пауза за день, и это правильно",
+      "en": "Quieter and more romantic than the Monte gardens. The tea house looks out over the golf course — a second pause in one day, and rightly so",
+      "pt": "Mais calmos e românticos do que os jardins do Monte. A casa de chá olha para o campo de golfe — segunda pausa do dia, e ainda bem",
+      "es": "Más tranquilos y románticos que los jardines de Monte. La casa de té mira al campo de golf — segunda pausa del día, y con razón",
+      "de": "Ruhiger und romantischer als die Gärten von Monte. Das Teehaus blickt über den Golfplatz — die zweite Pause an einem Tag, und das zu Recht"
+     }
+    },
+    {
+     "n": {
+      "ru": "Ужин: Restaurante O PALHEIRO",
+      "en": "Dinner: Restaurante O PALHEIRO",
+      "pt": "Jantar: Restaurante O PALHEIRO",
+      "es": "Cena: Restaurante O PALHEIRO",
+      "de": "Abendessen: Restaurante O PALHEIRO"
+     },
+     "m": {
+      "ru": "★4.4 · вс закрыт · до 22:00",
+      "en": "★4.4 · closed Sun · until 22:00",
+      "pt": "★4.4 · Dom fechado · até às 22:00",
+      "es": "★4.4 · Dom cerrado · hasta las 22:00",
+      "de": "★4.4 · So geschlossen · bis 22:00"
+     },
+     "note": {
+      "ru": "Деревенская таверна в паре минут от садов. Шеф пришёл из пятизвёздочного отеля — берите осьминога",
+      "en": "A village tavern a couple of minutes from the gardens. The chef came from a five-star hotel — order the octopus",
+      "pt": "Uma taberna de aldeia a dois minutos dos jardins. O chef veio de um hotel de cinco estrelas — peçam o polvo",
+      "es": "Una taberna de pueblo a dos minutos de los jardines. El chef viene de un hotel de cinco estrellas — pedid el pulpo",
+      "de": "Eine Dorftaverne zwei Minuten von den Gärten. Der Koch kam aus einem Fünf-Sterne-Hotel — bestellen Sie den Oktopus"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "По понедельникам Jasmin закрыт — тогда Hortênsia Gardens Tea House чуть западнее по той же леваде, с яблочным пирогом и видом на бухту",
+     "en": "Jasmin is closed on Mondays — then it is Hortênsia Gardens Tea House, slightly west along the same levada, with apple pie and a view of the bay",
+     "pt": "À segunda o Jasmin está fechado — nesse caso, a Hortênsia Gardens Tea House, um pouco mais a oeste na mesma levada, com tarte de maçã e vista para a baía",
+     "es": "Los lunes Jasmin cierra — entonces, Hortênsia Gardens Tea House, algo más al oeste por la misma levada, con tarta de manzana y vistas a la bahía",
+     "de": "Montags ist das Jasmin geschlossen — dann das Hortênsia Gardens Tea House, etwas weiter westlich an derselben Levada, mit Apfelkuchen und Blick auf die Bucht"
+    },
+    {
+     "ru": "Левада линейная: оставьте машину у чайного дома и идите навстречу маршруту, а обратно тем же путём — так не придётся возвращаться за машиной",
+     "en": "The levada is linear: leave the car at the tea house, walk out along the route and come back the same way — that way you never have to go back for the car",
+     "pt": "A levada é linear: deixem o carro na casa de chá, sigam pelo percurso e regressem pelo mesmo caminho — assim não têm de voltar atrás para ir buscá-lo",
+     "es": "La levada es lineal: dejad el coche en la casa de té, seguid la ruta y volved por el mismo camino — así no hay que regresar a buscarlo",
+     "de": "Die Levada ist eine Strecke, kein Rundweg: Lassen Sie das Auto am Teehaus, gehen Sie hinaus und denselben Weg zurück — so müssen Sie nie zum Auto zurücklaufen"
+    },
+    {
+     "ru": "В воскресенье O Palheiro закрыт. Ближайшая замена с видом — терраса Vista Balancal, она работает до 21:00",
+     "en": "O Palheiro is closed on Sundays. The nearest replacement with a view is the Vista Balancal terrace, open until 21:00",
+     "pt": "Ao domingo o O Palheiro está fechado. A substituição mais próxima com vista é a esplanada do Vista Balancal, aberta até às 21:00",
+     "es": "Los domingos O Palheiro cierra. El recambio más cercano con vistas es la terraza de Vista Balancal, abierta hasta las 21:00",
+     "de": "Sonntags ist das O Palheiro geschlossen. Der nächstgelegene Ersatz mit Aussicht ist die Terrasse des Vista Balancal, geöffnet bis 21:00"
+    }
+   ],
+   "park": {
+    "ru": "У Монте паркуются на Largo da Fonte и вдоль Caminho do Meio. У Palheiro Gardens своя парковка при входе, у Jasmin — несколько мест на обочине.",
+    "en": "At Monte people park at Largo da Fonte and along Caminho do Meio. Palheiro Gardens has its own car park at the entrance; at Jasmin there are a few spaces on the verge.",
+    "pt": "No Monte estaciona-se no Largo da Fonte e ao longo do Caminho do Meio. Os Jardins do Palheiro têm parque próprio à entrada; no Jasmin há alguns lugares na berma.",
+    "es": "En Monte se aparca en el Largo da Fonte y a lo largo del Caminho do Meio. Palheiro Gardens tiene su propio aparcamiento en la entrada; en Jasmin hay unas pocas plazas en el arcén.",
+    "de": "In Monte parkt man am Largo da Fonte und entlang des Caminho do Meio. Die Palheiro Gardens haben einen eigenen Parkplatz am Eingang; am Jasmin gibt es ein paar Plätze am Straßenrand."
+   },
+   "wear": {
+    "ru": "Обувь с протектором и дождевик: склон над Фуншалом часто накрывает облаком, а после дождя левада скользкая. Внизу солнце, наверху на несколько градусов прохладнее.",
+    "en": "Shoes with grip and a raincoat: the slope above Funchal is often swallowed by cloud, and the levada is slippery after rain. Sunny down below, a few degrees cooler up top.",
+    "pt": "Calçado com aderência e impermeável: a encosta acima do Funchal fica muitas vezes dentro da nuvem e, depois da chuva, a levada é escorregadia. Lá em baixo faz sol, cá em cima está uns graus mais fresco.",
+    "es": "Calzado con agarre e impermeable: la ladera sobre Funchal se mete a menudo en la nube y, tras la lluvia, la levada resbala. Abajo hace sol, arriba unos grados menos.",
+    "de": "Schuhe mit Profil und eine Regenjacke: Der Hang über Funchal steckt oft in der Wolke, und nach Regen ist die Levada rutschig. Unten Sonne, oben ein paar Grad kühler."
+   }
+  }
+ ]
+}
