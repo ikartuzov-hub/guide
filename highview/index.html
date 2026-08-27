@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мадейра из São Gonçalo — гид вокруг дома</title>
 
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SeedWave">
+<meta property="og:url" content="https://g.seedwave.pt/highview/">
+<meta property="og:title" content="Мадейра из São Gonçalo">
+<meta property="og:description" content="19 мест вокруг дома, 12 из них — не из путеводителей. Три готовых маршрута, пять языков. Гид для гостей Madeira High View.">
+<meta property="og:image" content="https://g.seedwave.pt/highview/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Мадейра из São Gonçalo">
+<meta name="twitter:description" content="19 мест вокруг дома, три маршрута, пять языков.">
+<meta name="twitter:image" content="https://g.seedwave.pt/highview/og.jpg">
+
+<link rel="icon" href="../icon.svg?v=2" type="image/svg+xml">
+<link rel="canonical" href="https://g.seedwave.pt/?guide=madeira-highview&lang=ru">
+
+<style>
+  html,body{margin:0;height:100%;background:#14110f;color:#f5f0e9;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .w{height:100%;display:grid;place-items:center;text-align:center;padding:24px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;margin:0 0 10px}
+  p{color:#a89e92;margin:0 0 22px;font-size:15px}
+  a{display:inline-block;background:#c94a3a;color:#fff;text-decoration:none;
+    padding:13px 26px;border-radius:999px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="w">
+  <div>
+    <h1>Мадейра из São Gonçalo</h1>
+    <p>Открываю гид…</p>
+    <a id="go" href="../?guide=madeira-highview&lang=ru">Открыть гид</a>
+  </div>
+</div>
+<script>
+  // Боты соцсетей не выполняют JS — им достаётся карточка выше.
+  // Человек попадает на гид сразу.
+  var p = new URLSearchParams(location.search);
+  var lang = p.get('lang') || 'ru';
+  var url = '../?guide=madeira-highview&lang=' + encodeURIComponent(lang);
+  document.getElementById('go').href = url;
+  location.replace(url);
+</script>
+</body>
+</html>
