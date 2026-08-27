@@ -42,6 +42,27 @@
    "dataUrl": "data/paris-igor.json",
    "hubUrl": "https://seedwave.pt/hub/",
    "live": true
+  },
+  {
+   "id": "madeira-highview",
+   "title": {
+    "ru": "Мадейра · вокруг Madeira High View",
+    "en": "Madeira · around Madeira High View",
+    "pt": "Madeira · à volta da Madeira High View",
+    "es": "Madeira · alrededor de Madeira High View",
+    "de": "Madeira · rund um Madeira High View"
+   },
+   "author": "Madeira High View",
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
+   "dataUrl": "data/madeira-highview.json",
+   "hubUrl": "https://seedwave.pt/hub/",
+   "live": true
   }
  ]
 }
