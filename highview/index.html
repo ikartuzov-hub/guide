@@ -13,6 +13,7 @@
 <meta property="og:image" content="https://g.seedwave.pt/highview/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:locale" content="ru_RU">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +22,6 @@
 <meta name="twitter:image" content="https://g.seedwave.pt/highview/og.jpg">
 
 <link rel="icon" href="../icon.svg?v=2" type="image/svg+xml">
-<link rel="canonical" href="https://g.seedwave.pt/?guide=madeira-highview&lang=ru">
 
 <style>
   html,body{margin:0;height:100%;background:#14110f;color:#f5f0e9;
@@ -42,8 +42,6 @@
   </div>
 </div>
 <script>
-  // Боты соцсетей не выполняют JS — им достаётся карточка выше.
-  // Человек попадает на гид сразу.
   var p = new URLSearchParams(location.search);
   var lang = p.get('lang') || 'ru';
   var url = '../?guide=madeira-highview&lang=' + encodeURIComponent(lang);
