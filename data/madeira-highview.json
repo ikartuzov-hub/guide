@@ -600,6 +600,7 @@
   {
    "id": "pinaculosunset",
    "feat": true,
+   "route": ["cristorei-mir", "pinaculo", "ferrugem"],
    "title": {
     "ru": "Закат в пяти минутах от дома",
     "en": "Sunset five minutes from the house",
@@ -735,6 +736,7 @@
   {
    "id": "sunriseeast",
    "feat": true,
+   "route": ["saolourenco", "farol", "prainha", "reismagos-bakery"],
    "title": {
     "ru": "Рассвет на востоке",
     "en": "Sunrise in the east",
@@ -917,6 +919,7 @@
   {
    "id": "tornosday",
    "feat": true,
+   "route": ["tornos", "jasmin", "palheiro", "opalheiro"],
    "title": {
     "ru": "Медленный день вокруг дома",
     "en": "A slow day around the house",
