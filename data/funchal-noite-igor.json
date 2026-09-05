@@ -347,6 +347,36 @@
    }
   },
   {
+   "id": "anges",
+   "name": "Bistrot Des Anges",
+   "lat": 32.6348432,
+   "lon": -16.9433239,
+   "place_id": "ChIJcYqV3u5fYAwRRIOq66q3Dos",
+   "reg": "fx-lido",
+   "rating": 4.8,
+   "count": 526,
+   "addr": "Rua da Ponta da Cruz 8a",
+   "tags": [
+    "food"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Маленький бистро у Forum, дверь в дверь с Imperfeito: французская подача, аккуратные тарелки, десерты хвалят отдельно — есть «кофе гурмана», где приносят понемногу всех сразу. Открылись в конце 2021 и до сих пор известны скорее по отзывам, чем по вывеске",
+    "en": "A small bistro by the Forum, next door to Imperfeito: French plating, careful dishes, and desserts people praise on their own — there is a gourmand coffee that brings a little of each. Opened in late 2021 and still better known by word of mouth than by its sign",
+    "pt": "Um pequeno bistrô junto ao Forum, porta com porta com o Imperfeito: empratamento francês, pratos cuidados e sobremesas elogiadas à parte — há um café gourmand que traz um pouco de cada. Abriu no final de 2021 e ainda se conhece mais por passa-palavra",
+    "es": "Un pequeño bistró junto al Forum, puerta con puerta con Imperfeito: emplatado francés, platos cuidados y postres que se elogian aparte — hay un café gourmand que trae un poco de cada uno. Abrió a finales de 2021 y se conoce más por el boca a boca",
+    "de": "Ein kleines Bistro beim Forum, Tür an Tür mit Imperfeito: französisches Anrichten, sorgfältige Teller und Desserts, die eigens gelobt werden — es gibt einen Café gourmand mit einer Kostprobe von allem. Eröffnet Ende 2021 und noch immer eher über Mundpropaganda bekannt"
+   },
+   "hours": {
+    "ru": "Вт–Вс 18:00–23:00, пн закрыто",
+    "en": "Tue–Sun 6–11 pm, closed Monday",
+    "pt": "Ter–Dom 18:00–23:00, fecha segunda",
+    "es": "Mar–Dom 18:00–23:00, cierra lunes",
+    "de": "Di–So 18:00–23:00, montags geschlossen"
+   }
+  },
+  {
    "id": "window",
    "name": "Window to Asia",
    "lat": 32.6369141,
@@ -790,6 +820,13 @@
     }
    ],
    "secrets": [
+    {
+     "ru": "Дверь в дверь с Imperfeito — Bistrot Des Anges: французская подача и десерты, ради которых берут «кофе гурмана». Если у одного нет места, второй в десяти шагах",
+     "en": "Next door to Imperfeito is Bistrot Des Anges: French plating and desserts worth ordering the gourmand coffee for. If one has no table, the other is ten steps away",
+     "pt": "Porta com porta com o Imperfeito fica o Bistrot Des Anges: empratamento francês e sobremesas que justificam o café gourmand. Se um não tiver mesa, o outro está a dez passos",
+     "es": "Puerta con puerta con Imperfeito está Bistrot Des Anges: emplatado francés y postres que justifican el café gourmand. Si uno no tiene mesa, el otro está a diez pasos",
+     "de": "Tür an Tür mit Imperfeito liegt das Bistrot Des Anges: französisches Anrichten und Desserts, für die sich der Café gourmand lohnt. Hat einer keinen Tisch, ist der andere zehn Schritte entfernt"
+    },
     {
      "ru": "В воскресенье Imperfeito закрыт — тогда вечер начинается с пиццы в Lume в километре западнее; там неаполитанское тесто и веганская моцарелла местного производства",
      "en": "Imperfeito is closed on Sundays — then the evening starts with pizza at Lume a kilometre west: Neapolitan dough and island-made vegan mozzarella",
