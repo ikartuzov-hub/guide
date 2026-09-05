@@ -138,18 +138,19 @@ function render(){
    +'<span class="dot">'+p.hours[L]+'</span>'
    +'<span class="dot">'+p.price+'</span>'+dst+'</p>'
    +'<div class="acts"><a class="btn" href="'+dir+'" target="_blank" rel="noopener">'+t.route+'</a>'
-   +'<button class="btn sec" onclick="focus(''+p.id+'')">'+t.onmap+'</button>'
+   +'<button class="btn sec" data-map="'+p.id+'">'+t.onmap+'</button>'
    +call+book+'</div></article>';
  }).join("");
  drawPins();
 }
 
 /* карта: все точки на первом экране */
+const LF=window.L; // Leaflet: имя L занято языком интерфейса
 let map=null, MK={};
 function initMap(){
- if(map||!window.L)return;
- map=L.map('map',{scrollWheelZoom:false});
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:19}).addTo(map);
+ if(map||!LF)return;
+ map=LF.map('map',{scrollWheelZoom:false});
+ LF.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:19}).addTo(map);
  drawPins();
 }
 function pinHtml(open){const c=open?'#E0A03F':'#7C8AA3';
@@ -159,9 +160,9 @@ function drawPins(){
  Object.values(MK).forEach(m=>map.removeLayer(m)); MK={};
  const t=UI[L], b=[];
  (openOnly?P.filter(openNow):P).forEach(p=>{
-  const ic=L.divIcon({className:'',html:pinHtml(openNow(p)),iconSize:[24,24],iconAnchor:[12,24]});
+  const ic=LF.divIcon({className:'',html:pinHtml(openNow(p)),iconSize:[24,24],iconAnchor:[12,24]});
   const dir="https://www.google.com/maps/dir/?api=1&destination="+p.lat+","+p.lon+"&destination_place_id="+p.pid+(me?"&origin="+me.lat+","+me.lon:"");
-  const m=L.marker([p.lat,p.lon],{icon:ic}).addTo(map)
+  const m=LF.marker([p.lat,p.lon],{icon:ic}).addTo(map)
     .bindPopup('<div class="pn">'+p.name+'</div><div class="pr">★ '+p.r.toFixed(1)+'</div>'
       +'<div>'+p.kind[L]+'</div>'
       +'<div style="margin-top:7px"><a href="'+dir+'" target="_blank" rel="noopener">'+t.route+' →</a>'
@@ -173,12 +174,15 @@ function drawPins(){
 }
 function focus(id){
  const m=MK[id]; if(!m)return;
- document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});
+ const el=document.getElementById('map'); if(el.scrollIntoView)el.scrollIntoView({behavior:'smooth',block:'center'});
  map.setView(m.getLatLng(),16,{animate:true}); m.openPopup();
 }
 
 document.getElementById("themeBtn").onclick=()=>{theme=theme==="light"?"dark":"light";ls("res_theme",theme);applyTheme();};
 document.getElementById("langBtn").onclick=()=>{L=LANGS[(LANGS.indexOf(L)+1)%LANGS.length];ls("res_lang",L);render();};
+document.getElementById("list").addEventListener("click",e=>{
+ const b=e.target.closest("[data-map]"); if(b)focus(b.getAttribute("data-map"));
+});
 document.getElementById("bTop").onclick=()=>{sort="top";render();};
 document.getElementById("bOpen").onclick=()=>{openOnly=!openOnly;render();};
 document.getElementById("bNear").onclick=()=>{
