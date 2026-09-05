@@ -1,0 +1,154 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8">
+<title>Ужин в Фуншале — где забронировать стол</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../icons/funchal-noite.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../icons/funchal-noite-180.png">
+<meta name="theme-color" content="#101725">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SeedWave">
+<meta property="og:title" content="Ужин в Фуншале — где забронировать стол">
+<meta property="og:description" content="Одиннадцать проверенных ресторанов: рейтинг, расстояние от вас, маршрут и телефон для брони.">
+<meta property="og:image" content="../share/og-funchal-noite.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://g.seedwave.pt/reserva/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ужин в Фуншале — где забронировать стол">
+<meta name="twitter:description" content="Одиннадцать проверенных ресторанов: рейтинг, расстояние, маршрут, телефон.">
+<meta name="twitter:image" content="../share/og-funchal-noite.png">
+<link rel="canonical" href="https://g.seedwave.pt/reserva/">
+<style>
+:root{--bg:#101725;--card:#16202F;--ink:#F1EBE0;--mut:#98A8BE;--faint:#61708A;--acc:#E0A03F;--accink:#101725;--line:#28364A;--ok:#5FBE87}
+:root[data-theme="light"]{--bg:#F6F2EA;--card:#FFFFFF;--ink:#1F2530;--mut:#5F6B7C;--faint:#98A2AF;--acc:#A8681A;--accink:#FFFFFF;--line:#E7E0D4;--ok:#2E7D4F}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+ padding:0 18px calc(40px + env(safe-area-inset-bottom))}
+.wrap{max-width:620px;margin:0 auto}
+header{padding:26px 0 18px;display:flex;align-items:flex-start;gap:14px}
+.mark{width:34px;height:34px;flex:0 0 34px;margin-top:2px}
+h1{font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:27px;margin:0 0 4px;line-height:1.15}
+.sub{color:var(--mut);margin:0;font-size:15px}
+.top{margin-left:auto;display:flex;gap:6px}
+.chip{background:transparent;color:var(--mut);border:1px solid var(--line);border-radius:9px;
+ padding:6px 10px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip[aria-pressed="true"]{background:var(--acc);color:var(--accink);border-color:var(--acc)}
+.bar{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 18px}
+.hint{color:var(--faint);font-size:13px;margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:11px}
+.row1{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.nm{font-size:18px;font-weight:600}
+.rt{color:var(--acc);font-weight:600;font-size:15px;white-space:nowrap}
+.cnt{color:var(--faint);font-size:13px}
+.kind{color:var(--mut);font-size:14px;margin:3px 0 0}
+.meta{color:var(--faint);font-size:13px;margin:6px 0 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.dot::before{content:"·";margin-right:8px}
+.open{color:var(--ok)}
+.acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+a.btn{flex:1 1 auto;text-align:center;text-decoration:none;border-radius:10px;padding:10px 12px;font-size:15px;font-weight:600;
+ background:var(--acc);color:var(--accink);min-width:96px}
+a.btn.sec{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:500}
+footer{color:var(--faint);font-size:13px;margin-top:26px;text-align:center}
+footer a{color:var(--acc)}
+@media(prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
+</style></head><body><div class="wrap">
+
+<header>
+ <svg class="mark" viewBox="0 0 100 100" fill="none" stroke="var(--acc)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M72 36 A26 26 0 1 0 72 64 L72 50 L54 50"/><path d="M20 84 Q30 78 40 84 Q50 90 60 84 Q70 78 80 84"/></svg>
+ <div><h1 id="h1"></h1><p class="sub" id="sub"></p></div>
+ <div class="top">
+   <button class="chip" id="langBtn" aria-label="Language">RU</button>
+   <button class="chip" id="themeBtn" aria-label="Theme">☾</button>
+ </div>
+</header>
+
+<div class="bar">
+ <button class="chip" id="bNear" aria-pressed="false"></button>
+ <button class="chip" id="bTop" aria-pressed="true"></button>
+ <button class="chip" id="bOpen" aria-pressed="false"></button>
+</div>
+<p class="hint" id="hint"></p>
+<div id="list"></div>
+
+<footer><span id="foot"></span> · <a href="../?guide=funchal-noite-igor" id="guideLink">SeedWave</a></footer>
+</div>
+<script>
+const P=[{"id": "akua", "name": "Akua", "lat": 32.6475074, "lon": -16.9092635, "pid": "ChIJEzbeKHhhYAwRB5rtKj4PkSQ", "r": 4.7, "c": 2715, "addr": "Rua dos Murças 6", "price": "€€€€", "kind": {"ru": "Рыба и морепродукты", "en": "Fish and seafood", "pt": "Peixe e marisco", "es": "Pescado y marisco", "de": "Fisch und Meeresfrüchte"}, "hours": {"ru": "Ежедневно 12:30–23:00", "en": "Daily 12:30–11 pm", "pt": "Todos os dias 12:30–23:00", "es": "Todos los días 12:30–23:00", "de": "Täglich 12:30–23:00"}, "open": {"0": [[750, 1380]], "1": [[750, 1380]], "2": [[750, 1380]], "3": [[750, 1380]], "4": [[750, 1380]], "5": [[750, 1380]], "6": [[750, 1380]]}, "tel": "+351938034758", "site": "http://akuafunchal.pt/"}, {"id": "kampo", "name": "Kampo by Chef Júlio Pereira", "lat": 32.6476931, "lon": -16.9071929, "pid": "ChIJpY-HoWhhYAwRIa2U8MuShd4", "r": 4.7, "c": 2467, "addr": "Rua da Alfândega 74", "price": "€€€€", "kind": {"ru": "Мясо и продукты земли", "en": "Meat and produce of the land", "pt": "Carne e produtos da terra", "es": "Carne y productos de la tierra", "de": "Fleisch und Produkte vom Land"}, "hours": {"ru": "Ежедневно 12:30–23:00", "en": "Daily 12:30–11 pm", "pt": "Todos os dias 12:30–23:00", "es": "Todos los días 12:30–23:00", "de": "Täglich 12:30–23:00"}, "open": {"0": [[750, 1380]], "1": [[750, 1380]], "2": [[750, 1380]], "3": [[750, 1380]], "4": [[750, 1380]], "5": [[750, 1380]], "6": [[750, 1380]]}, "tel": "+351924438080", "site": "http://www.kampo.pt/"}, {"id": "gazebo", "name": "Gazebo", "lat": 32.6454714, "lon": -16.9219138, "pid": "ChIJZX4LywhfYAwRSSkatJJijbE", "r": 4.9, "c": 272, "addr": "Rua dos Ilhéus 30", "price": "€€€€", "kind": {"ru": "Дегустационное меню, Michelin", "en": "Tasting menu, Michelin", "pt": "Menu de degustação, Michelin", "es": "Menú degustación, Michelin", "de": "Degustationsmenü, Michelin"}, "hours": {"ru": "Вт–Сб 19:30–00:00", "en": "Tue–Sat 7:30 pm–midnight", "pt": "Ter–Sáb 19:30–00:00", "es": "Mar–Sáb 19:30–00:00", "de": "Di–Sa 19:30–00:00"}, "open": {"1": [[1170, 1440]], "2": [[1170, 1440]], "3": [[1170, 1440]], "4": [[1170, 1440]], "5": [[1170, 1440]]}, "tel": "+351926531010", "site": "http://www.gazeboexperience.com/"}, {"id": "avista", "name": "Avista Restaurant", "lat": 32.6394278, "lon": -16.9256924, "pid": "ChIJET_71a5fYAwRMMbaYzR8uQA", "r": 4.6, "c": 1676, "addr": "Estrada Monumental 145", "price": "€€€€", "kind": {"ru": "Терраса над океаном", "en": "Terrace above the ocean", "pt": "Terraço sobre o oceano", "es": "Terraza sobre el océano", "de": "Terrasse über dem Meer"}, "hours": {"ru": "Ежедневно 07:30–22:00", "en": "Daily 7:30 am–10 pm", "pt": "Todos os dias 07:30–22:00", "es": "Todos los días 07:30–22:00", "de": "Täglich 07:30–22:00"}, "open": {"0": [[450, 1320]], "1": [[450, 1320]], "2": [[450, 1320]], "3": [[450, 1320]], "4": [[450, 1320]], "5": [[450, 1320]], "6": [[450, 1320]]}, "tel": "+351300601089", "site": "http://avistarestaurant.pt/"}, {"id": "uva", "name": "Uva Restaurant at The Vine", "lat": 32.647668, "lon": -16.913505, "pid": "ChIJay5XvuJfYAwRz1sxUyoY_ds", "r": 4.6, "c": 94, "addr": "Rua dos Aranhas 27", "price": "€€€€", "kind": {"ru": "Крыша в центре, сет-меню", "en": "Rooftop downtown, set menu", "pt": "Terraço no centro, menu fixo", "es": "Azotea en el centro, menú cerrado", "de": "Dachterrasse im Zentrum, Menü"}, "hours": {"ru": "Вт–Сб 19:00–21:30", "en": "Tue–Sat 7–9:30 pm", "pt": "Ter–Sáb 19:00–21:30", "es": "Mar–Sáb 19:00–21:30", "de": "Di–Sa 19:00–21:30"}, "open": {"1": [[1140, 1290]], "2": [[1140, 1290]], "3": [[1140, 1290]], "4": [[1140, 1290]], "5": [[1140, 1290]]}, "tel": "+351291009000", "site": "http://www.hotelthevine.com/"}, {"id": "galaxia", "name": "Galáxia Skyfood", "lat": 32.6439186, "lon": -16.9199126, "pid": "ChIJ4UoHymFfYAwRHX-JrlYAHI4", "r": 4.4, "c": 638, "addr": "Avenida do Infante 25", "price": "€€€€", "kind": {"ru": "Руфтоп-бар с видом", "en": "Rooftop bar with a view", "pt": "Bar de terraço com vista", "es": "Bar en azotea con vistas", "de": "Rooftop-Bar mit Aussicht"}, "hours": {"ru": "Ср–Вс 19:00–23:00", "en": "Wed–Sun 7–11 pm", "pt": "Qua–Dom 19:00–23:00", "es": "Mié–Dom 19:00–23:00", "de": "Mi–So 19:00–23:00"}, "open": {"2": [[1140, 1380]], "3": [[1140, 1380]], "4": [[1140, 1380]], "5": [[1140, 1380]], "6": [[1140, 1380]]}, "tel": "+351291213000", "site": "https://www.savoysignature.com/savoypalacehotel/pt/restaurants/galaxia-skyfood/"}, {"id": "terra", "name": "TERRA — Food Concept", "lat": 32.6492514, "lon": -16.9099223, "pid": "ChIJ7VAtMGdhYAwRUtNhxyJmvrQ", "r": 4.7, "c": 1130, "addr": "Rua Câmara Pestana 32, 2º", "price": "€€€", "kind": {"ru": "Азиатский фьюжн, много вегана", "en": "Asian fusion, lots of vegan", "pt": "Fusão asiática, muito vegano", "es": "Fusión asiática, mucho vegano", "de": "Asiatische Fusion, viel vegan"}, "hours": {"ru": "Вт–Сб 18:00–23:00", "en": "Tue–Sat 6–11 pm", "pt": "Ter–Sáb 18:00–23:00", "es": "Mar–Sáb 18:00–23:00", "de": "Di–Sa 18:00–23:00"}, "open": {"1": [[1080, 1380]], "2": [[1080, 1380]], "3": [[1080, 1380]], "4": [[1080, 1380]], "5": [[1080, 1380]]}, "tel": "+351936331335", "site": "http://terrafoodconcept.pt/"}, {"id": "imperfeito", "name": "Restaurante Imperfeito", "lat": 32.6348185, "lon": -16.9435209, "pid": "ChIJxWlG7DlfYAwRIlYQqIUHbT8", "r": 4.8, "c": 554, "addr": "Rua da Ponta da Cruz 12", "price": "€€€", "kind": {"ru": "Семейный, авторское меню", "en": "Family-run, chef's menu", "pt": "Familiar, menu de autor", "es": "Familiar, carta de autor", "de": "Familienbetrieb, Autorenküche"}, "hours": {"ru": "Пн–Сб 18:00–23:00", "en": "Mon–Sat 6–11 pm", "pt": "Seg–Sáb 18:00–23:00", "es": "Lun–Sáb 18:00–23:00", "de": "Mo–Sa 18:00–23:00"}, "open": {"0": [[1080, 1380]], "1": [[1080, 1380]], "2": [[1080, 1380]], "3": [[1080, 1380]], "4": [[1080, 1380]], "5": [[1080, 1380]]}, "tel": "+351937561943", "site": ""}, {"id": "window", "name": "Window to Asia", "lat": 32.6369141, "lon": -16.9401069, "pid": "ChIJQTgRFh9fYAwRRSSdMQkMXp4", "r": 4.8, "c": 1163, "addr": "Estrada Monumental 348", "price": "€€€", "kind": {"ru": "Азиатская кухня и коктейли", "en": "Asian food and cocktails", "pt": "Cozinha asiática e cocktails", "es": "Cocina asiática y cócteles", "de": "Asiatische Küche und Cocktails"}, "hours": {"ru": "Ежедневно 13:00–22:00", "en": "Daily 1–10 pm", "pt": "Todos os dias 13:00–22:00", "es": "Todos los días 13:00–22:00", "de": "Täglich 13:00–22:00"}, "open": {"0": [[780, 1320]], "1": [[780, 1320]], "2": [[780, 1320]], "3": [[780, 1320]], "4": [[780, 1320]], "5": [[780, 1320]], "6": [[780, 1320]]}, "tel": "+351291652214", "site": ""}, {"id": "lume", "name": "Lume Pizzeria", "lat": 32.643003, "lon": -16.9475313, "pid": "ChIJZYtAA65fYAwRGPfRGS9oEWg", "r": 4.7, "c": 1226, "addr": "Travessa dos Piornais", "price": "€€€", "kind": {"ru": "Неаполитанская пицца", "en": "Neapolitan pizza", "pt": "Pizza napolitana", "es": "Pizza napolitana", "de": "Neapolitanische Pizza"}, "hours": {"ru": "Ср–Вс, вечер; Пн и Вт закрыто", "en": "Wed–Sun evenings; closed Mon & Tue", "pt": "Qua–Dom, à noite; fecha seg e ter", "es": "Mié–Dom, por la noche; cierra lun y mar", "de": "Mi–So abends; Mo und Di geschlossen"}, "open": {"1": [[1080, 1350]], "2": [[1080, 1350]], "3": [[1080, 1350]], "4": [[1080, 1350]], "5": [[720, 930], [1080, 1350]], "6": [[720, 930], [1080, 1350]]}, "tel": "+351291653874", "site": "http://www.pizzerialume.com/"}, {"id": "trigal", "name": "Restaurante Trigal", "lat": 32.6486837, "lon": -16.9134981, "pid": "ChIJ3SshjOJfYAwRp63_bgZaMcE", "r": 4.4, "c": 791, "addr": "Rua da Carreira 187", "price": "€€€", "kind": {"ru": "Мадейрская домашняя кухня", "en": "Home-style Madeiran cooking", "pt": "Cozinha madeirense caseira", "es": "Cocina madeirense casera", "de": "Hausgemachte madeirische Küche"}, "hours": {"ru": "До 23:00; суббота закрыто", "en": "Until 11 pm; closed Saturday", "pt": "Até às 23:00; fecha ao sábado", "es": "Hasta las 23:00; cierra el sábado", "de": "Bis 23:00; samstags geschlossen"}, "open": {"0": [[660, 900], [1020, 1380]], "1": [[660, 900], [1020, 1380]], "2": [[660, 900], [1020, 1380]], "3": [[660, 900], [1020, 1380]], "4": [[660, 900], [1020, 1380]], "6": [[660, 900], [1020, 1380]]}, "tel": "+351291225736", "site": "https://restaurantetrigal.carrd.co/"}], UI={"ru": {"title": "Ужин в Фуншале", "sub": "Одиннадцать проверенных столов. Рейтинг, расстояние, звонок — и всё.", "near": "Сначала ближние", "top": "Сначала по рейтингу", "openonly": "Только открытые сейчас", "route": "Маршрут", "call": "Позвонить", "book": "Забронировать", "opennow": "Открыто", "closed": "Закрыто", "locate": "Показать расстояние", "denied": "Без геолокации — сортирую по рейтингу", "reviews": "отзывов", "foot": "Часы и рейтинги проверены 5 сентября 2026"}, "en": {"title": "Dinner in Funchal", "sub": "Eleven tables worth booking. Rating, distance, phone — that's it.", "near": "Nearest first", "top": "Top rated first", "openonly": "Open now only", "route": "Route", "call": "Call", "book": "Book", "opennow": "Open", "closed": "Closed", "locate": "Show distance", "denied": "No location — sorted by rating", "reviews": "reviews", "foot": "Hours and ratings checked 5 September 2026"}, "pt": {"title": "Jantar no Funchal", "sub": "Onze mesas que valem a reserva. Avaliação, distância, telefone — e pronto.", "near": "Mais perto primeiro", "top": "Melhor avaliados", "openonly": "Só abertos agora", "route": "Rota", "call": "Ligar", "book": "Reservar", "opennow": "Aberto", "closed": "Fechado", "locate": "Mostrar distância", "denied": "Sem localização — ordenado por avaliação", "reviews": "avaliações", "foot": "Horários e avaliações verificados a 5 de setembro de 2026"}, "es": {"title": "Cena en Funchal", "sub": "Once mesas que merecen reserva. Valoración, distancia, teléfono — nada más.", "near": "Más cercanos", "top": "Mejor valorados", "openonly": "Solo abiertos ahora", "route": "Ruta", "call": "Llamar", "book": "Reservar", "opennow": "Abierto", "closed": "Cerrado", "locate": "Ver distancia", "denied": "Sin ubicación — ordenado por valoración", "reviews": "reseñas", "foot": "Horarios y valoraciones verificados el 5 de septiembre de 2026"}, "de": {"title": "Abendessen in Funchal", "sub": "Elf Tische, die eine Reservierung wert sind. Bewertung, Entfernung, Anruf — mehr nicht.", "near": "Nächste zuerst", "top": "Beste Bewertung", "openonly": "Nur jetzt geöffnet", "route": "Route", "call": "Anrufen", "book": "Reservieren", "opennow": "Geöffnet", "closed": "Geschlossen", "locate": "Entfernung zeigen", "denied": "Ohne Standort — nach Bewertung sortiert", "reviews": "Bewertungen", "foot": "Öffnungszeiten und Bewertungen geprüft am 5. September 2026"}}, LANGS=["ru","en","pt","es","de"];
+let L=(navigator.language||"ru").slice(0,2); if(!LANGS.includes(L))L="en";
+let sort="top", openOnly=false, me=null;
+
+function ls(k,v){try{return v===undefined?localStorage.getItem(k):localStorage.setItem(k,v)}catch(e){return null}}
+const qs=new URLSearchParams(location.search);
+if(qs.get("lang")&&LANGS.includes(qs.get("lang")))L=qs.get("lang");
+else if(ls("res_lang")&&LANGS.includes(ls("res_lang")))L=ls("res_lang");
+let theme=qs.get("theme")||ls("res_theme")||"dark";
+function applyTheme(){document.documentElement.setAttribute("data-theme",theme==="light"?"light":"dark");
+ document.getElementById("themeBtn").textContent=theme==="light"?"☀":"☾";}
+
+function openNow(p){const d=new Date(),w=(d.getDay()+6)%7,m=d.getHours()*60+d.getMinutes();
+ const iv=p.open[String(w)]; if(!iv)return false;
+ return iv.some(([a,b])=>m>=a&&m<b);}
+function dist(a,b,c,e){const R=6371,t=x=>x*Math.PI/180;
+ const dLa=t(c-a),dLo=t(e-b);
+ const h=Math.sin(dLa/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dLo/2)**2;
+ return 2*R*Math.asin(Math.sqrt(h));}
+function fmtD(km){const walk=Math.round(km/4.6*60);
+ const d=km<1?Math.round(km*1000)+" m":km.toFixed(1)+" km";
+ return walk<=25?d+" · "+walk+"′":d;}
+
+function render(){
+ const t=UI[L];
+ document.documentElement.lang=L;
+ document.getElementById("h1").textContent=t.title;
+ document.getElementById("sub").textContent=t.sub;
+ document.getElementById("bNear").textContent=t.near;
+ document.getElementById("bTop").textContent=t.top;
+ document.getElementById("bOpen").textContent=t.openonly;
+ document.getElementById("foot").textContent=t.foot;
+ document.getElementById("langBtn").textContent=L.toUpperCase();
+ document.getElementById("guideLink").href="../?guide=funchal-noite-igor&lang="+L;
+ document.getElementById("bNear").setAttribute("aria-pressed",sort==="near");
+ document.getElementById("bTop").setAttribute("aria-pressed",sort==="top");
+ document.getElementById("bOpen").setAttribute("aria-pressed",openOnly);
+ document.getElementById("hint").textContent = me ? "" : t.denied;
+
+ let arr=P.slice();
+ if(openOnly)arr=arr.filter(openNow);
+ if(sort==="near"&&me)arr.sort((a,b)=>a._d-b._d); else arr.sort((a,b)=>b.r-a.r);
+
+ document.getElementById("list").innerHTML=arr.map(p=>{
+  const on=openNow(p);
+  const dst=me?'<span class="dot">'+fmtD(p._d)+'</span>':'';
+  const dir="https://www.google.com/maps/dir/?api=1&destination="+p.lat+","+p.lon+"&destination_place_id="+p.pid+(me?"&origin="+me.lat+","+me.lon:"");
+  const book=p.site?'<a class="btn sec" href="'+p.site+'" target="_blank" rel="noopener">'+t.book+'</a>':'';
+  const call=p.tel?'<a class="btn sec" href="tel:'+p.tel+'">'+t.call+'</a>':'';
+  return '<article class="card">'
+   +'<div class="row1"><span class="nm">'+p.name+'</span>'
+   +'<span class="rt">★ '+p.r.toFixed(1).replace(".",L==="en"?".":",")+'</span>'
+   +'<span class="cnt">'+p.c+' '+t.reviews+'</span></div>'
+   +'<p class="kind">'+p.kind[L]+'</p>'
+   +'<p class="meta"><span class="'+(on?"open":"")+'">'+(on?t.opennow:t.closed)+'</span>'
+   +'<span class="dot">'+p.hours[L]+'</span>'
+   +'<span class="dot">'+p.price+'</span>'+dst+'</p>'
+   +'<div class="acts"><a class="btn" href="'+dir+'" target="_blank" rel="noopener">'+t.route+'</a>'
+   +call+book+'</div></article>';
+ }).join("");
+}
+
+document.getElementById("themeBtn").onclick=()=>{theme=theme==="light"?"dark":"light";ls("res_theme",theme);applyTheme();};
+document.getElementById("langBtn").onclick=()=>{L=LANGS[(LANGS.indexOf(L)+1)%LANGS.length];ls("res_lang",L);render();};
+document.getElementById("bTop").onclick=()=>{sort="top";render();};
+document.getElementById("bOpen").onclick=()=>{openOnly=!openOnly;render();};
+document.getElementById("bNear").onclick=()=>{
+ sort="near";
+ if(me){render();return;}
+ if(!navigator.geolocation){render();return;}
+ navigator.geolocation.getCurrentPosition(pos=>{
+   me={lat:pos.coords.latitude,lon:pos.coords.longitude};
+   P.forEach(p=>p._d=dist(me.lat,me.lon,p.lat,p.lon));
+   render();
+ },()=>{sort="top";render();},{timeout:8000,maximumAge:300000});
+};
+
+applyTheme();render();
+</script></body></html>
