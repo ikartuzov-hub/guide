@@ -1,0 +1,824 @@
+{
+ "schema": 1,
+ "meta": {
+  "id": "funchal-noite-igor",
+  "author": "Igor Kartuzov",
+  "hubUrl": "https://seedwave.pt/hub/",
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/",
+  "city": {
+   "ru": "Фуншал",
+   "en": "Funchal",
+   "pt": "Funchal",
+   "es": "Funchal",
+   "de": "Funchal"
+  },
+  "icon": "icons/funchal-noite.svg",
+  "appleIcon": "icons/funchal-noite-180.png",
+  "theme": {
+   "bg": "#101725",
+   "bg2": "#16202F",
+   "bg3": "#1B2636",
+   "ink": "#F1EBE0",
+   "muted": "#98A8BE",
+   "faint": "#61708A",
+   "accent": "#E0A03F",
+   "accent2": "#F0BC6B",
+   "accentInk": "#101725",
+   "card": "#16202F",
+   "line": "#28364A",
+   "tile": "#1B2636"
+  },
+  "themeLight": {
+   "bg": "#F6F2EA",
+   "bg2": "#FFFFFF",
+   "bg3": "#FBF8F3",
+   "ink": "#1F2530",
+   "muted": "#5F6B7C",
+   "faint": "#98A2AF",
+   "accent": "#A8681A",
+   "accent2": "#C08430",
+   "accentInk": "#FFFFFF",
+   "card": "#FFFFFF",
+   "line": "#E7E0D4",
+   "tile": "#F1EBE0"
+  },
+  "shareBase": "share/"
+ },
+ "intro": {
+  "eyebrow": {
+   "ru": "Гид · Фуншал после заката",
+   "en": "Guide · Funchal after sunset",
+   "pt": "Guia · Funchal depois do pôr do sol",
+   "es": "Guía · Funchal después del atardecer",
+   "de": "Guide · Funchal nach Sonnenuntergang"
+  },
+  "title": {
+   "ru": "ГастроГид по вечернему Фуншалу",
+   "en": "An Evening Food Guide to Funchal",
+   "pt": "Guia Gastronómico do Funchal à Noite",
+   "es": "Guía Gastronómica del Funchal Nocturno",
+   "de": "Gastro-Guide durch das abendliche Funchal"
+  },
+  "sub": {
+   "ru": "Десять столов, за которыми стоит провести вечер, и три маршрута между ними — крыши с видом на огни, старый город пешком и места, куда ходят сами местные.",
+   "en": "Ten tables worth an evening and three routes between them — rooftops over the city lights, the old town on foot, and the places locals keep for themselves.",
+   "pt": "Dez mesas que valem uma noite e três percursos entre elas — terraços sobre as luzes da cidade, a cidade velha a pé e os sítios que os locais guardam para si.",
+   "es": "Diez mesas que merecen una noche y tres rutas entre ellas — azoteas sobre las luces de la ciudad, el casco antiguo a pie y los sitios que los locales se guardan.",
+   "de": "Zehn Tische, die einen Abend wert sind, und drei Routen dazwischen — Dachterrassen über den Lichtern, die Altstadt zu Fuß und die Orte, die Einheimische für sich behalten."
+  }
+ },
+ "regions": {
+  "fx-velha": {
+   "ru": "Старый город · центр",
+   "en": "Old town · centre",
+   "pt": "Cidade Velha · centro",
+   "es": "Casco antiguo · centro",
+   "de": "Altstadt · Zentrum"
+  },
+  "fx-infante": {
+   "ru": "Инфанте · Ильеуш",
+   "en": "Infante · Ilhéus",
+   "pt": "Infante · Ilhéus",
+   "es": "Infante · Ilhéus",
+   "de": "Infante · Ilhéus"
+  },
+  "fx-lido": {
+   "ru": "Лидо · Понта-да-Круж",
+   "en": "Lido · Ponta da Cruz",
+   "pt": "Lido · Ponta da Cruz",
+   "es": "Lido · Ponta da Cruz",
+   "de": "Lido · Ponta da Cruz"
+  }
+ },
+ "autoSkip": [
+  "fx-velha",
+  "fx-infante",
+  "fx-lido"
+ ],
+ "regionOrder": [
+  "fx-velha",
+  "fx-infante",
+  "fx-lido"
+ ],
+ "points": [
+  {
+   "id": "gazebo",
+   "name": "Gazebo",
+   "lat": 32.6454714,
+   "lon": -16.9219138,
+   "place_id": "ChIJZX4LywhfYAwRSSkatJJijbE",
+   "reg": "fx-infante",
+   "rating": 4.9,
+   "count": 272,
+   "addr": "Rua dos Ilhéus 30",
+   "tags": [
+    "fine"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Ужин-событие: кинта за садом посреди города, десять столов, овощи со своего огорода. Дегустационный сет на два с половиной часа — бронировать за несколько дней",
+    "en": "A dinner as an event: a quinta behind a garden in the middle of the city, ten tables, vegetables from their own plot. A two-and-a-half-hour tasting menu — book days ahead",
+    "pt": "Um jantar-acontecimento: uma quinta atrás de um jardim no meio da cidade, dez mesas, legumes da própria horta. Menu de degustação de duas horas e meia — reservar com dias de antecedência",
+    "es": "Una cena como acontecimiento: una quinta tras un jardín en pleno centro, diez mesas, verduras de su propio huerto. Menú degustación de dos horas y media — reservar con días de antelación",
+    "de": "Ein Abendessen als Ereignis: eine Quinta hinter einem Garten mitten in der Stadt, zehn Tische, Gemüse aus eigenem Anbau. Zweieinhalbstündiges Degustationsmenü — Tage im Voraus reservieren"
+   },
+   "hours": {
+    "ru": "Вт–Сб 19:30–00:00",
+    "en": "Tue–Sat 7:30 pm–midnight",
+    "pt": "Ter–Sáb 19:30–00:00",
+    "es": "Mar–Sáb 19:30–00:00",
+    "de": "Di–Sa 19:30–00:00"
+   }
+  },
+  {
+   "id": "avista",
+   "name": "Avista Restaurant",
+   "lat": 32.6394278,
+   "lon": -16.9256924,
+   "place_id": "ChIJET_71a5fYAwRMMbaYzR8uQA",
+   "reg": "fx-infante",
+   "rating": 4.6,
+   "count": 1676,
+   "addr": "Estrada Monumental 145",
+   "tags": [
+    "fine",
+    "view"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Терраса над обрывом при Cliff Bay: внизу вода, справа вся дуга залива в огнях. Просить столик снаружи — обогреватели есть, а вид того стоит",
+    "en": "A cliff-top terrace at the Cliff Bay: water below, the whole lit curve of the bay to the right. Ask for a table outside — there are heaters, and the view earns it",
+    "pt": "Terraço sobre a falésia, no Cliff Bay: a água em baixo, toda a curva iluminada da baía à direita. Pedir mesa lá fora — há aquecedores e a vista compensa",
+    "es": "Terraza sobre el acantilado, en el Cliff Bay: el agua abajo y toda la curva iluminada de la bahía a la derecha. Pedir mesa fuera — hay estufas y la vista lo merece",
+    "de": "Terrasse über der Klippe im Cliff Bay: unten das Wasser, rechts der ganze beleuchtete Bogen der Bucht. Draußen einen Tisch verlangen — Heizstrahler gibt es, und der Blick lohnt sich"
+   },
+   "hours": {
+    "ru": "Ежедневно 07:30–22:00",
+    "en": "Daily 7:30 am–10 pm",
+    "pt": "Todos os dias 07:30–22:00",
+    "es": "Todos los días 07:30–22:00",
+    "de": "Täglich 07:30–22:00"
+   }
+  },
+  {
+   "id": "uva",
+   "name": "Uva Restaurant at The Vine",
+   "lat": 32.647668,
+   "lon": -16.913505,
+   "place_id": "ChIJay5XvuJfYAwRz1sxUyoY_ds",
+   "reg": "fx-velha",
+   "rating": 4.6,
+   "count": 94,
+   "addr": "Rua dos Aranhas 27",
+   "tags": [
+    "fine",
+    "view"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Крыша отеля The Vine в самом центре: панорама на город и горы, только сет-меню. Окно работы узкое — приходить к открытию, иначе закат уйдёт без вас",
+    "en": "The Vine's rooftop right in the centre: a panorama of city and mountains, set menu only. The window is short — come at opening or the sunset leaves without you",
+    "pt": "O terraço do The Vine mesmo no centro: panorama da cidade e das montanhas, só menu fixo. A janela é curta — chegar à abertura, senão o pôr do sol vai-se embora sem si",
+    "es": "La azotea del The Vine en pleno centro: panorama de la ciudad y las montañas, solo menú cerrado. La franja es corta — llegar a la apertura o el atardecer se irá sin ti",
+    "de": "Die Dachterrasse des The Vine mitten im Zentrum: Panorama über Stadt und Berge, nur Menü. Das Zeitfenster ist knapp — zur Öffnung kommen, sonst geht der Sonnenuntergang ohne Sie"
+   },
+   "hours": {
+    "ru": "Вт–Сб 19:00–21:30",
+    "en": "Tue–Sat 7–9:30 pm",
+    "pt": "Ter–Sáb 19:00–21:30",
+    "es": "Mar–Sáb 19:00–21:30",
+    "de": "Di–Sa 19:00–21:30"
+   }
+  },
+  {
+   "id": "galaxia",
+   "name": "Galáxia Skyfood",
+   "lat": 32.6439186,
+   "lon": -16.9199126,
+   "place_id": "ChIJ4UoHymFfYAwRHX-JrlYAHI4",
+   "reg": "fx-infante",
+   "rating": 4.4,
+   "count": 638,
+   "addr": "Avenida do Infante 25",
+   "tags": [
+    "bar",
+    "view"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Крыша Savoy Palace: сюда идут за первым бокалом, когда город внизу только начинает зажигаться. К одежде относятся строго — рубашка обязательна",
+    "en": "The Savoy Palace rooftop: come for the first glass, while the city below is just starting to light up. They are strict about dress — a shirt is required",
+    "pt": "O terraço do Savoy Palace: vir para o primeiro copo, quando a cidade em baixo começa a acender-se. São rigorosos com o traje — camisa é obrigatória",
+    "es": "La azotea del Savoy Palace: se viene por la primera copa, cuando la ciudad de abajo empieza a encenderse. Son estrictos con la ropa — camisa obligatoria",
+    "de": "Die Dachterrasse des Savoy Palace: für das erste Glas, wenn die Stadt unten gerade anfängt zu leuchten. Der Dresscode wird ernst genommen — Hemd ist Pflicht"
+   },
+   "hours": {
+    "ru": "Ср–Вс 19:00–23:00",
+    "en": "Wed–Sun 7–11 pm",
+    "pt": "Qua–Dom 19:00–23:00",
+    "es": "Mié–Dom 19:00–23:00",
+    "de": "Mi–So 19:00–23:00"
+   }
+  },
+  {
+   "id": "akua",
+   "name": "Akua",
+   "lat": 32.6475074,
+   "lon": -16.9092635,
+   "place_id": "ChIJEzbeKHhhYAwRB5rtKj4PkSQ",
+   "reg": "fx-velha",
+   "rating": 4.7,
+   "count": 2715,
+   "addr": "Rua dos Murças 6",
+   "tags": [
+    "fine",
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Рыба и морепродукты у Хулио Перейры. Садиться за стойку напротив открытой кухни: оттуда видно всю работу, и повара сами рассказывают, что у вас в тарелке. Столик на террасе просят указывать при брони отдельно",
+    "en": "Fish and seafood by Júlio Pereira. Sit at the counter facing the open kitchen: you see the whole run of service and the cooks explain the plate themselves. A terrace table has to be requested when booking",
+    "pt": "Peixe e marisco de Júlio Pereira. Sentar ao balcão em frente à cozinha aberta: vê-se todo o serviço e os cozinheiros explicam o prato. A mesa no terraço tem de ser pedida na reserva",
+    "es": "Pescado y marisco de Júlio Pereira. Sentarse en la barra frente a la cocina abierta: se ve todo el servicio y los cocineros explican el plato. La mesa en la terraza hay que pedirla al reservar",
+    "de": "Fisch und Meeresfrüchte von Júlio Pereira. An die Theke vor der offenen Küche setzen: man sieht den ganzen Ablauf, und die Köche erklären den Teller selbst. Einen Tisch auf der Terrasse muss man bei der Reservierung ausdrücklich verlangen"
+   },
+   "hours": {
+    "ru": "Ежедневно 12:30–23:00",
+    "en": "Daily 12:30–11 pm",
+    "pt": "Todos os dias 12:30–23:00",
+    "es": "Todos los días 12:30–23:00",
+    "de": "Täglich 12:30–23:00"
+   }
+  },
+  {
+   "id": "kampo",
+   "name": "Kampo by Chef Júlio Pereira",
+   "lat": 32.6476931,
+   "lon": -16.9071929,
+   "place_id": "ChIJpY-HoWhhYAwRIa2U8MuShd4",
+   "reg": "fx-velha",
+   "rating": 4.7,
+   "count": 2467,
+   "addr": "Rua da Alfândega 74",
+   "tags": [
+    "fine",
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Мясо и всё, что растёт на земле — старший брат Akua у того же шефа: он вырос между мясной лавкой отца и огородом деда, отсюда и название. Зал маленький, полдюжины мест у стойки смотрят прямо в кухню. Бронь идёт сменами, на стол дают около двух часов — на бегущий ужин не рассчитывайте",
+    "en": "Meat and everything the land gives — the elder brother of Akua from the same chef, who grew up between his father's butcher shop and his grandfather's vegetable plot; hence the name. A small room, half a dozen counter seats looking straight into the kitchen. Booking runs in shifts and tables are held about two hours, so don't plan a leisurely marathon",
+    "pt": "Carne e tudo o que vem da terra — o irmão mais velho do Ákua, do mesmo chef, que cresceu entre o talho do pai e a horta do avô; daí o nome. Sala pequena, meia dúzia de lugares ao balcão virados para a cozinha. As reservas são por turnos e a mesa é de cerca de duas horas",
+    "es": "Carne y todo lo que da la tierra — el hermano mayor de Akua, del mismo chef, criado entre la carnicería de su padre y la huerta de su abuelo; de ahí el nombre. Sala pequeña, media docena de sitios en la barra frente a la cocina. Las reservas van por turnos y la mesa dura unas dos horas",
+    "de": "Fleisch und alles, was die Erde gibt — der ältere Bruder von Akua, vom selben Koch, der zwischen der Metzgerei des Vaters und dem Garten des Großvaters aufwuchs; daher der Name. Kleiner Raum, ein halbes Dutzend Thekenplätze mit Blick in die Küche. Reserviert wird in Schichten, der Tisch gilt etwa zwei Stunden"
+   },
+   "hours": {
+    "ru": "Ежедневно 12:30–23:00",
+    "en": "Daily 12:30–11 pm",
+    "pt": "Todos os dias 12:30–23:00",
+    "es": "Todos los días 12:30–23:00",
+    "de": "Täglich 12:30–23:00"
+   }
+  },
+  {
+   "id": "terra",
+   "name": "TERRA — Food Concept",
+   "lat": 32.6492514,
+   "lon": -16.9099223,
+   "place_id": "ChIJ7VAtMGdhYAwRUtNhxyJmvrQ",
+   "reg": "fx-velha",
+   "rating": 4.7,
+   "count": 1130,
+   "addr": "Rua Câmara Pestana 32, 2º",
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Открытая терраса на втором этаже, азиатский фьюжн, половина меню веганская. Хлеб и растительное масло к нему хвалят отдельно. Брать что-то тёплое: к ночи на террасе свежо",
+    "en": "An open terrace on the first floor, Asian fusion, half the menu vegan. The bread and its plant butter get praised on their own. Bring a layer: the terrace cools down at night",
+    "pt": "Terraço aberto no primeiro andar, fusão asiática, metade do menu vegana. O pão e a manteiga vegetal são elogiados à parte. Levar um casaco: à noite o terraço arrefece",
+    "es": "Terraza abierta en la primera planta, fusión asiática, media carta vegana. El pan y su mantequilla vegetal se elogian aparte. Llevar algo de abrigo: de noche la terraza refresca",
+    "de": "Offene Terrasse im ersten Stock, asiatische Fusion, die Hälfte der Karte vegan. Brot und pflanzliche Butter werden eigens gelobt. Etwas Warmes mitnehmen: nachts wird es auf der Terrasse frisch"
+   },
+   "hours": {
+    "ru": "Вт–Сб 18:00–23:00",
+    "en": "Tue–Sat 6–11 pm",
+    "pt": "Ter–Sáb 18:00–23:00",
+    "es": "Mar–Sáb 18:00–23:00",
+    "de": "Di–Sa 18:00–23:00"
+   }
+  },
+  {
+   "id": "imperfeito",
+   "name": "Restaurante Imperfeito",
+   "lat": 32.6348185,
+   "lon": -16.9435209,
+   "place_id": "ChIJxWlG7DlfYAwRIlYQqIUHbT8",
+   "reg": "fx-lido",
+   "rating": 4.8,
+   "count": 554,
+   "addr": "Rua da Ponta da Cruz 12",
+   "tags": [
+    "food"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Два брата: один на кухне, второй в зале. Короткое авторское меню, свиные щёчки и креветки в чесноке, цены заметно ниже уровня еды. Столов мало — звонить заранее",
+    "en": "Two brothers: one in the kitchen, one in the room. A short chef's menu, pork cheeks and garlic prawns, prices well below the level of the cooking. Few tables — call ahead",
+    "pt": "Dois irmãos: um na cozinha, outro na sala. Menu curto de autor, bochechas de porco e gambas com alho, preços bem abaixo do nível da comida. Poucas mesas — telefonar antes",
+    "es": "Dos hermanos: uno en la cocina, otro en la sala. Carta corta de autor, carrilleras y gambas al ajillo, precios muy por debajo del nivel de la cocina. Pocas mesas — llamar antes",
+    "de": "Zwei Brüder: einer in der Küche, einer im Raum. Kurze Autorenkarte, Schweinebäckchen und Knoblauchgarnelen, Preise deutlich unter dem Niveau der Küche. Wenige Tische — vorher anrufen"
+   },
+   "hours": {
+    "ru": "Пн–Сб 18:00–23:00",
+    "en": "Mon–Sat 6–11 pm",
+    "pt": "Seg–Sáb 18:00–23:00",
+    "es": "Lun–Sáb 18:00–23:00",
+    "de": "Mo–Sa 18:00–23:00"
+   }
+  },
+  {
+   "id": "window",
+   "name": "Window to Asia",
+   "lat": 32.6369141,
+   "lon": -16.9401069,
+   "place_id": "ChIJQTgRFh9fYAwRRSSdMQkMXp4",
+   "reg": "fx-lido",
+   "rating": 4.8,
+   "count": 1163,
+   "addr": "Estrada Monumental 348",
+   "tags": [
+    "food",
+    "bar"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Пад-тай, карри с уткой, суши дня и коктейли. Десерты — отдельная причина зайти: манговый липкий рис и шоколадный торт, который пекут под заказ. Кухня закрывается в 22:00",
+    "en": "Pad thai, duck curry, sushi of the day and cocktails. The desserts are a reason of their own: mango sticky rice and a chocolate cake baked to order. The kitchen closes at 10 pm",
+    "pt": "Pad thai, caril de pato, sushi do dia e cocktails. As sobremesas são motivo à parte: arroz doce de manga e um bolo de chocolate feito na hora. A cozinha fecha às 22:00",
+    "es": "Pad thai, curry de pato, sushi del día y cócteles. Los postres son motivo aparte: arroz glutinoso con mango y un pastel de chocolate hecho al momento. La cocina cierra a las 22:00",
+    "de": "Pad Thai, Entencurry, Sushi des Tages und Cocktails. Die Desserts sind ein eigener Grund: Mango Sticky Rice und ein Schokoladenkuchen, der auf Bestellung gebacken wird. Die Küche schließt um 22:00"
+   },
+   "hours": {
+    "ru": "Ежедневно 13:00–22:00",
+    "en": "Daily 1–10 pm",
+    "pt": "Todos os dias 13:00–22:00",
+    "es": "Todos los días 13:00–22:00",
+    "de": "Täglich 13:00–22:00"
+   }
+  },
+  {
+   "id": "lume",
+   "name": "Lume Pizzeria",
+   "lat": 32.643003,
+   "lon": -16.9475313,
+   "place_id": "ChIJZYtAA65fYAwRGPfRGS9oEWg",
+   "reg": "fx-lido",
+   "rating": 4.7,
+   "count": 1226,
+   "addr": "Travessa dos Piornais",
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Неаполитанская пицца на хорошем тесте, веганская моцарелла местного производства. Готовят неспешно — приходить не на голодный желудок",
+    "en": "Neapolitan pizza on serious dough, with vegan mozzarella made on the island. They take their time — don't arrive starving",
+    "pt": "Pizza napolitana com massa a sério e mozzarella vegana feita na ilha. Levam o seu tempo — não chegar esfomeado",
+    "es": "Pizza napolitana de masa seria y mozzarella vegana hecha en la isla. Se toman su tiempo — no llegar muerto de hambre",
+    "de": "Neapolitanische Pizza auf gutem Teig, mit veganem Mozzarella von der Insel. Sie lassen sich Zeit — nicht ausgehungert kommen"
+   },
+   "hours": {
+    "ru": "Ср–Вс, вечер; Пн и Вт закрыто",
+    "en": "Wed–Sun evenings; closed Mon & Tue",
+    "pt": "Qua–Dom, à noite; fecha seg e ter",
+    "es": "Mié–Dom, por la noche; cierra lun y mar",
+    "de": "Mi–So abends; Mo und Di geschlossen"
+   }
+  },
+  {
+   "id": "trigal",
+   "name": "Restaurante Trigal",
+   "lat": 32.6486837,
+   "lon": -16.9134981,
+   "place_id": "ChIJ3SshjOJfYAwRp63_bgZaMcE",
+   "reg": "fx-velha",
+   "rating": 4.4,
+   "count": 791,
+   "addr": "Rua da Carreira 187",
+   "tags": [
+    "food",
+    "wine"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Домашняя мадейрская кухня в центре: рыба-шпага, пикадо в чесночном соусе, местное вино. Столики на улице под бугенвиллеей. Самый простой и самый местный вечер в этом списке",
+    "en": "Home-style Madeiran cooking in the centre: scabbard fish, picado in garlic sauce, local wine. Tables outside under the bougainvillea. The plainest and most local evening on this list",
+    "pt": "Cozinha madeirense caseira no centro: peixe-espada, picado em molho de alho, vinho da casa. Mesas na rua sob a buganvília. A noite mais simples e mais local desta lista",
+    "es": "Cocina madeirense casera en el centro: pez espada negro, picado en salsa de ajo, vino local. Mesas fuera bajo la buganvilla. La noche más sencilla y más local de esta lista",
+    "de": "Hausgemachte madeirische Küche im Zentrum: Degenfisch, Picado in Knoblauchsauce, Wein von der Insel. Tische draußen unter der Bougainvillea. Der einfachste und lokalste Abend dieser Liste"
+   },
+   "hours": {
+    "ru": "До 23:00; суббота закрыто",
+    "en": "Until 11 pm; closed Saturday",
+    "pt": "Até às 23:00; fecha ao sábado",
+    "es": "Hasta las 23:00; cierra el sábado",
+    "de": "Bis 23:00; samstags geschlossen"
+   }
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "funchal-velha",
+   "feat": true,
+   "route": [
+    "terra",
+    "akua"
+   ],
+   "title": {
+    "ru": "Старый город пешком",
+    "en": "The old town on foot",
+    "pt": "A cidade velha a pé",
+    "es": "El casco antiguo a pie",
+    "de": "Die Altstadt zu Fuß"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.6492514,
+   "sunLon": -16.9099223,
+   "why": {
+    "ru": "Вечер без машины и без спешки: закуски на террасе, пока светло, главный ужин у открытой кухни в четырёх минутах ходьбы, и расписанные двери Rua de Santa Maria на десерт.",
+    "en": "An evening with no car and no hurry: small plates on a terrace while it is still light, the main dinner at an open kitchen four minutes away, and the painted doors of Rua de Santa Maria for dessert.",
+    "pt": "Uma noite sem carro e sem pressa: entradas num terraço enquanto há luz, o jantar principal numa cozinha aberta a quatro minutos, e as portas pintadas da Rua de Santa Maria como sobremesa.",
+    "es": "Una noche sin coche y sin prisa: entrantes en una terraza mientras hay luz, la cena principal en una cocina abierta a cuatro minutos, y las puertas pintadas de la Rua de Santa Maria de postre.",
+    "de": "Ein Abend ohne Auto und ohne Eile: kleine Teller auf der Terrasse, solange es hell ist, das eigentliche Abendessen vier Minuten weiter an der offenen Küche, und die bemalten Türen der Rua de Santa Maria als Dessert."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "TERRA — начать, пока светло",
+      "en": "TERRA — start while it's light",
+      "pt": "TERRA — começar com luz",
+      "es": "TERRA — empezar con luz",
+      "de": "TERRA — anfangen, solange es hell ist"
+     },
+     "m": {
+      "ru": "18:30 · вт–сб",
+      "en": "6:30 pm · Tue–Sat",
+      "pt": "18:30 · ter–sáb",
+      "es": "18:30 · mar–sáb",
+      "de": "18:30 · Di–Sa"
+     },
+     "note": {
+      "ru": "Терраса на втором этаже, азиатский фьюжн. Две-три закуски и бокал — полный ужин здесь съест аппетит, который нужен дальше",
+      "en": "A first-floor terrace, Asian fusion. Two or three small plates and a glass — a full dinner here eats the appetite you need later",
+      "pt": "Terraço no primeiro andar, fusão asiática. Duas ou três entradas e um copo — um jantar completo aqui gasta o apetite que faz falta a seguir",
+      "es": "Terraza en la primera planta, fusión asiática. Dos o tres entrantes y una copa — una cena completa aquí se come el apetito que hace falta después",
+      "de": "Terrasse im ersten Stock, asiatische Fusion. Zwei, drei kleine Teller und ein Glas — ein volles Menü hier frisst den Appetit, den man später braucht"
+     }
+    },
+    {
+     "n": {
+      "ru": "Akua — ужин у открытой кухни",
+      "en": "Akua — dinner at the open kitchen",
+      "pt": "Akua — jantar na cozinha aberta",
+      "es": "Akua — cena en la cocina abierta",
+      "de": "Akua — Abendessen an der offenen Küche"
+     },
+     "m": {
+      "ru": "20:30 · 350 м вниз, мимо собора",
+      "en": "8:30 pm · 350 m downhill, past the cathedral",
+      "pt": "20:30 · 350 m a descer, junto à Sé",
+      "es": "20:30 · 350 m cuesta abajo, junto a la catedral",
+      "de": "20:30 · 350 m bergab, an der Kathedrale vorbei"
+     },
+     "note": {
+      "ru": "Просите места за стойкой. Рыба здесь меняется по улову, так что честнее спросить, что сегодня хорошо, чем выбирать по карте",
+      "en": "Ask for the counter. The fish changes with the catch, so asking what is good tonight beats reading the menu",
+      "pt": "Peça o balcão. O peixe muda com a maré, por isso perguntar o que está bom hoje vale mais do que ler a carta",
+      "es": "Pide la barra. El pescado cambia con la captura, así que preguntar qué está bien hoy vale más que leer la carta",
+      "de": "Bitten Sie um die Theke. Der Fisch wechselt mit dem Fang — fragen, was heute gut ist, bringt mehr als die Karte"
+     }
+    },
+    {
+     "n": {
+      "ru": "Rua de Santa Maria и марина",
+      "en": "Rua de Santa Maria and the marina",
+      "pt": "Rua de Santa Maria e a marina",
+      "es": "Rua de Santa Maria y la marina",
+      "de": "Rua de Santa Maria und der Yachthafen"
+     },
+     "m": {
+      "ru": "22:30 · пять минут пешком",
+      "en": "10:30 pm · a five-minute walk",
+      "pt": "22:30 · cinco minutos a pé",
+      "es": "22:30 · cinco minutos a pie",
+      "de": "22:30 · fünf Minuten zu Fuß"
+     },
+     "note": {
+      "ru": "Расписанные двери и вечерний гул старого города, дальше — набережная. Здесь вечер заканчивается сам, без плана",
+      "en": "Painted doors and the evening hum of the old town, then the waterfront. The evening ends by itself here, without a plan",
+      "pt": "Portas pintadas e o burburinho da cidade velha, depois a marginal. A noite acaba por si, sem plano",
+      "es": "Puertas pintadas y el rumor nocturno del casco antiguo, después el paseo marítimo. La noche termina sola, sin plan",
+      "de": "Bemalte Türen und das abendliche Summen der Altstadt, dann die Promenade. Der Abend endet hier von selbst, ohne Plan"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Если Akua полон — Trigal в двух кварталах: рыба-шпага и пикадо под бугенвиллеей, вдвое дешевле и без брони. Кроме субботы, она у них выходная",
+     "en": "If Akua is full, Trigal is two blocks away: scabbard fish and picado under the bougainvillea, half the price and no booking needed. Not on Saturdays, though — that's their day off",
+     "pt": "Se o Akua estiver cheio, o Trigal fica a dois quarteirões: peixe-espada e picado sob a buganvília, metade do preço e sem reserva. Menos ao sábado, que é o dia de folga",
+     "es": "Si Akua está lleno, Trigal queda a dos manzanas: pez espada y picado bajo la buganvilla, la mitad de precio y sin reserva. Salvo el sábado, que cierran",
+     "de": "Ist Akua voll, liegt Trigal zwei Blocks weiter: Degenfisch und Picado unter der Bougainvillea, halber Preis, ohne Reservierung. Nur samstags nicht — da ist Ruhetag"
+    },
+    {
+     "ru": "Хочется не рыбы, а мяса — Kampo в трёх минутах от Akua: тот же шеф, но про землю, а не про море. Сходить в оба за одну поездку — хороший способ понять его кухню целиком",
+     "en": "If you want meat rather than fish, Kampo is three minutes from Akua: the same chef, but about the land instead of the sea. Doing both in one trip is the best way to understand his cooking",
+     "pt": "Se apetecer carne em vez de peixe, o Kampo fica a três minutos do Ákua: o mesmo chef, mas virado para a terra e não para o mar. Fazer os dois na mesma viagem é a melhor forma de perceber a sua cozinha",
+     "es": "Si apetece carne en vez de pescado, Kampo está a tres minutos de Akua: el mismo chef, pero de tierra en lugar de mar. Hacer los dos en un mismo viaje es la mejor forma de entender su cocina",
+     "de": "Wer Fleisch statt Fisch will: Kampo liegt drei Minuten von Akua entfernt — derselbe Koch, aber vom Land statt vom Meer. Beide auf einer Reise zu besuchen, erklärt seine Küche am besten"
+    },
+    {
+     "ru": "Uva на крыше The Vine — тот же квартал, но другой вечер: только сет-меню и только с 19:00 до 21:30, зато закат над городом с высоты",
+     "en": "Uva on The Vine's roof is the same block but a different evening: set menu only, 7 to 9:30 pm, and the sunset over the city from above",
+     "pt": "O Uva, no terraço do The Vine, é o mesmo quarteirão mas outra noite: só menu fixo, das 19:00 às 21:30, com o pôr do sol sobre a cidade lá do alto",
+     "es": "El Uva, en la azotea del The Vine, es la misma manzana pero otra noche: solo menú cerrado, de 19:00 a 21:30, con el atardecer sobre la ciudad desde arriba",
+     "de": "Uva auf dem Dach des The Vine ist derselbe Block, aber ein anderer Abend: nur Menü, 19:00 bis 21:30, dafür der Sonnenuntergang über der Stadt von oben"
+    }
+   ],
+   "park": {
+    "ru": "Машина не нужна вовсе. Если приехали на ней — парковка Almirante Reis или Campo da Barca, дальше всё пешком в пределах 400 метров.",
+    "en": "No car needed at all. If you drove, park at Almirante Reis or Campo da Barca; everything else is within 400 metres on foot.",
+    "pt": "Não é preciso carro. Se vier de carro, estacione no Almirante Reis ou no Campo da Barca; o resto são 400 metros a pé.",
+    "es": "No hace falta coche. Si vienes en coche, aparca en Almirante Reis o Campo da Barca; el resto son 400 metros a pie.",
+    "de": "Kein Auto nötig. Wer doch fährt: Parkhaus Almirante Reis oder Campo da Barca, alles Weitere liegt 400 Meter zu Fuß."
+   },
+   "wear": {
+    "ru": "Что-то с рукавами: обе террасы открытые, после десяти вечера с моря тянет прохладой.",
+    "en": "Something with sleeves: both terraces are open-air, and after ten the sea sends a chill.",
+    "pt": "Algo de manga: os dois terraços são ao ar livre e depois das dez o mar traz fresco.",
+    "es": "Algo de manga: las dos terrazas son al aire libre y después de las diez el mar refresca.",
+    "de": "Etwas mit Ärmeln: Beide Terrassen sind offen, und nach zehn zieht es vom Meer her kühl."
+   }
+  },
+  {
+   "id": "funchal-alturas",
+   "feat": true,
+   "route": [
+    "galaxia",
+    "avista"
+   ],
+   "title": {
+    "ru": "Огни города сверху",
+    "en": "City lights from above",
+    "pt": "As luzes da cidade lá de cima",
+    "es": "Las luces de la ciudad desde arriba",
+    "de": "Die Lichter der Stadt von oben"
+   },
+   "duration": "half",
+   "car": true,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.6439186,
+   "sunLon": -16.9199126,
+   "why": {
+    "ru": "Вечер, построенный вокруг света: бокал на крыше, пока солнце садится в океан, ужин на террасе над водой, когда залив уже горит огнями, и спуск к воде вместо десерта.",
+    "en": "An evening built around light: a glass on a rooftop as the sun drops into the ocean, dinner on a terrace above the water once the bay is lit, and a walk down to the sea instead of dessert.",
+    "pt": "Uma noite construída à volta da luz: um copo no terraço enquanto o sol cai no oceano, jantar num terraço sobre a água com a baía já acesa, e a descida até ao mar em vez de sobremesa.",
+    "es": "Una noche construida alrededor de la luz: una copa en la azotea mientras el sol cae al océano, cena en una terraza sobre el agua con la bahía ya encendida, y bajar al mar en lugar de postre.",
+    "de": "Ein Abend um das Licht herum gebaut: ein Glas auf dem Dach, während die Sonne ins Meer fällt, Abendessen auf der Terrasse über dem Wasser, wenn die Bucht schon leuchtet, und der Abstieg ans Meer statt Dessert."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Galáxia Skyfood — первый бокал",
+      "en": "Galáxia Skyfood — the first glass",
+      "pt": "Galáxia Skyfood — o primeiro copo",
+      "es": "Galáxia Skyfood — la primera copa",
+      "de": "Galáxia Skyfood — das erste Glas"
+     },
+     "m": {
+      "ru": "19:00 · ср–вс, крыша Savoy Palace",
+      "en": "7 pm · Wed–Sun, Savoy Palace rooftop",
+      "pt": "19:00 · qua–dom, terraço do Savoy Palace",
+      "es": "19:00 · mié–dom, azotea del Savoy Palace",
+      "de": "19:00 · Mi–So, Dachterrasse des Savoy Palace"
+     },
+     "note": {
+      "ru": "Приходить к самому закату: город внизу зажигается постепенно, и это лучшая часть вечера. Рубашка обязательна — с дресс-кодом здесь строго",
+      "en": "Come right at sunset: the city below lights up gradually and that is the best part of the evening. A shirt is required — the dress code is enforced",
+      "pt": "Chegar mesmo ao pôr do sol: a cidade acende-se aos poucos e essa é a melhor parte da noite. Camisa obrigatória — o traje é levado a sério",
+      "es": "Llegar justo al atardecer: la ciudad se enciende poco a poco y esa es la mejor parte de la noche. Camisa obligatoria — el código de vestimenta se aplica",
+      "de": "Genau zum Sonnenuntergang kommen: Die Stadt unten leuchtet nach und nach auf, das ist der beste Teil des Abends. Hemd ist Pflicht — der Dresscode gilt"
+     }
+    },
+    {
+     "n": {
+      "ru": "Avista — ужин над водой",
+      "en": "Avista — dinner above the water",
+      "pt": "Avista — jantar sobre a água",
+      "es": "Avista — cena sobre el agua",
+      "de": "Avista — Abendessen über dem Wasser"
+     },
+     "m": {
+      "ru": "20:45 · 15 минут вниз пешком или 5 на такси",
+      "en": "8:45 pm · 15 minutes downhill on foot, or 5 by taxi",
+      "pt": "20:45 · 15 minutos a descer a pé, ou 5 de táxi",
+      "es": "20:45 · 15 minutos cuesta abajo a pie, o 5 en taxi",
+      "de": "20:45 · 15 Minuten bergab zu Fuß oder 5 mit dem Taxi"
+     },
+     "note": {
+      "ru": "Терраса при Cliff Bay: внизу шумит вода, справа вся дуга залива в огнях. Есть сомелье — проще отдать выбор вина ему",
+      "en": "The Cliff Bay terrace: water below, the lit curve of the bay to the right. There is a sommelier — easier to hand the wine over to him",
+      "pt": "O terraço do Cliff Bay: a água em baixo, a curva iluminada da baía à direita. Há escanção — mais fácil entregar-lhe a escolha do vinho",
+      "es": "La terraza del Cliff Bay: el agua abajo, la curva iluminada de la bahía a la derecha. Hay sumiller — más fácil dejarle a él la elección del vino",
+      "de": "Die Terrasse des Cliff Bay: unten das Wasser, rechts der beleuchtete Bogen der Bucht. Es gibt einen Sommelier — die Weinwahl gibt man ihm besser ab"
+     }
+    },
+    {
+     "n": {
+      "ru": "Променад Лидо",
+      "en": "The Lido promenade",
+      "pt": "A promenade do Lido",
+      "es": "El paseo del Lido",
+      "de": "Die Promenade am Lido"
+     },
+     "m": {
+      "ru": "22:15 · десять минут вдоль воды",
+      "en": "10:15 pm · ten minutes along the water",
+      "pt": "22:15 · dez minutos à beira-mar",
+      "es": "22:15 · diez minutos junto al agua",
+      "de": "22:15 · zehn Minuten am Wasser entlang"
+     },
+     "note": {
+      "ru": "После плотного ужина спуститься к воде и пройти вдоль неё: волна, фонари и ни одного меню в руках",
+      "en": "After a heavy dinner, drop down to the water and walk: surf, lamps and not a menu in sight",
+      "pt": "Depois de um jantar pesado, descer ao mar e caminhar: ondulação, candeeiros e nenhuma ementa à vista",
+      "es": "Después de una cena copiosa, bajar al mar y caminar: oleaje, farolas y ninguna carta a la vista",
+      "de": "Nach einem schweren Essen hinunter ans Wasser und dort entlang: Brandung, Laternen und keine Karte in der Hand"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Galáxia закрыта в понедельник и вторник — в эти дни начинайте сразу с Avista, там открыто каждый день и терраса та же",
+     "en": "Galáxia is closed Monday and Tuesday — on those days start straight at Avista, open daily with the same kind of terrace",
+     "pt": "O Galáxia fecha à segunda e à terça — nesses dias comece logo no Avista, aberto todos os dias e com o mesmo tipo de terraço",
+     "es": "Galáxia cierra lunes y martes — esos días empieza directamente en Avista, abierto a diario y con la misma clase de terraza",
+     "de": "Galáxia ist montags und dienstags zu — dann direkt im Avista anfangen, täglich geöffnet, dieselbe Art Terrasse"
+    },
+    {
+     "ru": "Столик на террасе Avista нужно просить при бронировании: внутри вид уже не тот, а обогреватели снаружи есть",
+     "en": "An Avista terrace table must be requested when booking: inside, the view is not the same, and there are heaters outdoors",
+     "pt": "A mesa no terraço do Avista pede-se na reserva: por dentro a vista não é a mesma e lá fora há aquecedores",
+     "es": "La mesa en la terraza del Avista se pide al reservar: dentro la vista ya no es la misma y fuera hay estufas",
+     "de": "Der Terrassentisch im Avista muss bei der Reservierung verlangt werden: drinnen ist der Blick nicht derselbe, draußen gibt es Heizstrahler"
+    }
+   ],
+   "park": {
+    "ru": "Между точками 900 метров под уклон — пешком легко вниз и тяжело обратно. Проще оставить машину у отеля и вызвать такси на обратный путь.",
+    "en": "The two stops are 900 metres apart and downhill — easy walking down, hard back up. Simpler to leave the car at the hotel and take a taxi home.",
+    "pt": "Entre os dois pontos são 900 metros a descer — fácil para baixo, duro de volta. Mais simples deixar o carro no hotel e apanhar táxi no regresso.",
+    "es": "Entre los dos puntos hay 900 metros en bajada — fácil de bajar, duro de volver. Más simple dejar el coche en el hotel y coger taxi a la vuelta.",
+    "de": "Zwischen beiden Stationen liegen 900 Meter bergab — leicht hinunter, mühsam zurück. Einfacher: Auto am Hotel lassen und für den Rückweg ein Taxi."
+   },
+   "wear": {
+    "ru": "Рубашка или пиджак — в Galáxia без этого могут развернуть. И слой сверху: обе террасы открыты ветру.",
+    "en": "A shirt or jacket — Galáxia may turn you away without one. And a layer on top: both terraces are open to the wind.",
+    "pt": "Camisa ou casaco — no Galáxia podem recusar a entrada sem isso. E uma camada por cima: os dois terraços estão expostos ao vento.",
+    "es": "Camisa o americana — en Galáxia pueden no dejarte entrar sin ello. Y una capa encima: las dos terrazas están expuestas al viento.",
+    "de": "Hemd oder Sakko — im Galáxia wird man sonst abgewiesen. Und eine Lage darüber: Beide Terrassen liegen im Wind."
+   }
+  },
+  {
+   "id": "funchal-local",
+   "feat": true,
+   "route": [
+    "imperfeito",
+    "window"
+   ],
+   "title": {
+    "ru": "Без парада",
+    "en": "No fuss",
+    "pt": "Sem espalhafato",
+    "es": "Sin alardes",
+    "de": "Ohne Aufhebens"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "any",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 32.6348185,
+   "sunLon": -16.9435209,
+   "why": {
+    "ru": "Западная часть города, где ужинают сами жители: семейная кухня без сета и церемоний, потом коктейль с десертом в двенадцати минутах ходьбы. Дешевле первых двух вечеров примерно вдвое.",
+    "en": "The western side of town, where residents actually eat: family cooking with no tasting menu and no ceremony, then a cocktail and dessert twelve minutes away. Roughly half the price of the other two evenings.",
+    "pt": "O lado ocidental da cidade, onde os residentes jantam mesmo: cozinha de família sem menu de degustação nem cerimónia, e depois um cocktail com sobremesa a doze minutos. Cerca de metade do preço das outras duas noites.",
+    "es": "El lado oeste de la ciudad, donde cenan los residentes: cocina familiar sin menú degustación ni ceremonia, y luego un cóctel con postre a doce minutos. Cerca de la mitad de precio que las otras dos noches.",
+    "de": "Der Westen der Stadt, wo die Einheimischen wirklich essen: Familienküche ohne Degustationsmenü und ohne Zeremonie, danach ein Cocktail mit Dessert zwölf Minuten weiter. Etwa halb so teuer wie die anderen beiden Abende."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Imperfeito — ужин у братьев",
+      "en": "Imperfeito — dinner with the brothers",
+      "pt": "Imperfeito — jantar com os irmãos",
+      "es": "Imperfeito — cena con los hermanos",
+      "de": "Imperfeito — Abendessen bei den Brüdern"
+     },
+     "m": {
+      "ru": "18:30 · пн–сб, вс закрыто",
+      "en": "6:30 pm · Mon–Sat, closed Sunday",
+      "pt": "18:30 · seg–sáb, fecha ao domingo",
+      "es": "18:30 · lun–sáb, cierra el domingo",
+      "de": "18:30 · Mo–Sa, sonntags geschlossen"
+     },
+     "note": {
+      "ru": "Меню короткое и меняется: спрашивайте у брата в зале, что взял бы он. Свиные щёчки и креветки в чесноке берут почти все — и правильно делают",
+      "en": "The menu is short and shifts: ask the brother in the room what he would order. Almost everyone takes the pork cheeks and garlic prawns, and they are right",
+      "pt": "A ementa é curta e vai mudando: pergunte ao irmão da sala o que pediria. Quase toda a gente leva as bochechas e as gambas com alho — e com razão",
+      "es": "La carta es corta y cambia: pregunta al hermano de la sala qué pediría él. Casi todos toman las carrilleras y las gambas al ajillo, y hacen bien",
+      "de": "Die Karte ist kurz und wechselt: Fragen Sie den Bruder im Raum, was er nehmen würde. Fast alle bestellen Schweinebäckchen und Knoblauchgarnelen — zu Recht"
+     }
+    },
+    {
+     "n": {
+      "ru": "Window to Asia — коктейль и десерт",
+      "en": "Window to Asia — cocktail and dessert",
+      "pt": "Window to Asia — cocktail e sobremesa",
+      "es": "Window to Asia — cóctel y postre",
+      "de": "Window to Asia — Cocktail und Dessert"
+     },
+     "m": {
+      "ru": "20:45 · 900 м по Estrada Monumental, кухня до 22:00",
+      "en": "8:45 pm · 900 m along Estrada Monumental, kitchen until 10 pm",
+      "pt": "20:45 · 900 m pela Estrada Monumental, cozinha até às 22:00",
+      "es": "20:45 · 900 m por la Estrada Monumental, cocina hasta las 22:00",
+      "de": "20:45 · 900 m die Estrada Monumental entlang, Küche bis 22:00"
+     },
+     "note": {
+      "ru": "Сюда идут за манговым липким рисом и крем-брюле на маракуйе; шоколадный торт пекут под заказ, так что закажите его сразу с коктейлем",
+      "en": "Come for the mango sticky rice and the passion-fruit crème brûlée; the chocolate cake is baked to order, so ask for it together with the cocktail",
+      "pt": "Vir pelo arroz doce de manga e pelo crème brûlée de maracujá; o bolo de chocolate é feito na hora, por isso peça-o já com o cocktail",
+      "es": "Se viene por el arroz glutinoso con mango y la crema quemada de maracuyá; el pastel de chocolate se hace al momento, así que pídelo junto al cóctel",
+      "de": "Wegen Mango Sticky Rice und Passionsfrucht-Crème-brûlée; der Schokoladenkuchen wird auf Bestellung gebacken — gleich mit dem Cocktail ordern"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "В воскресенье Imperfeito закрыт — тогда вечер начинается с пиццы в Lume в километре западнее; там неаполитанское тесто и веганская моцарелла местного производства",
+     "en": "Imperfeito is closed on Sundays — then the evening starts with pizza at Lume a kilometre west: Neapolitan dough and island-made vegan mozzarella",
+     "pt": "Ao domingo o Imperfeito está fechado — nesse caso a noite começa com pizza no Lume, a um quilómetro para oeste: massa napolitana e mozzarella vegana feita na ilha",
+     "es": "Los domingos Imperfeito cierra — entonces la noche empieza con pizza en Lume, a un kilómetro al oeste: masa napolitana y mozzarella vegana hecha en la isla",
+     "de": "Sonntags ist Imperfeito zu — dann beginnt der Abend mit Pizza im Lume, einen Kilometer westlich: neapolitanischer Teig und veganer Mozzarella von der Insel"
+    },
+    {
+     "ru": "Кухня Window to Asia закрывается в 22:00, а не в полночь: если ужин затянулся, десерт лучше перенести в план, а не надеяться успеть",
+     "en": "Window to Asia's kitchen shuts at 10 pm, not at midnight: if dinner runs long, plan the dessert rather than hoping to make it",
+     "pt": "A cozinha do Window to Asia fecha às 22:00, não à meia-noite: se o jantar se alongar, é melhor planear a sobremesa do que contar com a sorte",
+     "es": "La cocina de Window to Asia cierra a las 22:00, no a medianoche: si la cena se alarga, mejor planear el postre que confiar en llegar",
+     "de": "Die Küche im Window to Asia schließt um 22:00, nicht um Mitternacht: Zieht sich das Essen, plant man das Dessert lieber ein, statt darauf zu hoffen"
+    }
+   ],
+   "park": {
+    "ru": "У Forum Madeira большая подземная парковка, от неё до обеих точек пешком. Между ними — 900 метров по ровной Estrada Monumental.",
+    "en": "Forum Madeira has a large underground car park within walking distance of both stops. Between them, 900 flat metres along Estrada Monumental.",
+    "pt": "O Forum Madeira tem um grande parque subterrâneo a curta distância dos dois pontos. Entre eles, 900 metros planos pela Estrada Monumental.",
+    "es": "El Forum Madeira tiene un gran aparcamiento subterráneo a poca distancia de ambos puntos. Entre ellos, 900 metros llanos por la Estrada Monumental.",
+    "de": "Das Forum Madeira hat ein großes Parkhaus, von dem beide Stationen zu Fuß erreichbar sind. Dazwischen 900 ebene Meter die Estrada Monumental entlang."
+   },
+   "wear": {
+    "ru": "Никакого дресс-кода: обычная одежда и лёгкая куртка на обратный путь вдоль моря.",
+    "en": "No dress code here: normal clothes and a light jacket for the walk back along the sea.",
+    "pt": "Sem código de vestuário: roupa normal e um casaco leve para o regresso à beira-mar.",
+    "es": "Sin código de vestimenta: ropa normal y una chaqueta ligera para la vuelta junto al mar.",
+    "de": "Kein Dresscode: normale Kleidung und eine leichte Jacke für den Rückweg am Meer."
+   }
+  }
+ ]
+}
