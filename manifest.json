@@ -63,6 +63,27 @@
    "dataUrl": "data/madeira-highview.json",
    "hubUrl": "https://seedwave.pt/hub/",
    "live": true
+  },
+  {
+   "id": "funchal-noite-igor",
+   "title": {
+    "ru": "ГастроГид по вечернему Фуншалу",
+    "en": "An Evening Food Guide to Funchal",
+    "pt": "Guia Gastronómico do Funchal à Noite",
+    "es": "Guía Gastronómica del Funchal Nocturno",
+    "de": "Gastro-Guide durch das abendliche Funchal"
+   },
+   "author": "Igor Kartuzov",
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
+   "dataUrl": "data/funchal-noite-igor.json",
+   "hubUrl": "https://seedwave.pt/hub/",
+   "live": true
   }
  ]
 }
