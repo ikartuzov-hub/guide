@@ -15,9 +15,9 @@
 <link rel="icon" href="../icons/malaga.svg" type="image/svg+xml">
 <style>body{margin:0;background:#14181D;color:#F5F0E8;font:16px system-ui;display:grid;place-items:center;height:100vh}a{color:#E0703A}</style>
 <script>
-var q=new URLSearchParams(location.search);var p=new URLSearchParams();p.set('guide','malaga-igor');p.set('s','tapas-centro');
+var q=new URLSearchParams(location.search);var p=new URLSearchParams();p.set('s','tapas-centro');
 if(q.get('lang'))p.set('lang',q.get('lang'));if(q.get('theme'))p.set('theme',q.get('theme'));
-location.replace('../?'+p.toString());
+location.replace('../malaga/'+(p.toString()?'?'+p.toString():''));
 </script><link rel="canonical" href="https://g.seedwave.pt/share/tapas-centro.html">
 </head>
-<body><p>Открываю гид… <a href="../?guide=malaga-igor&s=tapas-centro">Малага</a></p></body></html>
+<body><p>Открываю гид… <a href="../malaga/?s=tapas-centro">Малага</a></p></body></html>

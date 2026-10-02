@@ -46,3 +46,12 @@ Guide is a data-driven guide engine: each guide is a JSON file, loaded by `?guid
 <p align="center">
   <sub>© Igor Kartuzov · <a href="https://seedwave.pt/hub/">SeedWave</a> — AI-first studio · Madeira, EU</sub>
 </p>
+
+## Устройство (с 02.10.2026)
+
+- **Движок один:** `engine/engine.js` + `engine/engine.css`. Корень `index.html` — оболочка (гид по умолчанию Мадейра, любой гид через `?guide=…`, старые ссылки работают).
+- **Папка на гид** — чтобы гид сохранялся на экран телефона отдельным приложением (у папки свой статичный манифест, `start_url`/`scope` внутри папки): `malaga/`, `paris/`, `funchal/`.
+- **Новый гид:** положить `data/{id}.json` (+ фото, иконки) и выполнить
+  `python3 tools/make_shell.py <папка> <id> --og share/og-<…>.png` — создаст `<папка>/index.html`, `manifest.webmanifest`, иконки 192/512.
+- **План на день** (уровень 2): окно времени + прогноз Open-Meteo (без ключей) + часы работы. Необязательные поля точки: `open` (`{"6":[["12:00","24:00"]]}`, 0 = вс, `[]` = выходной), `indoor`, `dwell` (мин); в `meta`: `planStart`, `planFrom`, `planTo`. Без `open` берутся типовые часы по тегу.
+- Резервная копия до переделки: ветка `backup/2026-10-02-before-split`.

@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Малага: парк, кофе и тапас-бары",
+  "short_name": "Малага",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14181D",
+  "theme_color": "#B4501E",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "../icons/malaga-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icons/malaga-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icons/malaga-2-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
