@@ -84,6 +84,27 @@
    "dataUrl": "data/funchal-noite-igor.json",
    "hubUrl": "https://seedwave.pt/hub/",
    "live": true
+  },
+  {
+   "id": "malaga-igor",
+   "title": {
+    "ru": "Малага: парк, кофе и тапас-бары",
+    "en": "Málaga: park, coffee and tapas bars",
+    "pt": "Málaga: parque, café e tabernas de tapas",
+    "es": "Málaga: parque, café y bares de tapas",
+    "de": "Málaga: Park, Kaffee und Tapas-Bars"
+   },
+   "author": "Igor Kartuzov",
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
+   "dataUrl": "data/malaga-igor.json",
+   "hubUrl": "https://seedwave.pt/hub/",
+   "live": true
   }
  ]
 }

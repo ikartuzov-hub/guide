@@ -1,0 +1,972 @@
+{
+ "schema": 1,
+ "meta": {
+  "id": "malaga-igor",
+  "author": "Igor Kartuzov",
+  "hubUrl": "https://seedwave.pt/hub/",
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/",
+  "city": {
+   "ru": "Малага",
+   "en": "Málaga",
+   "pt": "Málaga",
+   "es": "Málaga",
+   "de": "Málaga"
+  },
+  "icon": "icons/malaga.svg",
+  "appleIcon": "icons/malaga-180.png",
+  "theme": {
+   "bg": "#14181D",
+   "bg2": "#1B2128",
+   "bg3": "#222A33",
+   "ink": "#F5F0E8",
+   "muted": "#A9B0B8",
+   "faint": "#6C7580",
+   "accent": "#E0703A",
+   "accent2": "#F08C57",
+   "accentInk": "#14181D",
+   "card": "#1B2128",
+   "line": "#2D3641",
+   "tile": "#222A33"
+  },
+  "themeLight": {
+   "bg": "#F7F2EA",
+   "bg2": "#FFFFFF",
+   "bg3": "#FCF8F2",
+   "ink": "#232A31",
+   "muted": "#626B75",
+   "faint": "#9AA2AB",
+   "accent": "#B4501E",
+   "accent2": "#CC6A36",
+   "accentInk": "#FFFFFF",
+   "card": "#FFFFFF",
+   "line": "#E8DFD2",
+   "tile": "#F2EBDF"
+  },
+  "shareBase": "share/"
+ },
+ "intro": {
+  "eyebrow": {
+   "ru": "Гид · Малага без спешки",
+   "en": "Guide · Málaga, no rush",
+   "pt": "Guia · Málaga sem pressa",
+   "es": "Guía · Málaga sin prisa",
+   "de": "Guide · Málaga ohne Eile"
+  },
+  "title": {
+   "ru": "Малага: парк, кофе и тапас-бары",
+   "en": "Málaga: park, coffee and tapas bars",
+   "pt": "Málaga: parque, café e tabernas de tapas",
+   "es": "Málaga: parque, café y bares de tapas",
+   "de": "Málaga: Park, Kaffee und Tapas-Bars"
+  },
+  "sub": {
+   "ru": "Один день между приходом и отходом лайнера: игристое в парке, кофе, тапас-бары старого центра и последний бокал во дворике. Без списка «увидеть всё».",
+   "en": "One day between the ship's arrival and departure: sparkling wine in the park, coffee, old-town tapas bars and a last glass in a patio. No see-it-all checklist.",
+   "pt": "Um dia entre a chegada e a partida do navio: espumante no parque, café, tabernas de tapas do centro histórico e um último copo num pátio. Sem lista de «ver tudo».",
+   "es": "Un día entre la llegada y la salida del barco: espumoso en el parque, café, bares de tapas del casco antiguo y una última copa en un patio. Sin lista de «verlo todo».",
+   "de": "Ein Tag zwischen Ankunft und Abfahrt des Schiffs: Schaumwein im Park, Kaffee, Tapas-Bars der Altstadt und ein letztes Glas im Innenhof. Ohne Sehenswürdigkeiten-Liste."
+  }
+ },
+ "regions": {
+  "mlg-port": {
+   "ru": "Порт и парк",
+   "en": "Port and park",
+   "pt": "Porto e parque",
+   "es": "Puerto y parque",
+   "de": "Hafen und Park"
+  },
+  "mlg-centro": {
+   "ru": "Старый центр",
+   "en": "Old town",
+   "pt": "Centro histórico",
+   "es": "Casco antiguo",
+   "de": "Altstadt"
+  }
+ },
+ "autoSkip": [
+  "mlg-port",
+  "mlg-centro"
+ ],
+ "regionOrder": [
+  "mlg-port",
+  "mlg-centro"
+ ],
+ "points": [
+  {
+   "id": "terminal",
+   "name": "Puerto de Málaga · Terminal de cruceros",
+   "lat": 36.7082805,
+   "lon": -4.4141475,
+   "place_id": "ChIJ7W0k0_P3cg0RvPmxG0ZkXY4",
+   "reg": "mlg-port",
+   "rating": 4.5,
+   "count": 3360,
+   "addr": "Muelle de Levante",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Точка встречи: выход с лайнеров. Какой именно терминал — уточнить у друзей по названию судна; пешком отсюда до парка около 10 минут",
+    "en": "Meeting point: the cruise exit. Which terminal exactly depends on the ship, so check with your friends; the park is about 10 minutes' walk",
+    "pt": "Ponto de encontro: a saída dos cruzeiros. O terminal exato depende do navio, confirme com os amigos; o parque fica a cerca de 10 minutos a pé",
+    "es": "Punto de encuentro: la salida de cruceros. Qué terminal exactamente depende del barco, confírmalo con tus amigos; el parque queda a unos 10 minutos a pie",
+    "de": "Treffpunkt: der Kreuzfahrt-Ausgang. Welches Terminal, hängt vom Schiff ab, bitte mit den Freunden klären; zum Park sind es etwa 10 Minuten zu Fuß"
+   },
+   "hours": {
+    "ru": "Работает в дни захода судов",
+    "en": "Open on cruise-ship days",
+    "pt": "Aberto nos dias de escala",
+    "es": "Abierto en días de escala",
+    "de": "An Anlauftagen geöffnet"
+   }
+  },
+  {
+   "id": "parque",
+   "name": "Parque de Málaga",
+   "lat": 36.7191148,
+   "lon": -4.4156899,
+   "place_id": "ChIJ2Uh4w5T3cg0RkHSZoZ-K09A",
+   "reg": "mlg-port",
+   "rating": 4.6,
+   "count": 12463,
+   "addr": "Paseo del Parque",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Тропический парк в самом центре, тень, фонтаны и скамейки: здесь час на игристое с собственными бокалами. Формально пить на улице в Малаге нельзя — берите тихий уголок и не шумите",
+    "en": "A tropical park in the middle of town, shade, fountains and benches: an hour for sparkling wine from your own glasses. Drinking in public is formally not allowed in Málaga, so pick a quiet corner and keep it low-key",
+    "pt": "Um parque tropical no centro, com sombra, fontes e bancos: uma hora para espumante nos vossos copos. Beber na rua é formalmente proibido em Málaga, escolham um canto sossegado e discrição",
+    "es": "Un parque tropical en pleno centro, con sombra, fuentes y bancos: una hora para el espumoso con vuestras copas. Beber en la calle está formalmente prohibido en Málaga, elegid un rincón tranquilo y discreción",
+    "de": "Ein tropischer Park mitten in der Stadt, mit Schatten, Brunnen und Bänken: eine Stunde für Schaumwein aus den eigenen Gläsern. Alkohol im Freien ist in Málaga formal verboten, also eine ruhige Ecke wählen und dezent bleiben"
+   },
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24 hours",
+    "pt": "Aberto 24 horas",
+    "es": "Abierto 24 horas",
+    "de": "Rund um die Uhr"
+   }
+  },
+  {
+   "id": "ayuntamiento",
+   "name": "Ayuntamiento de Málaga",
+   "lat": 36.720239,
+   "lon": -4.4149435,
+   "place_id": "ChIJBYFGQ-r3cg0RtrBeWnUTw0o",
+   "reg": "mlg-port",
+   "rating": null,
+   "count": null,
+   "addr": "Av. Cervantes 4",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/malaga/ayuntamiento.jpg",
+   "note": {
+    "ru": "Мэрия между пальмами — самый узнаваемый вид по дороге из порта. По субботам внутрь не попасть, достаточно снимка снаружи",
+    "en": "The city hall between the palms is the best-known view on the way from the port. Closed on Saturdays, the outside is all you need",
+    "pt": "A câmara entre as palmeiras é a vista mais conhecida a caminho do porto. Fechada ao sábado, basta vê-la por fora",
+    "es": "El ayuntamiento entre palmeras es la imagen más conocida del camino desde el puerto. Cerrado los sábados, basta con verlo por fuera",
+    "de": "Das Rathaus zwischen den Palmen ist der bekannteste Anblick auf dem Weg vom Hafen. Samstags geschlossen, von außen reicht völlig"
+   },
+   "hours": {
+    "ru": "Снаружи, в любое время",
+    "en": "Exterior only, any time",
+    "pt": "Só exterior, a qualquer hora",
+    "es": "Solo exterior, a cualquier hora",
+    "de": "Nur von außen, jederzeit"
+   }
+  },
+  {
+   "id": "santacatedral",
+   "name": "Santa Catedral Specialty Coffee",
+   "lat": 36.7211549,
+   "lon": -4.4191166,
+   "place_id": "ChIJ90eSSMP3cg0RyJdx0NvoJJk",
+   "reg": "mlg-centro",
+   "rating": 4.8,
+   "count": 1504,
+   "addr": "C. San Agustín 5",
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Лучший кофе рядом с собором: небольшое место, обжарка на любой вкус. Идеальная пауза после парка перед тапас-барами",
+    "en": "The best coffee by the cathedral: a small place with roasts for every taste. A perfect pause after the park and before the tapas bars",
+    "pt": "O melhor café junto à catedral: um sítio pequeno, com torras para todos os gostos. Pausa perfeita depois do parque e antes das tapas",
+    "es": "El mejor café junto a la catedral: un sitio pequeño con tuestes para todos los gustos. Pausa perfecta tras el parque y antes de las tapas",
+    "de": "Der beste Kaffee neben der Kathedrale: ein kleines Lokal mit Röstungen für jeden Geschmack. Ideale Pause nach dem Park und vor den Tapas-Bars"
+   },
+   "hours": {
+    "ru": "Сб 9:00–18:00",
+    "en": "Sat 9 am–6 pm",
+    "pt": "Sáb 9:00–18:00",
+    "es": "Sáb 9:00–18:00",
+    "de": "Sa 9:00–18:00"
+   }
+  },
+  {
+   "id": "catedral",
+   "name": "Catedral de Málaga",
+   "lat": 36.7201678,
+   "lon": -4.4193106,
+   "place_id": "ChIJjanOEZX3cg0R-hlvsHnCw_w",
+   "reg": "mlg-centro",
+   "rating": null,
+   "count": null,
+   "addr": "C. Molina Lario 9",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/malaga/catedral.jpg",
+   "note": {
+    "ru": "«Одинокая» (La Manquita): у собора достроена только одна башня. Снаружи красиво в любой свет, внутрь заходить не обязательно",
+    "en": "La Manquita, «the one-armed lady»: only one tower was ever finished. Beautiful outside in any light; going in is optional",
+    "pt": "A «Manquita»: só uma das torres foi concluída. Bonita por fora com qualquer luz; entrar é opcional",
+    "es": "La Manquita: solo se terminó una de las torres. Preciosa por fuera con cualquier luz; entrar es opcional",
+    "de": "Die «Einarmige» (La Manquita): nur ein Turm wurde fertiggestellt. Außen bei jedem Licht schön, hineinzugehen ist optional"
+   },
+   "hours": {
+    "ru": "Сб 10:30–18:00",
+    "en": "Sat 10:30 am–6 pm",
+    "pt": "Sáb 10:30–18:00",
+    "es": "Sáb 10:30–18:00",
+    "de": "Sa 10:30–18:00"
+   }
+  },
+  {
+   "id": "larios",
+   "name": "Calle Marqués de Larios",
+   "lat": 36.7194687,
+   "lon": -4.421575,
+   "place_id": "ChIJX_OksZX3cg0RBuCwuIlH1PM",
+   "reg": "mlg-centro",
+   "rating": null,
+   "count": null,
+   "addr": "Calle Marqués de Larios",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/malaga/larios.jpg",
+   "note": {
+    "ru": "Главная пешеходная улица: мраморная брусчатка и тент от солнца. Просто пройти от Plaza de la Constitución вниз — лучший променад между двумя тапас-барами",
+    "en": "The main pedestrian street: marble paving and awnings against the sun. A stroll down from Plaza de la Constitución is the best walk between two tapas bars",
+    "pt": "A rua pedonal principal: calçada de mármore e toldos contra o sol. Descer desde a Plaza de la Constitución é o melhor passeio entre duas tabernas",
+    "es": "La calle peatonal principal: suelo de mármol y toldos contra el sol. Bajar desde la Plaza de la Constitución es el mejor paseo entre dos bares de tapas",
+    "de": "Die zentrale Fußgängerstraße: Marmorpflaster und Sonnensegel. Von der Plaza de la Constitución hinunterzuschlendern ist der schönste Spaziergang zwischen zwei Tapas-Bars"
+   },
+   "hours": {
+    "ru": "Круглосуточно",
+    "en": "Open 24 hours",
+    "pt": "Aberto 24 horas",
+    "es": "Abierto 24 horas",
+    "de": "Rund um die Uhr"
+   }
+  },
+  {
+   "id": "illari",
+   "name": "Illari Vinos y Tapas",
+   "lat": 36.7195717,
+   "lon": -4.4203141,
+   "place_id": "ChIJ-RsHd3j3cg0RcbwPlfPI8wM",
+   "reg": "mlg-centro",
+   "rating": 4.7,
+   "count": 2098,
+   "addr": "C. Strachan 14",
+   "tags": [
+    "food",
+    "wine"
+   ],
+   "secret": true,
+   "photo": "photos/malaga/illari.jpg",
+   "note": {
+    "ru": "Тапас и вино в одном шаге от Larios: артишоки, молетито, хорошее вино по бокалу. Мало мест, на шестерых бронировать: +34 951 43 50 72",
+    "en": "Tapas and wine a step from Larios: artichokes, molletitos, good wine by the glass. Few tables, so book for six: +34 951 43 50 72",
+    "pt": "Tapas e vinho a um passo da Larios: alcachofras, molletitos, bom vinho a copo. Poucas mesas, reservem para seis: +34 951 43 50 72",
+    "es": "Tapas y vino a un paso de Larios: alcachofas, molletitos, buen vino por copas. Pocas mesas, reservad para seis: +34 951 43 50 72",
+    "de": "Tapas und Wein einen Schritt von der Larios: Artischocken, Molletitos, guter Wein im Glas. Wenige Tische, für sechs reservieren: +34 951 43 50 72"
+   },
+   "hours": {
+    "ru": "Сб 12:00–00:00",
+    "en": "Sat 12 pm–midnight",
+    "pt": "Sáb 12:00–00:00",
+    "es": "Sáb 12:00–00:00",
+    "de": "Sa 12:00–00:00"
+   }
+  },
+  {
+   "id": "casalola",
+   "name": "Casa Lola",
+   "lat": 36.7220513,
+   "lon": -4.4189706,
+   "place_id": "ChIJsUiA5L_3cg0RhcGgclosSyc",
+   "reg": "mlg-centro",
+   "rating": 4.3,
+   "count": 18182,
+   "addr": "C. Granada 46",
+   "tags": [
+    "food",
+    "bar"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Классика малагских тапас и пинчо за стойкой, бочки вместо столов. Очередь записывают у входа, поэтому приходить лучше к 14:00 и вписать имя заранее. Тел. +34 952 22 38 14",
+    "en": "Málaga classics: tapas and pinchos at the bar, barrels for tables. The queue list is at the door, so arrive around 2 pm and put your name down early. Tel. +34 952 22 38 14",
+    "pt": "Clássicos de Málaga: tapas e pinchos ao balcão, barris por mesas. A lista de espera fica à porta, cheguem pelas 14:00 e deixem logo o nome. Tel. +34 952 22 38 14",
+    "es": "Clásicos malagueños: tapas y pinchos en la barra, barriles por mesas. La lista de espera está en la puerta, llegad hacia las 14:00 y apuntad el nombre enseguida. Tel. +34 952 22 38 14",
+    "de": "Málaga-Klassiker: Tapas und Pinchos an der Theke, Fässer als Tische. Die Warteliste liegt am Eingang, gegen 14 Uhr kommen und gleich den Namen eintragen. Tel. +34 952 22 38 14"
+   },
+   "hours": {
+    "ru": "Сб 12:00–23:30",
+    "en": "Sat 12 pm–11:30 pm",
+    "pt": "Sáb 12:00–23:30",
+    "es": "Sáb 12:00–23:30",
+    "de": "Sa 12:00–23:30"
+   }
+  },
+  {
+   "id": "pimpi",
+   "name": "Bodega El Pimpi",
+   "lat": 36.7219304,
+   "lon": -4.4181336,
+   "place_id": "ChIJ7a2TAMD3cg0RD8K-iOjCzIo",
+   "reg": "mlg-centro",
+   "rating": 4.1,
+   "count": 20782,
+   "addr": "C. Granada 62",
+   "tags": [
+    "wine",
+    "bar"
+   ],
+   "secret": false,
+   "photo": "photos/malaga/pimpi.jpg",
+   "note": {
+    "ru": "Самая известная бодега города: сладкое малагское вино из бочек и зелёный дворик. Последний бокал перед дорогой к лайнеру. Тел. +34 952 22 54 03",
+    "en": "The city's most famous bodega: sweet Málaga wine from the barrel and a green patio. The last glass before the walk back to the ship. Tel. +34 952 22 54 03",
+    "pt": "A bodega mais famosa da cidade: vinho doce de Málaga do barril e um pátio verde. O último copo antes de voltar ao navio. Tel. +34 952 22 54 03",
+    "es": "La bodega más famosa de la ciudad: vino dulce de Málaga de barrica y un patio verde. La última copa antes de volver al barco. Tel. +34 952 22 54 03",
+    "de": "Die berühmteste Bodega der Stadt: süßer Málaga-Wein vom Fass und ein grüner Innenhof. Das letzte Glas vor dem Rückweg zum Schiff. Tel. +34 952 22 54 03"
+   },
+   "hours": {
+    "ru": "Сб 12:00–00:30",
+    "en": "Sat 12 pm–12:30 am",
+    "pt": "Sáb 12:00–00:30",
+    "es": "Sáb 12:00–00:30",
+    "de": "Sa 12:00–00:30"
+   }
+  },
+  {
+   "id": "antiguacasa",
+   "name": "Antigua Casa de Guardia",
+   "lat": 36.7178003,
+   "lon": -4.4233936,
+   "place_id": "ChIJqcM6npb3cg0RHLq8vzr84HQ",
+   "reg": "mlg-centro",
+   "rating": 4.6,
+   "count": 11091,
+   "addr": "Alameda Principal 18",
+   "tags": [
+    "wine",
+    "bar"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Старейшая винная лавка города (1840): вино наливают из бочек, счёт мелом на стойке. Постоять у бара и выпить по бокалу",
+    "en": "The city's oldest wine tavern (1840): wine from barrels, the bill chalked on the bar. Stand at the counter for a glass",
+    "pt": "A taberna de vinho mais antiga da cidade (1840): vinho de barril, a conta a giz no balcão. Um copo de pé ao balcão",
+    "es": "La taberna de vinos más antigua de la ciudad (1840): vino de barrica y la cuenta a tiza en la barra. Una copa de pie en el mostrador",
+    "de": "Die älteste Weinstube der Stadt (1840): Wein vom Fass, die Rechnung mit Kreide auf der Theke. Ein Glas im Stehen am Tresen"
+   },
+   "hours": {
+    "ru": "Сб 11:30–22:45",
+    "en": "Sat 11:30 am–10:45 pm",
+    "pt": "Sáb 11:30–22:45",
+    "es": "Sáb 11:30–22:45",
+    "de": "Sa 11:30–22:45"
+   }
+  },
+  {
+   "id": "laperegrina",
+   "name": "La Peregrina",
+   "lat": 36.7244904,
+   "lon": -4.4193918,
+   "place_id": "ChIJBzjbhL_3cg0RaOt6XIDzfdQ",
+   "reg": "mlg-centro",
+   "rating": 4.6,
+   "count": 3292,
+   "addr": "C. Madre de Dios 37",
+   "tags": [
+    "food"
+   ],
+   "secret": true,
+   "photo": "",
+   "note": {
+    "ru": "Запасной вариант для обеда: уютная кухня без толпы. Работает с 13:00 до 16:30. Тел. +34 952 06 10 85",
+    "en": "A backup for lunch: cosy cooking without the crowds. Open 1 pm to 4:30 pm. Tel. +34 952 06 10 85",
+    "pt": "Plano B para o almoço: cozinha acolhedora sem multidões. Aberto das 13:00 às 16:30. Tel. +34 952 06 10 85",
+    "es": "Plan B para comer: cocina acogedora sin aglomeraciones. Abre de 13:00 a 16:30. Tel. +34 952 06 10 85",
+    "de": "Plan B fürs Mittagessen: gemütliche Küche ohne Gedränge. Geöffnet 13:00 bis 16:30. Tel. +34 952 06 10 85"
+   },
+   "hours": {
+    "ru": "Сб 13:00–16:30",
+    "en": "Sat 1 pm–4:30 pm",
+    "pt": "Sáb 13:00–16:30",
+    "es": "Sáb 13:00–16:30",
+    "de": "Sa 13:00–16:30"
+   }
+  },
+  {
+   "id": "latranca",
+   "name": "La Tranca",
+   "lat": 36.7242405,
+   "lon": -4.4210356,
+   "place_id": "ChIJ1ZlDWL73cg0Rvzvbcwj_UvQ",
+   "reg": "mlg-centro",
+   "rating": 4.7,
+   "count": 10466,
+   "addr": "C. Carretería 92",
+   "tags": [
+    "food",
+    "bar"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Местный бар с шумной стойкой, всё на ходу. Хорошая замена, если у Illari и Casa Lola нет мест",
+    "en": "A noisy local bar, everything on the go. A good swap if Illari and Casa Lola have no room",
+    "pt": "Um bar local animado, tudo ao balcão. Boa alternativa se o Illari e a Casa Lola estiverem cheios",
+    "es": "Un bar local animado, todo en la barra. Buena alternativa si Illari y Casa Lola están llenos",
+    "de": "Eine lebhafte Stammbar, alles an der Theke. Gute Alternative, wenn Illari und Casa Lola voll sind"
+   },
+   "hours": {
+    "ru": "Сб 12:00–01:00",
+    "en": "Sat 12 pm–1 am",
+    "pt": "Sáb 12:00–01:00",
+    "es": "Sáb 12:00–01:00",
+    "de": "Sa 12:00–01:00"
+   }
+  },
+  {
+   "id": "uvedoble",
+   "name": "Uvedoble Taberna",
+   "lat": 36.7206679,
+   "lon": -4.4174263,
+   "place_id": "ChIJb3U1tur3cg0RmrHODNDVXSI",
+   "reg": "mlg-centro",
+   "rating": 4.5,
+   "count": 5187,
+   "addr": "C. Alcazabilla 1",
+   "tags": [
+    "food",
+    "fine"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Более «ресторанные» тапас у Римского театра: хорошо, если хочется посидеть за столом. Бронь за пару дней",
+    "en": "More restaurant-style tapas by the Roman theatre: good if you want a proper table. Book a couple of days ahead",
+    "pt": "Tapas mais de restaurante junto ao Teatro Romano: boas para quem quer mesa. Reservar com dois dias",
+    "es": "Tapas más de restaurante junto al Teatro Romano: bien si queréis mesa. Reservad con un par de días",
+    "de": "Eher restauranthafte Tapas am Römischen Theater: gut, wenn man am Tisch sitzen will. Ein paar Tage vorher reservieren"
+   },
+   "hours": {
+    "ru": "Сб 12:30–00:00",
+    "en": "Sat 12:30 pm–midnight",
+    "pt": "Sáb 12:30–00:00",
+    "es": "Sáb 12:30–00:00",
+    "de": "Sa 12:30–00:00"
+   }
+  },
+  {
+   "id": "atarazanas",
+   "name": "Mercado de Atarazanas",
+   "lat": 36.718456,
+   "lon": -4.4240713,
+   "place_id": "ChIJh7fwj5b3cg0Rvka5UAw2BH0",
+   "reg": "mlg-centro",
+   "rating": 4.6,
+   "count": 50328,
+   "addr": "C. Atarazanas 10",
+   "tags": [
+    "shop",
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Рынок под витражом XIX века: хамон, оливки, свежая рыба. В субботу закрывается в 14:00, поэтому лучше утром или как запасной план",
+    "en": "A market under a 19th-century stained-glass window: jamón, olives, fresh fish. It closes at 2 pm on Saturday, so go in the morning or use it as a backup",
+    "pt": "Mercado sob um vitral do século XIX: presunto, azeitonas, peixe fresco. Fecha às 14:00 ao sábado, por isso melhor de manhã ou como plano B",
+    "es": "Mercado bajo una vidriera del siglo XIX: jamón, aceitunas, pescado fresco. Los sábados cierra a las 14:00, mejor por la mañana o como plan B",
+    "de": "Markt unter einem Buntglasfenster aus dem 19. Jahrhundert: Jamón, Oliven, frischer Fisch. Samstags um 14 Uhr zu, also vormittags oder als Plan B"
+   },
+   "hours": {
+    "ru": "Сб 9:00–14:00",
+    "en": "Sat 9 am–2 pm",
+    "pt": "Sáb 9:00–14:00",
+    "es": "Sáb 9:00–14:00",
+    "de": "Sa 9:00–14:00"
+   }
+  },
+  {
+   "id": "picasso",
+   "name": "Museo Picasso Málaga",
+   "lat": 36.7217363,
+   "lon": -4.4184291,
+   "place_id": "ChIJt3AqVJX3cg0RuStMhenHghw",
+   "reg": "mlg-centro",
+   "rating": null,
+   "count": null,
+   "addr": "C. San Agustín 8",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/malaga/picasso.jpg",
+   "note": {
+    "ru": "План на дождь: дворец Буэнависта с галереей и коллекцией Пикассо. На шестерых хватит часа, закрывается в 19:00",
+    "en": "The rainy-day plan: the Buenavista palace with its arcaded courtyard and Picasso's collection. An hour is enough for six, open until 7 pm",
+    "pt": "Plano para a chuva: o palácio de Buenavista com pátio de arcadas e a coleção de Picasso. Uma hora chega para seis, aberto até às 19:00",
+    "es": "Plan para la lluvia: el palacio de Buenavista con su patio de arcos y la colección de Picasso. Una hora basta para seis, abre hasta las 19:00",
+    "de": "Der Regenplan: der Palast Buenavista mit Arkadenhof und Picassos Sammlung. Für sechs reicht eine Stunde, geöffnet bis 19 Uhr"
+   },
+   "hours": {
+    "ru": "Сб 10:00–19:00",
+    "en": "Sat 10 am–7 pm",
+    "pt": "Sáb 10:00–19:00",
+    "es": "Sáb 10:00–19:00",
+    "de": "Sa 10:00–19:00"
+   }
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "malaga-sabado",
+   "feat": true,
+   "route": [
+    "terminal",
+    "parque",
+    "santacatedral",
+    "illari",
+    "casalola",
+    "pimpi"
+   ],
+   "title": {
+    "ru": "Суббота без спешки",
+    "en": "A Saturday without a rush",
+    "pt": "Um sábado sem pressa",
+    "es": "Un sábado sin prisa",
+    "de": "Ein Samstag ohne Eile"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 36.7213,
+   "sunLon": -4.4214,
+   "why": {
+    "ru": "Шесть человек, восемь часов и никакой гонки: игристое в парке, кофе, два тапас-бара и последний бокал во дворике. Всё пешком, обратно в порт на такси за 8 минут.",
+    "en": "Six people, eight hours and no race: sparkling wine in the park, coffee, two tapas bars and a last glass in a patio. All on foot, back to the port by taxi in 8 minutes.",
+    "pt": "Seis pessoas, oito horas e nenhuma corrida: espumante no parque, café, duas tabernas de tapas e um último copo num pátio. Tudo a pé, de volta ao porto de táxi em 8 minutos.",
+    "es": "Seis personas, ocho horas y ninguna carrera: espumoso en el parque, café, dos bares de tapas y una última copa en un patio. Todo a pie, de vuelta al puerto en taxi en 8 minutos.",
+    "de": "Sechs Personen, acht Stunden und kein Wettlauf: Schaumwein im Park, Kaffee, zwei Tapas-Bars und ein letztes Glas im Innenhof. Alles zu Fuß, zurück zum Hafen mit dem Taxi in 8 Minuten."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Встреча у выхода с лайнера",
+      "en": "Meet at the cruise exit",
+      "pt": "Encontro à saída do cruzeiro",
+      "es": "Encuentro en la salida del crucero",
+      "de": "Treffen am Kreuzfahrt-Ausgang"
+     },
+     "m": {
+      "ru": "09:30 · уточнить терминал по названию судна",
+      "en": "09:30 · confirm the terminal from the ship's name",
+      "pt": "09:30 · confirmar o terminal pelo nome do navio",
+      "es": "09:30 · confirmar la terminal por el nombre del barco",
+      "de": "09:30 · Terminal anhand des Schiffsnamens klären"
+     }
+    },
+    {
+     "n": {
+      "ru": "Игристое в Parque de Málaga",
+      "en": "Sparkling wine in Parque de Málaga",
+      "pt": "Espumante no Parque de Málaga",
+      "es": "Espumoso en el Parque de Málaga",
+      "de": "Schaumwein im Parque de Málaga"
+     },
+     "m": {
+      "ru": "10:15–11:15 · пара бутылок, шесть бокалов, тихая скамейка",
+      "en": "10:15–11:15 · two bottles, six glasses, a quiet bench",
+      "pt": "10:15–11:15 · duas garrafas, seis copos, um banco sossegado",
+      "es": "10:15–11:15 · dos botellas, seis copas, un banco tranquilo",
+      "de": "10:15–11:15 · zwei Flaschen, sechs Gläser, eine ruhige Bank"
+     }
+    },
+    {
+     "n": {
+      "ru": "Кофе у собора",
+      "en": "Coffee by the cathedral",
+      "pt": "Café junto à catedral",
+      "es": "Café junto a la catedral",
+      "de": "Kaffee an der Kathedrale"
+     },
+     "m": {
+      "ru": "11:30 · Santa Catedral Specialty Coffee, 10 минут пешком",
+      "en": "11:30 · Santa Catedral Specialty Coffee, 10 min on foot",
+      "pt": "11:30 · Santa Catedral Specialty Coffee, 10 min a pé",
+      "es": "11:30 · Santa Catedral Specialty Coffee, 10 min a pie",
+      "de": "11:30 · Santa Catedral Specialty Coffee, 10 Min. zu Fuß"
+     }
+    },
+    {
+     "n": {
+      "ru": "Тапас в Illari",
+      "en": "Tapas at Illari",
+      "pt": "Tapas no Illari",
+      "es": "Tapas en Illari",
+      "de": "Tapas im Illari"
+     },
+     "m": {
+      "ru": "12:15–13:30 · столик на шестерых забронировать заранее",
+      "en": "12:15–13:30 · book a table for six in advance",
+      "pt": "12:15–13:30 · reservar mesa para seis com antecedência",
+      "es": "12:15–13:30 · reservar mesa para seis con antelación",
+      "de": "12:15–13:30 · Tisch für sechs vorab reservieren"
+     }
+    },
+    {
+     "n": {
+      "ru": "Casa Lola, пинчо и бочки",
+      "en": "Casa Lola, pinchos and barrels",
+      "pt": "Casa Lola, pinchos e barris",
+      "es": "Casa Lola, pinchos y barriles",
+      "de": "Casa Lola, Pinchos und Fässer"
+     },
+     "m": {
+      "ru": "14:00–15:15 · по дороге пройти по Larios; записаться в очередь",
+      "en": "14:00–15:15 · stroll down Larios on the way; put your name on the list",
+      "pt": "14:00–15:15 · passar pela Larios; escrever o nome na lista",
+      "es": "14:00–15:15 · pasear por la Larios; apuntarse en la lista",
+      "de": "14:00–15:15 · unterwegs über die Larios; auf die Liste eintragen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Последний бокал в El Pimpi",
+      "en": "Last glass at El Pimpi",
+      "pt": "Último copo no El Pimpi",
+      "es": "Última copa en El Pimpi",
+      "de": "Letztes Glas im El Pimpi"
+     },
+     "m": {
+      "ru": "15:15–16:00 · потом такси к порту, на судне к 17:00",
+      "en": "15:15–16:00 · then a taxi to the port, aboard by 5 pm",
+      "pt": "15:15–16:00 · depois táxi até ao porto, a bordo às 17:00",
+      "es": "15:15–16:00 · luego taxi al puerto, a bordo a las 17:00",
+      "de": "15:15–16:00 · dann Taxi zum Hafen, um 17:00 an Bord"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Пить на улице в Малаге формально нельзя: берите тихий уголок парка и не шумите, а бокалы уберите в сумку перед выходом",
+     "en": "Drinking in public is formally not allowed in Málaga: take a quiet corner of the park, keep it low-key and put the glasses away before leaving",
+     "pt": "Beber na rua é formalmente proibido em Málaga: escolham um canto sossegado do parque, discrição e guardem os copos antes de sair",
+     "es": "Beber en la calle está formalmente prohibido en Málaga: elegid un rincón tranquilo del parque, discreción y guardad las copas antes de salir",
+     "de": "Alkohol im Freien ist in Málaga formal verboten: ruhige Ecke im Park wählen, dezent bleiben und die Gläser vor dem Gehen einpacken"
+    }
+   ],
+   "park": {
+    "ru": "Такси от Plaza de la Marina или центра до порта около 8 минут; при запасе по времени — 25 минут пешком по набережной.",
+    "en": "A taxi from the centre to the port takes about 8 minutes; with time to spare it is a 25-minute walk along the waterfront.",
+    "pt": "O táxi do centro ao porto demora cerca de 8 minutos; com tempo, são 25 minutos a pé pela marginal.",
+    "es": "El taxi del centro al puerto tarda unos 8 minutos; con tiempo, son 25 minutos a pie por el paseo marítimo.",
+    "de": "Das Taxi vom Zentrum zum Hafen dauert etwa 8 Minuten; mit Zeitpuffer sind es 25 Minuten zu Fuß an der Promenade."
+   },
+   "wear": {
+    "ru": "Октябрьское тепло и солнце: лёгкая одежда, удобные кроссовки по брусчатке, на вечернюю тень лёгкая кофта",
+    "en": "Warm October sunshine: light clothes, comfortable shoes for the cobbles and a thin layer for the shade",
+    "pt": "Sol e calor de outubro: roupa leve, sapatilhas confortáveis para a calçada e um casaco fino para a sombra",
+    "es": "Sol y calor de octubre: ropa ligera, calzado cómodo para el empedrado y una prenda fina para la sombra",
+    "de": "Warmer Oktobersonnenschein: leichte Kleidung, bequeme Schuhe fürs Pflaster und eine dünne Jacke für den Schatten"
+   }
+  },
+  {
+   "id": "tapas-centro",
+   "feat": true,
+   "route": [
+    "illari",
+    "casalola",
+    "latranca",
+    "uvedoble",
+    "pimpi"
+   ],
+   "title": {
+    "ru": "Тапас по старому центру",
+    "en": "Tapas through the old town",
+    "pt": "Tapas pelo centro histórico",
+    "es": "Tapas por el casco antiguo",
+    "de": "Tapas durch die Altstadt"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "any",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 36.7213,
+   "sunLon": -4.4214,
+   "why": {
+    "ru": "Стоячие тапас-бары в пяти минутах друг от друга: по бокалу вина и паре тарелок в каждом, без одного долгого обеда.",
+    "en": "Standing tapas bars five minutes from each other: a glass of wine and a couple of plates in each, not one long lunch.",
+    "pt": "Tabernas de tapas a cinco minutos umas das outras: um copo de vinho e um par de pratos em cada, sem um almoço longo.",
+    "es": "Bares de tapas a cinco minutos entre sí: una copa de vino y un par de platos en cada uno, sin una comida larga.",
+    "de": "Tapas-Bars im Fünf-Minuten-Abstand: in jeder ein Glas Wein und ein, zwei Teller, statt eines langen Mittagessens."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Illari, артишоки и молетито",
+      "en": "Illari, artichokes and molletitos",
+      "pt": "Illari, alcachofras e molletitos",
+      "es": "Illari, alcachofas y molletitos",
+      "de": "Illari, Artischocken und Molletitos"
+     },
+     "m": {
+      "ru": "12:15 · начать здесь, пока есть места",
+      "en": "12:15 · start here while there are tables",
+      "pt": "12:15 · começar aqui enquanto há mesas",
+      "es": "12:15 · hier beginnen, solange Plätze frei sind",
+      "de": "12:15 · hier beginnen, solange Plätze frei sind"
+     }
+    },
+    {
+     "n": {
+      "ru": "Casa Lola",
+      "en": "Casa Lola",
+      "pt": "Casa Lola",
+      "es": "Casa Lola",
+      "de": "Casa Lola"
+     },
+     "m": {
+      "ru": "14:00 · пинчо у стойки, очередь по списку",
+      "en": "14:00 · pinchos at the bar, queue by list",
+      "pt": "14:00 · pinchos ao balcão, fila por lista",
+      "es": "14:00 · pinchos en la barra, cola por lista",
+      "de": "14:00 · Pinchos an der Theke, Warteliste"
+     }
+    },
+    {
+     "n": {
+      "ru": "La Tranca",
+      "en": "La Tranca",
+      "pt": "La Tranca",
+      "es": "La Tranca",
+      "de": "La Tranca"
+     },
+     "m": {
+      "ru": "запасной вариант, 5 минут пешком",
+      "en": "backup option, 5 minutes on foot",
+      "pt": "alternativa, 5 minutos a pé",
+      "es": "alternativa, 5 minutos a pie",
+      "de": "Ausweichmöglichkeit, 5 Minuten zu Fuß"
+     }
+    },
+    {
+     "n": {
+      "ru": "Uvedoble Taberna",
+      "en": "Uvedoble Taberna",
+      "pt": "Uvedoble Taberna",
+      "es": "Uvedoble Taberna",
+      "de": "Uvedoble Taberna"
+     },
+     "m": {
+      "ru": "у Римского театра, если хочется сесть",
+      "en": "by the Roman theatre, if you want to sit",
+      "pt": "junto ao Teatro Romano, se quiserem sentar",
+      "es": "junto al Teatro Romano, si queréis sentaros",
+      "de": "am Römischen Theater, wenn man sitzen möchte"
+     }
+    },
+    {
+     "n": {
+      "ru": "El Pimpi, финальный бокал",
+      "en": "El Pimpi, the final glass",
+      "pt": "El Pimpi, o último copo",
+      "es": "El Pimpi, la última copa",
+      "de": "El Pimpi, das letzte Glas"
+     },
+     "m": {
+      "ru": "15:15 · малагское сладкое вино во дворике",
+      "en": "15:15 · sweet Málaga wine in the patio",
+      "pt": "15:15 · vinho doce de Málaga no pátio",
+      "es": "15:15 · vino dulce de Málaga en el patio",
+      "de": "15:15 · süßer Málaga-Wein im Innenhof"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Не нужно успеть во все пять: два-три бара с неспешным разговором лучше пяти галопом",
+     "en": "You do not need all five: two or three bars with unhurried talk beat five at a gallop",
+     "pt": "Não é preciso ir aos cinco: dois ou três bares com conversa calma valem mais do que cinco a galope",
+     "es": "No hace falta ir a los cinco: dos o tres bares con charla tranquila valen más que cinco al galope",
+     "de": "Man muss nicht alle fünf schaffen: zwei, drei Bars mit entspanntem Gespräch sind besser als fünf im Galopp"
+    }
+   ],
+   "park": {
+    "ru": "Машина не нужна: центр компактный, всё пешком; такси есть у Plaza de la Marina.",
+    "en": "No car needed: the centre is compact and everything is on foot; taxis wait at Plaza de la Marina.",
+    "pt": "Não precisa de carro: o centro é compacto e tudo se faz a pé; há táxis na Plaza de la Marina.",
+    "es": "No hace falta coche: el centro es compacto y todo se hace a pie; hay taxis en la Plaza de la Marina.",
+    "de": "Kein Auto nötig: das Zentrum ist kompakt und alles zu Fuß; Taxis stehen an der Plaza de la Marina."
+   },
+   "wear": {
+    "ru": "Удобная обувь: брусчатка и камень. Лёгкая одежда.",
+    "en": "Comfortable shoes: cobbles and stone. Light clothes.",
+    "pt": "Calçado confortável: calçada e pedra. Roupa leve.",
+    "es": "Calzado cómodo: empedrado y piedra. Ropa ligera.",
+    "de": "Bequeme Schuhe: Kopfsteinpflaster und Stein. Leichte Kleidung."
+   }
+  },
+  {
+   "id": "malaga-dozhd",
+   "feat": true,
+   "route": [
+    "picasso",
+    "catedral",
+    "antiguacasa",
+    "atarazanas"
+   ],
+   "title": {
+    "ru": "Если пойдёт дождь",
+    "en": "If it rains",
+    "pt": "Se chover",
+    "es": "Si llueve",
+    "de": "Falls es regnet"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "any",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 36.7213,
+   "sunLon": -4.4214,
+   "why": {
+    "ru": "Запасной вариант на мокрую погоду: музей под крышей, собор, бочки Антигуа Каса де Гуардия и рынок. Всё рядом с центром.",
+    "en": "A wet-weather fallback: a museum under cover, the cathedral, the barrels of Antigua Casa de Guardia and the market. All close to the centre.",
+    "pt": "Plano B para o mau tempo: um museu coberto, a catedral, os barris da Antigua Casa de Guardia e o mercado. Tudo perto do centro.",
+    "es": "Plan B para el mal tiempo: un museo cubierto, la catedral, las barricas de la Antigua Casa de Guardia y el mercado. Todo cerca del centro.",
+    "de": "Ausweichplan bei Regen: ein Museum unter Dach, die Kathedrale, die Fässer der Antigua Casa de Guardia und der Markt. Alles nah am Zentrum."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Museo Picasso Málaga",
+      "en": "Museo Picasso Málaga",
+      "pt": "Museo Picasso Málaga",
+      "es": "Museo Picasso Málaga",
+      "de": "Museo Picasso Málaga"
+     },
+     "m": {
+      "ru": "10:30 · около часа",
+      "en": "10:30 · about an hour",
+      "pt": "10:30 · cerca de uma hora",
+      "es": "10:30 · aproximadamente una hora",
+      "de": "10:30 · etwa eine Stunde"
+     }
+    },
+    {
+     "n": {
+      "ru": "Catedral de Málaga",
+      "en": "Catedral de Málaga",
+      "pt": "Catedral de Málaga",
+      "es": "Catedral de Málaga",
+      "de": "Catedral de Málaga"
+     },
+     "m": {
+      "ru": "11:45 · зайти, пока льёт",
+      "en": "11:45 · step in while it pours",
+      "pt": "11:45 · entrar enquanto chove",
+      "es": "11:45 · entrar mientras llueve",
+      "de": "11:45 · hineingehen, solange es gießt"
+     }
+    },
+    {
+     "n": {
+      "ru": "Mercado de Atarazanas",
+      "en": "Mercado de Atarazanas",
+      "pt": "Mercado de Atarazanas",
+      "es": "Mercado de Atarazanas",
+      "de": "Mercado de Atarazanas"
+     },
+     "m": {
+      "ru": "до 14:00 · хамон, оливки, рыба",
+      "en": "until 2 pm · jamón, olives, fish",
+      "pt": "até às 14:00 · presunto, azeitonas, peixe",
+      "es": "hasta las 14:00 · jamón, aceitunas, pescado",
+      "de": "bis 14 Uhr · Jamón, Oliven, Fisch"
+     }
+    },
+    {
+     "n": {
+      "ru": "Antigua Casa de Guardia",
+      "en": "Antigua Casa de Guardia",
+      "pt": "Antigua Casa de Guardia",
+      "es": "Antigua Casa de Guardia",
+      "de": "Antigua Casa de Guardia"
+     },
+     "m": {
+      "ru": "после 13:00 · вино из бочек у стойки",
+      "en": "after 1 pm · wine from the barrel at the bar",
+      "pt": "depois das 13:00 · vinho de barril ao balcão",
+      "es": "después de las 13:00 · vino de barrica en la barra",
+      "de": "nach 13 Uhr · Wein vom Fass an der Theke"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Atarazanas закрывается в 14:00: рынок лучше поставить раньше Casa de Guardia",
+     "en": "Atarazanas closes at 2 pm, so put the market before Casa de Guardia",
+     "pt": "O Atarazanas fecha às 14:00: o mercado deve vir antes da Casa de Guardia",
+     "es": "Atarazanas cierra a las 14:00: mejor el mercado antes que Casa de Guardia",
+     "de": "Atarazanas schließt um 14 Uhr: den Markt vor der Casa de Guardia einplanen"
+    }
+   ],
+   "park": {
+    "ru": "Всё в радиусе 10 минут пешком, зонтик и такси у Plaza de la Marina.",
+    "en": "Everything within 10 minutes on foot; carry an umbrella, taxis at Plaza de la Marina.",
+    "pt": "Tudo a menos de 10 minutos a pé; levem guarda-chuva, táxis na Plaza de la Marina.",
+    "es": "Todo a menos de 10 minutos a pie; llevad paraguas, taxis en la Plaza de la Marina.",
+    "de": "Alles innerhalb von 10 Minuten zu Fuß; Schirm mitnehmen, Taxis an der Plaza de la Marina."
+   },
+   "wear": {
+    "ru": "Непромокаемая куртка и обувь, которая не скользит по мокрому камню.",
+    "en": "A waterproof jacket and shoes that do not slip on wet stone.",
+    "pt": "Casaco impermeável e sapatos que não escorreguem na pedra molhada.",
+    "es": "Chaqueta impermeable y zapatos que no resbalen en piedra mojada.",
+    "de": "Regenjacke und Schuhe, die auf nassem Stein nicht rutschen."
+   }
+  }
+ ]
+}
