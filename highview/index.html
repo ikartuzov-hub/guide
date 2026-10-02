@@ -2,51 +2,37 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Мадейра из São Gonçalo — гид вокруг дома</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Мадейра из São Gonçalo</title>
+<meta name="description" content="Закаты, левады и таверны в двадцати минутах от дома — то, что находишь, когда живёшь здесь, а не приезжаешь на неделю.">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../icons/madeira-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#C13A57">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Фуншал · São Gonçalo">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="SeedWave">
-<meta property="og:url" content="https://g.seedwave.pt/highview/">
+<meta property="og:site_name" content="Мой Гид · SeedWave">
 <meta property="og:title" content="Мадейра из São Gonçalo">
-<meta property="og:description" content="19 мест вокруг дома, 12 из них — не из путеводителей. Три готовых маршрута, пять языков. Гид для гостей Madeira High View.">
+<meta property="og:description" content="Закаты, левады и таверны в двадцати минутах от дома — то, что находишь, когда живёшь здесь, а не приезжаешь на неделю.">
+<meta property="og:url" content="https://g.seedwave.pt/highview/">
 <meta property="og:image" content="https://g.seedwave.pt/highview/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:locale" content="ru_RU">
-
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Мадейра из São Gonçalo">
-<meta name="twitter:description" content="19 мест вокруг дома, три маршрута, пять языков.">
 <meta name="twitter:image" content="https://g.seedwave.pt/highview/og.jpg">
-
-<link rel="icon" href="../icon.svg?v=2" type="image/svg+xml">
-
-<style>
-  html,body{margin:0;height:100%;background:#14110f;color:#f5f0e9;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-  .w{height:100%;display:grid;place-items:center;text-align:center;padding:24px}
-  h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;margin:0 0 10px}
-  p{color:#a89e92;margin:0 0 22px;font-size:15px}
-  a{display:inline-block;background:#c94a3a;color:#fff;text-decoration:none;
-    padding:13px 26px;border-radius:999px;font-size:15px}
-</style>
+<link rel="canonical" href="https://g.seedwave.pt/highview/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../engine/engine.css?v=1">
 </head>
 <body>
-<div class="w">
-  <div>
-    <h1>Мадейра из São Gonçalo</h1>
-    <p>Открываю гид…</p>
-    <a id="go" href="../?guide=madeira-highview&lang=ru">Открыть гид</a>
-  </div>
-</div>
-<script>
-  var p = new URLSearchParams(location.search);
-  var lang = p.get('lang') || 'ru';
-  var url = '../?guide=madeira-highview&lang=' + encodeURIComponent(lang);
-  document.getElementById('go').href = url;
-  location.replace(url);
-</script>
+<!-- Папка гида madeira-highview: собрано tools/make_shell.py. Движок общий — ../engine/engine.js. Руками не править. -->
+<script>window.GUIDE_ID="madeira-highview";window.GUIDE_BASE='../';window.GUIDE_STATIC=true;</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js"></script>
+<script src="../engine/engine.js?v=1"></script>
 </body>
 </html>

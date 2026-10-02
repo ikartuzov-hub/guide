@@ -51,14 +51,16 @@ def main():
     ap.add_argument("--svg")
     ap.add_argument("--og")
     ap.add_argument("--lang", default="ru")
+    ap.add_argument("--title", help="если в data нет intro.title")
+    ap.add_argument("--desc", help="если в data нет intro.sub")
     a = ap.parse_args()
 
     d = json.load(open(os.path.join(ROOT, "data", a.guide_id + ".json")))
     m, intro, lang = d["meta"], d.get("intro", {}), a.lang
     assert m["id"] == a.guide_id, "meta.id ≠ имени файла"
-    title = pick(intro.get("title"), lang) or a.guide_id
+    title = pick(intro.get("title"), lang) or a.title or a.guide_id
     city = pick(m.get("city"), lang) or title
-    desc = pick(intro.get("sub"), lang)
+    desc = pick(intro.get("sub"), lang) or a.desc or ""
     svg = a.svg or m.get("icon") or "icon.svg"
     apple = a.apple or m.get("appleIcon") or svg
     bg = (m.get("theme") or {}).get("bg", "#1a1014")
