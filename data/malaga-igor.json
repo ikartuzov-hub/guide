@@ -97,7 +97,7 @@
  "points": [
   {
    "id": "terminal",
-   "name": "Puerto de Málaga · Terminal de cruceros",
+   "name": "Puerto de Málaga · Terminal de cruceros Levante",
    "lat": 36.7082805,
    "lon": -4.4141475,
    "place_id": "ChIJ7W0k0_P3cg0RvPmxG0ZkXY4",
@@ -111,11 +111,11 @@
    "secret": false,
    "photo": "",
    "note": {
-    "ru": "Точка встречи: выход с лайнеров. Какой именно терминал — уточнить у друзей по названию судна; пешком отсюда до парка около 10 минут",
-    "en": "Meeting point: the cruise exit. Which terminal exactly depends on the ship, so check with your friends; the park is about 10 minutes' walk",
-    "pt": "Ponto de encontro: a saída dos cruzeiros. O terminal exato depende do navio, confirme com os amigos; o parque fica a cerca de 10 minutos a pé",
-    "es": "Punto de encuentro: la salida de cruceros. Qué terminal exactamente depende del barco, confírmalo con tus amigos; el parque queda a unos 10 minutos a pie",
-    "de": "Treffpunkt: der Kreuzfahrt-Ausgang. Welches Terminal, hängt vom Schiff ab, bitte mit den Freunden klären; zum Park sind es etwa 10 Minuten zu Fuß"
+    "ru": "Терминалы A/B на Muelle de Levante — здесь швартуется MSC Opera. До Куба вдоль воды 15–20 минут",
+    "en": "Terminals A/B on Muelle de Levante, where MSC Opera docks. 15–20 minutes along the water to the Cube",
+    "pt": "Terminais A/B no Muelle de Levante, onde atraca o MSC Opera. 15–20 minutos junto à água até ao Cubo",
+    "es": "Terminales A/B en el Muelle de Levante, donde atraca el MSC Opera. 15–20 minutos junto al agua hasta el Cubo",
+    "de": "Terminals A/B am Muelle de Levante, hier legt die MSC Opera an. 15–20 Minuten am Wasser entlang bis zum Würfel"
    },
    "hours": {
     "ru": "Работает в дни захода судов",
@@ -126,6 +126,38 @@
    },
    "indoor": false,
    "dwell": 10
+  },
+  {
+   "id": "pompidou",
+   "name": "Centre Pompidou Málaga · El Cubo",
+   "lat": 36.7188223,
+   "lon": -4.4126341,
+   "place_id": "ChIJ4ZRUeen3cg0RM1wQJ3uNKbw",
+   "reg": "mlg-port",
+   "rating": 4.4,
+   "count": 19060,
+   "addr": "Muelle Uno, Pje. del Dr. Carrillo Casaux",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "",
+   "indoor": false,
+   "dwell": 10,
+   "note": {
+    "ru": "Точка встречи: разноцветный стеклянный Куб на набережной Muelle Uno. Видно издалека, ошибиться невозможно",
+    "en": "Meeting point: the colourful glass Cube on the Muelle Uno waterfront. Visible from afar, impossible to miss",
+    "pt": "Ponto de encontro: o Cubo de vidro colorido no cais Muelle Uno. Vê-se de longe, impossível falhar",
+    "es": "Punto de encuentro: el Cubo de cristal de colores en el Muelle Uno. Se ve desde lejos, imposible perderse",
+    "de": "Treffpunkt: der bunte Glaswürfel an der Uferpromenade Muelle Uno. Von Weitem sichtbar, unverfehlbar"
+   },
+   "hours": {
+    "ru": "Снаружи — всегда",
+    "en": "Outside — any time",
+    "pt": "Exterior — sempre",
+    "es": "Exterior — siempre",
+    "de": "Außen — jederzeit"
+   }
   },
   {
    "id": "parque",
@@ -666,6 +698,110 @@
   }
  ],
  "scenarios": [
+  {
+   "id": "vstrecha",
+   "feat": true,
+   "route": [
+    "terminal",
+    "pompidou",
+    "parque"
+   ],
+   "title": {
+    "ru": "От лайнера к Кубу — встреча в 09:30",
+    "en": "From the ship to the Cube — meet at 9:30",
+    "pt": "Do navio ao Cubo — encontro às 9:30",
+    "es": "Del barco al Cubo — encuentro a las 9:30",
+    "de": "Vom Schiff zum Würfel — Treffen um 9:30"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk"
+   ],
+   "sunLat": 36.7188,
+   "sunLon": -4.4126,
+   "why": {
+    "ru": "Выходите из терминала Levante и идите вдоль воды в сторону города: Muelle de Levante, потом Muelle Uno. Через 15–20 минут справа будет разноцветный стеклянный Куб — мы ждём там. Оттуда 3 минуты до парка с игристым.",
+    "en": "Leave the Levante terminal and walk along the water towards town: Muelle de Levante, then Muelle Uno. After 15–20 minutes the colourful glass Cube is on your right — we wait there. From there it is 3 minutes to the park and the sparkling wine.",
+    "pt": "Saiam do terminal Levante e caminhem junto à água em direção à cidade: Muelle de Levante, depois Muelle Uno. Em 15–20 minutos o Cubo de vidro colorido fica à direita — esperamos aí. Daí são 3 minutos até ao parque e ao espumante.",
+    "es": "Salid de la terminal Levante y caminad junto al agua hacia la ciudad: Muelle de Levante y luego Muelle Uno. En 15–20 minutos el Cubo de cristal de colores queda a la derecha — os esperamos allí. Desde allí, 3 minutos al parque y al espumoso.",
+    "de": "Verlasst das Levante-Terminal und geht am Wasser entlang Richtung Stadt: Muelle de Levante, dann Muelle Uno. Nach 15–20 Minuten steht rechts der bunte Glaswürfel — dort warten wir. Von dort 3 Minuten zum Park und zum Schaumwein."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Терминал Levante (MSC Opera)",
+      "en": "Levante terminal (MSC Opera)",
+      "pt": "Terminal Levante (MSC Opera)",
+      "es": "Terminal Levante (MSC Opera)",
+      "de": "Levante-Terminal (MSC Opera)"
+     },
+     "m": {
+      "ru": "выход ~09:00",
+      "en": "exit ~9:00",
+      "pt": "saída ~09:00",
+      "es": "salida ~09:00",
+      "de": "Ausgang ~9:00"
+     }
+    },
+    {
+     "n": {
+      "ru": "Куб · Centre Pompidou",
+      "en": "The Cube · Centre Pompidou",
+      "pt": "O Cubo · Centre Pompidou",
+      "es": "El Cubo · Centre Pompidou",
+      "de": "Der Würfel · Centre Pompidou"
+     },
+     "m": {
+      "ru": "09:30 · 15–20 мин вдоль воды",
+      "en": "9:30 · 15–20 min along the water",
+      "pt": "09:30 · 15–20 min junto à água",
+      "es": "09:30 · 15–20 min junto al agua",
+      "de": "9:30 · 15–20 Min. am Wasser"
+     }
+    },
+    {
+     "n": {
+      "ru": "Parque de Málaga — игристое",
+      "en": "Parque de Málaga — sparkling wine",
+      "pt": "Parque de Málaga — espumante",
+      "es": "Parque de Málaga — espumoso",
+      "de": "Parque de Málaga — Schaumwein"
+     },
+     "m": {
+      "ru": "3 минуты от Куба",
+      "en": "3 min from the Cube",
+      "pt": "3 min do Cubo",
+      "es": "3 min del Cubo",
+      "de": "3 Min. vom Würfel"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Если задерживаетесь — напишите, ждём у Куба. У терминала есть такси, если не хочется идти",
+     "en": "Running late? Message us, we wait at the Cube. Taxis wait at the terminal if you would rather not walk",
+     "pt": "Atrasados? Mandem mensagem, esperamos no Cubo. Há táxis no terminal se não quiserem andar",
+     "es": "¿Os retrasáis? Escribid, esperamos en el Cubo. Hay taxis en la terminal si no queréis caminar",
+     "de": "Verspätet? Schreibt uns, wir warten am Würfel. Am Terminal stehen Taxis, falls ihr nicht laufen wollt"
+    }
+   ],
+   "park": {
+    "ru": "Обратно на судно: от центра 30 минут пешком или 8–10 минут на такси. Посадка — к 17:00.",
+    "en": "Back to the ship: 30 minutes on foot from the centre or 8–10 minutes by taxi. Be aboard by 5 pm.",
+    "pt": "Regresso ao navio: 30 minutos a pé do centro ou 8–10 minutos de táxi. A bordo até às 17:00.",
+    "es": "Vuelta al barco: 30 minutos a pie desde el centro u 8–10 minutos en taxi. A bordo a las 17:00.",
+    "de": "Zurück zum Schiff: 30 Minuten zu Fuß vom Zentrum oder 8–10 Minuten Taxi. Um 17 Uhr an Bord."
+   },
+   "wear": {
+    "ru": "Удобная обувь и солнцезащитные очки — весь день пешком.",
+    "en": "Comfortable shoes and sunglasses — walking all day.",
+    "pt": "Calçado confortável e óculos de sol — o dia todo a pé.",
+    "es": "Calzado cómodo y gafas de sol — todo el día a pie.",
+    "de": "Bequeme Schuhe und Sonnenbrille — den ganzen Tag zu Fuß."
+   }
+  },
   {
    "id": "malaga-sabado",
    "feat": true,
