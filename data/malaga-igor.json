@@ -45,29 +45,29 @@
   "shareBase": "share/",
   "planStart": "terminal",
   "planFrom": "09:30",
-  "planTo": "16:15"
+  "planTo": "17:30"
  },
  "intro": {
   "eyebrow": {
-   "ru": "Гид · Малага без спешки",
-   "en": "Guide · Málaga, no rush",
-   "pt": "Guia · Málaga sem pressa",
-   "es": "Guía · Málaga sin prisa",
-   "de": "Guide · Málaga ohne Eile"
+   "ru": "Гид · Малага за один день",
+   "en": "Guide · Málaga in one day",
+   "pt": "Guia · Málaga num dia",
+   "es": "Guía · Málaga en un día",
+   "de": "Guide · Málaga an einem Tag"
   },
   "title": {
-   "ru": "Малага: парк, кофе и тапас-бары",
-   "en": "Málaga: park, coffee and tapas bars",
-   "pt": "Málaga: parque, café e tabernas de tapas",
-   "es": "Málaga: parque, café y bares de tapas",
-   "de": "Málaga: Park, Kaffee und Tapas-Bars"
+   "ru": "Малага за один день",
+   "en": "Málaga in one day",
+   "pt": "Málaga num dia",
+   "es": "Málaga en un día",
+   "de": "Málaga an einem Tag"
   },
   "sub": {
-   "ru": "Один день между приходом и отходом лайнера: игристое в парке, кофе, тапас-бары старого центра и последний бокал во дворике. Без списка «увидеть всё».",
-   "en": "One day between the ship's arrival and departure: sparkling wine in the park, coffee, old-town tapas bars and a last glass in a patio. No see-it-all checklist.",
-   "pt": "Um dia entre a chegada e a partida do navio: espumante no parque, café, tabernas de tapas do centro histórico e um último copo num pátio. Sem lista de «ver tudo».",
-   "es": "Un día entre la llegada y la salida del barco: espumoso en el parque, café, bares de tapas del casco antiguo y una última copa en un patio. Sin lista de «verlo todo».",
-   "de": "Ein Tag zwischen Ankunft und Abfahrt des Schiffs: Schaumwein im Park, Kaffee, Tapas-Bars der Altstadt und ein letztes Glas im Innenhof. Ohne Sehenswürdigkeiten-Liste."
+   "ru": "Маршрут, который мы прошли сами 3 октября: от лайнера к римскому театру, аперитив, собор, игристое, вид с Гибральфаро и обед в Illari. Плюс тапас-бары и план на дождь. Гид пополняется.",
+   "en": "The route we walked ourselves on 3 October: from the ship to the Roman theatre, aperitivo, cathedral, sparkling wine, the Gibralfaro view and lunch at Illari. Plus tapas bars and a rainy-day plan. The guide keeps growing.",
+   "pt": "O percurso que fizemos a 3 de outubro: do navio ao teatro romano, aperitivo, catedral, espumante, a vista do Gibralfaro e almoço no Illari. E ainda tabernas de tapas e um plano para a chuva. O guia continua a crescer.",
+   "es": "La ruta que hicimos el 3 de octubre: del barco al teatro romano, aperitivo, catedral, espumoso, la vista de Gibralfaro y comida en Illari. Además, bares de tapas y un plan para la lluvia. La guía sigue creciendo.",
+   "de": "Die Route, die wir am 3. Oktober selbst gegangen sind: vom Schiff zum Römischen Theater, Aperitivo, Kathedrale, Schaumwein, der Blick vom Gibralfaro und Mittagessen im Illari. Dazu Tapas-Bars und ein Regenplan. Der Guide wächst weiter."
   }
  },
  "regions": {
@@ -198,6 +198,144 @@
    },
    "indoor": false,
    "dwell": 60
+  },
+  {
+   "id": "teatro",
+   "name": "Teatro Romano y Alcazaba",
+   "lat": 36.7211729,
+   "lon": -4.416823,
+   "place_id": "ChIJM8NJoOr3cg0RKUe-SadD5oU",
+   "reg": "mlg-centro",
+   "rating": 4.6,
+   "count": 9634,
+   "addr": "C/ Alcazabilla s/n",
+   "tags": [
+    "sight"
+   ],
+   "photo": "photos/malaga/teatro.jpg",
+   "note": {
+    "ru": "Римский театр I века у подножия Алькасабы — смотреть можно бесплатно прямо с улицы. Здесь мы встретились 03.10: отличная точка сбора, все её находят.",
+    "en": "A 1st-century Roman theatre at the foot of the Alcazaba, free to see right from the street. We met here on 3 October: a great meeting point, everyone finds it.",
+    "pt": "Teatro romano do século I aos pés da Alcazaba, visível de graça a partir da rua. Encontrámo-nos aqui a 3 de outubro: ótimo ponto de encontro, toda a gente o encontra.",
+    "es": "Teatro romano del siglo I a los pies de la Alcazaba, gratis desde la calle. Aquí nos encontramos el 3 de octubre: buen punto de encuentro, todos lo encuentran.",
+    "de": "Römisches Theater aus dem 1. Jh. am Fuß der Alcazaba, kostenlos von der Straße aus zu sehen. Hier trafen wir uns am 3. Oktober: ein guter Treffpunkt, jeder findet ihn."
+   },
+   "hours": {
+    "ru": "Вт–Сб 10:00–18:00, Вс 10:00–16:00, Пн закрыто (снаружи — всегда)",
+    "en": "Tue–Sat 10 am–6 pm, Sun 10 am–4 pm, Mon closed (outside view always)",
+    "pt": "Ter–Sáb 10:00–18:00, Dom 10:00–16:00, Seg fechado (por fora — sempre)",
+    "es": "Mar–Sáb 10:00–18:00, Dom 10:00–16:00, Lun cerrado (desde fuera — siempre)",
+    "de": "Di–Sa 10–18 Uhr, So 10–16 Uhr, Mo geschlossen (von außen immer)"
+   },
+   "open": {
+    "*": [
+     [
+      "08:00",
+      "22:00"
+     ]
+    ]
+   },
+   "dwell": 20
+  },
+  {
+   "id": "carbon",
+   "name": "Plaza del Carbón",
+   "lat": 36.72177,
+   "lon": -4.42063,
+   "reg": "mlg-centro",
+   "rating": null,
+   "count": null,
+   "addr": "Plaza del Carbón",
+   "tags": [
+    "bar"
+   ],
+   "secret": true,
+   "photo": "photos/malaga/carbon.jpg",
+   "note": {
+    "ru": "Маленькая площадь с зонтиками за собором: аперитив под пальмами в 10 утра — и разговор сам подхватывается. Столики на площади у нескольких баров, садитесь, где есть место.",
+    "en": "A small square with umbrellas behind the cathedral: an aperitivo under the palms at 10 am and the conversation just flows. Several bars share the square, sit wherever there is room.",
+    "pt": "Pequena praça com chapéus de sol atrás da catedral: aperitivo debaixo das palmeiras às 10 da manhã e a conversa flui. Vários bares partilham a praça, sentem-se onde houver lugar.",
+    "es": "Pequeña plaza con sombrillas detrás de la catedral: un aperitivo bajo las palmeras a las 10 y la conversación fluye sola. Varios bares comparten la plaza, sentaos donde haya sitio.",
+    "de": "Kleiner Platz mit Sonnenschirmen hinter der Kathedrale: Aperitivo unter Palmen um 10 Uhr, und das Gespräch läuft von selbst. Mehrere Bars teilen sich den Platz, setzt euch, wo Platz ist."
+   },
+   "open": {
+    "*": [
+     [
+      "09:30",
+      "24:00"
+     ]
+    ]
+   },
+   "dwell": 45
+  },
+  {
+   "id": "alcazabilla",
+   "name": "Calle Alcazabilla · terrazas",
+   "lat": 36.7221,
+   "lon": -4.4172,
+   "reg": "mlg-centro",
+   "rating": null,
+   "count": null,
+   "addr": "Calle Alcazabilla",
+   "tags": [
+    "bar",
+    "wine"
+   ],
+   "note": {
+    "ru": "Пешеходная улица напротив римского театра: террасы одна за другой, бокал игристого с видом на Алькасабу. Наверху дома 12 — руфтоп La Terraza de La Alcazaba (с 13:00 по выходным).",
+    "en": "A pedestrian street facing the Roman theatre: terraces one after another, a glass of sparkling wine with a view of the Alcazaba. On top of no. 12 is the rooftop La Terraza de La Alcazaba (from 1 pm at weekends).",
+    "pt": "Rua pedonal em frente ao teatro romano: esplanadas umas atrás das outras, um copo de espumante com vista para a Alcazaba. No topo do n.º 12 fica o rooftop La Terraza de La Alcazaba (a partir das 13:00 ao fim de semana).",
+    "es": "Calle peatonal frente al teatro romano: terrazas una tras otra, una copa de espumoso con vistas a la Alcazaba. En lo alto del n.º 12, el rooftop La Terraza de La Alcazaba (desde las 13:00 el fin de semana).",
+    "de": "Fußgängerstraße gegenüber dem Römischen Theater: Terrassen reihenweise, ein Glas Schaumwein mit Blick auf die Alcazaba. Oben auf Nr. 12 die Dachbar La Terraza de La Alcazaba (am Wochenende ab 13 Uhr)."
+   },
+   "open": {
+    "*": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ]
+   },
+   "dwell": 40
+  },
+  {
+   "id": "gibralfaro",
+   "name": "Mirador de Gibralfaro",
+   "lat": 36.722892,
+   "lon": -4.4086407,
+   "place_id": "ChIJ_Q_VDcL3cg0RUKZFUUxFbf0",
+   "reg": "mlg-centro",
+   "rating": 4.7,
+   "count": 5683,
+   "addr": "Camino Gibralfaro",
+   "tags": [
+    "sight"
+   ],
+   "photo": "photos/malaga/gibralfaro.jpg",
+   "note": {
+    "ru": "Лучший вид на Малагу: порт, арена для корриды, море и весь город. Подъём пешком 15–25 минут по тропе от Алькасабы, местами крутой и скользкий — нужна удобная обувь и вода. Обратно можно на такси или автобусе 35.",
+    "en": "The best view of Málaga: the port, the bullring, the sea and the whole city. 15–25 minutes up on foot from the Alcazaba, steep and slippery in places — wear proper shoes and bring water. Down by taxi or bus 35.",
+    "pt": "A melhor vista de Málaga: o porto, a praça de touros, o mar e a cidade inteira. Subida a pé de 15–25 minutos a partir da Alcazaba, íngreme e escorregadia em partes — calçado confortável e água. Para descer, táxi ou autocarro 35.",
+    "es": "La mejor vista de Málaga: el puerto, la plaza de toros, el mar y toda la ciudad. Subida a pie de 15–25 minutos desde la Alcazaba, empinada y resbaladiza en tramos: buen calzado y agua. Para bajar, taxi o bus 35.",
+    "de": "Der beste Blick auf Málaga: Hafen, Stierkampfarena, Meer und die ganze Stadt. 15–25 Minuten zu Fuß hinauf ab der Alcazaba, stellenweise steil und rutschig — gute Schuhe und Wasser mitnehmen. Hinunter mit Taxi oder Bus 35."
+   },
+   "hours": {
+    "ru": "Открыто всегда",
+    "en": "Always open",
+    "pt": "Sempre aberto",
+    "es": "Siempre abierto",
+    "de": "Immer geöffnet"
+   },
+   "open": {
+    "*": [
+     [
+      "00:00",
+      "24:00"
+     ]
+    ]
+   },
+   "indoor": false,
+   "dwell": 45
   },
   {
    "id": "ayuntamiento",
@@ -698,6 +836,173 @@
   }
  ],
  "scenarios": [
+  {
+   "id": "odin-den",
+   "feat": true,
+   "route": [
+    "pompidou",
+    "teatro",
+    "carbon",
+    "catedral",
+    "alcazabilla",
+    "gibralfaro",
+    "illari",
+    "parque"
+   ],
+   "title": {
+    "ru": "Один день в Малаге — наш маршрут",
+    "en": "One day in Málaga — our route",
+    "pt": "Um dia em Málaga — o nosso percurso",
+    "es": "Un día en Málaga — nuestra ruta",
+    "de": "Ein Tag in Málaga — unsere Route"
+   },
+   "duration": "day",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 36.7213,
+   "sunLon": -4.418,
+   "why": {
+    "ru": "Проверено 3 октября 2026: четверо, ~7 км пешком, от лайнера до проводов. Театр и Алькасаба, аперитив, собор, игристое, вид с Гибральфаро и долгий обед — без спешки и без очередей в музеи.",
+    "en": "Tested on 3 October 2026: four friends, ~7 km on foot, from the ship to the goodbyes. Theatre and Alcazaba, aperitivo, cathedral, sparkling wine, the Gibralfaro view and a long lunch — no rush, no museum queues.",
+    "pt": "Testado a 3 de outubro de 2026: quatro amigos, ~7 km a pé, do navio às despedidas. Teatro e Alcazaba, aperitivo, catedral, espumante, a vista do Gibralfaro e um almoço longo — sem pressa, sem filas de museus.",
+    "es": "Probado el 3 de octubre de 2026: cuatro amigos, ~7 km a pie, del barco a las despedidas. Teatro y Alcazaba, aperitivo, catedral, espumoso, la vista de Gibralfaro y una comida larga — sin prisa y sin colas de museos.",
+    "de": "Getestet am 3. Oktober 2026: vier Freunde, ~7 km zu Fuß, vom Schiff bis zum Abschied. Theater und Alcazaba, Aperitivo, Kathedrale, Schaumwein, der Blick vom Gibralfaro und ein langes Mittagessen — ohne Eile, ohne Museumsschlangen."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Встреча у Куба на Muelle Uno",
+      "en": "Meet at the Cube on Muelle Uno",
+      "pt": "Encontro junto ao Cubo no Muelle Uno",
+      "es": "Encuentro junto al Cubo en Muelle Uno",
+      "de": "Treffen am Würfel am Muelle Uno"
+     },
+     "m": {
+      "ru": "09:30 · 15–20 мин пешком от терминала Levante",
+      "en": "09:30 · 15–20 min on foot from the Levante terminal",
+      "pt": "09:30 · 15–20 min a pé do terminal Levante",
+      "es": "09:30 · 15–20 min a pie desde la terminal Levante",
+      "de": "09:30 · 15–20 Min. zu Fuß vom Levante-Terminal"
+     }
+    },
+    {
+     "n": {
+      "ru": "Римский театр и Алькасаба",
+      "en": "Roman theatre and Alcazaba",
+      "pt": "Teatro romano e Alcazaba",
+      "es": "Teatro romano y Alcazaba",
+      "de": "Römisches Theater und Alcazaba"
+     },
+     "m": {
+      "ru": "09:40 · общее фото на фоне стен, бесплатно с улицы",
+      "en": "09:40 · group photo by the walls, free from the street",
+      "pt": "09:40 · foto de grupo junto às muralhas, grátis da rua",
+      "es": "09:40 · foto de grupo junto a las murallas, gratis desde la calle",
+      "de": "09:40 · Gruppenfoto vor den Mauern, gratis von der Straße"
+     }
+    },
+    {
+     "n": {
+      "ru": "Аперитив на Plaza del Carbón",
+      "en": "Aperitivo on Plaza del Carbón",
+      "pt": "Aperitivo na Plaza del Carbón",
+      "es": "Aperitivo en la Plaza del Carbón",
+      "de": "Aperitivo auf der Plaza del Carbón"
+     },
+     "m": {
+      "ru": "10:10 · апероль под зонтиками, ~45 мин",
+      "en": "10:10 · Aperol under umbrellas, ~45 min",
+      "pt": "10:10 · Aperol debaixo dos chapéus, ~45 min",
+      "es": "10:10 · Aperol bajo las sombrillas, ~45 min",
+      "de": "10:10 · Aperol unter Schirmen, ~45 Min."
+     }
+    },
+    {
+     "n": {
+      "ru": "Собор и Plaza del Obispo",
+      "en": "Cathedral and Plaza del Obispo",
+      "pt": "Catedral e Plaza del Obispo",
+      "es": "Catedral y Plaza del Obispo",
+      "de": "Kathedrale und Plaza del Obispo"
+     },
+     "m": {
+      "ru": "11:30 · «Однорукая» Ла Манкита и жёлтый Епископский дворец",
+      "en": "11:30 · «La Manquita» and the yellow Bishop's Palace",
+      "pt": "11:30 · «La Manquita» e o Palácio Episcopal amarelo",
+      "es": "11:30 · «La Manquita» y el Palacio Episcopal amarillo",
+      "de": "11:30 · «La Manquita» und der gelbe Bischofspalast"
+     }
+    },
+    {
+     "n": {
+      "ru": "Игристое на Calle Alcazabilla",
+      "en": "Sparkling wine on Calle Alcazabilla",
+      "pt": "Espumante na Calle Alcazabilla",
+      "es": "Espumoso en la Calle Alcazabilla",
+      "de": "Schaumwein in der Calle Alcazabilla"
+     },
+     "m": {
+      "ru": "12:15 · терраса напротив театра",
+      "en": "12:15 · a terrace facing the theatre",
+      "pt": "12:15 · esplanada em frente ao teatro",
+      "es": "12:15 · terraza frente al teatro",
+      "de": "12:15 · Terrasse gegenüber dem Theater"
+     }
+    },
+    {
+     "n": {
+      "ru": "Подъём на Гибральфаро",
+      "en": "Up to Gibralfaro",
+      "pt": "Subida ao Gibralfaro",
+      "es": "Subida a Gibralfaro",
+      "de": "Hinauf zum Gibralfaro"
+     },
+     "m": {
+      "ru": "13:30 · вид на порт и море, 45 мин с подъёмом",
+      "en": "13:30 · port and sea view, 45 min with the climb",
+      "pt": "13:30 · vista do porto e do mar, 45 min com a subida",
+      "es": "13:30 · vista al puerto y al mar, 45 min con la subida",
+      "de": "13:30 · Blick auf Hafen und Meer, 45 Min. mit Aufstieg"
+     }
+    },
+    {
+     "n": {
+      "ru": "Обед в Illari",
+      "en": "Lunch at Illari",
+      "pt": "Almoço no Illari",
+      "es": "Comida en Illari",
+      "de": "Mittagessen im Illari"
+     },
+     "m": {
+      "ru": "15:15 · артишоки, хамон, малагское вино — бронировать",
+      "en": "15:15 · artichokes, jamón, Málaga wine — book ahead",
+      "pt": "15:15 · alcachofras, presunto, vinho de Málaga — reservar",
+      "es": "15:15 · alcachofas, jamón, vino de Málaga — reservar",
+      "de": "15:15 · Artischocken, Jamón, Málaga-Wein — reservieren"
+     }
+    },
+    {
+     "n": {
+      "ru": "Parque de Málaga и проводы",
+      "en": "Parque de Málaga and goodbyes",
+      "pt": "Parque de Málaga e despedidas",
+      "es": "Parque de Málaga y despedidas",
+      "de": "Parque de Málaga und Abschied"
+     },
+     "m": {
+      "ru": "16:15 · тень пальм, к лайнеру к 17:30",
+      "en": "16:15 · palm shade, back to the ship by 5:30 pm",
+      "pt": "16:15 · sombra das palmeiras, de volta ao navio às 17:30",
+      "es": "16:15 · sombra de palmeras, al barco a las 17:30",
+      "de": "16:15 · Palmenschatten, um 17:30 zurück zum Schiff"
+     }
+    }
+   ]
+  },
   {
    "id": "vstrecha",
    "feat": true,
