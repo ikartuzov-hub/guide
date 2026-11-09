@@ -52,7 +52,7 @@ document.body.insertAdjacentHTML('afterbegin',`<div class="top"><div class="top-
   <footer class="foot">
     <div class="cta"><div class="cta-t"><span data-i="foot_t"></span><small data-i="foot_s"></small></div>
       <a class="btn" id="hublink" data-i="foot_btn" href="#"></a></div>
-    <div class="sig"><span>© <a href="#" id="lk">Igor Kartuzov</a> · <a href="#" id="hub2">SeedWave</a></span>
+    <div class="sig"><span>© <a href="#" id="hub2">SeedWave</a> · <a data-mad href="https://seedwave.pt/madeira/?lang=pt&amp;utm_source=guide&amp;utm_medium=footer">Madeira</a> · <a href="#" id="lk">Igor Kartuzov</a></span>
       <span data-i="data_note"></span></div>
   </footer>
 </div>`);
