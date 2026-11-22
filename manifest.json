@@ -105,6 +105,27 @@
    "dataUrl": "data/malaga-igor.json",
    "hubUrl": "https://seedwave.pt/hub/",
    "live": true
+  },
+  {
+   "id": "nuremberg-igor",
+   "title": {
+    "ru": "Нюрнберг: лето и Рождество",
+    "en": "Nuremberg: summer and Christmas",
+    "pt": "Nuremberga: verão e Natal",
+    "es": "Núremberg: verano y Navidad",
+    "de": "Nürnberg: Sommer und Weihnachten"
+   },
+   "author": "Igor Kartuzov",
+   "langs": [
+    "ru",
+    "en",
+    "pt",
+    "es",
+    "de"
+   ],
+   "dataUrl": "data/nuremberg-igor.json",
+   "hubUrl": "https://seedwave.pt/hub/",
+   "live": true
   }
  ]
 }

@@ -1,0 +1,1027 @@
+{
+ "schema": 1,
+ "meta": {
+  "id": "nuremberg-igor",
+  "author": "Igor Kartuzov",
+  "hubUrl": "https://seedwave.pt/hub/",
+  "linkedin": "https://www.linkedin.com/in/igor-kartuzov/",
+  "city": {
+   "ru": "Нюрнберг",
+   "en": "Nuremberg",
+   "pt": "Nuremberga",
+   "es": "Núremberg",
+   "de": "Nürnberg"
+  },
+  "icon": "icons/nuremberg.svg",
+  "appleIcon": "icons/nuremberg-180.png",
+  "theme": {
+   "bg": "#17191C",
+   "bg2": "#1E2124",
+   "bg3": "#26292D",
+   "ink": "#F3EEE8",
+   "muted": "#ACB1B5",
+   "faint": "#6E747A",
+   "accent": "#D96F55",
+   "accent2": "#E8876D",
+   "accentInk": "#17191C",
+   "card": "#1E2124",
+   "line": "#30343A",
+   "tile": "#26292D"
+  },
+  "themeLight": {
+   "bg": "#F5F2EE",
+   "bg2": "#FFFFFF",
+   "bg3": "#FBF8F4",
+   "ink": "#22262A",
+   "muted": "#5E656B",
+   "faint": "#9AA0A6",
+   "accent": "#A2412C",
+   "accent2": "#BA5640",
+   "accentInk": "#FFFFFF",
+   "card": "#FFFFFF",
+   "line": "#E5DED6",
+   "tile": "#F1EBE4"
+  },
+  "shareBase": "share/",
+  "planStart": "weisserturm",
+  "planFrom": "11:00",
+  "planTo": "19:00"
+ },
+ "intro": {
+  "eyebrow": {
+   "ru": "Гид · Нюрнберг пешком",
+   "en": "Guide · Nuremberg on foot",
+   "pt": "Guia · Nuremberga a pé",
+   "es": "Guía · Núremberg a pie",
+   "de": "Guide · Nürnberg zu Fuß"
+  },
+  "title": {
+   "ru": "Нюрнберг: лето и Рождество",
+   "en": "Nuremberg: summer and Christmas",
+   "pt": "Nuremberga: verão e Natal",
+   "es": "Núremberg: verano y Navidad",
+   "de": "Nürnberg: Sommer und Weihnachten"
+  },
+  "sub": {
+   "ru": "Две наши поездки — 3 августа 2024 и 21 ноября 2026. Река и крытые мосты летом, огни, колесо обозрения и глинтвейн в ноябре. Колбаски с утиной ножкой у Дюрера и спешелти-кофе у крепости. Гид пополняется.",
+   "en": "Two of our trips — 3 August 2024 and 21 November 2026. The river and covered bridges in summer; lights, a Ferris wheel and mulled wine in November. Sausages and duck leg by Dürer's house, specialty coffee by the castle. The guide keeps growing.",
+   "pt": "Duas viagens nossas — 3 de agosto de 2024 e 21 de novembro de 2026. O rio e as pontes cobertas no verão; luzes, roda-gigante e vinho quente em novembro. Salsichas e perna de pato junto à casa de Dürer, café de especialidade junto ao castelo. O guia continua a crescer.",
+   "es": "Dos viajes nuestros — 3 de agosto de 2024 y 21 de noviembre de 2026. El río y los puentes cubiertos en verano; luces, noria y vino caliente en noviembre. Salchichas y muslo de pato junto a la casa de Durero, café de especialidad junto al castillo. La guía sigue creciendo.",
+   "de": "Zwei unserer Reisen — 3. August 2024 und 21. November 2026. Der Fluss und die überdachten Stege im Sommer; Lichter, Riesenrad und Glühwein im November. Bratwürste und Entenkeule bei Dürer, Specialty Coffee an der Burg. Der Guide wächst weiter."
+  }
+ },
+ "regions": {
+  "nbg-lorenz": {
+   "ru": "Лоренц · Белая башня",
+   "en": "Lorenz · White Tower",
+   "pt": "Lorenz · Torre Branca",
+   "es": "Lorenz · Torre Blanca",
+   "de": "Lorenz · Weißer Turm"
+  },
+  "nbg-sebald": {
+   "ru": "Себальд и река",
+   "en": "Sebald and the river",
+   "pt": "Sebald e o rio",
+   "es": "Sebald y el río",
+   "de": "Sebald und der Fluss"
+  }
+ },
+ "autoSkip": [
+  "nbg-lorenz",
+  "nbg-sebald"
+ ],
+ "regionOrder": [
+  "nbg-lorenz",
+  "nbg-sebald"
+ ],
+ "points": [
+  {
+   "id": "weisserturm",
+   "name": "Weißer Turm",
+   "lat": 49.4504445,
+   "lon": 11.0706699,
+   "place_id": "ChIJlV6Fa6lXn0cRF5H8Ao4fulc",
+   "reg": "nbg-lorenz",
+   "addr": "Ludwigsplatz",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/nuremberg/weisserturm.jpg",
+   "note": {
+    "ru": "Белая башня — ворота в старый город. В ноябре к четырём уже темно: улица в огнях, отсюда начинается праздничная часть города. От паркинга Jakobsmarkt — пять минут.",
+    "en": "The White Tower is the gateway to the old town. In November it is dark by four: the street is lit up and the festive part of the city starts here. Five minutes from the Jakobsmarkt car park.",
+    "pt": "A Torre Branca é a porta da cidade velha. Em novembro às quatro já é noite: a rua acende-se e começa aqui a parte festiva da cidade. A cinco minutos do parque Jakobsmarkt.",
+    "es": "La Torre Blanca es la puerta del casco antiguo. En noviembre a las cuatro ya es de noche: la calle se ilumina y aquí empieza la parte festiva. A cinco minutos del parking Jakobsmarkt.",
+    "de": "Der Weiße Turm ist das Tor zur Altstadt. Im November ist es um vier dunkel: die Straße leuchtet, hier beginnt der festliche Teil der Stadt. Fünf Minuten vom Parkhaus Jakobsmarkt."
+   },
+   "hours": {
+    "ru": "Снаружи — всегда",
+    "en": "Outside — always",
+    "pt": "Por fora — sempre",
+    "es": "Por fuera — siempre",
+    "de": "Von außen — immer"
+   },
+   "indoor": false,
+   "dwell": 10
+  },
+  {
+   "id": "winterdorf",
+   "name": "WinterDorf mit Riesenrad am Jakobsplatz",
+   "lat": 49.4500374,
+   "lon": 11.0701584,
+   "place_id": "ChIJRx6p04tXn0cRUWkbgHVWlaA",
+   "reg": "nbg-lorenz",
+   "rating": 4.6,
+   "count": 156,
+   "addr": "Jakobsplatz",
+   "tags": [
+    "bar"
+   ],
+   "secret": false,
+   "photo": "photos/nuremberg/winterdorf.jpg",
+   "note": {
+    "ru": "Рождественский городок с колесом обозрения: деревянная пирамида Winzer Glühwein, ларьки с сосисками и пряниками. Глинтвейн в кружке — обязательно!",
+    "en": "A Christmas village with a Ferris wheel: the wooden Winzer Glühwein pyramid, stalls with sausages and gingerbread. Mulled wine in a mug — a must!",
+    "pt": "Uma aldeia de Natal com roda-gigante: a pirâmide de madeira Winzer Glühwein, bancas de salsichas e pão de gengibre. Vinho quente na caneca — obrigatório!",
+    "es": "Un pueblo navideño con noria: la pirámide de madera Winzer Glühwein, puestos de salchichas y pan de jengibre. Vino caliente en taza — ¡imprescindible!",
+    "de": "Ein Winterdorf mit Riesenrad: die hölzerne Winzer-Glühwein-Pyramide, Buden mit Bratwurst und Lebkuchen. Glühwein im Becher — Pflicht!"
+   },
+   "hours": {
+    "ru": "В сезон: пн–чт, вс 11:00–21:00; пт–сб до 22:00",
+    "en": "In season: Mon–Thu, Sun 11 am–9 pm; Fri–Sat until 10 pm",
+    "pt": "Na época: seg–qui, dom 11:00–21:00; sex–sáb até às 22:00",
+    "es": "En temporada: lun–jue, dom 11:00–21:00; vie–sáb hasta las 22:00",
+    "de": "In der Saison: Mo–Do, So 11–21 Uhr; Fr–Sa bis 22 Uhr"
+   },
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ]
+   },
+   "indoor": false,
+   "dwell": 60
+  },
+  {
+   "id": "schoenerbrunnen",
+   "name": "Schöner Brunnen",
+   "lat": 49.454238,
+   "lon": 11.0770384,
+   "place_id": "ChIJBebKdABXn0cRVfgWZef27IU",
+   "reg": "nbg-sebald",
+   "rating": 4.7,
+   "count": 11030,
+   "addr": "Hauptmarkt",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "photos/nuremberg/schoenerbrunnen.jpg",
+   "note": {
+    "ru": "Красивый фонтан на Главной рыночной площади — позолоченный шпиль, рядом Фрауэнкирхе. Сердце старого города и главный рождественский рынок.",
+    "en": "The Beautiful Fountain on the Main Market square — a gilded spire with the Frauenkirche beside it. The heart of the old town and the main Christmas market.",
+    "pt": "A Fonte Bonita na praça do Mercado Principal — uma agulha dourada, com a Frauenkirche ao lado. O coração da cidade velha e o principal mercado de Natal.",
+    "es": "La Fuente Bonita en la plaza del Mercado Principal — una aguja dorada junto a la Frauenkirche. El corazón del casco antiguo y el gran mercado navideño.",
+    "de": "Der Schöne Brunnen am Hauptmarkt — eine vergoldete Turmspitze, daneben die Frauenkirche. Das Herz der Altstadt und der große Christkindlesmarkt."
+   },
+   "hours": {
+    "ru": "Всегда",
+    "en": "Always",
+    "pt": "Sempre",
+    "es": "Siempre",
+    "de": "Immer"
+   },
+   "indoor": false,
+   "dwell": 15
+  },
+  {
+   "id": "henkersteg",
+   "name": "Henkersteg",
+   "lat": 49.4531258,
+   "lon": 11.0730657,
+   "place_id": "ChIJl148BEhXn0cRzI-HnEFVlmc",
+   "reg": "nbg-sebald",
+   "rating": 4.8,
+   "count": 393,
+   "addr": "Henkersteg",
+   "tags": [
+    "view"
+   ],
+   "secret": false,
+   "photo": "photos/nuremberg/henkersteg.jpg",
+   "note": {
+    "ru": "Самые открыточные виды Нюрнберга: крытый деревянный мост, дома прямо над водой, отражения в Пегнице. Идти вдоль реки не спеша — летом здесь лучше всего.",
+    "en": "Nuremberg's most postcard views: a covered wooden bridge, houses right above the water, reflections in the Pegnitz. Walk the river slowly — best in summer.",
+    "pt": "As vistas mais de postal de Nuremberga: uma ponte de madeira coberta, casas mesmo sobre a água, reflexos no Pegnitz. Caminhar devagar junto ao rio — no verão é o melhor.",
+    "es": "Las vistas más de postal de Núremberg: un puente de madera cubierto, casas sobre el agua, reflejos en el Pegnitz. Pasear despacio junto al río — en verano es lo mejor.",
+    "de": "Nürnbergs Postkartenblicke: ein überdachter Holzsteg, Häuser direkt über dem Wasser, Spiegelungen in der Pegnitz. Langsam am Fluss entlang — im Sommer am schönsten."
+   },
+   "hours": {
+    "ru": "Всегда",
+    "en": "Always",
+    "pt": "Sempre",
+    "es": "Siempre",
+    "de": "Immer"
+   },
+   "indoor": false,
+   "dwell": 30
+  },
+  {
+   "id": "schlayerturm",
+   "name": "Schlayerturm · Kettensteg",
+   "lat": 49.4543962,
+   "lon": 11.0707664,
+   "place_id": "ChIJW2kxd31Xn0cR8k46LW5ofiQ",
+   "reg": "nbg-sebald",
+   "rating": 4.7,
+   "count": 109,
+   "addr": "Kettensteg",
+   "tags": [
+    "view"
+   ],
+   "secret": true,
+   "photo": "photos/nuremberg/schlayer.jpg",
+   "note": {
+    "ru": "Чуть дальше по реке от Henkersteg — тише и зеленее: старые крепостные башни у воды, туристов заметно меньше. Хорошее место для фото.",
+    "en": "A little further down the river from Henkersteg — quieter and greener: old fortification towers by the water and far fewer tourists. A good spot for photos.",
+    "pt": "Um pouco mais à frente no rio, depois da Henkersteg — mais sossegado e verde: velhas torres da muralha junto à água e muito menos turistas. Bom sítio para fotos.",
+    "es": "Un poco más allá del Henkersteg, río abajo — más tranquilo y verde: viejas torres de la muralla junto al agua y muchos menos turistas. Buen sitio para fotos.",
+    "de": "Ein Stück flussabwärts vom Henkersteg — ruhiger und grüner: alte Wehrtürme am Wasser, deutlich weniger Touristen. Ein guter Fotoplatz."
+   },
+   "hours": {
+    "ru": "Всегда",
+    "en": "Always",
+    "pt": "Sempre",
+    "es": "Siempre",
+    "de": "Immer"
+   },
+   "indoor": false,
+   "dwell": 20
+  },
+  {
+   "id": "duererstube",
+   "name": "Albrecht-Dürer-Stube",
+   "lat": 49.456201,
+   "lon": 11.074386,
+   "place_id": "ChIJwxw5Lq5Xn0cRw_bqetNpcu4",
+   "reg": "nbg-sebald",
+   "rating": 4.7,
+   "count": 2074,
+   "addr": "Albrecht-Dürer-Straße 6",
+   "tags": [
+    "food"
+   ],
+   "secret": true,
+   "photo": "photos/nuremberg/duererstube.jpg",
+   "note": {
+    "ru": "Вот она — настоящая Франкония! Маленькие нюрнбергские колбаски с жареной картошечкой и хреном, утиная ножка с кнёдлем и красной капустой. Уютная старая «штубе»: абажуры, картины, Дюрер на стене. Столик лучше бронировать: +49 911 227209",
+    "en": "Here it is — the real Franconia! Little Nuremberg sausages with fried potatoes and horseradish, duck leg with dumpling and red cabbage. A cosy old 'Stube': lampshades, paintings, Dürer on the wall. Book a table: +49 911 227209",
+    "pt": "Aqui está — a verdadeira Francónia! Salsichinhas de Nuremberga com batata salteada e rábano, perna de pato com knödel e couve roxa. Uma 'Stube' antiga e acolhedora: candeeiros, quadros, Dürer na parede. Reservar mesa: +49 911 227209",
+    "es": "¡Aquí está la auténtica Franconia! Salchichitas de Núremberg con patatas salteadas y rábano picante, muslo de pato con knödel y lombarda. Una 'Stube' antigua y acogedora: lámparas, cuadros, Durero en la pared. Reservar mesa: +49 911 227209",
+    "de": "Hier ist es — das echte Franken! Kleine Nürnberger Bratwürste mit Bratkartoffeln und Meerrettich, Entenkeule mit Kloß und Blaukraut. Eine gemütliche alte Stube: Lampenschirme, Bilder, Dürer an der Wand. Tisch reservieren: +49 911 227209"
+   },
+   "hours": {
+    "ru": "Обычно ужин с 17:30; обед — пт и вс 11:30–15:00. Мы обедали в субботу днём — часы уточняйте",
+    "en": "Usually dinner from 5:30 pm; lunch Fri and Sun 11:30 am–3 pm. We had lunch on a Saturday — check the hours",
+    "pt": "Normalmente jantar a partir das 17:30; almoço sex e dom 11:30–15:00. Almoçámos num sábado — confirmar horário",
+    "es": "Normalmente cena desde las 17:30; comida vie y dom 11:30–15:00. Comimos un sábado — confirmar horario",
+    "de": "Meist Abendessen ab 17:30; mittags Fr und So 11:30–15 Uhr. Wir waren an einem Samstagmittag da — Zeiten prüfen"
+   },
+   "open": {
+    "1": [
+     [
+      "17:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "17:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "17:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "17:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "15:00"
+     ],
+     [
+      "17:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "17:30",
+      "24:00"
+     ]
+    ],
+    "0": [
+     [
+      "11:30",
+      "15:00"
+     ]
+    ]
+   },
+   "indoor": true,
+   "dwell": 90
+  },
+  {
+   "id": "duererhaus",
+   "name": "Albrecht-Dürer-Haus",
+   "lat": 49.4571961,
+   "lon": 11.0737762,
+   "place_id": "ChIJhSIs3LFXn0cR55XgdYda0BI",
+   "reg": "nbg-sebald",
+   "rating": 4.5,
+   "count": 3620,
+   "addr": "Albrecht-Dürer-Straße 39",
+   "tags": [
+    "sight"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Самый центр старый 😁! Дом художника у крепостной стены, в двух шагах от Albrecht-Dürer-Stube.",
+    "en": "The oldest heart of the centre 😁! The painter's house by the city wall, two steps from the Albrecht-Dürer-Stube.",
+    "pt": "O centro mais antigo 😁! A casa do pintor junto à muralha, a dois passos da Albrecht-Dürer-Stube.",
+    "es": "¡El centro más antiguo 😁! La casa del pintor junto a la muralla, a dos pasos de la Albrecht-Dürer-Stube.",
+    "de": "Die älteste Mitte 😁! Das Haus des Malers an der Stadtmauer, zwei Schritte von der Albrecht-Dürer-Stube."
+   },
+   "hours": {
+    "ru": "Вт–вс 10:00–18:00, пн выходной",
+    "en": "Tue–Sun 10 am–6 pm, closed Mon",
+    "pt": "Ter–dom 10:00–18:00, fecha à seg",
+    "es": "Mar–dom 10:00–18:00, lunes cerrado",
+    "de": "Di–So 10–18 Uhr, Mo geschlossen"
+   },
+   "open": {
+    "1": [],
+    "2": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "0": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ]
+   },
+   "indoor": true,
+   "dwell": 60
+  },
+  {
+   "id": "bulldog",
+   "name": "White Bulldog Kaffeerösterei",
+   "lat": 49.4573068,
+   "lon": 11.0833541,
+   "place_id": "ChIJz0NZFrtXn0cRzl6z7nLc7HY",
+   "reg": "nbg-sebald",
+   "rating": 4.5,
+   "count": 351,
+   "addr": "Hirschelgasse 1",
+   "tags": [
+    "coffee"
+   ],
+   "secret": true,
+   "photo": "photos/nuremberg/bulldog.jpg",
+   "note": {
+    "ru": "Свой ростер прямо в зале — и это чувствуется в чашке! Кофе — настоящий спешелти. А бутеры с авокадо и разными начинками — отдельная радость. Летом — столики на улице под зонтиками.",
+    "en": "Their own roaster right in the room — and you taste it in the cup! Real specialty coffee. And the avocado sandwiches with different toppings are a joy of their own. In summer — tables outside under umbrellas.",
+    "pt": "Torrador próprio mesmo na sala — e nota-se na chávena! Café de especialidade a sério. E as tostas de abacate com vários recheios são uma alegria à parte. No verão — mesas na rua, debaixo dos chapéus.",
+    "es": "Tostador propio en plena sala — ¡y se nota en la taza! Café de especialidad de verdad. Y las tostadas de aguacate con distintos toppings son una alegría aparte. En verano — mesas fuera bajo sombrillas.",
+    "de": "Eigene Röstmaschine mitten im Raum — und das schmeckt man in der Tasse! Echter Specialty Coffee. Und die Avocado-Stullen mit verschiedenen Belägen sind eine Freude für sich. Im Sommer — Tische draußen unter Schirmen."
+   },
+   "hours": {
+    "ru": "Пн–пт 08:00–18:30 (вт до 18:00), сб 10:00–18:00, вс выходной",
+    "en": "Mon–Fri 8 am–6:30 pm (Tue to 6 pm), Sat 10 am–6 pm, closed Sun",
+    "pt": "Seg–sex 08:00–18:30 (ter até 18:00), sáb 10:00–18:00, dom fechado",
+    "es": "Lun–vie 08:00–18:30 (mar hasta 18:00), sáb 10:00–18:00, dom cerrado",
+    "de": "Mo–Fr 8–18:30 Uhr (Di bis 18 Uhr), Sa 10–18 Uhr, So geschlossen"
+   },
+   "open": {
+    "1": [
+     [
+      "08:00",
+      "18:30"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "18:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "18:30"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "18:30"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "18:30"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "18:00"
+     ]
+    ],
+    "0": []
+   },
+   "indoor": true,
+   "dwell": 45
+  },
+  {
+   "id": "bratwurst",
+   "name": "Bratwursthäusle",
+   "lat": 49.4549976,
+   "lon": 11.0767387,
+   "place_id": "ChIJZwLEja9Xn0cRq0MaCwLu78M",
+   "reg": "nbg-sebald",
+   "rating": 4.3,
+   "count": 9114,
+   "addr": "Rathausplatz 1",
+   "tags": [
+    "food"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "«Нюрнбергские сосиски! И картофельный салат!» — у нас в списке на следующий раз. Колбаски жарят на открытом огне прямо в зале, у церкви Святого Зебальда.",
+    "en": "\"Nuremberg sausages! And potato salad!\" — on our list for next time. The sausages are grilled over an open fire in the dining room, by St Sebald's church.",
+    "pt": "«Salsichas de Nuremberga! E salada de batata!» — na nossa lista para a próxima. As salsichas grelham em lume aberto na sala, junto à igreja de São Sebaldo.",
+    "es": "«¡Salchichas de Núremberg! ¡Y ensalada de patata!» — en nuestra lista para la próxima. Las salchichas se asan a fuego abierto en el comedor, junto a la iglesia de San Sebaldo.",
+    "de": "„Nürnberger Würstchen! Und Kartoffelsalat!“ — auf unserer Liste fürs nächste Mal. Die Würste werden im Gastraum über offenem Feuer gegrillt, an der Sebalduskirche."
+   },
+   "hours": {
+    "ru": "Пн–сб 11:00–22:00, вс до 20:00",
+    "en": "Mon–Sat 11 am–10 pm, Sun until 8 pm",
+    "pt": "Seg–sáb 11:00–22:00, dom até às 20:00",
+    "es": "Lun–sáb 11:00–22:00, dom hasta las 20:00",
+    "de": "Mo–Sa 11–22 Uhr, So bis 20 Uhr"
+   },
+   "open": {
+    "1": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "0": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ]
+   },
+   "indoor": true,
+   "dwell": 60
+  },
+  {
+   "id": "troedelstuben",
+   "name": "Trödelstuben",
+   "lat": 49.453285,
+   "lon": 11.0746114,
+   "place_id": "ChIJqc-kEK9Xn0cRv6QIZ_VM82E",
+   "reg": "nbg-sebald",
+   "rating": 4.5,
+   "count": 5165,
+   "addr": "Trödelmarkt 30",
+   "tags": [
+    "food",
+    "wine"
+   ],
+   "secret": false,
+   "photo": "",
+   "note": {
+    "ru": "Винная и пивная комнаты на островке Trödelmarkt, у самого Henkersteg. В нашем списке на следующий раз — удобно совместить с прогулкой по реке.",
+    "en": "Wine and beer rooms on the little Trödelmarkt island, right by the Henkersteg. On our list for next time — easy to combine with the river walk.",
+    "pt": "Salas de vinho e de cerveja na ilhota de Trödelmarkt, mesmo junto à Henkersteg. Na nossa lista para a próxima — fácil de juntar ao passeio pelo rio.",
+    "es": "Salas de vino y cerveza en la islita de Trödelmarkt, junto al Henkersteg. En nuestra lista para la próxima — fácil de combinar con el paseo por el río.",
+    "de": "Wein- und Bierstuben auf der kleinen Trödelmarkt-Insel, direkt am Henkersteg. Auf unserer Liste fürs nächste Mal — gut mit dem Flussspaziergang zu verbinden."
+   },
+   "hours": {
+    "ru": "Ежедневно 11:00–23:00",
+    "en": "Daily 11 am–11 pm",
+    "pt": "Todos os dias 11:00–23:00",
+    "es": "Todos los días 11:00–23:00",
+    "de": "Täglich 11–23 Uhr"
+   },
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ]
+   },
+   "indoor": true,
+   "dwell": 75
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "nbg-advent",
+   "feat": true,
+   "route": [
+    "weisserturm",
+    "winterdorf",
+    "schoenerbrunnen",
+    "duererstube"
+   ],
+   "title": {
+    "ru": "Рождественский вечер в старом городе",
+    "en": "A Christmas evening in the old town",
+    "pt": "Uma noite de Natal na cidade velha",
+    "es": "Una tarde de Navidad en el casco antiguo",
+    "de": "Ein Adventsabend in der Altstadt"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "sunset",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 49.4527,
+   "sunLon": 11.075,
+   "why": {
+    "ru": "Проверено 21 ноября 2026: в сумерках от Белой башни — колесо обозрения и глинтвейн, фонтан на Главной площади и франконский ужин у Дюрера. Всё пешком, около 2 км.",
+    "en": "Tested on 21 November 2026: at dusk from the White Tower — Ferris wheel and mulled wine, the fountain on the Main Market and a Franconian dinner by Dürer's house. All on foot, about 2 km.",
+    "pt": "Testado a 21 de novembro de 2026: ao entardecer da Torre Branca — roda-gigante e vinho quente, a fonte do Mercado Principal e um jantar franconiano junto à casa de Dürer. Tudo a pé, cerca de 2 km.",
+    "es": "Probado el 21 de noviembre de 2026: al atardecer desde la Torre Blanca — noria y vino caliente, la fuente del Mercado Principal y una cena franconia junto a la casa de Durero. Todo a pie, unos 2 km.",
+    "de": "Getestet am 21. November 2026: in der Dämmerung vom Weißen Turm — Riesenrad und Glühwein, der Brunnen am Hauptmarkt und ein fränkisches Abendessen bei Dürer. Alles zu Fuß, etwa 2 km."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Белая башня в огнях",
+      "en": "The White Tower lit up",
+      "pt": "A Torre Branca iluminada",
+      "es": "La Torre Blanca iluminada",
+      "de": "Der Weiße Turm im Lichterglanz"
+     },
+     "m": {
+      "ru": "16:00 · машину оставить в паркинге Jakobsmarkt",
+      "en": "4 pm · leave the car at the Jakobsmarkt car park",
+      "pt": "16:00 · deixar o carro no parque Jakobsmarkt",
+      "es": "16:00 · dejar el coche en el parking Jakobsmarkt",
+      "de": "16 Uhr · Auto im Parkhaus Jakobsmarkt lassen"
+     }
+    },
+    {
+     "n": {
+      "ru": "Колесо обозрения и глинтвейн",
+      "en": "Ferris wheel and mulled wine",
+      "pt": "Roda-gigante e vinho quente",
+      "es": "Noria y vino caliente",
+      "de": "Riesenrad und Glühwein"
+     },
+     "m": {
+      "ru": "16:15–17:15 · WinterDorf на Jakobsplatz",
+      "en": "4:15–5:15 pm · WinterDorf on Jakobsplatz",
+      "pt": "16:15–17:15 · WinterDorf na Jakobsplatz",
+      "es": "16:15–17:15 · WinterDorf en la Jakobsplatz",
+      "de": "16:15–17:15 · WinterDorf am Jakobsplatz"
+     }
+    },
+    {
+     "n": {
+      "ru": "Красивый фонтан и рождественский рынок",
+      "en": "The Beautiful Fountain and the Christmas market",
+      "pt": "A Fonte Bonita e o mercado de Natal",
+      "es": "La Fuente Bonita y el mercado navideño",
+      "de": "Schöner Brunnen und Christkindlesmarkt"
+     },
+     "m": {
+      "ru": "17:30 · через пешеходную улицу и мост, 15 минут",
+      "en": "5:30 pm · along the pedestrian street and over the bridge, 15 min",
+      "pt": "17:30 · pela rua pedonal e a ponte, 15 min",
+      "es": "17:30 · por la calle peatonal y el puente, 15 min",
+      "de": "17:30 · über die Fußgängerzone und die Brücke, 15 Min."
+     }
+    },
+    {
+     "n": {
+      "ru": "Ужин в Albrecht-Dürer-Stube",
+      "en": "Dinner at the Albrecht-Dürer-Stube",
+      "pt": "Jantar na Albrecht-Dürer-Stube",
+      "es": "Cena en la Albrecht-Dürer-Stube",
+      "de": "Abendessen in der Albrecht-Dürer-Stube"
+     },
+     "m": {
+      "ru": "18:30 · колбаски или утиная ножка, столик забронировать заранее",
+      "en": "6:30 pm · sausages or duck leg, book the table in advance",
+      "pt": "18:30 · salsichinhas ou perna de pato, reservar mesa",
+      "es": "18:30 · salchichitas o muslo de pato, reservar mesa",
+      "de": "18:30 · Bratwürste oder Entenkeule, Tisch vorab reservieren"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "В ноябре темнеет к 16:30 — начинайте маршрут в сумерках, тогда все огни уже горят",
+     "en": "In November it gets dark by 4:30 pm — start at dusk so that all the lights are on",
+     "pt": "Em novembro escurece às 16:30 — comecem ao entardecer, com as luzes já acesas",
+     "es": "En noviembre oscurece a las 16:30 — empezad al atardecer, con todas las luces ya encendidas",
+     "de": "Im November wird es gegen 16:30 dunkel — in der Dämmerung starten, dann leuchtet schon alles"
+    }
+   ],
+   "park": {
+    "ru": "Паркинг Jakobsmarkt (Zirkelschmiedsgasse 9) — крытый, около 2 € в час, туалеты есть. До Белой башни пять минут пешком.",
+    "en": "Jakobsmarkt car park (Zirkelschmiedsgasse 9) — covered, about €2 an hour, with toilets. Five minutes on foot to the White Tower.",
+    "pt": "Parque Jakobsmarkt (Zirkelschmiedsgasse 9) — coberto, cerca de 2 € por hora, com WC. Cinco minutos a pé até à Torre Branca.",
+    "es": "Parking Jakobsmarkt (Zirkelschmiedsgasse 9) — cubierto, unos 2 € por hora, con aseos. Cinco minutos a pie hasta la Torre Blanca.",
+    "de": "Parkhaus Jakobsmarkt (Zirkelschmiedsgasse 9) — überdacht, etwa 2 € pro Stunde, mit WC. Fünf Minuten zu Fuß zum Weißen Turm."
+   },
+   "wear": {
+    "ru": "Ноябрь: тёплая куртка, шапка и шарф — у ларьков стоишь долго; удобная обувь по брусчатке",
+    "en": "November: a warm jacket, hat and scarf — you stand a long time at the stalls; comfortable shoes for the cobbles",
+    "pt": "Novembro: casaco quente, gorro e cachecol — fica-se muito tempo nas bancas; calçado confortável para a calçada",
+    "es": "Noviembre: abrigo, gorro y bufanda — se pasa mucho rato en los puestos; calzado cómodo para el empedrado",
+    "de": "November: warme Jacke, Mütze und Schal — man steht lange an den Buden; bequeme Schuhe fürs Pflaster"
+   }
+  },
+  {
+   "id": "nbg-leto",
+   "feat": true,
+   "route": [
+    "bulldog",
+    "duererhaus",
+    "henkersteg",
+    "schlayerturm"
+   ],
+   "title": {
+    "ru": "Летний день у Пегница",
+    "en": "A summer day on the Pegnitz",
+    "pt": "Um dia de verão junto ao Pegnitz",
+    "es": "Un día de verano junto al Pegnitz",
+    "de": "Ein Sommertag an der Pegnitz"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "day",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 49.4527,
+   "sunLon": 11.075,
+   "why": {
+    "ru": "Проверено 3 августа 2024: кофе и бутеры с авокадо в White Bulldog, Дом Дюрера, потом вниз к реке — крытый мост, дома над водой, бокал белого на улочке у реки.",
+    "en": "Tested on 3 August 2024: coffee and avocado sandwiches at White Bulldog, Dürer's House, then down to the river — the covered bridge, houses above the water, a glass of white in a lane by the river.",
+    "pt": "Testado a 3 de agosto de 2024: café e tostas de abacate no White Bulldog, a Casa de Dürer, depois até ao rio — a ponte coberta, casas sobre a água, um copo de branco numa ruela junto ao rio.",
+    "es": "Probado el 3 de agosto de 2024: café y tostadas de aguacate en White Bulldog, la Casa de Durero y luego al río — el puente cubierto, casas sobre el agua, una copa de blanco en una callejuela junto al río.",
+    "de": "Getestet am 3. August 2024: Kaffee und Avocado-Stullen im White Bulldog, das Dürer-Haus, dann hinunter zum Fluss — der überdachte Steg, Häuser über dem Wasser, ein Glas Weißwein in einer Gasse am Fluss."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Кофе и бутеры в White Bulldog",
+      "en": "Coffee and sandwiches at White Bulldog",
+      "pt": "Café e tostas no White Bulldog",
+      "es": "Café y tostadas en White Bulldog",
+      "de": "Kaffee und Stullen im White Bulldog"
+     },
+     "m": {
+      "ru": "12:30 · столик на улице под зонтиком",
+      "en": "12:30 pm · a table outside under an umbrella",
+      "pt": "12:30 · mesa na rua, debaixo do chapéu",
+      "es": "12:30 · mesa fuera bajo la sombrilla",
+      "de": "12:30 · Tisch draußen unterm Schirm"
+     }
+    },
+    {
+     "n": {
+      "ru": "Дом Дюрера",
+      "en": "Dürer's House",
+      "pt": "Casa de Dürer",
+      "es": "Casa de Durero",
+      "de": "Dürer-Haus"
+     },
+     "m": {
+      "ru": "14:00 · 10 минут пешком вверх к крепостной стене",
+      "en": "2 pm · 10 minutes uphill to the city wall",
+      "pt": "14:00 · 10 minutos a subir até à muralha",
+      "es": "14:00 · 10 minutos cuesta arriba hasta la muralla",
+      "de": "14 Uhr · 10 Minuten bergauf zur Stadtmauer"
+     }
+    },
+    {
+     "n": {
+      "ru": "Набережная и Henkersteg",
+      "en": "The riverbank and Henkersteg",
+      "pt": "A margem e a Henkersteg",
+      "es": "La orilla y el Henkersteg",
+      "de": "Das Ufer und der Henkersteg"
+     },
+     "m": {
+      "ru": "15:30 · вниз к Пегницу, крытый деревянный мост",
+      "en": "3:30 pm · down to the Pegnitz, the covered wooden bridge",
+      "pt": "15:30 · descer até ao Pegnitz, a ponte de madeira coberta",
+      "es": "15:30 · bajar al Pegnitz, el puente de madera cubierto",
+      "de": "15:30 · hinunter zur Pegnitz, der überdachte Holzsteg"
+     }
+    },
+    {
+     "n": {
+      "ru": "Башни у Kettensteg и бокал у реки",
+      "en": "Towers by the Kettensteg and a glass by the river",
+      "pt": "Torres junto à Kettensteg e um copo junto ao rio",
+      "es": "Torres junto al Kettensteg y una copa junto al río",
+      "de": "Türme am Kettensteg und ein Glas am Fluss"
+     },
+     "m": {
+      "ru": "16:15 · тихая часть реки; столик на улочке — для бокала белого",
+      "en": "4:15 pm · the quiet stretch of river; a table in a lane for a glass of white",
+      "pt": "16:15 · a parte sossegada do rio; uma mesa na ruela para um copo de branco",
+      "es": "16:15 · el tramo tranquilo del río; una mesa en la callejuela para una copa de blanco",
+      "de": "16:15 · der ruhige Flussabschnitt; ein Tisch in der Gasse für ein Glas Weißwein"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Лучший свет на реке — во второй половине дня, когда солнце за спиной и дома отражаются в воде",
+     "en": "The best light on the river is in the afternoon, with the sun behind you and the houses mirrored in the water",
+     "pt": "A melhor luz no rio é à tarde, com o sol nas costas e as casas refletidas na água",
+     "es": "La mejor luz en el río es por la tarde, con el sol a la espalda y las casas reflejadas en el agua",
+     "de": "Das beste Licht am Fluss gibt es am Nachmittag, mit der Sonne im Rücken und den Häusern im Wasser gespiegelt"
+    }
+   ],
+   "park": {
+    "ru": "Паркинг Jakobsmarkt — ближайший к реке и старому городу; летом в выходные лучше приезжать до обеда.",
+    "en": "Jakobsmarkt car park — the closest to the river and the old town; at summer weekends arrive before lunch.",
+    "pt": "Parque Jakobsmarkt — o mais próximo do rio e da cidade velha; aos fins de semana de verão chegar antes do almoço.",
+    "es": "Parking Jakobsmarkt — el más cercano al río y al casco antiguo; los fines de semana de verano, llegar antes de comer.",
+    "de": "Parkhaus Jakobsmarkt — am nächsten an Fluss und Altstadt; an Sommerwochenenden vor Mittag kommen."
+   },
+   "wear": {
+    "ru": "Август: лёгкая одежда, солнечные очки, удобная обувь — много брусчатки и подъём к крепости",
+    "en": "August: light clothes, sunglasses, comfortable shoes — lots of cobbles and a climb to the castle wall",
+    "pt": "Agosto: roupa leve, óculos de sol, calçado confortável — muita calçada e uma subida até à muralha",
+    "es": "Agosto: ropa ligera, gafas de sol, calzado cómodo — mucho empedrado y una subida hasta la muralla",
+    "de": "August: leichte Kleidung, Sonnenbrille, bequeme Schuhe — viel Pflaster und ein Anstieg zur Stadtmauer"
+   }
+  },
+  {
+   "id": "nbg-kolbaski",
+   "feat": true,
+   "route": [
+    "schoenerbrunnen",
+    "bratwurst",
+    "troedelstuben"
+   ],
+   "title": {
+    "ru": "Нюрнбергские колбаски: на следующий раз",
+    "en": "Nuremberg sausages: for next time",
+    "pt": "Salsichas de Nuremberga: para a próxima",
+    "es": "Salchichas de Núremberg: para la próxima",
+    "de": "Nürnberger Bratwürste: fürs nächste Mal"
+   },
+   "duration": "half",
+   "car": false,
+   "light": "any",
+   "act": [
+    "walk",
+    "food"
+   ],
+   "sunLat": 49.4527,
+   "sunLon": 11.075,
+   "why": {
+    "ru": "Два места из нашего списка «хочу посетить» рядом с Главной площадью: колбаски с открытого огня и винные комнаты на островке у Henkersteg. Ещё не проверено нами — проверим и допишем.",
+    "en": "Two places from our 'want to go' list near the Main Market: sausages from an open fire and the wine rooms on the island by the Henkersteg. Not tested by us yet — we will try them and update.",
+    "pt": "Dois sítios da nossa lista «quero visitar» junto ao Mercado Principal: salsichas no lume aberto e as salas de vinho na ilhota junto à Henkersteg. Ainda não testado por nós — vamos experimentar e atualizar.",
+    "es": "Dos sitios de nuestra lista «quiero ir» junto al Mercado Principal: salchichas a fuego abierto y las salas de vino en la islita junto al Henkersteg. Aún no probado por nosotros — lo probaremos y actualizaremos.",
+    "de": "Zwei Orte von unserer „Will-ich-hin“-Liste am Hauptmarkt: Würstchen vom offenen Feuer und die Weinstuben auf der Insel am Henkersteg. Von uns noch nicht getestet — wir probieren und ergänzen."
+   },
+   "stops": [
+    {
+     "n": {
+      "ru": "Главная площадь",
+      "en": "The Main Market",
+      "pt": "O Mercado Principal",
+      "es": "El Mercado Principal",
+      "de": "Der Hauptmarkt"
+     },
+     "m": {
+      "ru": "12:00 · фонтан, Фрауэнкирхе",
+      "en": "12 pm · the fountain, the Frauenkirche",
+      "pt": "12:00 · a fonte, a Frauenkirche",
+      "es": "12:00 · la fuente, la Frauenkirche",
+      "de": "12 Uhr · Brunnen, Frauenkirche"
+     }
+    },
+    {
+     "n": {
+      "ru": "Bratwursthäusle",
+      "en": "Bratwursthäusle",
+      "pt": "Bratwursthäusle",
+      "es": "Bratwursthäusle",
+      "de": "Bratwursthäusle"
+     },
+     "m": {
+      "ru": "12:15 · шесть колбасок, картофельный салат, красное пиво",
+      "en": "12:15 pm · six sausages, potato salad, a red beer",
+      "pt": "12:15 · seis salsichas, salada de batata, cerveja vermelha",
+      "es": "12:15 · seis salchichas, ensalada de patata, cerveza roja",
+      "de": "12:15 · sechs Würstchen, Kartoffelsalat, ein Rotbier"
+     }
+    },
+    {
+     "n": {
+      "ru": "Trödelstuben",
+      "en": "Trödelstuben",
+      "pt": "Trödelstuben",
+      "es": "Trödelstuben",
+      "de": "Trödelstuben"
+     },
+     "m": {
+      "ru": "14:00 · бокал вина на островке, дальше — прогулка по реке",
+      "en": "2 pm · a glass of wine on the island, then a walk along the river",
+      "pt": "14:00 · um copo de vinho na ilhota, depois um passeio pelo rio",
+      "es": "14:00 · una copa de vino en la islita, luego un paseo por el río",
+      "de": "14 Uhr · ein Glas Wein auf der Insel, dann ein Spaziergang am Fluss"
+     }
+    }
+   ],
+   "secrets": [
+    {
+     "ru": "Нюрнбергские колбаски маленькие — меньше шести не заказывают",
+     "en": "Nuremberg sausages are small — nobody orders fewer than six",
+     "pt": "As salsichas de Nuremberga são pequenas — ninguém pede menos de seis",
+     "es": "Las salchichas de Núremberg son pequeñas — nadie pide menos de seis",
+     "de": "Nürnberger sind klein — unter sechs bestellt keiner"
+    }
+   ],
+   "park": {
+    "ru": "Паркинг Jakobsmarkt — 15 минут пешком до Главной площади.",
+    "en": "Jakobsmarkt car park — 15 minutes on foot to the Main Market.",
+    "pt": "Parque Jakobsmarkt — 15 minutos a pé até ao Mercado Principal.",
+    "es": "Parking Jakobsmarkt — 15 minutos a pie hasta el Mercado Principal.",
+    "de": "Parkhaus Jakobsmarkt — 15 Minuten zu Fuß zum Hauptmarkt."
+   },
+   "wear": {
+    "ru": "По погоде; удобная обувь по брусчатке",
+    "en": "Dress for the weather; comfortable shoes for the cobbles",
+    "pt": "Conforme o tempo; calçado confortável para a calçada",
+    "es": "Según el tiempo; calzado cómodo para el empedrado",
+    "de": "Je nach Wetter; bequeme Schuhe fürs Pflaster"
+   }
+  }
+ ]
+}

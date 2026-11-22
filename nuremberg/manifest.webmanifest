@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Нюрнберг: лето и Рождество",
+  "short_name": "Нюрнберг",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#17191C",
+  "theme_color": "#A2412C",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "../icons/nuremberg-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icons/nuremberg-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icons/nuremberg-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
